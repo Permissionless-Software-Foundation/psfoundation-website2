@@ -9,39 +9,40 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
-import pic11 from '../assets/images/blog.jpg'
+// import pic11 from '../assets/images/blog.jpg'
+
 
 const IndexPage = ({
   data: {
     allMarkdownRemark: { edges },
   },
 }) => {
-  //console.log(`edges: ${JSON.stringify(edges, null, 2)}`)
+  // console.log(`edges: ${JSON.stringify(edges, null, 2)}`)
 
   const Posts = edges
     // Filter Blog posts. Posts have dates. Research pages don't.
     .filter(edge => !!edge.node.frontmatter.date)
     .map(edge => <li key={edge.node.id}><PostLink key={edge.node.id} post={edge.node} /></li>)
 
+  const link = edges.filter(edge => !!edge.node.frontmatter.date)
+  console.log(`link: ${JSON.stringify(link,null,2)}`)
+
+  if(typeof window !== 'undefined')
+    window.location.href = link[0].node.frontmatter.path
+
   return (
     <Layout>
       <Helmet>
-        <title>Blog</title>
-        <meta name="Blog" content="Blog" />
+        <title>PSF Business Plan</title>
+        <meta name="PSF Business Plan" content="PSF Business Plan" />
       </Helmet>
 
       <div id="main" className="alt">
         <section id="one">
           <div className="inner">
-            <header className="major">
-              <h1>Blog</h1>
-            </header>
-            <span className="image main">
-              <img src={pic11} alt="" />
-            </span>
 
             <p>
-              This page displays all blog entries, sorted by date.
+              This page should take you to the business plan below:
             </p>
 
             <ul>{Posts}</ul>

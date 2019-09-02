@@ -1,8 +1,8 @@
 ---
-date: "2019-04-23"
-title: "Syndicate Wikileaks"
-root: "/blog"
-path: "/blog/wikileaks"
+date: "2019-09-01"
+title: "PSF Business Plan"
+root: "/biz-plan"
+path: "/biz-plan/business-plan"
 ---
 # Support Wikileaks
 ## Show Your Support by Syndicating Wikileaks Data

@@ -24,7 +24,7 @@ class SellBadgerButton extends React.Component {
 
     // Calculate the number of tokens to send.
     let tokens = 1.0
-    if(window && window.usdPerToken) {
+    if(typeof window !== 'undefined' && window.usdPerToken) {
       // Calculate number of tokens in a dollar, up to 3 decimal places
       tokens = 1000 / window.usdPerToken
       tokens = Math.floor(tokens)
@@ -63,13 +63,13 @@ class SellBadgerButton extends React.Component {
 
             console.log(`Transaction sent!`)
 
-            
+
             // Run the callback if one is defined on the button.
           //  var successCallback = badgerButton.getAttribute("data-success-callback")
           //  if (successCallback) {
           //    window[successCallback](window.usdPerBC)
           //  }
-            
+
           })
         } else {
           window.open('https://badger.bitcoin.com')

@@ -11,25 +11,35 @@ const StyledButton = styled.a`
 
 class BuyBadgerButton extends React.Component {
   render() {
-    return <StyledButton href="#" className="button special badger-button-buy"
-      onClick={this.invokeBadger}
-      data-to="bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al">
+    return (
+      <StyledButton
+        href="#"
+        className="button special badger-button-buy"
+        onClick={this.invokeBadger}
+        data-to="bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al"
+      >
         Buy $0.10 of PSF Tokens
       </StyledButton>
+    )
   }
 
   // Invoke the Badger Wallet when the button is clicked.
-  invokeBadger (event) {
-    event.preventDefault();
+  invokeBadger(event) {
+    event.preventDefault()
 
-    let bch = Math.floor(100000000/window.usdPerBCH/10)
-    console.log(`Sending ${bch} BCH`)
+    let bch = 300.0
+    if (typeof window !== 'undefined') {
+      Math.floor(100000000 / window.usdPerBCH / 10)
+      console.log(`Sending ${bch} BCH`)
+    }
 
-    var badgerButtons = document.body.getElementsByClassName("badger-button-buy")
+    var badgerButtons = document.body.getElementsByClassName(
+      'badger-button-buy'
+    )
     for (var i = 0; i < badgerButtons.length; i++) {
-    //  var badgerButton = badgerButtons[i]
+      //  var badgerButton = badgerButtons[i]
       //badgerButton.addEventListener('click', function(event) {
-   /*     if (typeof web4bch !== 'undefined') {
+      /*     if (typeof web4bch !== 'undefined') {
           // Instantiate web4bch
           web4bch = new Web4Bch(web4bch.currentProvider)
 

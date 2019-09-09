@@ -2,14 +2,25 @@
   Badger button to buy $1 USD of PSF tokens.
 */
 
+/* eslint-disable */
+
 import React from 'react'
 import styled from 'styled-components'
+
+import Util from '../components/lib/util'
+const util = new Util()
 
 const StyledButton = styled.a`
   margin-bottom: 25px;
 `
 
 class BuyBadgerButton extends React.Component {
+  constructor(props) {
+    super()
+    console.log(`button usdPerBCH price: ${props.usdPerBch}`)
+    this.usdPerBch = props.usdPerBch
+  }
+
   render() {
     return (
       <StyledButton
@@ -24,48 +35,53 @@ class BuyBadgerButton extends React.Component {
   }
 
   // Invoke the Badger Wallet when the button is clicked.
-  invokeBadger(event) {
+  async invokeBadger(event) {
     event.preventDefault()
 
-    let bch = 300.0
-    if (typeof window !== 'undefined') {
-      Math.floor(100000000 / window.usdPerBCH / 10)
-      console.log(`Sending ${bch} BCH`)
-    }
+    const prices = await util.getPrice()
 
-    var badgerButtons = document.body.getElementsByClassName(
-      'badger-button-buy'
-    )
-    for (var i = 0; i < badgerButtons.length; i++) {
-      //  var badgerButton = badgerButtons[i]
-      //badgerButton.addEventListener('click', function(event) {
-      /*     if (typeof web4bch !== 'undefined') {
-          // Instantiate web4bch
-          web4bch = new Web4Bch(web4bch.currentProvider)
+    // console.log(`hello ${this.usdPerBch}`)
 
-          if(bch === null || isNaN(bch)) bch = 10000 // Prevent value=null bug
+    let bch = Math.floor(100000000 / prices.usdPerBCH / 10)
+    console.log(`Sending ${bch} satoshis in BCH`)
 
-          var txParams = {
-            to: badgerButton.getAttribute("data-to"),
-            from: web4bch.bch.defaultAccount,
-            value: bch
-          }
+    // Only execute if Badger Wallet is installed.
+    if (typeof Web4Bch !== 'undefined' && typeof web4bch !== 'undefined') {
+      // Get a handle on the 'Buy' button.
+      const badgerButtons = document.body.getElementsByClassName(
+        'badger-button-buy'
+      )
+      const badgerButton = badgerButtons[0]
 
-          web4bch.bch.sendTransaction(txParams, (err, res) => {
-            if (err) return
+      // Instantiate web4bch
+      const badgerWallet = new Web4Bch(web4bch.currentProvider)
 
-            console.log(`Transaction sent!`)
+      // Prevent value=null bug
+      if (bch === null || isNaN(bch)) bch = 10000
 
-            // Run the callback if one is defined on the button.
-            var successCallback = badgerButton.getAttribute("data-success-callback")
-            if (successCallback) {
-              window[successCallback](window.usdPerBC)
-            }
-          })
-        } else {
-          window.open('https://badgerwallet.cash')
-        }*/
-      //})
+      // Config settings for the transaction.
+      var txParams = {
+        to: badgerButton.getAttribute('data-to'),
+        from: badgerWallet.bch.defaultAccount,
+        value: bch,
+      }
+
+      badgerWallet.bch.sendTransaction(txParams, (err, res) => {
+        if (err) return
+
+        console.log(`Transaction sent! TXID: ${res}`)
+
+        // Run the callback if one is defined on the button.
+        // var successCallback = badgerButton.getAttribute('data-success-callback')
+        // if (successCallback) {
+        //   window[successCallback](window.usdPerBC)
+        // }
+      })
+
+    } else {
+      // Send them to the badger wallet page if they don't have Badger Extension
+      // installed.
+      window.open('https://badger.bitcoin.com')
     }
   }
 }

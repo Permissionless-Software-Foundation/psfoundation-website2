@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react'
 //import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
@@ -8,6 +10,9 @@ import BuyBadgerButton from '../components/buy-badger-button'
 import SellBadgerButton from '../components/sell-badger-button'
 import WarningDiv from '../components/warning'
 import PriceSection from '../components/price-section'
+
+import Util from '../components/lib/util'
+const util = new Util()
 
 import qrcode from '../assets/images/qrcode.png'
 const BchAddress = styled.p`
@@ -21,6 +26,12 @@ const BizPlanButton = styled.a`
 `
 
 class HomeIndex extends React.Component {
+  constructor() {
+    super()
+
+    this.usdPerBCH = 300.0
+  }
+
   render() {
     const siteTitle = 'Permissionless Software Foundation'
 
@@ -34,13 +45,11 @@ class HomeIndex extends React.Component {
           <div className="grid-wrapper">
             <div className="col-6">
               <header className="">
-                <h2>
-                  Permissionless
-                  <br />
-                  Software
-                  <br />
-                  Foundation
-                </h2>
+                <h2>Permissionless</h2>
+
+                  <h2>Software</h2>
+
+                  <h2>Foundation</h2>
               </header>
               <p>
                 The mission of the Permissionless Software Foundation is to
@@ -100,7 +109,9 @@ class HomeIndex extends React.Component {
                 <BchAddress className="bchAddress">
                   bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al
                 </BchAddress>
-                <BuyBadgerButton />
+                <br />
+                <BuyBadgerButton usdPerBch="4" />
+                <br />
                 <SellBadgerButton />
               </center>
             </div>
@@ -201,6 +212,16 @@ class HomeIndex extends React.Component {
       </Layout>
     )
   }
+
+  async componentDidMount() {
+    try {
+      // Update the component state with token price from the server.
+      // await this.getPrice()
+    } catch (err) {
+      console.log(`Error in index.js/componentDidMounts(): `, err)
+    }
+  }
+
 }
 
 export default HomeIndex

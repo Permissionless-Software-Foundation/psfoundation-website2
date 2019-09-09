@@ -251,10 +251,10 @@ class PriceChart extends React.Component {
         tokenBalance: body.tokenBalance,
       }))
 
-      console.log(`usdPerToken: ${this.state.usdPerToken}`)
-      console.log(`usdPerBCH: ${this.state.usdPerBCH}`)
-      console.log(`bchBalance: ${this.state.bchBalance}`)
-      console.log(`tokenBalance: ${this.state.tokenBalance}`)
+      // console.log(`usdPerToken: ${this.state.usdPerToken}`)
+      // console.log(`usdPerBCH: ${this.state.usdPerBCH}`)
+      // console.log(`bchBalance: ${this.state.bchBalance}`)
+      // console.log(`tokenBalance: ${this.state.tokenBalance}`)
 
       // Add BCH price to window object, so it can be used by Badger Button
       // if(typeof window !== 'undefined')

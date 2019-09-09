@@ -94,10 +94,10 @@ class PriceSection extends React.Component {
         tokenBalance: body.tokenBalance,
       }))
 
-      console.log(`usdPerToken: ${this.state.usdPerToken}`)
-      console.log(`usdPerBCH: ${this.state.usdPerBCH}`)
-      console.log(`bchBalance: ${this.state.bchBalance}`)
-      console.log(`tokenBalance: ${this.state.tokenBalance}`)
+      // console.log(`usdPerToken: ${this.state.usdPerToken}`)
+      // console.log(`usdPerBCH: ${this.state.usdPerBCH}`)
+      // console.log(`bchBalance: ${this.state.bchBalance}`)
+      // console.log(`tokenBalance: ${this.state.tokenBalance}`)
     } catch (err) {
       console.log(`Error in Header.js/getPrice()`)
       throw err

@@ -87,8 +87,7 @@ class HomeIndex extends React.Component {
                   sponshorship, or other fiduciary responsibility.
                 </p>
                 <BizPlanButton
-                  href="https://docs.google.com/document/d/1UgX_h4TB9CtxxabseC7lRGwQlCsNikPo7DJUlIrNv0k/edit?usp=sharing"
-                  target="_blank"
+                  href="/biz-plan/business-plan"
                   rel="noopener noreferrer"
                   className="button special"
                 >
@@ -112,7 +111,7 @@ class HomeIndex extends React.Component {
                 <br />
                 <BuyBadgerButton usdPerBch="4" />
                 <br />
-                <SellBadgerButton />
+                <SellBadgerButton usdPerBch="4" />
               </center>
             </div>
             <div className="col-6">

@@ -1,80 +1,97 @@
 /*
-  Badger button to sell $1 USD worth of PSF tokens.
+  Badger button to sell $0.1 USD worth of PSF tokens.
 */
+
+/* eslint-disable */
 
 import React from 'react'
 import styled from 'styled-components'
+
+import Util from '../components/lib/util'
+const util = new Util()
 
 const StyledButton = styled.a`
   margin-bottom: 25px;
 `
 
 class SellBadgerButton extends React.Component {
+  constructor(props) {
+    super()
+    console.log(`button usdPerBCH price: ${props.usdPerBch}`)
+    this.usdPerBch = props.usdPerBch
+  }
+
   render() {
-    return <StyledButton href="#" className="button special badger-button-sell"
-      onClick={this.invokeBadger}
-      data-to="bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al">
+    return (
+      <StyledButton
+        href="#"
+        className="button special badger-button-sell"
+        onClick={this.invokeBadger}
+        data-to="bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al"
+      >
         Sell $0.10 of PSF Tokens
       </StyledButton>
+    )
   }
 
   // Invoke the Badger Wallet when the button is clicked.
-  invokeBadger (event) {
-    event.preventDefault();
+  async invokeBadger(event) {
+    event.preventDefault()
 
-    // Calculate the number of tokens to send.
-    let tokens = 1.0
-    if(typeof window !== 'undefined' && window.usdPerToken) {
-      // Calculate number of tokens in a dollar, up to 3 decimal places
-      tokens = 1000 / window.usdPerToken
-      tokens = Math.floor(tokens)
-      tokens = tokens / 1000
-      tokens = tokens / 10 // From $1 to $0.10
-    }
+    // Get the token price from the server.
+    const prices = await util.getPrice()
+    //console.log(`prices: ${JSON.stringify(prices, null, 2)}`)
 
-    console.log(`Selling ${tokens} tokens.`)
+    // Calculate the amount of tokens to send to equate to $0.10 USD.
+    let tokens = 0.1 / prices.usdPerToken
+    tokens = util.eightDecimals(tokens)
+    console.log(`Sending ${tokens} tokens equal to $0.10 USD`)
 
-    //let bch = Math.floor(100000000/window.usdPerBCH)
-    //console.log(`Sending ${bch} BCH`)
+    // Only execute if Badger Wallet is installed.
+    if (typeof Web4Bch !== 'undefined' && typeof web4bch !== 'undefined') {
+      // Get a handle on the 'Sell' button.
+      const badgerButtons = document.body.getElementsByClassName(
+        'badger-button-sell'
+      )
+      const badgerButton = badgerButtons[0]
 
-    var badgerButtons = document.body.getElementsByClassName("badger-button-sell")
-    for (var i = 0; i < badgerButtons.length; i++) {
-    //  var badgerButton = badgerButtons[i]
-      //badgerButton.addEventListener('click', function(event) {
- /*       if (typeof web4bch !== 'undefined') {
-          // Instantiate web4bch
-          web4bch = new Web4Bch(web4bch.currentProvider)
+      // Instantiate web4bch
+      const badgerWallet = new Web4Bch(web4bch.currentProvider)
 
-          // Prevent value=null bug
-          if(tokens === null || isNaN(tokens)) tokens = 10000
+      // Prevent value=null bug
+      if (tokens === null || isNaN(tokens)) tokens = 1
 
-          var txParams = {
-            to: badgerButton.getAttribute("data-to"),
-            from: web4bch.bch.defaultAccount,
-            value: tokens,
-            sendTokenData: {
-              tokenId: '38e97c5d7d3585a2cbf3f9580c82ca33985f9cb0845d4dcce220cb709f9538b0',
-              tokenProtocol: 'slp'
-            }
-          }
+      // Config settings for the transaction.
+      var txParams = {
+        to: badgerButton.getAttribute('data-to'),
+        from: web4bch.bch.defaultAccount,
+        value: tokens,
+        sendTokenData: {
+          tokenId:
+            '38e97c5d7d3585a2cbf3f9580c82ca33985f9cb0845d4dcce220cb709f9538b0',
+          tokenProtocol: 'slp',
+        },
+      }
 
-          web4bch.bch.sendTransaction(txParams, (err, res) => {
-            if (err) return
+      // Send the tokens.
+      badgerWallet.bch.sendTransaction(txParams, (err, res) => {
+        if (err) {
+          console.error(`Error sending transaction: `, err)
+          return
+        }
 
-            console.log(`Transaction sent!`)
+        console.log(`Transaction sent! TXID: ${res}`)
 
-
-            // Run the callback if one is defined on the button.
-          //  var successCallback = badgerButton.getAttribute("data-success-callback")
-          //  if (successCallback) {
-          //    window[successCallback](window.usdPerBC)
-          //  }
-
-          })
-        } else {
-          window.open('https://badger.bitcoin.com')
-        }*/
-      //})
+        // Run the callback if one is defined on the button.
+        // var successCallback = badgerButton.getAttribute('data-success-callback')
+        // if (successCallback) {
+        //   window[successCallback](window.usdPerBC)
+        // }
+      })
+    } else {
+      // Send them to the badger wallet page if they don't have Badger Extension
+      // installed.
+      window.open('https://badger.bitcoin.com')
     }
   }
 }

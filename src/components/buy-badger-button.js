@@ -1,5 +1,5 @@
 /*
-  Badger button to buy $1 USD of PSF tokens.
+  Badger button to buy $0.1 USD of PSF tokens.
 */
 
 /* eslint-disable */
@@ -39,10 +39,12 @@ class BuyBadgerButton extends React.Component {
     event.preventDefault()
 
     const prices = await util.getPrice()
+    //console.log(`prices: ${JSON.stringify(prices,null,2)}`)
 
-    // console.log(`hello ${this.usdPerBch}`)
-
-    let bch = Math.floor(100000000 / prices.usdPerBCH / 10)
+    // Convert $0.10 into satoshis.
+    let bch = 0.1 / prices.usdPerBCH
+    bch = util.eightDecimals(bch)
+    bch = util.bch2sats(bch)
     console.log(`Sending ${bch} satoshis in BCH`)
 
     // Only execute if Badger Wallet is installed.
@@ -67,7 +69,10 @@ class BuyBadgerButton extends React.Component {
       }
 
       badgerWallet.bch.sendTransaction(txParams, (err, res) => {
-        if (err) return
+        if (err) {
+          console.error(`Error sending transaction: `, err)
+          return
+        }
 
         console.log(`Transaction sent! TXID: ${res}`)
 

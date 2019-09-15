@@ -24,7 +24,7 @@ path: "/biz-plan/business-plan"
 
 - [Token Economics](#tokenEconomics)
   - [Token Creation, Issuance, and Wallet](#tokenCreation)
-      - [Reinforcing Circle of Value](#valueCreation)
+      - [Value Creation](#valueCreation)
       - [Scope of Value: SaaS](#scopeOfValue)
       - [A Pseudo-Stable Token](#pseudoStableToken)
           - [Bancor & Liquidity](#bancor)

@@ -5,8 +5,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
-
 const MainDiv = styled.section`
   background-color: #ffff00;
   color: black!important;
@@ -19,13 +17,15 @@ font-weight: bold;
 class WarningDiv extends React.Component {
   render() {
     return (<MainDiv>
-        <p>
+      <div style={{backgroundColor: '#ffff00'}}>
+        <p style={{color: '#000000'}}>
           <StyledStrong>Warning:</StyledStrong> The PSF token should not be considered an investment.
           It's an experimental business model for tracking and rewarding effort
           in open source projects. It's value is intended to be transactional
           in nature,
           and any long-term value is highly speculative.
         </p>
+        </div>
       </MainDiv>
     )
   }

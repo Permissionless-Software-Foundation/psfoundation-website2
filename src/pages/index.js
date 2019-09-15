@@ -105,11 +105,13 @@ class HomeIndex extends React.Component {
                 <span className="image">
                   <img src={qrcode} alt="" />
                 </span>
-                <BchAddress className="bchAddress">
+                <br />
+                <p style={{textAlign: 'center'}}>
                   bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al
-                </BchAddress>
+                </p>
                 <br />
                 <BuyBadgerButton usdPerBch="4" />
+                <br />
                 <br />
                 <SellBadgerButton usdPerBch="4" />
               </center>

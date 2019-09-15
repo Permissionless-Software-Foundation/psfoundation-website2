@@ -47,7 +47,7 @@ path: "/biz-plan/business-plan"
 
 
 ## Executive Summary<a name="executiveSummary"></a>
-This document lays out the business model and formation plans for the *Permissionless Software Foundation*. The Foundation will offer an SLP token on the BCH network to self-fund the development of open source software which focuses on *individual sovereignty*, with emphasis on privacy, censorship resistance, and [Agorism](https://en.wikipedia.org/wiki/Agorism).
+This document lays out the business model and formation plans for the *Permissionless Software Foundation*. The Foundation will offer an SLP token on the BCH network to self-fund the development of open source software which focuses on *individual sovereignty*, with emphasis on privacy, censorship resistance, and [Agorism](https://en.wikipedia.org/wiki/Agorism). Unlocking private, censorship resistant trade will empower the next stage of globalism, increasing wealth for normal people and disempowering nationalistic governments.
 
 The initial focus will be on software that fits the software as a service (SaaS) business model, as that model lends itself best to the use of a native utility token. Many ideas are borrowed from [the Bancor whitepaper](https://github.com/Permissionless-Software-Foundation/token-liquidity/blob/master/docs/bancor-protocol-whitepaper.pdf), such as the concepts of token liquidity and forming a community that can self-fund through a native token. See [this video](https://youtu.be/LcbHTF3zCdI) for additional background.
 
@@ -113,6 +113,9 @@ Members of the board of directors will posses deep knowledge in one or more of t
 A board of advisors will also be assembled to provide guidance on matters of technical, legal, and governance matters.
 
 ## Token Economics<a name="tokenEconomics"></a>
+Before delving into the specifics of the token economics, it's important to keep the big picture in mind: The purpose of the mathematics behind the token is to allow free market supply-and-demand to control the price, but to institute 'guard rails' in the event of market panics or irrational exuberance, and thereby encourage the price of the token to gravitate towards a pseudo-stable price point.
+
+The value created by the Permissionless Software Foundation comes from both managing the software projects and managing this pseudo-stable price point. The Foundation is as much an institution for creating software, as it is a central bank of their own community-based economy.
 
 ### Token Creation, Issuance, and Wallet<a name="tokenCreation"></a>
 The proposed PSF token will be issued on the Bitcoin Cash (BCH) blockchain using the [Simple Ledger Token Protocol (SLP)](https://simpleledger.cash/) and [SLP-SDK](https://developer.bitcoin.com/slp). The token is currently exchanged using the [Badger Wallet](https://badger.bitcoin.com/), and several up-and-coming SLP token-aware wallets by sending either BCH or PSF tokens to this BCH address:
@@ -125,7 +128,7 @@ The PSF token is identified by its unique SLP property token ID of:
 
 The minting baton for creating new tokens is active and controlled by the Permissionless Software Foundation. That means there is no cap on the token issuance. The Foundation will have the sole power to create tokens at-will, to reimburse or recognize the effort of developers.
 
-#### Reinforcing Circle of Value<a name="valueCreation"></a>
+#### Value Creation<a name="valueCreation"></a>
 At the center of the token economics is the [liquidity app](https://github.com/Permissionless-Software-Foundation/token-liquidity), allowing community members to permissionlessly exchange tokens for Bitcoin Cash (or Bitcoin Cash for tokens) at any time. Because the Foundation has the sole power to create new tokens, it has the obligation to regulate the price of the token and work with the mathematics of the app to achieve a pseudo-stable price.
 
 Price management is intended to follow a reinforcing ‘virtuous circle’ of value as follows:
@@ -134,15 +137,17 @@ Price management is intended to follow a reinforcing ‘virtuous circle’ of va
 
 2. Continuous efforts by developers and contributors make the software more valuable and should increase usage of the software.
 
-3. Users acquire tokens to use the software by sending BCH to the liquidity app, thus increasing the market price of the token.
+3. Users inject value into the token economy in one of two ways. Both activities increase the market price of the token.
+    - They acquire tokens to use the software by sending BCH to the liquidity app.
+    - They pay BCH to the apps they interact with and that app sends a portion of the BCH to the token-liquidity app with instructions to burn that amount of tokens.
 
-4. Contributors can trade their tokens for BCH via the liquidity app, and from there convert BCH into their local fiat currency via an exchange.
+4. Contributors can trade their tokens for BCH via the liquidity app. They can then spend the BCH directly or convert it into their local fiat currency via a local exchange.
 
 To be clear, the token does not become more valuable because of the labor of the developers (Labor Theory of Value). The token will become more valuable for two reasons:
 
 1. Modern software suffers from entropy or ‘code rot’. Continuous contributions are required to keep modern software functional and secure. It is this continued effort that is valuable, and the reason why other organizations can’t simply copy the software to capture the value.
 
-2. Studies have shown no correlation between the number of users and the number of developers in an open source project, which is why unfunded open source projects are such a big social problem (example: the Heartbleed bug). This also means that targeted effort by a few developers can provide a great deal of value to a large population of users.
+2. Studies have shown no correlation between the number of users and the number of developers in an open source project, which is why unfunded open source projects are such a big social problem (example: [the Heartbleed bug](https://mashable.com/2014/04/14/heartbleed-open-source/#IxuitorltiqZ)). This also means that targeted effort by a few developers can provide a great deal of value to a large population of users.
 
 **It is <u>demand for</u> and <u>usage of</u> the token that captures value and increases price.**
 

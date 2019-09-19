@@ -245,6 +245,40 @@ More platforms are available for specialized needs that can not be directly serv
 
 
 ## Projects<a name="projects"></a>
+Each software project presented here helps to reinforce the others, creating an infrastructure and toolset for people to engage in agorism while protecting their privacy and anonymity. Each project listed will be built in the order presented here.
+
+### Time Tracking
+The time tracking app at [ovn.psfoundation.cash](https://ovn.psfoundation.cash) is used by contributors to track time spent on Foundation projects. This logged time can then be reimbursed with PSF tokens. This time-tracking app allows the Permissionless Software Foundation to be an [Open Value Network](https://wiki.p2pfoundation.net/Open_Value_Network). The source code for the app has two parts:
+- [The front end user interface](https://github.com/Permissionless-Software-Foundation/time-tracking-front-end)
+- [The back end REST API](https://github.com/Permissionless-Software-Foundation/time-tracking-api)
+
+### End-to-end Encrypted Chat
+Our [web-based chat app](https://chat.psfoundation.cash) is distributed over IPFS making it very difficult to censor or block. It is end-to-end encrypted, allowing members of the Foundation to communicate securely without any danger of snooping. The code is open source, allowing anyone to audit it. While [our Telegram channel](https://t.me/permissionless_software) allows communication with a more mainstream audience, the web-based chat app is useful for anyone who needs to communicate privately in real-time. And because it is delivered through a web browser, any type of device or operating system can access it.
+
+- [The web-app source code](https://github.com/Permissionless-Software-Foundation/chat-web-app)
+
+### Uncensorable Publishing
+Several tools have been packaged together to allow users to create websites and web applications that are nearly uncensorable. The technologies used are a combination of IPFS, Bitoin Cash, and Tor. A demo and walk-through of the earliest version is [available here](https://troutsblog.com/about).
+
+In order to publish uncensorable updates to this type of publishing platform, the Bitcoin Cash blockchain is used. These updates will also send a small amount of BCH to our token liquidity app, instructing it to burn a small amount of tokens. This publishing application is the first income-producing product distributed by the PSF, and is also a foundational piece of technology upon which more advanced and uncensorable applications will be developed.
+
+Videos:
+- [Non-technical video overview of how governments censor content](https://www.youtube.com/watch?v=RlNVyatwd5M)
+- [Technical walkthrough video of how this software circumvents government censorship](https://www.youtube.com/watch?v=Ez9YXpu_Chs&t=971s)
+
+Software:
+- [Web server](https://github.com/Permissionless-Software-Foundation/ipfs-web-server)
+- [Website template](https://github.com/Permissionless-Software-Foundation/gatsby-ipfs-template)
+- [Memo push](https://github.com/Permissionless-Software-Foundation/memo-push) tool
+for publishing updates via the Bitcoin Cash blockchain.
+
+### Tor Search Engine
+More akin to a curated list than a search engine, the web app [described here](https://github.com/Permissionless-Software-Foundation/psf-docs/blob/master/pips/PIP004.md) will be developed to allow Tor-based websites, with their ephemeral `.onion` addresses, to be easily found and browsed. Ecommerce sites can promote themselves, allowing an advertising market to emerge. This web app will build upon the uncensorable publishing application described above.
+
+This app will mostly be run by [Mirror nodes in a hybrid peer-to-peer network](https://honest.cash/christroutner/hybrid-p2p-networks-1051). The PSF token will align incentives and reduce spam. This will allow cryptocurrency-based services to conduct business and be ‘found’ easily, while still using the Tor network for robust censorship resistance.
+
+### IPFS File Hosting
+The uncensorable publishing technology above will be used to create an IPFS file hosting application. This application will allow for easy file hosting on the IPFS network in exchange for Bitcoin Cash. The Tor search engine will allow for multiple actors to safely compete and create a market of hosting services. Allowing for content to easily be uploaded and shared, anonymously and in an uncensorable fashion, will provide the foundation for many more types of permissionless applications to be built. This could very well be the key to mainstream cryptocurrency adoption. The specifications for this application [can be found here](https://github.com/Permissionless-Software-Foundation/psf-docs/blob/master/pips/PIP002.md).
 
 ### Permissionless, Anonymous Email<a name="permissionlessEmail"></a>
 Email is the most fundamental piece of identity on the internet. And yet, privacy-respecting email providers are rare to non-existent because of abuse by spammers. Cryptocurrency provides the answer to that problem. Studies have shown the a cost of $0.01 to $0.05 per email is prohibitive to spammers.
@@ -252,13 +286,6 @@ Email is the most fundamental piece of identity on the internet. And yet, privac
 An easy-to-setup, open-source email server like [iRedMail](https://iredmail.com/download.html) can be combined with a light weight [koa web server](https://github.com/christroutner/babel-free-koa2-api-boilerplate) for account management and the [SLP JavaScript SDK](https://github.com/Bitcoin-com/slp-sdk) to allow payment in PSF tokens.
 
 For example, a new account could be funded with $3 USD worth of PSF tokens, allowing up to 300 emails to be sent or received. Once depleted of funds, more tokens can be sent to increase the quota.
-
-### Tor Server Tools<a name="torServers"></a>
-A suite of JavaScript libraries will be developed and maintained to help developers build [hybrid peer-to-peer networks](https://honest.cash/christroutner/hybrid-p2p-networks-1051), using the PSF token as a medium of exchange for aligning incentives within the network.
-
-Tor allows servers to hide within the tor network (darkweb). Networking tools like [Tor Browser](https://www.torproject.org/download/), [tor2web](https://www.tor2web.org/), or [privoxy](https://www.privoxy.org/) allow normal users to browse the darkweb using a conventional web browser. However, tor websites, which end it ‘.onion’ addresses are ephemeral and there no good search engine for the dark web.
-
-[Mirror node](https://honest.cash/christroutner/technologies-for-democratizing-power-108) software developed by the PSF foundation will be used to remove the need for search engines by distributing curated lists of tor-based servers. The PSF token will align incentives and reduce spam. This will allow cryptocurrency-based services to conduct business and be ‘found’ easily, while still using the tor network for robust censorship resistance.
 
 ### Anonymous Bitcoin: Consolidating CoinJoin<a name="coinjoin"></a>
 [Consolidating CoinJoin](https://gist.github.com/christroutner/8d54597da652fe2affa5a7230664bc45) is a peer-to-peer mixing service that brings privacy and fungibility to the Bitcoin Cash network. Users will use the PSF token to pay for the mixing service. Servers will use the PSF token to pay Mirrors to advertise their tor .onion address.

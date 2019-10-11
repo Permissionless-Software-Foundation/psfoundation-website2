@@ -6,7 +6,7 @@ import fetch from 'isomorphic-fetch'
 import PriceChart from './price-chart'
 
 //const SERVER = 'http://localhost:5000'
-const SERVER = 'https://psfoundation.co'
+const SERVER = 'https://psfoundation.cash'
 
 
 const PriceP = styled.p`
@@ -41,7 +41,7 @@ class PriceSection extends React.Component {
           <div className="col-7">
             <div>
               <h2>App Exchange Rate & Balances</h2>
-              <PriceChart server="https://psfoundation.co" />
+              <PriceChart server="https://psfoundation.cash" />
             </div>
           </div>
 

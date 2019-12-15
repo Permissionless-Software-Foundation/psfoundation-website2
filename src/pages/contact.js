@@ -9,7 +9,7 @@ const ListItem = styled.li`
 `
 const MainContainer = styled.div`
   margin: 40px;
-  
+
 `
 
 class Contact extends React.Component {
@@ -32,13 +32,23 @@ class Contact extends React.Component {
         <br />
         <ul>
           <ListItem>
+            <a href="https://t.me/permissionless_software" target="_blank" rel="noopener noreferrer">
+              PSF Telegram Channel
+            </a> -
+            The majority of communication takes place on our Telegram channel.
+            Pop in and say 'Hello'. This is the place to ask questions and get
+            to know the community.
+          </ListItem>
+
+          <ListItem>
             <a href="https://chat.psfoundation.cash" target="_blank" rel="noopener noreferrer">
               PSF Chat Server
             </a> -
-            The majority of communication takes place on our unencrypted chat
-            server. This is a tor-friendly chat server that is hosted and controlled
-            by the Foundation. This is the place to ask questions and get to know
-            the community.
+            This is our prototype chat application. It's 100% open source,
+            decentralized, and end-to-end encrypted. It's syndicated over IPFS, so
+            it's incredibly difficult to censor, and it can be accessed through any
+            web browser on any device. If you want to engaing in private, real-time,
+            text-based communication, this is a great way to do it.
           </ListItem>
 
           <ListItem>
@@ -62,7 +72,7 @@ class Contact extends React.Component {
             <a href="https://pidgin.im/" target="_blank" rel="noopener noreferrer">Pidgin</a> instant
             messanger along with the <a href="https://otr.cypherpunks.ca/"
             target="_blank" rel="noopener noreferrer">OTR</a> plugin for end-to-end encryption. This
-            software is automatically installed in
+            software is automatically installed in {' '}
             <a href="https://tails.boum.org/" target="_blank" rel="noopener noreferrer">Tails</a> OS.{' '}
             <a href="https://www.youtube.com/watch?v=HsSssbs-Sso" target="_blank" rel="noopener noreferrer">
             Here is a video explaining the software</a>. You can chat with members

@@ -14,7 +14,9 @@ import PriceSection from '../components/price-section'
 import Util from '../components/lib/util'
 const util = new Util()
 
-import qrcode from '../assets/images/qrcode.png'
+import qrcodeBCH from '../assets/images/qrcodeBCH.png'
+import qrcodeSLP from '../assets/images/qrcodeSLP.png'
+
 const BchAddress = styled.p`
   text-align: center;
   font-size: 18px;
@@ -47,9 +49,9 @@ class HomeIndex extends React.Component {
               <header className="">
                 <h2>Permissionless</h2>
 
-                  <h2>Software</h2>
+                <h2>Software</h2>
 
-                  <h2>Foundation</h2>
+                <h2>Foundation</h2>
               </header>
               <p>
                 The mission of the Permissionless Software Foundation is to
@@ -103,17 +105,22 @@ class HomeIndex extends React.Component {
             <div className="col-6">
               <center>
                 <span className="image">
-                  <img src={qrcode} alt="" />
+                  <img src={qrcodeBCH} alt="bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al" />
                 </span>
                 <br />
-                <p style={{textAlign: 'center'}}>
+                <p style={{ textAlign: 'center' }}>
                   bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al
                 </p>
                 <br />
-                <BuyBadgerButton usdPerBch="4" />
+
+                <span className="image">
+                  <img src={qrcodeSLP} alt="simpleledger:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfqtaqr70rp" />
+                </span>
                 <br />
-                <br />
-                <SellBadgerButton usdPerBch="4" />
+                <p style={{ textAlign: 'center' }}>
+                  simpleledger:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfqtaqr70rp
+                </p>
+
               </center>
             </div>
             <div className="col-6">
@@ -147,6 +154,13 @@ class HomeIndex extends React.Component {
                 Do not send BCH to the app address unless you are using a SLP
                 token-aware wallet. Non-aware wallets can destroy the tokens.
               </p>
+              <br />
+              <center>
+              <BuyBadgerButton usdPerBch="4" />
+              <br />
+              <br />
+              <SellBadgerButton usdPerBch="4" />
+              </center>
             </div>
           </div>
         </section>
@@ -222,7 +236,6 @@ class HomeIndex extends React.Component {
       console.log(`Error in index.js/componentDidMounts(): `, err)
     }
   }
-
 }
 
 export default HomeIndex

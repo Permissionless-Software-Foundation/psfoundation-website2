@@ -51,7 +51,8 @@ path: "/biz-plan/business-plan"
 
 
 ## Executive Summary<a name="executiveSummary"></a>
-This document lays out the business model and formation plans for the *Permissionless Software Foundation*. The Foundation will offer an SLP token on the BCH network to self-fund the development of open source software which focuses on *individual sovereignty*, with emphasis on privacy, censorship resistance, and [Agorism](https://en.wikipedia.org/wiki/Agorism). Unlocking private, censorship resistant trade will empower the next stage of globalism, increasing wealth for normal people and disempowering nationalistic governments.
+This document lays out the business model and formation plans for the *Permissionless Software Foundation*. The Foundation will offer an SLP token on the BCH network to self-fund the development of open source software, and to promote the economic growth of the
+Bitcoin Cash ecosystem.
 
 The initial focus will be on software that fits the software as a service (SaaS) business model, as that model lends itself best to the use of a native utility token. Many ideas are borrowed from [the Bancor whitepaper](https://github.com/Permissionless-Software-Foundation/token-liquidity/blob/master/docs/bancor-protocol-whitepaper.pdf), such as the concepts of token liquidity and forming a community that can self-fund through a native token. See [this video](https://youtu.be/LcbHTF3zCdI) for additional background.
 

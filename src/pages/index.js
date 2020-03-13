@@ -101,13 +101,13 @@ class HomeIndex extends React.Component {
         </section>
 
         <section id="two" className="main style2">
-          <div className="grid-wrapper">
+          <div className="grid-wrapper" style={{ visibility: 'hidden' }}>
             <div className="col-12">
               <h2>Token Liquidity App is Under Construction</h2>
             </div>
           </div>
 
-          <div className="grid-wrapper" style={{ visibility: 'hidden' }}>
+          <div className="grid-wrapper">
             <div className="col-6">
               <center>
                 <span className="image">
@@ -138,19 +138,32 @@ class HomeIndex extends React.Component {
                 liquidity app. Scan the QR code with a SLP token-aware BCH
                 wallet, like{' '}
                 <a
-                  href="https://badgerwallet.cash/"
+                  href="https://badger.bitcoin.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Badger Wallet
+                  Badger Mobile
                 </a>{' '}
-                browser extension, or click the Buy or Sell buttons to trade $1
-                USD worth of tokens.
+                or the{' '}
+                <a
+                  href="https://wallet.bitcoin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Bitcoin.com Wallet
+                </a>{' '}, or click the Buy or Sell buttons to trade $1
+                USD worth of tokens if you have the <a
+                  href="https://badger.bitcoin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Badger Wallet browser extension
+                </a> installed.
               </p>
               <p>
                 The liquidity app will send tokens if it recieves BCH. It will
-                send BCH if it recieves tokens. It will take two (2) block
-                confirmations before tokens will appear in your wallet. Refresh
+                send BCH if it recieves tokens. <b>It will take two (2) block
+                confirmations before tokens will appear in your wallet</b>. Refresh
                 the window to get the most up-to-date exchange rate.
               </p>
               <p>

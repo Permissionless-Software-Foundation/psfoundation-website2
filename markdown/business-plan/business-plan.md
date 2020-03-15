@@ -51,12 +51,13 @@ path: "/biz-plan/business-plan"
 
 
 ## Executive Summary<a name="executiveSummary"></a>
-This document lays out the business model and formation plans for the *Permissionless Software Foundation*. The Foundation will offer an SLP token on the BCH network to self-fund the development of open source software, and to promote the economic growth of the
-Bitcoin Cash ecosystem.
+This document lays out the business model and formation plans for the *Permissionless Software Foundation* (**PSF**). The Foundation is a community-oriented and legally-nonexistent organization that exists to foster the <u>growth of open source software</u> and the <u>adoption of Bitcoin Cash</u> across the globe. The PSF will offer a Simple Ledger Protocol (**SLP**) token on the Bitcoin Cash (**BCH**) network to self-fund the development of open source software, and recognize contributors that help the organization grow.
 
-The initial focus will be on software that fits the software as a service (SaaS) business model, as that model lends itself best to the use of a native utility token. Many ideas are borrowed from [the Bancor whitepaper](https://github.com/Permissionless-Software-Foundation/token-liquidity/blob/master/docs/bancor-protocol-whitepaper.pdf), such as the concepts of token liquidity and forming a community that can self-fund through a native token. See [this video](https://youtu.be/LcbHTF3zCdI) for additional background.
+The focus of efforts will be on software that fits the software as a service (SaaS) business model, as that model lends itself best to the use of a native utility token. Many ideas are borrowed from [the Bancor whitepaper](https://github.com/Permissionless-Software-Foundation/token-liquidity/blob/master/docs/bancor-protocol-whitepaper.pdf), such as the concepts of token liquidity and forming a community that can self-fund through a native token. See [this video](https://youtu.be/LcbHTF3zCdI) for additional background. The *primary purpose of the token* is to <u>recognize</u> and <u>quantify</u> contributions by community members.
 
 The Foundation will fund development of SaaS open source software projects. The value of this software will be monetized through the use of the PSF utility token. The Foundation will manage projects with the goal of creating a positive-reinforcement cycle between developers, software, and the pseudo-stable utility token.
+
+When the token is used to pay for software services, the tokens are burned, and BCH is captured in a special **token-liquidity** application, inspired by the Bancor whitepaper. This application allows community members to exchange their tokens for BCH, providing perfect liquidity. The price of the token is loosely pegged to BCH through an adjustable exchange rate. The loose peg allows supply and demand dynamics to work naturally, but retards wild market swings.
 
 ## The Problem: Underfunded Open Source Projects<a name="problem"></a>
 Funding for open source software projects is a well studied and unsolved social problem, primarily due to the concept of [code rot](https://en.wikipedia.org/wiki/Software_rot) in modern software development. Rather than rehash or summarize the issue, interested readers should refer to this seminal work by Nadia Eghbal:
@@ -74,12 +75,12 @@ Here is a list of articles discussing this idea further:
 ## The Permissionless Software Foundation<a name="thePSF"></a>
 
 ### Mission<a name="mission"></a>
-The mission of the Permissionless Software Foundation is to promote *individual sovereignty* through the use of software. The Foundation will focus on the development, management, and promotion of software that makes it easy for individuals to protect their privacy, circumvent censorship, and engage in [Agorism](https://en.wikipedia.org/wiki/Agorism).
+The mission of the Permissionless Software Foundation is to foster the <u>growth of open source software</u> and the <u>adoption of Bitcoin Cash</u> across the globe. We belive this is the best way to promote individual sovereignty and increase prosperity. The Foundation will focus on the development, management, and promotion of software that makes it easy for individuals to protect their privacy, circumvent censorship, and engage in economic action.
 
 #### Tools to fight surveillance<a name="antiSurveillance"></a>
 The primary tool used to protect privacy is [the Tor network](https://www.torproject.org/). The Tor network and tor-accessible browsers like [Brave browser](https://brave.com/browser-option-a-hpa811/) work within the current [server-client paradigm](https://en.wikipedia.org/wiki/Client%E2%80%93server_model), but they provide a layer of anonymity by hiding the server IP address inside the Tor network.
 
-For financial privacy, cryptocurrency will be used, combined with obfuscation technologies such as [Consolidating CoinJoin](https://gist.github.com/christroutner/457b99b8033fdea5ae565687e6360323) or [CashShuffle](https://cashshuffle.com/).
+For financial privacy, cryptocurrency will be used, combined with obfuscation technologies such as [Consolidating CoinJoin](https://gist.github.com/christroutner/457b99b8033fdea5ae565687e6360323), [CashShuffle](https://cashshuffle.com/), or [Cash Fusion](https://news.bitcoin.com/bitcoin-cash-gets-significant-privacy-boost-with-cashfusion-alpha-launch/)
 
 #### Tools to fight censorship<a name="antiCensorship"></a>
 The primary tool used to prevent censorship will be [IPFS](https://ipfs.io/) and the Bitcoin Cash blockchain. These two peer-to-peer (p2p) networks have individually [proven](http://la3.org/~kilburn/blog/catalan-government-bypass-ipfs/) robust censorship resistance throughout their short lives. The Foundation offers software that [combine these two technologies](https://troutsblog.com/about).
@@ -98,13 +99,16 @@ For long-term, technical discussions, GitHub Issues will be used. GitHub Issues 
 [Loomio](https://www.loomio.org/) is a proven platform for democratic discussion and decision making. Non-technical, long-term discussions, like those around governance, will take place on the [PSF Loomio group](https://www.loomio.org/join/group/46sYVVAhsMo5aWzr4jF71ZJS/).
 
 #### Board of Directors<a name="boardOfDirectors"></a>
-A board of directors will slowly be created to help govern the Foundation. The goal is to decentralize power within the organization so that no one entity represents a single point of failure. Pseudonyms for board members, to protect their identity from the wider world, will be allowed and encouraged
+A board of directors will slowly be created to help govern the Foundation. The goal is to decentralize power within the organization so that no one entity represents a single point of failure. Pseudonyms for board members, to protect their identity from the wider world, will be allowed and encouraged.
 
-For legal activities that require a single entity, such as signing contracts or opening bank accounts, a chairman of the board will be elected by the other board members. This member may change at-will by a majority vote of the board members. The chairman will assume the honorary title of ‘Dread Pirate Robert’, in respect to the anonymous administrators that ran the Silk Road and gave cryptocurrencies their start in the market.
+The primary duties of the board of directors are short and simple:
+- The board has the sole power to create new tokens. The tokens are primarily used to recognize contributors that help the organization grow.<br /><br />
 
-To prevent abuse, seek consensus, and reduce central points of failure, new token issuances will require a 3-of-5 signature. New tokens can only be created if 3 of the 5 directors sign the transaction with their private key.
+- They can also approve the transfer of tokens or BCH into the token-liquidity app, in order to help the token stay close to the psudo-stable peg.
 
-The ‘creation address’ for new tokens will be changed annually. In addition to good security, this process will ensure all board members are familiar with the process of adding and removing private keys, so that compromised keys can be removed easily.
+To prevent abuse, seek consensus, and reduce central points of failure, new token issuance will require a 3-of-5 signature. New tokens can only be created if 3 of the 5 directors sign the transaction with their private key. Likewise, BCH held by the organization can only be spent if three of the five keys sign for the transaction.
+
+The ‘creation address’ for new tokens will be changed annually. In addition to good security, this process will ensure all board members are familiar with the process of adding and removing private keys, so that keys can be replaced easily if a security compromise occurs.
 
 Members of the board of directors will posses deep knowledge in one or more of these area:
 - Cryptography
@@ -120,10 +124,10 @@ A board of advisors will also be assembled to provide guidance on matters of tec
 ## Token Economics<a name="tokenEconomics"></a>
 Before delving into the specifics of the token economics, it's important to keep the big picture in mind: The purpose of the mathematics behind the token is to allow free market supply-and-demand to control the price, but to institute 'guard rails' in the event of market panics or irrational exuberance, and thereby encourage the price of the token to gravitate towards a pseudo-stable price point.
 
-The value created by the Permissionless Software Foundation comes from both managing the software projects and managing this pseudo-stable price point. The Foundation is as much an institution for creating software, as it is a central bank of their own community-based economy.
+The value created by the Permissionless Software Foundation comes from both managing the software projects and managing this **pseudo-stable peg** between BCH and the token. The Foundation is as much an institution for creating software, as it is a central bank of their own community-based economy.
 
 ### Token Creation, Issuance, and Wallet<a name="tokenCreation"></a>
-The proposed PSF token will be issued on the Bitcoin Cash (BCH) blockchain using the [Simple Ledger Token Protocol (SLP)](https://simpleledger.cash/) and [SLP-SDK](https://developer.bitcoin.com/slp). The token is currently exchanged using the [Badger Wallet](https://badger.bitcoin.com/), and several up-and-coming SLP token-aware wallets by sending either BCH or PSF tokens to this BCH address:
+The proposed PSF token will be issued on the Bitcoin Cash (BCH) blockchain using the [Simple Ledger Token Protocol (SLP)](https://simpleledger.cash/) and [SLP-SDK](https://developer.bitcoin.com/slp). The token is currently exchanged using the [Badger Wallet](https://badger.bitcoin.com/), the [Bitcoin.com wallet](https://wallet.bitcoin.com), and several up-and-coming SLP token-aware wallets, by sending either BCH or PSF tokens to this BCH address:
 
 bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al
 
@@ -131,16 +135,16 @@ The PSF token is identified by its unique SLP property token ID of:
 
 [38e97c5d7d3585a2cbf3f9580c82ca33985f9cb0845d4dcce220cb709f9538b0](https://rest.bitcoin.com/v2/slp/tokenStats/38e97c5d7d3585a2cbf3f9580c82ca33985f9cb0845d4dcce220cb709f9538b0)
 
-The minting baton for creating new tokens is active and controlled by the Permissionless Software Foundation. That means there is no cap on the token issuance. The Foundation will have the sole power to create tokens at-will, to reimburse or recognize the effort of developers.
+The minting baton for creating new tokens is active and controlled by the Permissionless Software Foundation. That means there is no cap on the token issuance. The Board of Directors of the Foundation will have the sole power to create tokens at-will, to reimburse or recognize the effort of community members.
 
 #### Value Creation<a name="valueCreation"></a>
 At the center of the token economics is the [liquidity app](https://github.com/Permissionless-Software-Foundation/token-liquidity), allowing community members to permissionlessly exchange tokens for Bitcoin Cash (or Bitcoin Cash for tokens) at any time. Because the Foundation has the sole power to create new tokens, it has the obligation to regulate the price of the token and work with the mathematics of the app to achieve a pseudo-stable price.
 
 Price management is intended to follow a reinforcing ‘virtuous circle’ of value as follows:
 
-1. Developers who contribute time and effort are rewarded in newly issued tokens.
+1. Developers who contribute time and effort are rewarded in newly issued tokens.<br /><br />
 
-2. Continuous efforts by developers and contributors make the software more valuable and should increase usage of the software.
+2. Continuous efforts by developers and contributors make the software more valuable and should increase usage of the software.<br /><br />
 
 3. Users inject value into the token economy in one of two ways. Both activities increase the market price of the token.
     - They acquire tokens to use the software by sending BCH to the liquidity app.
@@ -150,11 +154,11 @@ Price management is intended to follow a reinforcing ‘virtuous circle’ of va
 
 To be clear, the token does not become more valuable because of the labor of the developers (Labor Theory of Value). The token will become more valuable for two reasons:
 
-1. Modern software suffers from entropy or ‘code rot’. Continuous contributions are required to keep modern software functional and secure. It is this continued effort that is valuable, and the reason why other organizations can’t simply copy the software to capture the value.
+1. Modern software suffers from entropy or ‘[code rot](https://en.wikipedia.org/wiki/Software_rot)’. Continuous contributions are required to keep modern software functional and secure. It is this *continued* effort that is valuable, and the reason why other organizations can’t simply copy the software to capture the value. This economic phenomenon is sometimes referred to as the [Red Queen's game](https://www.entrepreneur.com/article/218359).<br /><br />
 
 2. Studies have shown no correlation between the number of users and the number of developers in an open source project, which is why unfunded open source projects are such a big social problem (example: [the Heartbleed bug](https://mashable.com/2014/04/14/heartbleed-open-source/#IxuitorltiqZ)). This also means that targeted effort by a few developers can provide a great deal of value to a large population of users.
 
-**It is <u>demand for</u> and <u>usage of</u> the token that captures value and increases price.**
+**It is <u>demand for</u> and <u>usage of</u> software and services which monetize the token, that captures value and increases the price of the token.** This allows open source developers to capture value later in the software life cycle. Rewarding developers later in the business cycle **is the problem this business model solves**.
 
 #### Scope of Value: SaaS<a name="scopeOfValue"></a>
 Price appreciation of the token is directly tied to usage of the token and management of supply. For this reason, the Foundation must be very selective of the class of software it supports. The ‘Software as a Service’ business model is the most conducive, where usage of the software is directly tied to usage of the token. This business model will be a prerequisite for any project sponsored by the Foundation.

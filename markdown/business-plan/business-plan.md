@@ -152,7 +152,7 @@ Price management is intended to follow a reinforcing ‘virtuous circle’ of va
 
 4. Contributors can trade their tokens for BCH via the liquidity app. They can then spend the BCH directly or convert it into their local fiat currency via a local exchange.
 
-To be clear, the token does not become more valuable because of the labor of the developers (Labor Theory of Value). The token will become more valuable for two reasons:
+To be clear, the token does not become more valuable because of the labor of the developers ([Labor Theory of Value](https://en.wikipedia.org/wiki/Labor_theory_of_value)). The token will become more valuable for two reasons:
 
 1. Modern software suffers from entropy or ‘[code rot](https://en.wikipedia.org/wiki/Software_rot)’. Continuous contributions are required to keep modern software functional and secure. It is this *continued* effort that is valuable, and the reason why other organizations can’t simply copy the software to capture the value. This economic phenomenon is sometimes referred to as the [Red Queen's game](https://www.entrepreneur.com/article/218359).<br /><br />
 
@@ -165,9 +165,9 @@ Price appreciation of the token is directly tied to usage of the token and manag
 
 #### A Pseudo-Stable Token<a name="pseudoStableToken"></a>
 ##### Bancor & Liquidity<a name="bancor"></a>
-[The Bancor whitepaper](https://github.com/Permissionless-Software-Foundation/token-liquidity/blob/master/docs/bancor-protocol-whitepaper.pdf) was the original inspiration for the token liquidity app and token economics discussed below. They were the first to introduce the thesis that liquidity is what differentiates ‘real money’ from ‘play money’, and to facilitate perfect liquidity in cryptocurrencies through the use of an autonomous application. See [this video](https://youtu.be/LcbHTF3zCdI) for additional background.
+[The Bancor whitepaper](https://github.com/Permissionless-Software-Foundation/token-liquidity/blob/master/docs/bancor-protocol-whitepaper.pdf) was the original inspiration for the token liquidity app and token economics discussed below. They were the first to introduce the thesis that liquidity is what differentiates ‘real money’ from ‘pretend money’, and to facilitate perfect liquidity in cryptocurrencies through the use of an autonomous application. See [this video](https://youtu.be/LcbHTF3zCdI) for additional background.
 
-Using the [Metamask](https://metamask.io/) browser extension, funded with a small amount of Ethereum, you can play with their token liquidity apps by visiting https://bancor.network. This same user experience is possible on the Bitcoin Cash blockchain using [Badger Wallet](https://badgerwallet.cash/) and the [token liquidity app](https://github.com/Permissionless-Software-Foundation/token-liquidity) introduced here.
+Using the [Metamask](https://metamask.io/) browser extension, funded with a small amount of Ethereum, you can play with their token liquidity apps by visiting https://bancor.network. This same user experience is possible on the Bitcoin Cash blockchain using [Badger Wallet](https://badger.bitcoin.com/) and the [token liquidity app](https://github.com/Permissionless-Software-Foundation/token-liquidity) introduced here.
 
 While Bancors token liquidity concept was implemented as a smart contract on the Ethereum blockchain, the token liquidity app for the Permissionless Software Foundation is implemented as a web app on the BCH blockchain using the [SLP JavaScript SDK](https://developer.bitcoin.com/slp). While the mathematics governing the Foundation’s app is similar in nature, the original mathematics in the Bancor whitepaper was ultimately rejected in favor of the mathematics presented here. The curve below illustrates the effective 'exchange rate' between tokens and BCHs as a function of the apps balance of each.
 
@@ -209,7 +209,7 @@ If token issuance is mismanaged or investment of time is misallocated to unprofi
 
 If the price of the token is pushed so far away from the pseudo-stable price point as to become nonfunctional for use in SaaS applications (-10x to -100x), the Foundation will need to add BCH to the liquidity app to help prop up the price. The mathematics favor this.
 
-It takes an exponentially increasing amount of tokens to extract a linear amount of BCH from the liquidity app as the price curve moves to the left of the pseudo-stable price point. As the BCH balance decreases, adding BCH to the app has increasing effectiveness at stabilizing the price. These mathematics retard the ability of panics in the marketplace to negatively affect the community, by making it easy for the Foundation to maintain a functional token.
+It takes an exponentially increasing amount of tokens to extract a linear amount of BCH from the liquidity app as the price curve moves to the left of the pseudo-stable price point. To state that another way: As the BCH balance decreases, adding BCH to the app has increasing effectiveness at stabilizing the price. These mathematics retard the ability of panics in the marketplace to negatively affect the community, by making it easy for the Foundation to maintain a functional token.
 
 It will be important for the Foundation to maintain a reserve of BCH in order to support the liquidity app, in the event of such market panics.
 
@@ -218,9 +218,7 @@ Hopefully the explanations above have revealed to the reader why the liquidity a
 
 
 #### Mitigating Catastrophic Failure<a name="migitatingFailure"></a>
-Many threats exist to the Permissionless Software Foundation and the community that will form around the token. If successful, the power of state actors will be threatened by the software promoted by the Foundation, and they may take steps to regulate or shut it down.
-
-Cryptocurrency communities have shown that contention happens. Communities around open source software naturally split and fork the software when compromise can not be reached. This degrades the valuable network effects of any coin or token in the short-term, but ultimately improves diversity and innovation in the long-term. Malicious hackers could potentially obtain the private keys for the PSF token and destroy its value by manipulating the creation of tokens.
+Many threats exist to the Permissionless Software Foundation and the community that will form around the token. Regulatory clarity and jurisdictional safety is unclear. Enforcement by state actors is unpredictable. Cryptocurrency communities have shown that contention happens. Communities around open source software naturally split and fork the software when compromise can not be reached. This degrades the valuable network effects of any coin or token in the short-term, but ultimately improves diversity and innovation in the long-term. Malicious hackers could potentially obtain the private keys for the PSF token and destroy its value by manipulating the creation of tokens.
 
 These threats are anticipated and mitigated by the use of the SLP protocol for tokens. All token exchanges take place on the Bitcoin Cash blockchain in a public, transparent, uncensorable manner. Because of this, it’s possible to easily fork the token and air-drop a new one to existing token holders, at any point in time.
 
@@ -257,7 +255,7 @@ More platforms are available for specialized needs that can not be directly serv
 Each software project presented here helps to reinforce the others, creating an infrastructure and toolset for people to engage in agorism while protecting their privacy and anonymity. Each project listed will be built in the order presented here.
 
 ### Time Tracking<a name="timeTracking"></a>
-The time tracking app at [ovn.psfoundation.cash](https://ovn.psfoundation.cash) is used by contributors to track time spent on Foundation projects. This logged time can then be reimbursed with PSF tokens. This time-tracking app allows the Permissionless Software Foundation to be an [Open Value Network](https://wiki.p2pfoundation.net/Open_Value_Network). The source code for the app has two parts:
+The time tracking app at [ovn.psfoundation.cash](https://ovn.psfoundation.cash) is used by contributors to track time spent on Foundation projects. This logged time can then be rewarded with PSF tokens. This time-tracking app allows the Permissionless Software Foundation to be an [Open Value Network](https://wiki.p2pfoundation.net/Open_Value_Network). The source code for the app has two parts:
 - [The front end user interface](https://github.com/Permissionless-Software-Foundation/time-tracking-front-end)
 - [The back end REST API](https://github.com/Permissionless-Software-Foundation/time-tracking-api)
 
@@ -286,8 +284,10 @@ More akin to a curated list than a search engine, the web app [described here](h
 
 This app will mostly be run by [Mirror nodes in a hybrid peer-to-peer network](https://honest.cash/christroutner/hybrid-p2p-networks-1051). The PSF token will align incentives and reduce spam. This will allow cryptocurrency-based services to conduct business and be ‘found’ easily, while still using the Tor network for robust censorship resistance.
 
-### IPFS File Hosting<a name="fileHosting"></a>
-The uncensorable publishing technology above will be used to create an IPFS file hosting application. This application will allow for easy file hosting on the IPFS network in exchange for Bitcoin Cash. The Tor search engine will allow for multiple actors to safely compete and create a market of hosting services. Allowing for content to easily be uploaded and shared, anonymously and in an uncensorable fashion, will provide the foundation for many more types of permissionless applications to be built. This could very well be the key to mainstream cryptocurrency adoption. The specifications for this application [can be found here](https://github.com/Permissionless-Software-Foundation/psf-docs/blob/master/pips/PIP002.md).
+### Filecoin Bridge<a name="fileHosting"></a>
+Members of the Foundation are monitoring the development of the [Filecoin network](https://filecoin.io/). PSF plans to be at the cutting edge of the technology as it developers. The primary goal of this work is to build a 'bridge' that will allow BCH or PSF tokens to be used to pay for file storage on the Filecoin network.
+
+Building this bridge will greatly complement the other PSF projects, by making the applications even harder to censor, easier to use, and thus more valuable.
 
 ### Permissionless, Anonymous Email<a name="permissionlessEmail"></a>
 Email is the most fundamental piece of identity on the internet. And yet, privacy-respecting email providers are rare to non-existent because of abuse by spammers. Cryptocurrency provides the answer to that problem. Studies have shown the a cost of $0.01 to $0.05 per email is prohibitive to spammers.
@@ -300,4 +300,4 @@ For example, a new account could be funded with $3 USD worth of PSF tokens, allo
 [Consolidating CoinJoin](https://gist.github.com/christroutner/8d54597da652fe2affa5a7230664bc45) is a peer-to-peer mixing service that brings privacy and fungibility to the Bitcoin Cash network. Users will use the PSF token to pay for the mixing service. Servers will use the PSF token to pay Mirrors to advertise their tor .onion address.
 
 ### P2P Cloud Infrastructure: P2P VPS<a name="p2pvps"></a>
-[P2P VPS](https://p2pvps.org/about) allows people to rent out unused computing power for hosting common internet services like blogs, email, VPN, and other cloud services. Any device capable of running Docker can be rented on the network, in exchange for the PSF token.
+[P2P VPS](https://p2pvps.org/about) allows people to rent out unused computing power for hosting common internet services like blogs, email, VPN, and other cloud services. Any device capable of running Docker can be rented on the network, in exchange for BCH or the PSF token.

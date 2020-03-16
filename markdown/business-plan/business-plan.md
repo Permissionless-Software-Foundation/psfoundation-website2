@@ -51,7 +51,7 @@ path: "/biz-plan/business-plan"
 
 
 ## Executive Summary<a name="executiveSummary"></a>
-This document lays out the business model and formation plans for the *Permissionless Software Foundation* (**PSF**). The Foundation is a community-oriented and legally-nonexistent organization that exists to foster the <u>growth of open source software</u> and the <u>adoption of Bitcoin Cash</u> across the globe. The PSF will offer a Simple Ledger Protocol (**SLP**) token on the Bitcoin Cash (**BCH**) network to self-fund the development of open source software, and recognize contributors that help the organization grow.
+This document lays out the business model and formation plans for the *Permissionless Software Foundation* (**PSF**). The Foundation is a community-oriented and legally-nonexistent organization whos purpose is to foster the <u>growth of open source software</u> and the <u>adoption of Bitcoin Cash</u> across the globe. The PSF will offer a Simple Ledger Protocol (**SLP**) token on the Bitcoin Cash (**BCH**) network to self-fund the development of open source software, and recognize contributors that help the organization grow.
 
 The focus of efforts will be on software that fits the software as a service (SaaS) business model, as that model lends itself best to the use of a native utility token. Many ideas are borrowed from [the Bancor whitepaper](https://github.com/Permissionless-Software-Foundation/token-liquidity/blob/master/docs/bancor-protocol-whitepaper.pdf), such as the concepts of token liquidity and forming a community that can self-fund through a native token. See [this video](https://youtu.be/LcbHTF3zCdI) for additional background. The *primary purpose of the token* is to <u>recognize</u> and <u>quantify</u> contributions by community members.
 
@@ -252,7 +252,7 @@ More platforms are available for specialized needs that can not be directly serv
 
 
 ## Projects<a name="projects"></a>
-Each software project presented here helps to reinforce the others, creating an infrastructure and toolset for people to engage in agorism while protecting their privacy and anonymity. Each project listed will be built in the order presented here.
+Each software project presented here helps to reinforce the others, creating an infrastructure and toolset for people to engage in economic activity while protecting their privacy and anonymity. Each project listed will be built in the order presented here.
 
 ### Time Tracking<a name="timeTracking"></a>
 The time tracking app at [ovn.psfoundation.cash](https://ovn.psfoundation.cash) is used by contributors to track time spent on Foundation projects. This logged time can then be rewarded with PSF tokens. This time-tracking app allows the Permissionless Software Foundation to be an [Open Value Network](https://wiki.p2pfoundation.net/Open_Value_Network). The source code for the app has two parts:

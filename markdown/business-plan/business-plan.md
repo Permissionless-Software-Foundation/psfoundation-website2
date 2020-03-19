@@ -41,7 +41,7 @@ path: "/biz-plan/business-plan"
   - [End-to-End Encrypted Web Chat](#chat)
   - [Uncensorable Publishing](#publishing)
   - [Tor Search Engine](#searchEngine)
-  - [IPFS File Hosting](#fileHosting)
+  - [Filecoin Bridge](#fileHosting)
   - [Permissionless, Anonymous Email](#permissionlessEmail)
   - [Anonymous Bitcoin: Consolidating CoinJoin](#coinjoin)
   - [P2P Cloud Infrastructure: P2P VPS](#p2pvps)
@@ -55,9 +55,9 @@ This document lays out the business model and formation plans for the *Permissio
 
 The focus of efforts will be on software that fits the software as a service (SaaS) business model, as that model lends itself best to the use of a native utility token. Many ideas are borrowed from [the Bancor whitepaper](https://github.com/Permissionless-Software-Foundation/token-liquidity/blob/master/docs/bancor-protocol-whitepaper.pdf), such as the concepts of token liquidity and forming a community that can self-fund through a native token. See [this video](https://youtu.be/LcbHTF3zCdI) for additional background. The *primary purpose of the token* is to <u>recognize</u> and <u>quantify</u> contributions by community members.
 
-The Foundation will fund development of SaaS open source software projects. The value of this software will be monetized through the burning of PSF utility tokens. The Foundation will manage projects with the goal of creating a positive-reinforcement cycle between developers, software, and the pseudo-stable utility token. **The primary business problem that the token-economic model solves is rewarding developers later in the business cycle.**
+The Foundation will fund development of SaaS open source software projects. The value of this software will be monetized through the burning of PSF utility tokens. The Foundation will manage projects with the goal of creating a positive-reinforcement cycle between developers, software, and the pseudo-stable utility token. **The primary business problem that the token-economic model solves is rewarding contributors later in the business cycle.**
 
-When the token is used to pay for software services, the tokens are burned, and BCH is captured in a special **token-liquidity** application, inspired by the Bancor whitepaper. This application allows community members to exchange their tokens for BCH, providing perfect liquidity. The price of the token is loosely pegged to BCH through an adjustable exchange rate. The loose peg allows supply and demand dynamics to work naturally, but retards wild market swings.
+When the token is used to pay for software services, the tokens are burned, and BCH is captured in a special [token-liquidity application](https://github.com/Permissionless-Software-Foundation/token-liquidity), inspired by the Bancor whitepaper. This application allows community members to exchange their tokens for BCH, providing perfect liquidity. The price of the token is loosely pegged to BCH through an adjustable exchange rate. The loose peg allows supply and demand dynamics to work naturally, but retards wild market swings.
 
 ## The Problem: Underfunded Open Source Projects<a name="problem"></a>
 Funding for open source software projects is a well studied and unsolved social problem, primarily due to the concept of [code rot](https://en.wikipedia.org/wiki/Software_rot) in modern software development. Rather than rehash or summarize the issue, interested readers should refer to this seminal work by Nadia Eghbal:
@@ -127,7 +127,7 @@ Before delving into the specifics of the token economics, it's important to keep
 The value created by the Permissionless Software Foundation comes from both managing the software projects and managing this **pseudo-stable peg** between BCH and the token. The Foundation is as much an institution for creating software, as it is a central bank of their own community-based economy.
 
 ### Token Creation, Issuance, and Wallet<a name="tokenCreation"></a>
-The proposed PSF token will be issued on the Bitcoin Cash (BCH) blockchain using the [Simple Ledger Token Protocol (SLP)](https://simpleledger.cash/) and [SLP-SDK](https://developer.bitcoin.com/slp). The token is currently exchanged using the [Badger Wallet](https://badger.bitcoin.com/), the [Bitcoin.com wallet](https://wallet.bitcoin.com), and several up-and-coming SLP token-aware wallets, by sending either BCH or PSF tokens to this BCH address:
+The proposed PSF token will be issued on the Bitcoin Cash (BCH) blockchain using the [Simple Ledger Token Protocol (SLP)](https://simpleledger.cash/). The token is currently exchanged using the [Badger Wallet](https://badger.bitcoin.com/), the [Bitcoin.com wallet](https://wallet.bitcoin.com), and several up-and-coming SLP token-aware wallets, by sending either BCH or PSF tokens to this BCH address:
 
 bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al
 
@@ -183,13 +183,13 @@ While Bancors token liquidity concept was implemented as a smart contract on the
 The liquidity app serves as an automated market maker, continuously adjusting the exchange rate according to the logarithmic equation above. The curve above was generated by assuming the app starts out with an initial balance of 25 BCH and 5000 tokens. This sets the <u>pseudo-stable price point</u> at 200 tokens-per-BCH (5000 / 25 = 200). These simple equations provide the following characteristics:
 
 
-- **The application can never run out of BCH.** As more BCH is extracted from the app, the exchange rate decreases in such a way that the entire amount of BCH can never be completely extracted.
+- **The application can never run out of BCH.** As more BCH is extracted from the app, the exchange rate decreases in such a way that the entire amount of BCH can never be completely extracted.<br /><br />
 
-- **The price of the token increases exponentially with demand.** Because of the rapid price appreciation, developers are incentivized to hold their tokens to maximize the profit from their efforts. But due to the liquidity provided by the app, they are free to ‘cash out’ at any time.
+- **The price of the token increases exponentially with demand.** Because of the rapid price appreciation, developers are incentivized to hold their tokens to maximize the profit from their efforts. But due to the liquidity provided by the app, they are free to ‘cash out’ at any time.<br /><br />
 
-- **Pseudo-stable price point.** The equation encourages a pseudo-stable price of 200 tokens per BCH. Buyers or sellers are increasingly disincentivized as the price is driven further from this point.
+- **Pseudo-stable price point.** The equation encourages a pseudo-stable price of 200 tokens per BCH. Buyers or sellers are increasingly disincentivized as the price is driven further from this point.<br /><br />
 
-- **Fair price dynamics.** Because the pricing algorithm is transparent, all participants are fairly incentivized.
+- **Fair price dynamics.** Because the pricing algorithm is transparent, all participants are fairly incentivized.<br /><br />
 
 The reasoning behind these core ideas are expanded below.
 

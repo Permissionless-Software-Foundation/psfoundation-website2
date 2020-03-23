@@ -16,6 +16,7 @@ const util = new Util()
 
 import qrcodeBCH from '../assets/images/qrcodeBCH.png'
 import qrcodeSLP from '../assets/images/qrcodeSLP.png'
+import qrBurn from '../assets/images/qrBurn.png'
 
 const BchAddress = styled.p`
   text-align: center;
@@ -197,6 +198,52 @@ class HomeIndex extends React.Component {
             </div>
 
             <div className="col-6">
+              <h3>FullStack.cash</h3>
+              <p>
+                <a href="https://fullstack.cash" target="_blank">FullStack.cash</a> is
+                a suite of software that allows modern webpages and phone apps
+                to interact with the Bitcoin Cash blockchain. It's a
+                subscription-based cloud service, that unlocks the next generation
+                of blockchain-based applications. Fees paid for the service
+                burn PSF tokens.
+              </p>
+              <ul className="actions">
+                <li>
+                  <a
+                    href="https://fullstack.cash"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button"
+                  >
+                    More Info
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="col-6">
+              <h3>Uncensorable Publishing</h3>
+              <p>
+                Publish web sites and web apps that impossible for any government
+                to censor or stop. Simultaniously broadcast your website using
+                a conventional domain (clear web), Tor (dark net), and the
+                Interplanetary File System (IPFS) network. Every website published
+                will send a small fraction of BCH to burn PSF tokens.
+              </p>
+              <ul className="actions">
+                <li>
+                  <a
+                    href="https://troutsblog.com/about/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button"
+                  >
+                    More Info
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="col-6">
               <h3>Anonymous Bitcoin: Consolidating CoinJoin</h3>
               <p>
                 Consolidating CoinJoin is a peer-to-peer mixing service that
@@ -240,6 +287,52 @@ class HomeIndex extends React.Component {
                   </a>
                 </li>
               </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="four" className="main style2">
+          <div className="grid-wrapper" style={{ visibility: 'hidden' }}>
+            <div className="col-12">
+              <h2>Token Liquidity App is Under Construction</h2>
+            </div>
+          </div>
+
+          <div className="grid-wrapper">
+            <div className="col-6">
+              <center>
+                <span className="image">
+                  <img src={qrBurn} alt="bitcoincash:qqsrke9lh257tqen99dkyy2emh4uty0vky9y0z0lsr" />
+                </span>
+                <br />
+                <p style={{ textAlign: 'center' }}>
+                  bitcoincash:qqsrke9lh257tqen99dkyy2emh4uty0vky9y0z0lsr
+                </p>
+                <br />
+
+              </center>
+            </div>
+            <div className="col-6">
+              <header className="">
+                <h2>Burn Tokens</h2>
+              </header>
+              <p>
+                Sending any money to this Bitcoin Cash address will cause the
+                tokens to be 'burned' and removed from circulation. This address
+                will be used by the applications above. For example, when somone
+                pays their subscription fee at <a href="https://fullstack.cash"
+                target="_blank">FullStack.cash</a>, the BCH is used to burn tokens.
+                This causes the price of all other tokens to increase.
+              </p>
+              <p>
+                This burning function is faciliated by
+                a second app, similar to the token liquidity app. It forwards
+                any BCH recieved to the token liquidity app, and it appends a special
+                OP_RETURN code instructing the tokens to be burned instead of
+                exchanged. The burn is transparent, public, and verifiable on the blockchain.
+              </p>
+
             </div>
           </div>
         </section>

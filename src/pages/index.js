@@ -203,7 +203,7 @@ class HomeIndex extends React.Component {
                 <a href="https://fullstack.cash" target="_blank">FullStack.cash</a> is
                 a suite of software that allows modern webpages and phone apps
                 to interact with the Bitcoin Cash blockchain. It's a
-                subscription-based cloud service, that unlocks the next generation
+                subscription-based cloud service, and it unlocks the next generation
                 of blockchain-based applications. Fees paid for the service
                 burn PSF tokens.
               </p>
@@ -223,11 +223,11 @@ class HomeIndex extends React.Component {
             <div className="col-6">
               <h3>Uncensorable Publishing</h3>
               <p>
-                Publish web sites and web apps that impossible for any government
+                Publish web sites and web apps that are impossible for any government
                 to censor or stop. Simultaniously broadcast your website using
                 a conventional domain (clear web), Tor (dark net), and the
                 Interplanetary File System (IPFS) network. Every website published
-                will send a small fraction of BCH to burn PSF tokens.
+                will send a tiny amount of BCH to burn PSF tokens.
               </p>
               <ul className="actions">
                 <li>

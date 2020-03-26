@@ -56,15 +56,9 @@ class HomeIndex extends React.Component {
               </header>
               <p>
                 The mission of the Permissionless Software Foundation is to
-                promote{' '}
-                <a
-                  href="https://en.wikipedia.org/wiki/Self-ownership"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  individual sovereignty
-                </a>{' '}
-                through the use of software. The Foundation will focus on the
+                foster the <u>growth of open source software</u> and
+                the <u>adoption of Bitcoin Cash</u> across the globe.
+                The Foundation will focus on the
                 development and promotion of software that makes it easy for
                 individuals to protect their privacy, circumvent censorship, and
                 engage in{' '}
@@ -81,11 +75,11 @@ class HomeIndex extends React.Component {
             <div className="col-6">
               <center>
                 <p>
-                  The business plan for the Permissionless Softare Foundation
+                  The business plan for the Permissionless Software Foundation
                   and PSF token is still being drafted. You can read the current
                   draft by clicking on the button below. It discusses the unique
                   token economics and mathematics used to create a psudo-stable
-                  utility token allowing open source software communities to
+                  utility token, allowing open source software communities to
                   self-fund without the need for venture capital, corporate
                   sponshorship, or other fiduciary responsibility.
                 </p>

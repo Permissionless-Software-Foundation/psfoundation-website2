@@ -104,7 +104,7 @@ For long-term, technical discussions, GitHub Issues will be used. GitHub Issues 
 While none of the proposals on Loomio are binding, they will inform token holders who help fund new grants.
 
 #### Less is More
-The level of governance is intentionally minimized. Funding from new tokens is directed by existing token holders, because they have the most to lose if those fund are misallocated. In this way, governance is left up to a free market of stakeholders with 'skin in the game'.
+The level of governance is intentionally minimized. Funding from new tokens is directed by existing token holders, because they have the most to lose if those funds are misallocated. In this way, governance is left up to a free market of stakeholders with 'skin in the game'.
 
 ## Token Economics<a name="tokenEconomics"></a>
 Before delving into the specifics of the token economics, it's important to keep the big picture in mind: The purpose of the mathematics behind the token is to enable steady funding of development, and fair incentives for collaboration, in order to further the Foundation's mission.
@@ -118,7 +118,7 @@ The PSF token is identified by its unique SLP property token ID of:
 
 [38e97c5d7d3585a2cbf3f9580c82ca33985f9cb0845d4dcce220cb709f9538b0](https://rest.bitcoin.com/v2/slp/tokenStats/38e97c5d7d3585a2cbf3f9580c82ca33985f9cb0845d4dcce220cb709f9538b0)
 
-The minting baton for creating new tokens is active and controlled by the Permissionless Software Foundation. That means there is no cap on the token issuance. The Board of Directors of the Foundation will have the sole power to create tokens at-will, to reimburse or recognize the effort of community members.
+The minting baton for creating new tokens is active and controlled by the Permissionless Software Foundation. That means there is no cap on the token issuance. See the *Funding* section for more details on how new tokens will be minted and used.
 
 #### Value Creation<a name="valueCreation"></a>
 At the center of the token economics is the [liquidity app](https://github.com/Permissionless-Software-Foundation/token-liquidity), allowing community members to permissionlessly exchange tokens for Bitcoin Cash (or Bitcoin Cash for tokens) at any time, while maintaining a peg to the Bitcoin Cash (BCH) coin.
@@ -129,7 +129,7 @@ Price management is intended to follow a reinforcing ‘virtuous circle’ of va
 
 2. Continuous efforts by developers and contributors make the software more valuable and should increase usage of the software.<br /><br />
 
-3. Users inject value into the token economy in one of two ways. Both activities increase the market price of the token.
+3. Users inject value into the token economy in one of two ways. Both activities strengthen the peg between the token and BCH.
     - They acquire tokens to use software by sending BCH to the liquidity app.
     - They pay BCH to the apps they interact with and that app sends a portion of the BCH to the token-liquidity app with instructions to burn that amount of tokens.
 
@@ -141,7 +141,7 @@ To be clear, the token does not become more valuable because of the labor of the
 
 2. Studies have shown no correlation between the number of users and the number of developers in an open source project, which is why unfunded open source projects are such a big social problem (example: [the Heartbleed bug](https://mashable.com/2014/04/14/heartbleed-open-source/#IxuitorltiqZ)). This also means that targeted effort by a few developers can provide a great deal of value to a large population of users.
 
-**It is <u>demand for</u> and <u>usage of</u> software and services which monetizes the token, captures value, and increases the price of the token.** This allows open source developers to capture value later in the software life cycle. Rewarding developers later in the software life cycle **is the main problem this business model solves**.
+**It is <u>demand for</u> and <u>usage of</u> software and services which monetizes the token, captures value, and strengthens the peg to BCH.** This allows open source developers to capture value later in the software life cycle. Rewarding developers later in the software life cycle **is the main problem this business model solves**.
 
 #### Scope of Value: SaaS<a name="scopeOfValue"></a>
 The stability of the peg between BCH and the token is directly tied to <u>usage</u> of the token and management of <u>supply</u>. For this reason, token holders must be very selective of the class of software they support. The ‘Software as a Service’ business model is the most conducive, where usage of the software is directly tied to usage of the token. This business model will be a prerequisite for any project sponsored by the community governing the Permissionless Software Foundation.
@@ -197,7 +197,7 @@ If token issuance is mismanaged or investment of time is misallocated to unprofi
 
 This will cause the exchange rate to increase above 200 tokens-per-bch, incentivizing speculative buyers to purchase the token. It will also incentivize sellers to hold onto the token until the peg is restored.
 
-It takes an exponentially increasing amount of tokens to extract a linear amount of BCH from the liquidity app as the price curve moves to the left of the inflection point. To state that another way: As the BCH balance of the app decreases, adding BCH to the app has increasing effectiveness at stabilizing the price. These mathematics retard the ability of panics in the marketplace to negatively affect the community, by making it easy for the community to maintain a functional token.
+It takes an exponentially increasing amount of tokens to extract a linear amount of BCH from the liquidity app as the price curve moves to the left of the inflection point. To state that another way: As the BCH balance of the app decreases, adding BCH to the app has increasing effectiveness at stabilizing the peg. These mathematics retard the ability of panics in the marketplace to negatively affect the community, by making it easy for the community to maintain a functional token.
 
 
 #### Mitigating Catastrophic Failure<a name="migitatingFailure"></a>
@@ -214,7 +214,7 @@ In this way, the Foundation embraces the concept of forks. Every effort will be 
 ## Labor<a name="labor"></a>
 Just as financial investors risk capital in a venture, early contributors in the community risk their labor. The primary difference is that community developers are in direct control of the outcome, and can continuously adapt to a changing business environment.
 
-Because of the 200 tokens-per-BCH peg, early contributors have a barometer upon which to gauge market value for their labor. Assuming the liquidity app starts with initial balances of 250 BCH and 50,000 tokens, the pseudo-stable price point is 200 tokens-per-BCH (50,000 / 250 = 200). At a market value of $200 USD-per-BCH, the market value of the token is $1 USD per token. While the market value of BCH in USD or other fiat currency is free to fluctuate, the 200 tokens-per-BCH pseudo-stable price point will remain constant. Contributors have both a value with which to gauge fair-market value for their labor, and direct control over the economic repercussions of their actions.
+Because of the 200 tokens-per-BCH peg, early contributors have a barometer upon which to gauge market value for their labor. Assuming the liquidity app starts with initial balances of 250 BCH and 50,000 tokens, the pseudo-stable price point is 200 tokens-per-BCH (50,000 / 250 = 200). At a market value of $200 USD-per-BCH, the market value of the token is $1 USD per token. While the market value of BCH in USD or other fiat currency is free to fluctuate, the 200 tokens-per-BCH pseudo-stable peg will remain constant. Contributors have both a value with which to gauge fair-market value for their labor, and direct control over the economic repercussions of their actions.
 
 Community members willing to be compensated in tokens, and then hold those tokens until the peg stabilizes, will make the best economic actors, and will be the most welcome early contributors. If the Foundation has other means of financing (such as BCH), they can use tokens to tip or supplement developers and thereby gain access to a wider pool of labor.
 

@@ -40,6 +40,8 @@ path: "/biz-plan/business-plan"
   - [Freelance Developers](#freelance)
 - [Projects](#projects)
   - [Time Tracking](#timeTracking)
+  - [FullStack.cash](#fullstack.cash)
+  - [Contract Work](#contractWork)
   - [End-to-End Encrypted Web Chat](#chat)
   - [Uncensorable Publishing](#publishing)
   - [Tor Search Engine](#searchEngine)
@@ -240,6 +242,18 @@ Because of the 200 tokens-per-BCH peg, early contributors have a barometer upon 
 
 Community members willing to be compensated in tokens, and then hold those tokens until the peg stabilizes, will make the best economic actors, and will be the most welcome early contributors. If the Foundation has other means of financing (such as BCH), they can use tokens to tip or supplement developers and thereby gain access to a wider pool of labor.
 
+### Salaried Contributors<a name="salaries"></a>
+Salaried contributors funded through three-month grants are the primary source of labor to grow the Foundation. Salaried community members are expected to track their work with the accounting software at [ovn.psfoundation.cash](https://ovn.psfoundation.cash). This [Open Value Network](https://wiki.p2pfoundation.net/Open_Value_Network) (OVN) software is similar to that used by [Sensorica NRP](http://nrp.sensorica.co/), who pioneered the concept.
+
+The work logs entered into this system can be downloaded and viewed by anyone, allowing transparent auditing by anyone in the community. These also provide a body of evidence to show what grant funds are being spent on, in order to justify funding for future grants.
+
+### Bounties<a name="bounties"></a>
+[GitCoin](https://gitcoin.co/) and [GitCash](https://gitcash.io/) are two permissionless bounty programs that have been used to pay developers in cryptocurrencies and tokens. While interfacing the PSF token to these platforms will be advantageous, it is not critical, as the workflow of both platforms is not difficult to replicate.
+
+Conventional Agile software practices can be used to break larger projects into small tasks. GitHub Issues can be created for each task and tagged with a PSF token bounty. Developers are free to claim and fulfill Issues (permissionlessly) by submitting Pull Requests (PR) that meet the specifications in the Issue. Once a PR is accepted into the code base, the bounty can be released to the developers Bitcoin Cash address. This can be done manually or in an automated fashion.
+
+### Freelance Developers<a name="freelance"></a>
+More platforms are available for specialized needs that can not be directly serviced by the community. Cryptocurrency-based freelance platforms like [FreelanceForCoins.com](https://freelanceforcoins.com/) or [LazyFox.io](https://lazyfox.io/), channels on cryptocurrency developer chat rooms like the [Bitcoin Cash Association](https://discord.gg/gNhPRw7), and fiat-based freelance platforms like [Upwork.com](https://www.upwork.com/) can all be used to find the appropriate expertise. Tokens can be used to tip or subsidize bids for labor on these platforms.
 
 
 ## Projects<a name="projects"></a>
@@ -250,6 +264,14 @@ The time tracking app at [ovn.psfoundation.cash](https://ovn.psfoundation.cash) 
 - [The front end user interface](https://github.com/Permissionless-Software-Foundation/time-tracking-front-end)
 - [The back end REST API](https://github.com/Permissionless-Software-Foundation/time-tracking-api)
 
+### FullStack.cash <a name="fullstack.cash"></a>
+[FullStack.cash](https://fullstack.cash) is the flagship product managed by the Permissionless Software Foundation. The REST API and JavaScript library provided by this platform enables all the other projects to interact with the BCH blockchain. The subscription fees paid to access this platform is the primary mechanism for burning tokens and main source of revenue for the Foundation.
+
+FullStack.cash was forked from the open source BITBOX JavaScript SDK and [rest.bitcoin.com](https://rest.bitcoin.com) REST API created by Gabriel Cardona, and developed by Bitcoin.com for two years. The site builds upon that asset by adding new features and providing reliable cloud services to enterprise customers.
+
+### Contract Work <a name="contractWork"></a>
+While not a project in and of itself, the Permissionless Software Foundation will actively seek out paid contract work with business partners. Payment will consist of agreements to burn PSF tokens. This work will utilize the FullStack.cash platform, and be managed and executed by PSF salaried community members.
+
 ### End-to-End Encrypted Web Chat<a name="chat"></a>
 Our [web-based chat app](https://chat.psfoundation.cash) is distributed over IPFS making it very difficult to censor or block. It is end-to-end encrypted, allowing members of the Foundation to communicate securely without any danger of snooping. The code is open source, allowing anyone to audit it. While [our Telegram channel](https://t.me/permissionless_software) allows communication with a more mainstream audience, the web-based chat app is useful for anyone who needs to communicate privately in real-time. And because it is delivered through a web browser, any type of device or operating system can access it.
 
@@ -258,7 +280,9 @@ Our [web-based chat app](https://chat.psfoundation.cash) is distributed over IPF
 ### Uncensorable Publishing<a name="publishing"></a>
 Several tools have been packaged together to allow users to create websites and web applications that are nearly uncensorable. The technologies used are a combination of IPFS, Bitoin Cash, and Tor. A demo and walk-through of the earliest version is [available here](https://troutsblog.com/about).
 
-In order to publish uncensorable updates to this type of publishing platform, the Bitcoin Cash blockchain is used. These updates will also send a small amount of BCH to our token liquidity app, instructing it to burn a small amount of tokens. This publishing application is the first income-producing product distributed by the PSF, and is also a foundational piece of technology upon which more advanced and uncensorable applications will be developed.
+In order to publish uncensorable updates to this type of publishing platform, the Bitcoin Cash blockchain is used. These updates will also send a small amount of BCH to our token liquidity app, instructing it to burn a small amount of tokens.
+
+While this platform is not expected to be a great contributor to revenue in the short term, it has the potential to grow virally and has unlimited upside in potential long-term revenue. It represents a foundational piece of technology upon which more advanced and uncensorable applications will be developed.
 
 Videos:
 - [Non-technical video overview of how governments censor content](https://www.youtube.com/watch?v=RlNVyatwd5M)
@@ -273,10 +297,10 @@ for publishing updates via the Bitcoin Cash blockchain.
 ### Tor Search Engine<a name="searchEngine"></a>
 More akin to a curated list than a search engine, the web app [described here](https://github.com/Permissionless-Software-Foundation/psf-docs/blob/master/pips/PIP004.md) will be developed to allow Tor-based websites, with their ephemeral `.onion` addresses, to be easily found and browsed. Ecommerce sites can promote themselves, allowing an advertising market to emerge. This web app will build upon the uncensorable publishing application described above.
 
-This app will mostly be run by [Mirror nodes in a hybrid peer-to-peer network](https://honest.cash/christroutner/hybrid-p2p-networks-1051). The PSF token will align incentives and reduce spam. This will allow cryptocurrency-based services to conduct business and be ‘found’ easily, while still using the Tor network for robust censorship resistance.
+This app will mostly be run by [Mirror nodes in a hybrid peer-to-peer network](https://honest.cash/christroutner/hybrid-p2p-networks-1051). The PSF token will align incentives and reduce spam. This will allow cryptocurrency-based services to conduct business and be ‘found’ easily, while still using the Tor network for robust protection from censorship by state actors.
 
 ### Filecoin Bridge<a name="fileHosting"></a>
-Members of the Foundation are monitoring the development of the [Filecoin network](https://filecoin.io/). PSF plans to be at the cutting edge of the technology as it developers. The primary goal of this work is to build a 'bridge' that will allow BCH or PSF tokens to be used to pay for file storage on the Filecoin network.
+Members of the Foundation are monitoring the development of the [Filecoin network](https://filecoin.io/). PSF plans to be at the cutting edge of the technology as it develops. The primary goal of this work is to build a 'bridge' that will allow BCH or PSF tokens to be used to pay for file storage on the Filecoin network.
 
 Building this bridge will greatly complement the other PSF projects, by making the applications even harder to censor, easier to use, and thus more valuable.
 

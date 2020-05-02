@@ -6,7 +6,6 @@ path: "/biz-plan/business-plan"
 ---
 
 ## Table of Contents
-**Note**: The TOC has not been updated
 
 - Overview
   - [Executive Summary](#executiveSummary)
@@ -21,19 +20,20 @@ path: "/biz-plan/business-plan"
       - [Short-term, General Discussion](#generalDiscussion)
       - [Long-term, Technical Discussion](#technicalDiscussion)
       - [Discussion of Governance](#governanceDiscussion)
-      - [Board of Directors](#boardOfDirectors)
-      - [Board of Advisors](#boardOfAdvisors)
+      - [Less is More](#lessIsMore)
+  - [Funding](#funding)
+  - [Management](#management)
+      - [Management of Grants](#managementOfGrants)
 
 - [Token Economics](#tokenEconomics)
   - [Token Creation, Issuance, and Wallet](#tokenCreation)
       - [Value Creation](#valueCreation)
       - [Scope of Value: SaaS](#scopeOfValue)
-      - [A Pseudo-Stable Token](#pseudoStableToken)
+      - [A Pseudo-Stable Peg](#pseudoStableToken)
           - [Bancor & Liquidity](#bancor)
-          - [High Demand: Capturing Value](#highDemand)
+          - [High Demand: Strong Peg, Good Governance](#highDemand)
           - [Low Demand: Unprofitable Liquidity](#lowDemand)
-          - [Price Gravity & Transparency](#priceGravity)
-      - [Mitigating Catastrophic Failure](#migitatingFailure)
+- [Mitigating Catastrophic Failure](#migitatingFailure)
 - [Labor](#labor)
   - [Salaried Contributors](#salaries)
   - [Bounties](#bounties)
@@ -103,10 +103,10 @@ For long-term, technical discussions, GitHub Issues will be used. GitHub Issues 
 
 While none of the proposals on Loomio are binding, they will inform token holders who help fund new grants.
 
-#### Less is More
+#### Less is More<a name="lessIsMore"></a>
 The level of governance is intentionally minimized. Governance of the organization is largely isolated to the funding mechanism. Funding from new tokens is directed by existing token holders, because they have the most to lose if those funds are misallocated. In this way, governance is left up to a free market of stakeholders with 'skin in the game'.
 
-## Funding
+### Funding<a name="funding"></a>
 
 Every 13,000 blocks (approximately three months), existing PSF token holders will be air-dropped a new 'funding' token. The funding token will only be air-dropped to holders who's tokens have not moved in three months. Five percent of the amount of PSF tokens held will be air dropped as funding tokens.
 
@@ -116,13 +116,13 @@ Prior to the air-drop, developers and other contributors are free to submit gran
 
 Every 13,100 blocks (approximately 1 week later), the funding tokens held by the grant SLP addresses will receive an air-drop of an equal amount of newly minted PSF tokens.
 
-## Management
+### Management<a name="management"></a>
 
 The management team for the Foundation will be funded via grants, the same as all other contributors to the Foundation. By funding members of the management team (or not funding them), token holders within the community have the ability to 'hire and fire' these members of the management team.
 
 The first member of the management team will have the title 'Head Janitor'. This persons chief responsibilities are to choose the other first contributors, and to slowly and a carefully distribute responsibilities and cryptographic keys. Their primary role is to grow the organization, keep it focused on the Foundations mission, and reduce any single points of failure that could lead to a catastrophic failure of the organization.
 
-### Management of Grants
+#### Management of Grants<a name="managementOfGrants"></a>
 
 The management team of the Permissionless Software Foundation will be responsible for curating applicants and posting approved grants to the Foundation's websites for community members to fund.
 
@@ -222,7 +222,7 @@ This will cause the exchange rate to increase above 200 tokens-per-bch, incentiv
 It takes an exponentially increasing amount of tokens to extract a linear amount of BCH from the liquidity app as the price curve moves to the left of the inflection point. To state that another way: As the BCH balance of the app decreases, adding BCH to the app has increasing effectiveness at stabilizing the peg. These mathematics retard the ability of panics in the marketplace to negatively affect the community, by making it easy for the community to maintain a functional token.
 
 
-#### Mitigating Catastrophic Failure<a name="migitatingFailure"></a>
+## Mitigating Catastrophic Failure<a name="migitatingFailure"></a>
 Many threats exist to the Permissionless Software Foundation and the community that will form around the token. Regulatory clarity and jurisdictional safety is unclear. Enforcement by state actors is unpredictable. Cryptocurrency communities have shown that contention happens frequently. Communities around open source software naturally split and fork the software when compromise can not be reached. This degrades the valuable network effects of any coin or token in the short-term, but ultimately improves diversity and innovation in the long-term. Malicious hackers could potentially obtain the private keys for the PSF token and destroy its value by manipulating the creation of tokens.
 
 These threats are anticipated and mitigated by the use of the SLP protocol for tokens. All token exchanges take place on the Bitcoin Cash blockchain in a public, transparent, uncensorable manner. Because of this, it’s possible to easily fork the token and air-drop a new one to existing token holders, at any point in time.

@@ -13,8 +13,8 @@ const initialState = {
       label: 'Current Price',
       data: [
         {
-          x: -5000,
-          y: 1,
+          x: -100000,
+          y: 33,
           r: 5,
         },
       ],
@@ -25,32 +25,32 @@ const initialState = {
       //xAxisID: 'deltaToken'
       //pointRadius: 10,
     },
-    {
-      // BCH/Token Exchange Rate
-      type: 'line',
-      label: 'n-a1',
-      fill: false,
-      lineTension: 0.1,
-      backgroundColor: 'rgba(75,192,192,0.4)',
-      borderColor: 'rgba(75,192,192,1)',
-      borderCapStyle: 'butt',
-      borderDash: [],
-      borderDashOffset: 0.0,
-      borderJoinStyle: 'miter',
-      pointBorderColor: 'rgba(75,192,192,1)',
-      pointBackgroundColor: '#fff',
-      pointBorderWidth: 1,
-      pointHoverRadius: 5,
-      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
-      pointHoverBorderColor: 'rgba(220,220,220,1)',
-      pointHoverBorderWidth: 2,
-      pointRadius: 0,
-      //pointRadius: 1,
-      pointHitRadius: 10,
-      data: initChartData.yData1,
-      yAxisID: 'B',
-      showLine: false,
-    },
+    // {
+    //   // BCH/Token Exchange Rate
+    //   type: 'line',
+    //   label: 'n-a1',
+    //   fill: false,
+    //   lineTension: 0.1,
+    //   backgroundColor: 'rgba(75,192,192,0.4)',
+    //   borderColor: 'rgba(75,192,192,1)',
+    //   borderCapStyle: 'butt',
+    //   borderDash: [],
+    //   borderDashOffset: 0.0,
+    //   borderJoinStyle: 'miter',
+    //   pointBorderColor: 'rgba(75,192,192,1)',
+    //   pointBackgroundColor: '#fff',
+    //   pointBorderWidth: 1,
+    //   pointHoverRadius: 5,
+    //   pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+    //   pointHoverBorderColor: 'rgba(220,220,220,1)',
+    //   pointHoverBorderWidth: 2,
+    //   pointRadius: 0,
+    //   //pointRadius: 1,
+    //   pointHitRadius: 10,
+    //   data: initChartData.yData1,
+    //   yAxisID: 'B',
+    //   showLine: false,
+    // },
     {
       // $/Token Exchange Rate
       type: 'line',
@@ -75,7 +75,7 @@ const initialState = {
       pointRadius: 1,
       pointHitRadius: 10,
       //data: [65, 59, 80, 81, 56, 55, 40],
-      data: initChartData.yData2,
+      data: initChartData.yData1,
       yAxisID: 'A',
     },
     {
@@ -83,8 +83,8 @@ const initialState = {
       label: 'Target Stable Price',
       data: [
         {
-          x: -5000,
-          y: 1,
+          x: 1,
+          y: 250,
           r: 5,
         },
       ],
@@ -129,20 +129,20 @@ const options = {
           color: 'rgba(254,254,254,1)',
         },
       },
-      {
-        id: 'B',
-        type: 'linear',
-        position: 'right',
-        scaleLabel: {
-          labelString: 'BCH Balance',
-          display: true,
-          fontColor: 'rgba(51,26,68,1)',
-          fontSize: 24,
-        },
-        gridLines: {
-          color: 'rgba(51,26,68,1)',
-        },
-      },
+      // {
+      //   id: 'B',
+      //   type: 'linear',
+      //   position: 'right',
+      //   scaleLabel: {
+      //     labelString: 'BCH Balance',
+      //     display: true,
+      //     fontColor: 'rgba(51,26,68,1)',
+      //     fontSize: 24,
+      //   },
+      //   gridLines: {
+      //     color: 'rgba(51,26,68,1)',
+      //   },
+      // },
     ],
     responseive: true,
     tooltips: {
@@ -190,7 +190,7 @@ class PriceChart extends React.Component {
       if (screenWidth < 800) {
         options.scales.xAxes[0].scaleLabel.fontSize = 14
         options.scales.yAxes[0].scaleLabel.fontSize = 14
-        options.scales.yAxes[1].scaleLabel.fontSize = 14
+        // options.scales.yAxes[1].scaleLabel.fontSize = 14
       }
     }
 
@@ -209,17 +209,17 @@ class PriceChart extends React.Component {
 
       //setInterval(function() {
       // var oldDataSet = _this.state.chartData.datasets[1]
-      var newData = []
+      // var newData = []
 
       // const newIndex = Math.floor(Math.abs(Math.random() * 10))
       // let newX = initChartData.xData2[newIndex]
       // let newY = initChartData.yData2[newIndex]
 
-      for (var x = 0; x < _this.state.chartData.labels.length; x++) {
-        newData.push(Math.floor(Math.random() * 100))
-      }
+      // for (var x = 0; x < _this.state.chartData.labels.length; x++) {
+      //   newData.push(Math.floor(Math.random() * 100))
+      // }
       let newState = _this.state.chartData
-      newState.datasets[1].data = newData
+      // newState.datasets[1].data = newData
 
       //newState.datasets[0].data[0] = {x: newX, y: newY, r: 5}
       newState.datasets[0].data[0] = { x: bestX, y: bestY, r: 5 }
@@ -251,10 +251,10 @@ class PriceChart extends React.Component {
         tokenBalance: body.tokenBalance,
       }))
 
-      // console.log(`usdPerToken: ${this.state.usdPerToken}`)
-      // console.log(`usdPerBCH: ${this.state.usdPerBCH}`)
-      // console.log(`bchBalance: ${this.state.bchBalance}`)
-      // console.log(`tokenBalance: ${this.state.tokenBalance}`)
+      console.log(`usdPerToken: ${this.state.usdPerToken}`)
+      console.log(`usdPerBCH: ${this.state.usdPerBCH}`)
+      console.log(`bchBalance: ${this.state.bchBalance}`)
+      console.log(`tokenBalance: ${this.state.tokenBalance}`)
 
       // Add BCH price to window object, so it can be used by Badger Button
       // if(typeof window !== 'undefined')
@@ -266,10 +266,15 @@ class PriceChart extends React.Component {
   }
 
   // Find the best x-y coordinates to use based on the real price.
+  // Determines the position of the red dot.
   getBestChartValues() {
     // Find the best x value.
+
+    // Multiply the returned balance by -1.
     const x = -1 * this.state.tokenBalance
+
     var curr = initChartData.xData2[0]
+
     var diff = Math.abs(x - curr)
     for (var val = 0; val < initChartData.xData2.length; val++) {
       var newdiff = Math.abs(x - initChartData.xData2[val])
@@ -282,7 +287,7 @@ class PriceChart extends React.Component {
     console.log(`bestX: ${bestX}`)
 
     const index = initChartData.xData2.indexOf(bestX)
-    const bestY = initChartData.yData2[index]
+    const bestY = initChartData.yData1[index]
     console.log(`bestY: ${bestY}`)
 
     return { bestX, bestY }

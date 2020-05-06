@@ -54,7 +54,7 @@ const initialState = {
     {
       // $/Token Exchange Rate
       type: 'line',
-      label: 'n-a2',
+      label: 'app-balance',
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -80,7 +80,7 @@ const initialState = {
     },
     {
       type: 'bubble',
-      label: 'Target Stable Price',
+      label: 'Inflection Point',
       data: [
         {
           x: 1,
@@ -120,7 +120,7 @@ const options = {
         type: 'linear',
         position: 'left',
         scaleLabel: {
-          labelString: '$ / Token',
+          labelString: 'BCH Balance',
           display: true,
           fontColor: 'rgba(254,254,254,1)',
           fontSize: 24,
@@ -156,7 +156,7 @@ const options = {
     labels: {
       //display: false,
       filter: function(item, chart) {
-        return !item.text.includes('n-a')
+        return !item.text.includes('app-balance')
       },
     },
   },

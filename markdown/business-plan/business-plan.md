@@ -22,6 +22,7 @@ path: "/biz-plan/business-plan"
       - [Discussion of Governance](#governanceDiscussion)
       - [Less is More](#lessIsMore)
   - [Funding](#funding)
+      - [Bootstrapping](#bootstrapping)
   - [Management](#management)
       - [Management of Grants](#managementOfGrants)
 
@@ -110,26 +111,46 @@ The level of governance is intentionally minimized. Governance of the organizati
 
 ### Funding<a name="funding"></a>
 
-Every 13,000 blocks (approximately three months), existing PSF token holders will be air-dropped a new 'funding' token. The funding token will only be air-dropped to holders who's tokens have not moved in three months. Five percent of the amount of PSF tokens held will be air dropped as funding tokens.
+Every 13,000 blocks (approximately three months), existing PSF token holders will be air-dropped a new 'funding' token. The funding token will only be air-dropped to holders who's tokens have not moved in three months. 100,000 funding tokens will be air-dropped, proptional to the amount of PSF tokens meeting the criteria.
 
-**For example**, if an address holds 100 PSF tokens that have not moved in three months, it will be air dropped 5 funding tokens.
+**For example**, if an address holds 1,000 PSF tokens that have not moved in three months, and the total supply of PSF tokens that have not moved in three months is 100,000 tokens, then the address would receive 1,000 funding tokens.
 
-Prior to the air-drop, developers and other contributors are free to submit grant proposals to the Foundation, along with an SLP address to receive funding. Receivers of the funding token are expected to send their funding tokens to the SLP addresses as they see fit, in order to fund the grants.
+Prior to the air-drop, developers and other contributors are free to submit grant proposals to the Foundation. An SLP address will be assigned to each approved grant proposal, and the proposal will be published to the PSF website.
 
-Every 13,100 blocks (approximately 1 week later), the funding tokens held by the grant SLP addresses will receive an air-drop of an equal amount of newly minted PSF tokens.
+Receivers of the funding token are expected to send their funding tokens to the SLP addresses of the grants as they see fit, in order to fund the grants.
+
+Every 13,100 blocks (approximately 1 week later), the funding tokens held by the grant SLP addresses will receive an air-drop of an equal amount of newly minted PSF tokens. The private keys for these grants will be held by someone designated as a **Treasurer**. The Treasurer will be funded by the PSF general grant, which will be used to fund core management. They will be responsible for distributing 1/3 of the PSF tokens, once per month, to the designated recipients in the grant proposal.
+
+#### Bootstrapping<a name="bootstrapping"></a>
+The Foundation was working off a [different governance model](https://github.com/Permissionless-Software-Foundation/psfoundation-website2/releases/tag/v1.0.0) prior to May 1st, 2020. The Governance and token-economic model captured in this business plan will go into effect on July 1st 2020.
+
+Here are main points on how the transition will take place:
+
+- On June 24th, approved grant applications with corresponding SLP tokens will be posted to the PSF website.<br /><br />
+
+- Using the first BCH block on or after 7PM UTC on June 15th 2020, a snapshot of the BCH blockchain will be taken. 100,000 funding tokens (FUND001) will be air-dropped to all addresses holding PSF tokens in that block.<br /><br />
+
+- Receivers of the FUND001 funding token are expected to send them to the SLP addresses associated with a grant, distributing tokens how they see fit, based on the funding they want each grant to receive.<br /><br />
+
+- Using the first BCH block on or after 7PM UTC on July 1st 2020, another snapshot of the BCH blockchain will be taken. Any SLP address associated with a grant and holding FUND001 tokens will be airdropped a matching amount of newly minted PSF tokens.<br /><br />
+
 
 ### Management<a name="management"></a>
 
 The management team for the Foundation will be funded via grants, the same as all other contributors to the Foundation. By funding members of the management team (or not funding them), token holders within the community have the ability to 'hire and fire' these members of the management team.
 
-The first member of the management team will have the title 'Head Janitor'. This persons chief responsibilities are to choose the other first contributors, and to slowly and a carefully distribute responsibilities and cryptographic keys. Their primary role is to grow the organization, keep it focused on the Foundations mission, and reduce any single points of failure that could lead to a catastrophic failure of the organization.
+The first member of the management team will have the title 'Head Janitor'. This person's chief responsibilities are to choose the other first contributors, and to slowly and a carefully distribute responsibilities and cryptographic keys. Their primary role is to grow the organization, keep it focused on the Foundation's mission, and reduce any single points of failure that could lead to a catastrophic failure of the organization.
 
-#### Management of Grants<a name="managementOfGrants"></a>
+Another member of the management team, the Treasurer, will be responsible for distributing PSF tokens to grant recipients.
 
-The management team of the Permissionless Software Foundation will be responsible for curating applicants and posting approved grants to the Foundation's websites for community members to fund.
+The main day-to-day duties of the management team will be to discuss, coordinate, and approve grant proposals, solicit the community for feedback,  and maintain the PSF website.
 
 ## Token Economics<a name="tokenEconomics"></a>
 Before delving into the specifics of the token economics, it's important to keep the big picture in mind: The purpose of the mathematics behind the token is to enable steady funding of development, and fair incentives for collaboration, in order to further the Foundation's mission.
+
+There is an unavoidable, short period of time where speculation of the token price is encouraged: in order bootstrap initial funding, and in the worst-case of market panics. This is an important part of the machinery of the organization and how it automatically recovers from some worst-case scenarios.
+
+But the long-term, steady-state incentives ensure that only community members who want to participate in governance, have incentive to hold the token. This ensure that dedicated, community-focused participants, with skin-in-the-game, are the ones driving the governance of the Permissionless Software Foundation and its community.
 
 ### Token Creation, Issuance, and Wallet<a name="tokenCreation"></a>
 The proposed PSF token will be issued on the Bitcoin Cash (BCH) blockchain using the [Simple Ledger Token Protocol (SLP)](https://simpleledger.cash/). The token is currently exchanged using the [Badger Wallet](https://badger.bitcoin.com/), the [Bitcoin.com wallet](https://wallet.bitcoin.com), and several up-and-coming SLP token-aware wallets, by sending either BCH or PSF tokens to this BCH address:
@@ -145,17 +166,17 @@ The minting baton for creating new tokens is active and controlled by the Permis
 To prevent abuse or theft, minting of new PSF tokens requires m-of-n signatures (typically 3 of 5). This requires a simple majority of key holders to approve the creation of new tokens.
 
 #### Value Creation<a name="valueCreation"></a>
-At the center of the token economics is the [liquidity app](https://github.com/Permissionless-Software-Foundation/token-liquidity), allowing community members to permissionlessly exchange tokens for Bitcoin Cash (or Bitcoin Cash for tokens) at any time, while maintaining a peg to the Bitcoin Cash (BCH) coin.
+At the center of the token economics is the [liquidity app](https://github.com/Permissionless-Software-Foundation/token-liquidity), allowing community members to permissionlessly exchange tokens for Bitcoin Cash (or Bitcoin Cash for tokens) at any time, while also maintaining an exchange-rate peg to Bitcoin Cash (BCH).
 
 Price management is intended to follow a reinforcing ‘virtuous circle’ of value as follows:
 
 1. Developers who contribute time and effort are rewarded in newly issued tokens.<br /><br />
 
-2. Continuous efforts by developers and contributors make the software more valuable and should increase usage of the software.<br /><br />
+2. Continuous efforts by developers and contributors make the software developed by the PSF more valuable, and should increase usage of the software.<br /><br />
 
 3. Users inject value into the token economy in one of two ways. Both activities strengthen the peg between the token and BCH.
     - They acquire tokens to use software by sending BCH to the liquidity app.
-    - They pay BCH to the apps they interact with and that app sends a portion of the BCH to the token-liquidity app with instructions to burn that amount of tokens.
+    - They pay BCH to the apps they interact with, and that app sends a portion of the BCH to the token-liquidity app with instructions to burn that amount of tokens.
 
 4. Contributors can trade their tokens for BCH via the liquidity app. They can then spend the BCH directly or convert it into their local fiat currency via a local exchange.
 
@@ -165,7 +186,7 @@ To be clear, the token does not become more valuable because of the labor of the
 
 2. Studies have shown no correlation between the number of users and the number of developers in an open source project, which is why unfunded open source projects are such a big social problem (example: [the Heartbleed bug](https://mashable.com/2014/04/14/heartbleed-open-source/#IxuitorltiqZ)). This also means that targeted effort by a few developers can provide a great deal of value to a large population of users.
 
-**It is <u>demand for</u> and <u>usage of</u> software and services which monetizes the token, captures value, and strengthens the peg to BCH.** This allows open source developers to capture value later in the software life cycle. Rewarding developers later in the software life cycle **is the main problem this business model solves**.
+**It is <u>demand for</u> and <u>usage of</u> software and services which monetizes the token, captures value, and strengthens the peg to BCH.** The use of tokens allows open source developers to capture value later in the software life cycle. Rewarding developers later in the software life cycle, and incentivizing maintenance of the software, **is the main problem this business model solves**.
 
 #### Scope of Value: SaaS<a name="scopeOfValue"></a>
 The stability of the peg between BCH and the token is directly tied to <u>usage</u> of the token and management of <u>supply</u>. For this reason, token holders must be very selective of the class of software they support. The ‘Software as a Service’ business model is the most conducive, where usage of the software is directly tied to usage of the token. This business model will be a prerequisite for any project sponsored by the community governing the Permissionless Software Foundation.
@@ -196,7 +217,7 @@ The liquidity app serves as an automated market maker, continuously adjusting th
 
 - **The peg between the token and BCH remains constant as demand increases.** After the inflection point is reached (at a balance of 250 BCH), the exchange rate is fixed at 200 tokens-per-bch. This allows for a predictable, steady exchange rate. Token holders are incentivized to only hold the token in order to actively participate in governance and **not** for price appreciation (speculation).<br /><br />
 
-- **Pseudo-stable peg.** The equation encourages a pseudo-stable peg of 200 tokens per BCH. Speculative buyers lose incentive and are replaced by stakeholders who are incentivized to encourage long-term growth through user-adoption of software. Below the inflection point, sellers are increasingly disincentivized as the peg changes to encourage buyers.<br /><br />
+- **Pseudo-stable peg.** The equation encourages a pseudo-stable peg of 200 tokens per BCH. Speculative buyers lose incentive and are replaced by stakeholders who are incentivized to encourage long-term growth through governance, and ultimately, user-adoption of software. Below the inflection point, sellers are increasingly disincentivized as the peg changes to encourage buyers.<br /><br />
 
 - **Fair price dynamics.** Because the pricing algorithm is transparent and market making is fully automated, all participants are fairly incentivized.<br /><br />
 
@@ -227,16 +248,16 @@ It takes an exponentially increasing amount of tokens to extract a linear amount
 ## Mitigating Catastrophic Failure<a name="migitatingFailure"></a>
 Many threats exist to the Permissionless Software Foundation and the community that will form around the token. Regulatory clarity and jurisdictional safety is unclear. Enforcement by state actors is unpredictable. Cryptocurrency communities have shown that contention happens frequently. Communities around open source software naturally split and fork the software when compromise can not be reached. This degrades the valuable network effects of any coin or token in the short-term, but ultimately improves diversity and innovation in the long-term. Malicious hackers could potentially obtain the private keys for the PSF token and destroy its value by manipulating the creation of tokens.
 
-These threats are anticipated and mitigated by the use of the SLP protocol for tokens. All token exchanges take place on the Bitcoin Cash blockchain in a public, transparent, uncensorable manner. Because of this, it’s possible to easily fork the token and air-drop a new one to existing token holders, at any point in time.
+All these threats are anticipated and mitigated by the use of the SLP protocol for tokens. All token exchanges take place on the Bitcoin Cash blockchain in a public, transparent, uncensorable manner. Because of this, it’s possible to easily fork the token and air-drop a new one to existing token holders, at any point in time.
 
-In the event of a state actor threatening the existence of the Foundation, or simply an irreconcilable disagreement within the organization, any minority group of actors can create a new token and send it to existing token holders, similar to how BCH air-dropped their coin to existing holders of BTC. They can also fork the SaaS projects overseen by the Foundation and modify them to use the new token, as all software will utilize [the MIT license](https://opensource.org/licenses/MIT).
+In any worst case scenario, from a state actor threatening the existence of the Foundation, or simply an irreconcilable disagreement within the organization, any minority group of actors can create a new token and send it to existing token holders, similar to how BCH air-dropped their coin to existing holders of BTC. They can also fork the SaaS projects overseen by the Foundation and modify them to use the new token, as all software will utilize [the MIT license](https://opensource.org/licenses/MIT).
 
 The same activity can mitigate a catastrophic hack of the Foundations private keys. A new token can simply be created and sent to all token holders prior to the hack.
 
 In this way, the Foundation embraces the concept of forks. Every effort will be made to listen and respect the views of community members and reach a compromise. But in the event of contentious disagreements in governance, minority members are encouraged to fork a new token off the existing one, and grow their own community.
 
 ## Labor<a name="labor"></a>
-Just as financial investors risk capital in a venture, early contributors in the community risk their labor. The primary difference is that community developers are in direct control of the outcome, and can continuously adapt to a changing business environment.
+Just as financial investors risk capital in a venture, early contributors in the community risk their labor. The primary difference is that community contributors are in direct control of the outcome, and can continuously adapt to a changing business environment.
 
 Because of the 200 tokens-per-BCH peg, early contributors have a barometer upon which to gauge market value for their labor. Assuming the liquidity app starts with initial balances of 250 BCH and 50,000 tokens, the pseudo-stable price point is 200 tokens-per-BCH (50,000 / 250 = 200). At a market value of $200 USD-per-BCH, the market value of the token is $1 USD per token. While the market value of BCH in USD or other fiat currency is free to fluctuate, the 200 tokens-per-BCH pseudo-stable peg will remain constant. Contributors have both a value with which to gauge fair-market value for their labor, and direct control over the economic repercussions of their actions.
 

@@ -111,15 +111,17 @@ The level of governance is intentionally minimized. Governance of the organizati
 
 ### Funding<a name="funding"></a>
 
-Every 13,000 blocks (approximately three months), existing PSF token holders will be air-dropped a new 'funding' token. The funding token will only be air-dropped to holders who's tokens have not moved in three months. 100,000 funding tokens will be air-dropped, proptional to the amount of PSF tokens meeting the criteria.
+Every 13,000 blocks (approximately three months), existing PSF token holders will be air-dropped a new 'funding' token. The funding token will only be air-dropped to holders who's tokens have not moved in two months. 100,000 funding tokens will be air-dropped, proportional to the amount of PSF tokens meeting the criteria.
 
-**For example**, if an address holds 1,000 PSF tokens that have not moved in three months, and the total supply of PSF tokens that have not moved in three months is 100,000 tokens, then the address would receive 1,000 funding tokens.
+**For example**, if an address holds 1,000 PSF tokens that have not moved in two months, and the total supply of PSF tokens that have not moved in two months is 100,000 tokens, then the address would receive 1,000 funding tokens.
 
 Prior to the air-drop, developers and other contributors are free to submit grant proposals to the Foundation. An SLP address will be assigned to each approved grant proposal, and the proposal will be published to the PSF website.
 
 Receivers of the funding token are expected to send their funding tokens to the SLP addresses of the grants as they see fit, in order to fund the grants.
 
-Every 13,100 blocks (approximately 1 week later), the funding tokens held by the grant SLP addresses will receive an air-drop of an equal amount of newly minted PSF tokens. The private keys for these grants will be held by someone designated as a **Treasurer**. The Treasurer will be funded by the PSF general grant, which will be used to fund core management. They will be responsible for distributing 1/3 of the PSF tokens, once per month, to the designated recipients in the grant proposal.
+Every 13,200 blocks (approximately 2 weeks later), the funding tokens held by the grant SLP addresses will receive an air-drop of an equal amount of newly minted PSF tokens. The private keys for these grants will be held by someone designated as a **Treasurer**. The Treasurer will also be funded by a PSF grant, and will be part of the PSF core management team. They will be responsible for distributing 1/3 of the PSF tokens, once per month, to the designated recipient in the grant proposal. Because everything happens transparently on-chain, there is no opportunity for hidden manipulation of funds.
+
+It's important to note: The scope of the grants will focus on <i>people</i> and not <i>projects</i>. People are expected to do work in line with the mission of promoting open source and Bitcoin Cash, but their personal reputation is as stake, and is the basis upon which token holders are sending them funds.
 
 #### Bootstrapping<a name="bootstrapping"></a>
 The Foundation was working off a [different governance model](https://github.com/Permissionless-Software-Foundation/psfoundation-website2/releases/tag/v1.0.0) prior to May 1st, 2020. The Governance and token-economic model captured in this business plan will go into effect on July 1st 2020.
@@ -130,7 +132,7 @@ Here are main points on how the transition will take place:
 
 - Using the first BCH block on or after 7PM UTC on June 15th 2020, a snapshot of the BCH blockchain will be taken. 100,000 funding tokens (FUND001) will be air-dropped to all addresses holding PSF tokens in that block.<br /><br />
 
-- Receivers of the FUND001 funding token are expected to send them to the SLP addresses associated with a grant, distributing tokens how they see fit, based on the funding they want each grant to receive.<br /><br />
+- Receivers of the FUND001 funding token are expected to send them to the SLP addresses associated with a grant, distributing tokens how they see fit, based on the funding they want each grantee to receive.<br /><br />
 
 - Using the first BCH block on or after 7PM UTC on July 1st 2020, another snapshot of the BCH blockchain will be taken. Any SLP address associated with a grant and holding FUND001 tokens will be airdropped a matching amount of newly minted PSF tokens.<br /><br />
 

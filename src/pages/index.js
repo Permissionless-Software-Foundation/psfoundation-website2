@@ -17,6 +17,11 @@ const util = new Util()
 import qrcodeBCH from '../assets/images/qrcodeBCH.png'
 import qrcodeSLP from '../assets/images/qrcodeSLP.png'
 import qrBurn from '../assets/images/qrBurn.png'
+import animatedGears from '../assets/images/PSF-animated-gears.gif'
+import vendingMachine from '../assets/images/vending-machine.png'
+import consulting from '../assets/images/consulting.png'
+import community from '../assets/images/community.png'
+
 
 const BchAddress = styled.p`
   text-align: center;
@@ -76,8 +81,7 @@ class HomeIndex extends React.Component {
               <center>
                 <p>
                   The business plan for the Permissionless Software Foundation
-                  and PSF token is still being drafted. You can read the current
-                  draft by clicking on the button below. It discusses the unique
+                  and PSF token discusses the
                   token economics and mathematics used to create a psudo-stable
                   utility token, allowing open source software communities to
                   self-fund without the need for venture capital, corporate
@@ -91,6 +95,90 @@ class HomeIndex extends React.Component {
                   Read the Business Plan
                 </BizPlanButton>
               </center>
+            </div>
+          </div>
+        </section>
+
+        <section id="five" className="main style5">
+          <div className="grid-wrapper">
+            <div className="col-6">
+              <center>
+                <span className="image fit">
+                  <img src={animatedGears} alt="animaed gear" />
+                </span>
+              </center>
+            </div>
+
+            <div className="col-6">
+              <h3>Three Major Facets</h3>
+              <p>
+                There are three major facets to the Permissionless Software
+                Foundation (PSF): <b>Vending Machines</b>, <b>Consulting</b>,
+                and <b>Community</b>. They are symbolized in the animated graphic.
+              </p>
+              <p>
+                Code drives everything. That is symbolized by the large gear
+                driving the three smaller gears. The three smaller gears represent
+                the three major facets.
+              </p>
+
+              <div className="grid-wrapper">
+                <div className="col-3">
+                <center>
+                  <span className="image fit">
+                    <img src={vendingMachine} alt="community" />
+                  </span>
+                </center>
+                </div>
+                <div className="col-9">
+                  <p>
+                  The <b>Vending Machine</b> represents SaaS
+                  applications. For example, the subscription service
+                  of <a href="https://fullstack.cash" target="_blank">FullStack.cash</a>, or
+                  the <a href="https://ipfs.fullstack.cash" target="blank">IPFS file hosting</a> service.
+                  These are 'coin operated'. A user pays BCH and immediately
+                  gets something of value for it. Each payment burns PSF tokens.
+                  This is the raw fuel that drives the peg between PSF tokens and BCH.
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid-wrapper">
+                <div className="col-3">
+                <center>
+                  <span className="image fit">
+                    <img src={consulting} alt="community" />
+                  </span>
+                </center>
+                </div>
+                <div className="col-9">
+                  <p>
+                  The PSF is also a <b>consulting</b> company. We match talented
+                  developers with entrepreurs looking to fund development of their
+                  business ideas. Work is structured in 3-6 month contracts.
+                  Payments go to burn tokens, and developers are paid in PSF tokens.
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid-wrapper">
+                <div className="col-3">
+                <center>
+                  <span className="image fit">
+                    <img src={community} alt="community" />
+                  </span>
+                </center>
+                </div>
+                <div className="col-9">
+                  <p>
+                  The PSF is governed by a <b>community</b> of token holders.
+                  Patreons can invest in Bitcoin Cash infrastructure by buying
+                  and holding PSF tokens. They are then eligible for air-drops
+                  that can be directed to fund <a href="https://en.wikipedia.org/wiki/Common_good" target="_blank">common goods</a>, like
+                  full nodes, indexers, privacy enhancements, and research.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -146,7 +234,7 @@ class HomeIndex extends React.Component {
                   rel="noopener noreferrer"
                 >
                   Bitcoin.com Wallet
-                </a>{' '}, or click the Buy or Sell buttons to trade $1
+                </a>, or click the Buy or Sell buttons to trade $0.10
                 USD worth of tokens if you have the <a
                   href="https://badger.bitcoin.com/"
                   target="_blank"
@@ -175,6 +263,14 @@ class HomeIndex extends React.Component {
               <br />
               <SellBadgerButton usdPerBch="4" />
               </center>
+            </div>
+          </div>
+
+          <div className="grid-wrapper">
+            <div className="col-12">
+                <p><center>
+                  PSF SLP Token ID: 38e97c5d7d3585a2cbf3f9580c82ca33985f9cb0845d4dcce220cb709f9538b0
+                </center></p>
             </div>
           </div>
         </section>

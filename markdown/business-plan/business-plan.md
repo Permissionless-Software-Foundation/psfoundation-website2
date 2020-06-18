@@ -124,17 +124,17 @@ Every 13,200 blocks (approximately 2 weeks later), the funding tokens held by th
 It's important to note: The scope of the grants will focus on <i>people</i> and not <i>projects</i>. People are expected to do work in line with the mission of promoting open source and Bitcoin Cash, but their personal reputation is as stake, and is the basis upon which token holders are sending them funds.
 
 #### Bootstrapping<a name="bootstrapping"></a>
-The Foundation was working off a [different governance model](https://github.com/Permissionless-Software-Foundation/psfoundation-website2/releases/tag/v1.0.0) prior to May 1st, 2020. The Governance and token-economic model captured in this business plan will go into effect on July 1st 2020.
+The Foundation was working off a [different governance model](https://github.com/Permissionless-Software-Foundation/psfoundation-website2/releases/tag/v1.0.0) prior to May 1st, 2020. The Governance and token-economic model captured in this business plan will go into effect on August 1st 2020.
 
 Here are main points on how the transition will take place:
 
-- On June 24th, approved grant applications with corresponding SLP tokens will be posted to the PSF website.<br /><br />
+- On July 24th, approved grant applications with corresponding SLP tokens will be posted to the PSF website.<br /><br />
 
-- Using the first BCH block on or after 7PM UTC on June 15th 2020, a snapshot of the BCH blockchain will be taken. 100,000 funding tokens (FUND001) will be air-dropped to all addresses holding PSF tokens in that block.<br /><br />
+- Using the first BCH block on or after 7PM UTC on July 15th 2020, a snapshot of the BCH blockchain will be taken. 100,000 funding tokens (FUND001) will be air-dropped to all addresses holding PSF tokens in that block.<br /><br />
 
 - Receivers of the FUND001 funding token are expected to send them to the SLP addresses associated with a grant, distributing tokens how they see fit, based on the funding they want each grantee to receive.<br /><br />
 
-- Using the first BCH block on or after 7PM UTC on July 1st 2020, another snapshot of the BCH blockchain will be taken. Any SLP address associated with a grant and holding FUND001 tokens will be airdropped a matching amount of newly minted PSF tokens.<br /><br />
+- Using the first BCH block on or after 7PM UTC on August 1st 2020, another snapshot of the BCH blockchain will be taken. Any SLP address associated with a grant and holding FUND001 tokens will be airdropped a matching amount of newly minted PSF tokens.<br /><br />
 
 
 ### Management<a name="management"></a>

@@ -24,7 +24,6 @@ path: "/biz-plan/business-plan"
   - [Funding](#funding)
       - [Bootstrapping](#bootstrapping)
   - [Management](#management)
-      - [Management of Grants](#managementOfGrants)
 
 - [Token Economics](#tokenEconomics)
   - [Token Creation, Issuance, and Wallet](#tokenCreation)
@@ -37,6 +36,7 @@ path: "/biz-plan/business-plan"
 - [Mitigating Catastrophic Failure](#migitatingFailure)
 - [Labor](#labor)
   - [Salaried Contributors](#salaries)
+  - [Hourly Rate Calculation](#hourly)
   - [Bounties](#bounties)
   - [Freelance Developers](#freelance)
 - [Projects](#projects)
@@ -56,11 +56,11 @@ path: "/biz-plan/business-plan"
 
 
 ## Executive Summary<a name="executiveSummary"></a>
-This document lays out the business model and formation plans for the *Permissionless Software Foundation* (**PSF**). The Foundation is a community-oriented, highly automated, and legally-nonexistent organization who's purpose is to foster the <u>growth of open source software</u> and the <u>adoption of Bitcoin Cash</u> across the globe. The PSF will offer a Simple Ledger Protocol (**SLP**) token on the Bitcoin Cash (**BCH**) network to self-fund the development of open source software, and reward contributors that help the organization grow.
+This document lays out the business model and formation plans for the *Permissionless Software Foundation* (**PSF**). The Foundation is a community-oriented, highly automated, and legally-nonexistent [decentralized autonomous organization](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization) who's purpose is to foster the <u>growth of open source software</u> and the <u>adoption of Bitcoin Cash</u> across the globe. The PSF will offer a Simple Ledger Protocol (**SLP**) token on the Bitcoin Cash (**BCH**) network to self-fund the development of open source software, and reward contributors that help the organization grow.
 
 The focus of efforts will be on the software as a service (SaaS) business model, as that model lends itself best to the use of a native utility token. The use of SaaS software by end-users imbues the token with financial value. Many ideas are borrowed from [the Bancor whitepaper](https://github.com/Permissionless-Software-Foundation/token-liquidity/blob/master/docs/bancor-formulas/bancor-protocol-whitepaper.pdf), such as the concepts of token liquidity and forming a community that can self-fund through a native token. See [this video](https://youtu.be/LcbHTF3zCdI) for additional background. The *primary purpose of the token* is to fund developers and other contributors, in order to maintain and improve the SaaS software produced by the Foundation.
 
-When end-users pay for software services, the BCH they pay goes to burn tokens, and BCH is captured in a special [token-liquidity application](https://github.com/Permissionless-Software-Foundation/token-liquidity) (inspired by the Bancor whitepaper). The price of the token is pegged to BCH through the use of the token-liquidity app, which also maintains perfect liquidity between BCH and the token. Contributors are funded via token-grants, by existing token holders. The token-liquidity application allows contributors to exchange their tokens for BCH.
+When end-users pay for software services, the BCH they pay goes to burn tokens, and BCH is captured in a special [token-liquidity application](https://github.com/Permissionless-Software-Foundation/token-liquidity) (inspired by the Bancor whitepaper). The price of the token is pegged to BCH through the use of the token-liquidity app, which also maintains perfect liquidity between BCH and the token. Research, development, and maintenance are funded via token-grants, by existing token holders. The token-liquidity application allows contributors to exchange their tokens for BCH.
 
 As long as efforts by developers result in stable, valuable software services, the token will maintain its peg to BCH. New tokens are minted to fund developers, and old tokens are taken out of circulation through the burning mechanism of users consuming services. New tokens are directed by existing token holders to fund developer grants every three months.
 
@@ -81,7 +81,7 @@ Here is a list of articles discussing this idea further:
 ## The Permissionless Software Foundation<a name="thePSF"></a>
 
 ### Mission<a name="mission"></a>
-The mission of the Permissionless Software Foundation is to foster the <u>growth of open source software</u> and the <u>adoption of Bitcoin Cash</u> across the globe. We believe this is the best way to promote individual sovereignty and increase prosperity. The Foundation will focus on the development, maintenance, and promotion of software that makes it easy for individuals to protect their privacy, circumvent censorship, and engage in economic action.
+The mission of the Permissionless Software Foundation is to foster the <u>growth of open source software</u> and the <u>adoption of Bitcoin Cash</u> across the globe. We believe this is the best way to promote individual sovereignty and increase prosperity. The Foundation will focus on the development, maintenance, and promotion of software that makes it easy for individuals to protect their privacy, circumvent censorship, and engage in economic activity.
 
 #### Tools to fight surveillance<a name="antiSurveillance"></a>
 The primary tool used to protect privacy is [the Tor network](https://www.torproject.org/). The Tor network and tor-accessible browsers like [Brave browser](https://brave.com/browser-option-a-hpa811/) work within the current [server-client paradigm](https://en.wikipedia.org/wiki/Client%E2%80%93server_model), but they provide a layer of anonymity by hiding the server IP address inside the Tor network.
@@ -121,7 +121,7 @@ Receivers of the funding token are expected to send their funding tokens to the 
 
 Every 13,200 blocks (approximately 2 weeks later), the funding tokens held by the grant SLP addresses will receive an air-drop of an equal amount of newly minted PSF tokens. The private keys for these grants will be held by someone designated as a **Treasurer**. The Treasurer will also be funded by a PSF grant, and will be part of the PSF core management team. They will be responsible for distributing 1/3 of the PSF tokens, once per month, to the designated recipient in the grant proposal. Because everything happens transparently on-chain, there is no opportunity for hidden manipulation of funds.
 
-It's important to note: The scope of the grants will focus on <i>people</i> and not <i>projects</i>. People are expected to do work in line with the mission of promoting open source and Bitcoin Cash, but their personal reputation is as stake, and is the basis upon which token holders are sending them funds.
+It's important to note: The scope of the grants will focus on both <i>people</i> and <i>projects</i>. People are expected to do work in line with the mission of promoting open source and Bitcoin Cash, but their personal reputation is as stake, and is the basis upon which token holders are sending them funds. Projects are eligible for funding as well. These funds will be directed by PSF management to develop those projects in the same way [consulting services](https://fullstack.cash/consulting) are handled.
 
 #### Bootstrapping<a name="bootstrapping"></a>
 The Foundation was working off a [different governance model](https://github.com/Permissionless-Software-Foundation/psfoundation-website2/releases/tag/v1.0.0) prior to May 1st, 2020. The Governance and token-economic model captured in this business plan will go into effect on August 1st 2020.
@@ -150,7 +150,7 @@ The main day-to-day duties of the management team will be to discuss, coordinate
 ## Token Economics<a name="tokenEconomics"></a>
 Before delving into the specifics of the token economics, it's important to keep the big picture in mind: The purpose of the mathematics behind the token is to enable steady funding of development, and fair incentives for collaboration, in order to further the Foundation's mission.
 
-There is an unavoidable, short period of time where speculation of the token price is encouraged: in order bootstrap initial funding, and in the worst-case of market panics. This is an important part of the machinery of the organization and how it automatically recovers from some worst-case scenarios.
+There is an unavoidable, short period of time where speculation of the token price is possible: in order to bootstrap initial funding, and in the worst-case of market panics. This is an important part of the mathematics and how the economic system automatically recovers from some worst-case scenarios.
 
 But the long-term, steady-state incentives ensure that only community members who want to participate in governance, have incentive to hold the token. This ensure that dedicated, community-focused participants, with skin-in-the-game, are the ones driving the governance of the Permissionless Software Foundation and its community.
 
@@ -177,7 +177,7 @@ Price management is intended to follow a reinforcing ‘virtuous circle’ of va
 2. Continuous efforts by developers and contributors make the software developed by the PSF more valuable, and should increase usage of the software.<br /><br />
 
 3. Users inject value into the token economy in one of two ways. Both activities strengthen the peg between the token and BCH.
-    - They acquire tokens to use software by sending BCH to the liquidity app.
+    - They acquire tokens to use software or participate in governance, by sending BCH to the liquidity app.
     - They pay BCH to the apps they interact with, and that app sends a portion of the BCH to the token-liquidity app with instructions to burn that amount of tokens.
 
 4. Contributors can trade their tokens for BCH via the liquidity app. They can then spend the BCH directly or convert it into their local fiat currency via a local exchange.
@@ -191,7 +191,7 @@ To be clear, the token does not become more valuable because of the labor of the
 **It is <u>demand for</u> and <u>usage of</u> software and services which monetizes the token, captures value, and strengthens the peg to BCH.** The use of tokens allows open source developers to capture value later in the software life cycle. Rewarding developers later in the software life cycle, and incentivizing maintenance of the software, **is the main problem this business model solves**.
 
 #### Scope of Value: SaaS<a name="scopeOfValue"></a>
-The stability of the peg between BCH and the token is directly tied to <u>usage</u> of the token and management of <u>supply</u>. For this reason, token holders must be very selective of the class of software they support. The ‘Software as a Service’ business model is the most conducive, where usage of the software is directly tied to usage of the token. This business model will be a prerequisite for any project sponsored by the community governing the Permissionless Software Foundation.
+The stability of the peg between BCH and the token is directly tied to <u>usage</u> of the token and management of <u>supply</u>. For this reason, the PSF community must be very selective of the class of software they support. The ‘Software as a Service’ business model is the most conducive, where usage of the software is directly tied to usage of the token. This business model will be a prerequisite for any project sponsored by the community governing the Permissionless Software Foundation.
 
 #### A Pseudo-Stable Peg<a name="pseudoStableToken"></a>
 ##### Bancor & Liquidity<a name="bancor"></a>
@@ -266,9 +266,21 @@ Because of the 200 tokens-per-BCH peg, early contributors have a barometer upon 
 Community members willing to be compensated in tokens, and then hold those tokens until the peg stabilizes, will make the best economic actors, and will be the most welcome early contributors. If the Foundation has other means of financing (such as BCH), they can use tokens to tip or supplement developers and thereby gain access to a wider pool of labor.
 
 ### Salaried Contributors<a name="salaries"></a>
-Salaried contributors funded through three-month grants are the primary source of labor to grow the Foundation. Salaried community members are expected to track their work with the accounting software at [ovn.psfoundation.cash](https://ovn.psfoundation.cash). This [Open Value Network](https://wiki.p2pfoundation.net/Open_Value_Network) (OVN) software is similar to that used by [Sensorica NRP](http://nrp.sensorica.co/), who pioneered the concept.
+Salaried contributors funded through three-month grants are the primary source of labor for management and research. Salaried community members are expected to track their work with the accounting software at [ovn.psfoundation.cash](https://ovn.psfoundation.cash). This [Open Value Network](https://wiki.p2pfoundation.net/Open_Value_Network) (OVN) software is similar to that used by [Sensorica NRP](http://nrp.sensorica.co/), who pioneered the concept.
 
 The work logs entered into this system can be downloaded and viewed by anyone, allowing transparent auditing by anyone in the community. These also provide a body of evidence to show what grant funds are being spent on, in order to justify funding for future grants.
+
+### Hourly Rate Calculation<a name="hourly"></a>
+Token rewards are calculated and distributed monthly. For contributors who are rewarded on an hourly basis, the following equations are used to calculate their token reward. It is based on the current spot price of BCH and the 200 token-to-BCH peg.
+
+1. Calculate the spot price of the token at an exchange rate of 200 tokens per BCH:
+    - $/token = ($/BCH) / (200 tokens/BCH)
+    - Example: if the spot price of BCH is currently $250 per BCH, the token = ($250/BCH) / (200 tokens/BCH) = $1.25 per token.
+2. Calculate an hourly rate of tokens based on fair market hourly rate.
+    - Hourly Rate / $/token
+    - Example: Assuming a fair market rate of $50/hour for a developer, the hourly rate in tokens = ($50/hour) / $1.25 per token = 40 tokens per hour
+3. Multiply the total hours contibuted in that month and logged into the [time tracking app](https://ovn.psfoundation.cash).
+    - Example: Assuming a developer contributed 20 hours that month, their reward = (20 hours) * (40 tokens per hour) = 800 tokens
 
 ### Bounties<a name="bounties"></a>
 [GitCoin](https://gitcoin.co/) and [GitCash](https://gitcash.io/) are two permissionless bounty programs that have been used to pay developers in cryptocurrencies and tokens. While interfacing the PSF token to these platforms will be advantageous, it is not critical, as the workflow of both platforms is not difficult to replicate.
@@ -293,12 +305,14 @@ The time tracking app at [ovn.psfoundation.cash](https://ovn.psfoundation.cash) 
 FullStack.cash was forked from the open source BITBOX JavaScript SDK and [rest.bitcoin.com](https://rest.bitcoin.com) REST API created by Gabriel Cardona, and developed by Bitcoin.com for two years. The site builds upon that asset by adding new features and providing reliable cloud services to enterprise customers.
 
 ### Contract Work <a name="contractWork"></a>
-While not a project in and of itself, the Permissionless Software Foundation will actively seek out paid contract work with business partners. Payment will consist of agreements to burn PSF tokens. This work will utilize the FullStack.cash platform, and be managed and executed by PSF salaried community members.
+While not a project in and of itself, the Permissionless Software Foundation will actively seek out [paid contract work](https://fullstack.cash/consulting) with business partners. Payment will consist of agreements to burn PSF tokens. This work will utilize the FullStack.cash platform, and be managed and executed by PSF community members.
 
 ### End-to-End Encrypted Web Chat<a name="chat"></a>
 Our [web-based chat app](https://chat.psfoundation.cash) is distributed over IPFS making it very difficult to censor or block. It is end-to-end encrypted, allowing members of the Foundation to communicate securely without any danger of snooping. The code is open source, allowing anyone to audit it. While [our Telegram channel](https://t.me/permissionless_software) allows communication with a more mainstream audience, the web-based chat app is useful for anyone who needs to communicate privately in real-time. And because it is delivered through a web browser, any type of device or operating system can access it.
 
 - [The web-app source code](https://github.com/Permissionless-Software-Foundation/chat-web-app)
+
+We are also developing an [improved specification](https://github.com/Permissionless-Software-Foundation/encrypt-msg/tree/master/docs) for e2e encrypted messaging and file sharing. This protocol will be implemented as a plugin to the [web wallet](https://wallet.fullstack.cash).
 
 ### Uncensorable Publishing<a name="publishing"></a>
 Several tools have been packaged together to allow users to create websites and web applications that are nearly uncensorable. The technologies used are a combination of IPFS, Bitoin Cash, and Tor. A demo and walk-through of the earliest version is [available here](https://troutsblog.com/about).
@@ -333,6 +347,8 @@ Email is the most fundamental piece of identity on the internet. And yet, privac
 An easy-to-setup, open-source email server like [iRedMail](https://iredmail.com/download.html) can be combined with a light weight [koa web server](https://github.com/christroutner/babel-free-koa2-api-boilerplate) for account management and the [SLP JavaScript SDK](https://github.com/Bitcoin-com/slp-sdk) to allow payment in PSF tokens.
 
 For example, a new account could be funded with $3 USD worth of PSF tokens, allowing up to 300 emails to be sent or received. Once depleted of funds, more tokens can be sent to increase the quota.
+
+An blockchain-based alternative to email is defined in [this media sharing specification](https://github.com/Permissionless-Software-Foundation/encrypt-msg/tree/master/docs). A plugin for the [FullStack web wallet](https://wallet.fullstack.cash) will be developed to implement this protocol.
 
 ### Anonymous Bitcoin: Consolidating CoinJoin<a name="coinjoin"></a>
 [Consolidating CoinJoin](https://gist.github.com/christroutner/8d54597da652fe2affa5a7230664bc45) is a peer-to-peer mixing service that brings privacy and fungibility to the Bitcoin Cash network. Users will use the PSF token to pay for the mixing service. Servers will use the PSF token to pay Mirrors to advertise their tor .onion address.

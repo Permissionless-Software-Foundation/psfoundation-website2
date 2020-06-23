@@ -174,7 +174,7 @@ const Landing = props => (
             <div className="content">
               <div className="inner">
                 <header className="major">
-                  <h3>E2E Encrypte Message and File Sharing</h3>
+                  <h3>E2E Encrypted Message and File Sharing</h3>
                 </header>
                 <p>
                   This grant will be used to fund continued development of
@@ -226,6 +226,37 @@ const Landing = props => (
                   the SWaP protocol to faciliate CoinJoin transactions, as well
                   as implementing it as an add-on for the <a href="https://wallet.fullstack.cash">FullStack.cash Wallet</a>.
                 </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <Link to="/grants" className="image">
+              <img src={qrPlaceholder} alt="" />
+            </Link>
+            <div className="content">
+              <div className="inner">
+                <header className="major">
+                  <h3>SLP Post Office</h3>
+                </header>
+                <p>
+                  <a href="https://medium.com/@vinarmani/simple-ledger-postage-protocol-enabling-a-true-slp-token-ecosystem-on-bitcoin-cash-f960a58c16c4" target="_blank" rel="noopener noreferrer">
+                  This article</a> explains the purpose and impact of the post
+                  office concept: allowing SLP tokens to be used even if buyers
+                  have no BCH. BCH is still used 'under the hood' and miners
+                  are still paid transaction fees. This scheme greatly improves
+                  the user experience for both buyers and sellers when using SLP
+                  tokens.
+                </p>
+                <p>
+                  Funds from this grant will be used to finish
+                  the <a href="https://github.com/TOKENLAND/simpleledger-post-office-server" target="_blank" rel="noopener noreferrer">
+                  open source post office server</a> and integrate client functionality
+                  into the <a href="https://wallet.fullstack.cash">FullStack.cash Wallet</a>.
+                  The client functionality will also be abstracted into an npm
+                  JavaScript library that can be used by any wallet application.
+                </p>
+
               </div>
             </div>
           </section>

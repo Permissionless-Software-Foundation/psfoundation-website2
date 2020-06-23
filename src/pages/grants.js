@@ -129,7 +129,7 @@ const Landing = props => (
                 <h3>JT Freeman - SLP Infrastructure</h3>
               </header>
               <p>
-                JT is the founder
+                JT is a founder
                 of <Link to="https://fountainhead.cash">Fountainhead.cash</Link>,{' '}
                 <Link to="https://read.cash/@SLP-Foundation/announcing-the-slp-foundation-e8cededa">SLP Foundation</Link>,
                 the <Link to="https://slp.dev">SLP.dev</Link> documentation site,
@@ -226,8 +226,6 @@ const Landing = props => (
               </div>
             </div>
           </section>
-
-          
         </section>
       </section>
     </div>

@@ -284,7 +284,7 @@ class HomeIndex extends React.Component {
               </header>
               <p className="projectText">
                 The PSF token will be used to fund the following open source
-                projects, with more on the way.
+                projects, with <a href="/grants">more on the way</a>.
               </p>
             </div>
 
@@ -323,7 +323,7 @@ class HomeIndex extends React.Component {
               <ul className="actions">
                 <li>
                   <a
-                    href="https://troutsblog.com/about/"
+                    href="https://uncensorablepublishing.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="button"
@@ -335,20 +335,19 @@ class HomeIndex extends React.Component {
             </div>
 
             <div className="col-6">
-              <h3>Anonymous Bitcoin: Consolidating CoinJoin</h3>
+              <h3>White Label Wallet</h3>
               <p>
-                Consolidating CoinJoin is a peer-to-peer mixing service that
-                brings privacy and fungability to the Bitcoin Cash network.
-                Users will use the PSF token to pay for the mixing service.
-                Servers will use the PSF token to pay Mirrors to advertise their
-                tor .onion address on the IPFS peer-to-peer network, and also to
-                transfer data between the <i>clearnet</i> and the <i>darkweb</i>
-                .
+                The <a href="https://wallet.fullstack.cash" target="_blank">
+                wallet app at FullStack.cash</a> is built using modular architecture
+                and 100% MIT licensed open source software. It's intended purpose
+                is to be easy to customize, in order to solve the widest possible
+                range of business problems. It leverages the infrastructure provided
+                by both FullStack.cash and Uncensorable Publishing.
               </p>
               <ul className="actions">
                 <li>
                   <a
-                    href="https://gist.github.com/christroutner/8d54597da652fe2affa5a7230664bc45"
+                    href="https://wallet.fullstack.cash"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="button"
@@ -409,19 +408,28 @@ class HomeIndex extends React.Component {
                 <h2>Burn Tokens</h2>
               </header>
               <p>
-                Sending any money to this Bitcoin Cash address will cause the
-                tokens to be 'burned' and removed from circulation. This address
+                Sending any BCH to this Bitcoin Cash address will cause
+                tokens to be 'burned' and removed from circulation. The exchange
+                happens just as it does above, but instead of sending the exchanged
+                tokens to the originating address, those tokens are burned.
+              </p>
+              <p>
+                This address
                 will be used by the applications above. For example, when somone
                 pays their subscription fee at <a href="https://fullstack.cash"
                 target="_blank">FullStack.cash</a>, the BCH is used to burn tokens.
-                This causes the price of all other tokens to increase.
+                This causes the price the tokens to increase, because
+                the BCH balance of the token-liquidity app goes up and it's token
+                balance goes down.
               </p>
               <p>
                 This burning function is faciliated by
                 a second app, similar to the token liquidity app. It forwards
                 any BCH recieved to the token liquidity app, and it appends a special
                 OP_RETURN code instructing the tokens to be burned instead of
-                exchanged. The burn is transparent, public, and verifiable on the blockchain.
+                exchanged. The burn is transparent, public, and
+                verifiable <a href="https://explorer.bitcoin.com/bch/address/bitcoincash:qqsrke9lh257tqen99dkyy2emh4uty0vky9y0z0lsr" target="_blank">
+                on the blockchain</a>.
               </p>
 
             </div>

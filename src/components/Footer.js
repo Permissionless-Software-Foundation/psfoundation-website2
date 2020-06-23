@@ -42,7 +42,7 @@ class Footer extends React.Component {
             </a>
           </li>
           <li>
-            <a href="https://troutsblog.com/about" target="_blank">Build your own IPFS-ready website</a>
+            <a href="https://uncensorablepublishing.com" target="_blank">Build your own IPFS-ready website</a>
           </li>
         </ul>
       </section>

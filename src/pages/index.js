@@ -131,7 +131,7 @@ class HomeIndex extends React.Component {
                 </center>
                 </div>
                 <div className="col-9">
-                  <p>
+                  <p style={{paddingRight: '20px'}}>
                   The <b>Vending Machine</b> represents SaaS
                   applications. For example, the subscription service
                   of <a href="https://fullstack.cash" target="_blank">FullStack.cash</a>, or
@@ -152,11 +152,12 @@ class HomeIndex extends React.Component {
                 </center>
                 </div>
                 <div className="col-9">
-                  <p>
+                  <p style={{paddingRight: '20px'}}>
                   The PSF is also a <b>consulting</b> company. We match talented
                   developers with entrepreurs looking to fund development of their
                   business ideas. Work is structured in 3-6 month contracts.
                   Payments go to burn tokens, and developers are paid in PSF tokens.
+                  {' '}<a href="https://fullstack.cash/consulting" target="_blank" rel="noopener noreferrer">Find out more</a>.
                   </p>
                 </div>
               </div>
@@ -170,7 +171,7 @@ class HomeIndex extends React.Component {
                 </center>
                 </div>
                 <div className="col-9">
-                  <p>
+                  <p style={{paddingRight: '20px'}}>
                   The PSF is governed by a <b>community</b> of token holders.
                   Patreons can invest in Bitcoin Cash infrastructure by buying
                   and holding PSF tokens. They are then eligible for air-drops

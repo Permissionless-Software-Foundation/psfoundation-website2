@@ -7,6 +7,7 @@ import trout from '../assets/images/trout-photo.jpg'
 import placeholder from '../assets/images/profile-image-placeholder.png'
 import jtfreeman from '../assets/images/jtfreeman.png'
 import qrPlaceholder from '../assets/images/qr-placeholder.png'
+import qrTrout from '../assets/images/trout-07-2020-grant.png'
 
 const Landing = props => (
   <Layout>
@@ -60,7 +61,9 @@ const Landing = props => (
         <section>
           <Link to="/grants" className="image">
             <img src={trout} alt="" />
+            <img src={qrTrout} alt="" style={{width: '250px', height: '200px'}}/>
           </Link>
+
           <div className="content">
             <div className="inner">
               <header className="major">

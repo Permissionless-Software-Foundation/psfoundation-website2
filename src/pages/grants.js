@@ -6,9 +6,19 @@ import Layout from '../components/layout'
 import trout from '../assets/images/trout-photo.jpg'
 import placeholder from '../assets/images/profile-image-placeholder.png'
 import jtfreeman from '../assets/images/jtfreeman.png'
-import qrPlaceholder from '../assets/images/qr-placeholder.png'
-import qrTrout from '../assets/images/trout-07-2020-grant.png'
 import daniel from '../assets/images/daniel.jpg'
+
+// QR donation codes
+// import qrPlaceholder from '../assets/images/qr-placeholder.png'
+import qrTrout from '../assets/images/trout-07-2020-grant.png'
+import qrCoinJoin from '../assets/images/grant-qrs/coinjoin-qr.png'
+import qrElectrumx from '../assets/images/grant-qrs/electrumx.png'
+import qrFullNode from '../assets/images/grant-qrs/full-node-qr.png'
+import qrNinsight from '../assets/images/grant-qrs/ninsight-qr.png'
+import qrPostOffice from '../assets/images/grant-qrs/post-office-qr.png'
+import qrSlpE2e from '../assets/images/grant-qrs/slp-e2e-qr.png'
+import qrSlpSecondLayer from '../assets/images/grant-qrs/slp-second-layer-qr.png'
+
 
 const Landing = props => (
   <Layout>
@@ -59,7 +69,7 @@ const Landing = props => (
       </section>
 
       <section id="two" className="spotlights">
-        <section>
+        <section style={{border: '5px solid black'}}>
           <Link to="/grants" className="image">
             <img src={trout} alt="" />
             <img
@@ -103,7 +113,7 @@ const Landing = props => (
           </div>
         </section>
 
-        <section>
+        <section style={{border: '5px solid black'}}>
           <Link to="/grants" className="image">
             <img src={daniel} alt="" />
           </Link>
@@ -154,15 +164,15 @@ const Landing = props => (
                 This will enable wallet users to send end-to-end (e2e) encrypted
                 messages, containing files of any size, to any other Bitcoin
                 Cash address. The experience will be very similar to email.
-                Combining uncensorable payments, communication, and file sharing into one app
-                will help facilitate economic activity around the world and grow demand for
-                Bitcoin Cash.
+                Combining uncensorable payments, communication, and file sharing
+                into one app will help facilitate economic activity around the
+                world and grow demand for Bitcoin Cash.
               </p>
             </div>
           </div>
         </section>
 
-        <section>
+        <section style={{border: '5px solid black'}}>
           <Link to="/grants" className="image">
             <img src={placeholder} alt="" />
           </Link>
@@ -186,9 +196,7 @@ const Landing = props => (
           </div>
         </section>
 
-
-
-        <section>
+        <section style={{border: '5px solid black'}}>
           <Link to="/grants" className="image">
             <img src={jtfreeman} alt="" />
           </Link>
@@ -237,9 +245,9 @@ const Landing = props => (
         </section>
 
         <section className="spotlights">
-          <section>
+          <section style={{border: '5px solid black'}}>
             <Link to="/grants" className="image">
-              <img src={qrPlaceholder} alt="" />
+              <img src={qrPostOffice} alt="" />
             </Link>
             <div className="content">
               <div className="inner">
@@ -261,28 +269,30 @@ const Landing = props => (
                   experience for both buyers and sellers when using SLP tokens.
                 </p>
                 <p>
-                  Funds from this grant will be used to finish the{' '}
+                  Funds from this grant will be used to integrate client
+                  functionality into the{' '}
+                  <a href="https://wallet.fullstack.cash">
+                    FullStack.cash Wallet
+                  </a>
+                  . The client functionality will also be abstracted into an npm
+                  JavaScript library that can be used by any wallet application.
+                  Funds will also be used to finish the{' '}
                   <a
                     href="https://github.com/TOKENLAND/simpleledger-post-office-server"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     open source post office server
-                  </a>{' '}
-                  and integrate client functionality into the{' '}
-                  <a href="https://wallet.fullstack.cash">
-                    FullStack.cash Wallet
                   </a>
-                  . The client functionality will also be abstracted into an npm
-                  JavaScript library that can be used by any wallet application.
+                  .
                 </p>
               </div>
             </div>
           </section>
 
-          <section>
+          <section style={{border: '5px solid black'}}>
             <Link to="/grants" className="image">
-              <img src={qrPlaceholder} alt="" />
+              <img src={qrCoinJoin} alt="" />
             </Link>
             <div className="content">
               <div className="inner">
@@ -350,6 +360,195 @@ const Landing = props => (
                     FullStack.cash Wallet
                   </a>
                   .
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section style={{border: '5px solid black'}}>
+            <Link to="/grants" className="image">
+              <img src={qrFullNode} alt="" />
+            </Link>
+            <div className="content">
+              <div className="inner">
+                <header className="major">
+                  <h3>Free Full Node</h3>
+                </header>
+                <p>
+                  Funds for this grant will be used to pay hosting costs for
+                  running an ABC archival full node along with a copy of{' '}
+                  <a
+                    href="https://github.com/christroutner/bch-api"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    bch-api
+                  </a>
+                  , the REST API run by FullStack.cash. Combined with the public
+                  ElectrumX network for indexer functionality, it will give the
+                  BCH developer community a free tier of access to use{' '}
+                  <a
+                    href="https://www.npmjs.com/package/@chris.troutner/bch-js"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    bch-js
+                  </a>
+                  , and will put it on equal footing with services provided by
+                  Bitcoin.com.
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section id="nine">
+          <div style={{ padding: '25px' }}>
+            <h2
+              style={{
+                borderTop: 'white 2px solid',
+                borderBottom: 'white 2px solid',
+              }}
+            >
+              <center>Bounties</center>
+            </h2>
+          </div>
+        </section>
+        <section className="spotlights">
+          <section style={{border: '5px solid black'}}>
+            <Link to="/grants" className="image">
+              <img src={qrNinsight} alt="" />
+            </Link>
+            <div className="content">
+              <div className="inner">
+                <header className="major">
+                  <h3>Expand Ninsight Library in bch-js</h3>
+                </header>
+                <p>
+                  The indexer used by{' '}
+                  <a
+                    href="https://rest.bitcoin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    rest.bitcoin.com
+                  </a>{' '}
+                  is called Ninsight, and it's what provides address balances
+                  and UTXO information. This is a free service provided by
+                  Bitcoin.com.
+                </p>
+                <p>
+                  Funds from this grant will be used to expand the{' '}
+                  <a
+                    href="https://bchjs.fullstack.cash/#api-Ninsight"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ninsight class library
+                  </a>{' '}
+                  in{' '}
+                  <a
+                    href="https://www.npmjs.com/package/@chris.troutner/bch-js"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    bch-js
+                  </a>
+                  , allowing users of the bch-js library to make calls to the
+                  Ninsight indexer at rest.bitcoin.com and use this free
+                  resource.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section style={{border: '5px solid black'}}>
+            <Link to="/grants" className="image">
+              <img src={qrElectrumx} alt="" />
+            </Link>
+            <div className="content">
+              <div className="inner">
+                <header className="major">
+                  <h3>Expand Electrumx Library in bch-js</h3>
+                </header>
+                <p>
+                  The{' '}
+                  <a href="https://bchjs.fullstack.cash/#api-ElectrumX">
+                    Electrumx class library
+                  </a>{' '}
+                  in{' '}
+                  <a
+                    href="https://www.npmjs.com/package/@chris.troutner/bch-js"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    bch-js
+                  </a>{' '}
+                  allows users to tap into the free, public Electrumx network.
+                  This is the same network used by the{' '}
+                  <a
+                    href="https://electroncash.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Electron Cash
+                  </a>{' '}
+                  wallet. Funds for this grant will pay for expanding the
+                  library, to add additional functionality.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section style={{border: '5px solid black'}}>
+            <Link to="/grants" className="image">
+              <img src={qrSlpE2e} alt="" />
+            </Link>
+            <div className="content">
+              <div className="inner">
+                <header className="major">
+                  <h3>SLP E2E Test</h3>
+                </header>
+                <p>
+                  Funds for this grant will be used to develop an end-to-end
+                  (e2e) test for sending SLP tokens. This test would verify
+                  that the entire stack of infrastructure required to send and
+                  recieve SLP tokens is functioning correctly.
+                </p>
+                <p>
+                  This would be an automated program that sends an SLP token
+                  from one wallet to
+                  another. This program would be added to
+                  the <a href="https://metrics.fullstack.cash/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Build Verification Test System</a> managed by FullStack.cash,
+                  and the test would be executed every 2 hours.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section style={{border: '5px solid black'}}>
+            <Link to="/grants" className="image">
+              <img src={qrSlpSecondLayer} alt="" />
+            </Link>
+            <div className="content">
+              <div className="inner">
+                <header className="major">
+                  <h3>Research: SLP Second Layer</h3>
+                </header>
+                <p>
+                  It should be possible to hack
+                  the <a href="https://github.com/simpleledger/slp-specifications/blob/master/slp-token-type-1.md"
+                  >SLP specification</a> to include on-chain pointers to additional
+                  data, when sending tokens. This would enable a wide range of additional
+                  use cases, such as security tokens. Another use case would be
+                  representing a changing video game character with an NFT token.
+                </p>
+                <p>
+                  Funds from this grant will be used to research this idea
+                  and create proof of concept code.
                 </p>
               </div>
             </div>

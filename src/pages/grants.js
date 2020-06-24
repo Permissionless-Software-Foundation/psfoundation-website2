@@ -8,6 +8,7 @@ import placeholder from '../assets/images/profile-image-placeholder.png'
 import jtfreeman from '../assets/images/jtfreeman.png'
 import qrPlaceholder from '../assets/images/qr-placeholder.png'
 import qrTrout from '../assets/images/trout-07-2020-grant.png'
+import daniel from '../assets/images/daniel.jpg'
 
 const Landing = props => (
   <Layout>
@@ -36,16 +37,16 @@ const Landing = props => (
             any of the SLP addresses below to indicate which people and projects
             they want to see funded. On <b>August 1st</b> the grant addresses
             will be funded 1:1 with newly minted PSF tokens to match the funding
-            tokens they've recieved. These tokens will be
-            distributed over the following three months to fund development of
-            projects and management of the organization, after which the
-            grant-funding cycle will begin again.
+            tokens they've recieved. These tokens will be distributed over the
+            following three months to fund development of projects and
+            management of the organization, after which the grant-funding cycle
+            will begin again.
           </p>
         </div>
       </section>
 
       <section id="eight">
-        <div style={{padding: '25px'}}>
+        <div style={{ padding: '25px' }}>
           <h2
             style={{
               borderTop: 'white 2px solid',
@@ -61,7 +62,11 @@ const Landing = props => (
         <section>
           <Link to="/grants" className="image">
             <img src={trout} alt="" />
-            <img src={qrTrout} alt="" style={{width: '250px', height: '200px'}}/>
+            <img
+              src={qrTrout}
+              alt=""
+              style={{ width: '250px', height: '200px' }}
+            />
           </Link>
 
           <div className="content">
@@ -100,6 +105,65 @@ const Landing = props => (
 
         <section>
           <Link to="/grants" className="image">
+            <img src={daniel} alt="" />
+          </Link>
+          <div className="content">
+            <div className="inner">
+              <header className="major">
+                <h3>Daniel Humberto</h3>
+              </header>
+              <p>
+                Daniel is a full stack developer with an emphasis on front end
+                apps using React and Gatsby, and IPFS. He's built many of the
+                PSF apps like the{' '}
+                <a
+                  href="https://wallet.fullstack.cash"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  FullStack.cash Wallet
+                </a>
+                , the{' '}
+                <a
+                  href="https://uncensorablepublishing.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Uncensorable Publishing
+                </a>{' '}
+                template, and many of our IPFS-enabled apps. As a Venezuelan, he
+                has witnessed first-hand the importance of secure communication
+                and the need to increase the efficiency of the grey market.
+              </p>
+              <p>
+                His grant will be used to fund continued development of this{' '}
+                <a
+                  href="https://github.com/Permissionless-Software-Foundation/encrypt-msg/blob/master/docs/README.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Media Sharing Protocol
+                </a>{' '}
+                and its integration into the{' '}
+                <a href="https://wallet.fullstack.cash">
+                  FullStack.cash Wallet
+                </a>
+                .
+              </p>
+              <p>
+                This will enable wallet users to send end-to-end (e2e) encrypted
+                messages, containing files of any size, to any other Bitcoin
+                Cash address. The experience will be very similar to email.
+                Combining uncensorable payments, communication, and file sharing into one app
+                will help facilitate economic activity around the world and grow demand for
+                Bitcoin Cash.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <Link to="/grants" className="image">
             <img src={placeholder} alt="" />
           </Link>
           <div className="content">
@@ -122,6 +186,8 @@ const Landing = props => (
           </div>
         </section>
 
+
+
         <section>
           <Link to="/grants" className="image">
             <img src={jtfreeman} alt="" />
@@ -132,29 +198,33 @@ const Landing = props => (
                 <h3>JT Freeman - SLP Infrastructure</h3>
               </header>
               <p>
-                JT is a founder
-                of <Link to="https://fountainhead.cash">Fountainhead.cash</Link>,{' '}
-                <Link to="https://read.cash/@SLP-Foundation/announcing-the-slp-foundation-e8cededa">SLP Foundation</Link>,
-                the <Link to="https://slp.dev">SLP.dev</Link> documentation site,
-                and many others. He created and maintains critical pieces of SLP
-                token infrastructure
-                like <Link to="https://www.npmjs.com/package/slp-parser">slp-parser</Link>{' '}
-                and <Link to="https://www.npmjs.com/package/slp-mdm">slp-mdm</Link>.
+                JT is a founder of{' '}
+                <Link to="https://fountainhead.cash">Fountainhead.cash</Link>,{' '}
+                <Link to="https://read.cash/@SLP-Foundation/announcing-the-slp-foundation-e8cededa">
+                  SLP Foundation
+                </Link>
+                , the <Link to="https://slp.dev">SLP.dev</Link> documentation
+                site, and many others. He created and maintains critical pieces
+                of SLP token infrastructure like{' '}
+                <Link to="https://www.npmjs.com/package/slp-parser">
+                  slp-parser
+                </Link>{' '}
+                and{' '}
+                <Link to="https://www.npmjs.com/package/slp-mdm">slp-mdm</Link>.
               </p>
               <p>
-                JT is an advisor to PSF management and a pillar of the Bitcoin Cash
-                community. This grant will fund his ongoing work in the space.
+                JT is an advisor to PSF management and a pillar of the Bitcoin
+                Cash community. This grant will fund his ongoing work in the
+                space.
               </p>
             </div>
           </div>
         </section>
       </section>
 
-
-
       <section>
         <section id="nine">
-          <div style={{padding: '25px'}}>
+          <div style={{ padding: '25px' }}>
             <h2
               style={{
                 borderTop: 'white 2px solid',
@@ -174,21 +244,37 @@ const Landing = props => (
             <div className="content">
               <div className="inner">
                 <header className="major">
-                  <h3>E2E Encrypted Message and File Sharing</h3>
+                  <h3>SLP Post Office</h3>
                 </header>
                 <p>
-                  This grant will be used to fund continued development of
-                  this <a href="https://github.com/Permissionless-Software-Foundation/encrypt-msg/blob/master/docs/README.md" target="_blank" rel="noopener noreferrer">
-                  Media Sharing Protocol</a> and its integration into
-                  the <a href="https://wallet.fullstack.cash">FullStack.cash Wallet</a> as
-                  an add-on. This will enable wallet users to send end-to-end (e2e)
-                  encrypted messages, containing files of any size, to any other
-                  Bitcoin Cash address.
+                  <a
+                    href="https://medium.com/@vinarmani/simple-ledger-postage-protocol-enabling-a-true-slp-token-ecosystem-on-bitcoin-cash-f960a58c16c4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    This article
+                  </a>{' '}
+                  explains the purpose and impact of the post office concept:
+                  allowing SLP tokens to be used even if buyers have no BCH. BCH
+                  is still used 'under the hood' and miners are still paid
+                  transaction fees. This scheme greatly improves the user
+                  experience for both buyers and sellers when using SLP tokens.
                 </p>
                 <p>
-                  The experience will be very similar to email. Combining payments,
-                  communication, and file sharing into one app will help
-                  facilitate economic activity and grow demand for Bitcoin Cash.
+                  Funds from this grant will be used to finish the{' '}
+                  <a
+                    href="https://github.com/TOKENLAND/simpleledger-post-office-server"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    open source post office server
+                  </a>{' '}
+                  and integrate client functionality into the{' '}
+                  <a href="https://wallet.fullstack.cash">
+                    FullStack.cash Wallet
+                  </a>
+                  . The client functionality will also be abstracted into an npm
+                  JavaScript library that can be used by any wallet application.
                 </p>
               </div>
             </div>
@@ -204,59 +290,67 @@ const Landing = props => (
                   <h3>Collaborative CoinJoin</h3>
                 </header>
                 <p>
-                  Existing CoinJoin protocols such as
-                  {' '}<a href="https://cashshuffle.com/" target="_blank" rel="noopener noreferrer">Cash Shuffle</a>{' '}
-                  and <a href="https://github.com/cashshuffle/spec/blob/master/CASHFUSION.md" target="_blank" rel="noopener noreferrer">Cash Fusion</a>{' '}
+                  Existing{' '}
+                  <a
+                    href="https://en.bitcoin.it/wiki/CoinJoin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    CoinJoin protocols
+                  </a>{' '}
+                  such as{' '}
+                  <a
+                    href="https://cashshuffle.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Cash Shuffle
+                  </a>{' '}
+                  and{' '}
+                  <a
+                    href="https://github.com/cashshuffle/spec/blob/master/CASHFUSION.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Cash Fusion
+                  </a>{' '}
                   have made great strides in bringing financial privacy to
-                  Bitcoin Cash. However, these protocols are extremely complex and
-                  as a result,
-                  have not been implemented in any software other
-                  than <a href="https://electroncash.org/" target="_blank" rel="noopener noreferrer">Electron Cash</a>.
+                  Bitcoin Cash. However, these protocols are extremely complex
+                  and as a result, have not been implemented in any software
+                  other than{' '}
+                  <a
+                    href="https://electroncash.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Electron Cash
+                  </a>
+                  .
                 </p>
                 <p>
-                  A new on-chain protocol
-                  called <a href="https://github.com/vinarmani/swap-protocol" target="_blank" rel="noopener noreferrer">SWaP</a> allows
-                  for collaborative transaction building and encrypted messaging,
-                  in order to create CoinJoin transactions. This includes the
-                  ability to consolidate 'dust' UTXOs, which is a feature CashShuffle
-                  does not have and the reason CashFusion was created.
+                  A new on-chain protocol called{' '}
+                  <a
+                    href="https://github.com/vinarmani/swap-protocol"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    SWaP
+                  </a>{' '}
+                  allows for collaborative transaction building and encrypted
+                  messaging, in order to create CoinJoin transactions. This
+                  includes the ability to consolidate 'dust' UTXOs, which is a
+                  feature CashShuffle does not have and the reason CashFusion
+                  was created.
                 </p>
                 <p>
-                  Grant funds will go towards research and development of adapting
-                  the SWaP protocol to faciliate CoinJoin transactions, as well
-                  as implementing it as an add-on for the <a href="https://wallet.fullstack.cash">FullStack.cash Wallet</a>.
+                  Grant funds will go towards research and development of
+                  adapting the SWaP protocol to faciliate CoinJoin transactions,
+                  as well as implementing it as an add-on for the{' '}
+                  <a href="https://wallet.fullstack.cash">
+                    FullStack.cash Wallet
+                  </a>
+                  .
                 </p>
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <Link to="/grants" className="image">
-              <img src={qrPlaceholder} alt="" />
-            </Link>
-            <div className="content">
-              <div className="inner">
-                <header className="major">
-                  <h3>SLP Post Office</h3>
-                </header>
-                <p>
-                  <a href="https://medium.com/@vinarmani/simple-ledger-postage-protocol-enabling-a-true-slp-token-ecosystem-on-bitcoin-cash-f960a58c16c4" target="_blank" rel="noopener noreferrer">
-                  This article</a> explains the purpose and impact of the post
-                  office concept: allowing SLP tokens to be used even if buyers
-                  have no BCH. BCH is still used 'under the hood' and miners
-                  are still paid transaction fees. This scheme greatly improves
-                  the user experience for both buyers and sellers when using SLP
-                  tokens.
-                </p>
-                <p>
-                  Funds from this grant will be used to finish
-                  the <a href="https://github.com/TOKENLAND/simpleledger-post-office-server" target="_blank" rel="noopener noreferrer">
-                  open source post office server</a> and integrate client functionality
-                  into the <a href="https://wallet.fullstack.cash">FullStack.cash Wallet</a>.
-                  The client functionality will also be abstracted into an npm
-                  JavaScript library that can be used by any wallet application.
-                </p>
-
               </div>
             </div>
           </section>

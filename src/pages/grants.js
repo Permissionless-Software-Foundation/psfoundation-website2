@@ -18,7 +18,9 @@ import qrNinsight from '../assets/images/grant-qrs/ninsight-qr.png'
 import qrPostOffice from '../assets/images/grant-qrs/post-office-qr.png'
 import qrSlpE2e from '../assets/images/grant-qrs/slp-e2e-qr.png'
 import qrSlpSecondLayer from '../assets/images/grant-qrs/slp-second-layer-qr.png'
-
+import qrDaniel from '../assets/images/grant-qrs/daniel-qr.png'
+import qrGrantAdmin from '../assets/images/grant-qrs/grant-admin-qr.png'
+import qrJt from '../assets/images/grant-qrs/jt-qr.png'
 
 const Landing = props => (
   <Layout>
@@ -75,7 +77,7 @@ const Landing = props => (
             <img
               src={qrTrout}
               alt=""
-              className="image-overlay"  
+              className="image-overlay"
             />
           </Link>
 
@@ -116,6 +118,11 @@ const Landing = props => (
         <section style={{border: '5px solid black'}}>
           <Link to="/grants" className="image">
             <img src={daniel} alt="" />
+            <img
+              src={qrDaniel}
+              alt=""
+              className="image-overlay"
+            />
           </Link>
           <div className="content">
             <div className="inner">
@@ -175,6 +182,11 @@ const Landing = props => (
         <section style={{border: '5px solid black'}}>
           <Link to="/grants" className="image">
             <img src={placeholder} alt="" />
+            <img
+              src={qrGrantAdmin}
+              alt=""
+              className="image-overlay"
+            />
           </Link>
           <div className="content">
             <div className="inner">
@@ -199,6 +211,11 @@ const Landing = props => (
         <section style={{border: '5px solid black'}}>
           <Link to="/grants" className="image">
             <img src={jtfreeman} alt="" />
+            <img
+              src={qrJt}
+              alt=""
+              className="image-overlay"
+            />
           </Link>
           <div className="content">
             <div className="inner">

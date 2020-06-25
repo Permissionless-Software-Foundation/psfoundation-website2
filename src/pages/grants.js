@@ -70,12 +70,12 @@ const Landing = props => (
 
       <section id="two" className="spotlights">
         <section style={{border: '5px solid black'}}>
-          <Link to="/grants" className="image">
+          <Link to="/grants" className="image image-overlay-wrap">
             <img src={trout} alt="" />
             <img
               src={qrTrout}
               alt=""
-              style={{ width: '250px', height: '200px' }}
+              className="image-overlay"  
             />
           </Link>
 

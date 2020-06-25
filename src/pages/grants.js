@@ -21,6 +21,7 @@ import qrSlpSecondLayer from '../assets/images/grant-qrs/slp-second-layer-qr.png
 import qrDaniel from '../assets/images/grant-qrs/daniel-qr.png'
 import qrGrantAdmin from '../assets/images/grant-qrs/grant-admin-qr.png'
 import qrJt from '../assets/images/grant-qrs/jt-qr.png'
+import qrSlpCliWallet from '../assets/images/grant-qrs/qr-slp-cli-wallet.png'
 
 const Landing = props => (
   <Layout>
@@ -71,14 +72,10 @@ const Landing = props => (
       </section>
 
       <section id="two" className="spotlights">
-        <section style={{border: '5px solid black'}}>
+        <section style={{ border: '5px solid black' }}>
           <Link to="/grants" className="image image-overlay-wrap">
             <img src={trout} alt="" />
-            <img
-              src={qrTrout}
-              alt=""
-              className="image-overlay"
-            />
+            <img src={qrTrout} alt="" className="image-overlay" />
           </Link>
 
           <div className="content">
@@ -115,14 +112,10 @@ const Landing = props => (
           </div>
         </section>
 
-        <section style={{border: '5px solid black'}}>
+        <section style={{ border: '5px solid black' }}>
           <Link to="/grants" className="image">
             <img src={daniel} alt="" />
-            <img
-              src={qrDaniel}
-              alt=""
-              className="image-overlay"
-            />
+            <img src={qrDaniel} alt="" className="image-overlay" />
           </Link>
           <div className="content">
             <div className="inner">
@@ -179,14 +172,10 @@ const Landing = props => (
           </div>
         </section>
 
-        <section style={{border: '5px solid black'}}>
+        <section style={{ border: '5px solid black' }}>
           <Link to="/grants" className="image">
             <img src={placeholder} alt="" />
-            <img
-              src={qrGrantAdmin}
-              alt=""
-              className="image-overlay"
-            />
+            <img src={qrGrantAdmin} alt="" className="image-overlay" />
           </Link>
           <div className="content">
             <div className="inner">
@@ -208,14 +197,10 @@ const Landing = props => (
           </div>
         </section>
 
-        <section style={{border: '5px solid black'}}>
+        <section style={{ border: '5px solid black' }}>
           <Link to="/grants" className="image">
             <img src={jtfreeman} alt="" />
-            <img
-              src={qrJt}
-              alt=""
-              className="image-overlay"
-            />
+            <img src={qrJt} alt="" className="image-overlay" />
           </Link>
           <div className="content">
             <div className="inner">
@@ -262,7 +247,7 @@ const Landing = props => (
         </section>
 
         <section className="spotlights">
-          <section style={{border: '5px solid black'}}>
+          <section style={{ border: '5px solid black' }}>
             <Link to="/grants" className="image">
               <img src={qrPostOffice} alt="" />
             </Link>
@@ -307,7 +292,7 @@ const Landing = props => (
             </div>
           </section>
 
-          <section style={{border: '5px solid black'}}>
+          <section style={{ border: '5px solid black' }}>
             <Link to="/grants" className="image">
               <img src={qrCoinJoin} alt="" />
             </Link>
@@ -382,7 +367,7 @@ const Landing = props => (
             </div>
           </section>
 
-          <section style={{border: '5px solid black'}}>
+          <section style={{ border: '5px solid black' }}>
             <Link to="/grants" className="image">
               <img src={qrFullNode} alt="" />
             </Link>
@@ -432,7 +417,7 @@ const Landing = props => (
           </div>
         </section>
         <section className="spotlights">
-          <section style={{border: '5px solid black'}}>
+          <section style={{ border: '5px solid black' }}>
             <Link to="/grants" className="image">
               <img src={qrNinsight} alt="" />
             </Link>
@@ -479,7 +464,7 @@ const Landing = props => (
             </div>
           </section>
 
-          <section style={{border: '5px solid black'}}>
+          <section style={{ border: '5px solid black' }}>
             <Link to="/grants" className="image">
               <img src={qrElectrumx} alt="" />
             </Link>
@@ -517,7 +502,7 @@ const Landing = props => (
             </div>
           </section>
 
-          <section style={{border: '5px solid black'}}>
+          <section style={{ border: '5px solid black' }}>
             <Link to="/grants" className="image">
               <img src={qrSlpE2e} alt="" />
             </Link>
@@ -528,25 +513,28 @@ const Landing = props => (
                 </header>
                 <p>
                   Funds for this grant will be used to develop an end-to-end
-                  (e2e) test for sending SLP tokens. This test would verify
-                  that the entire stack of infrastructure required to send and
+                  (e2e) test for sending SLP tokens. This test would verify that
+                  the entire stack of infrastructure required to send and
                   recieve SLP tokens is functioning correctly.
                 </p>
                 <p>
                   This would be an automated program that sends an SLP token
-                  from one wallet to
-                  another. This program would be added to
-                  the <a href="https://metrics.fullstack.cash/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Build Verification Test System</a> managed by FullStack.cash,
-                  and the test would be executed every 2 hours.
+                  from one wallet to another. This program would be added to the{' '}
+                  <a
+                    href="https://metrics.fullstack.cash/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Build Verification Test System
+                  </a>{' '}
+                  managed by FullStack.cash, and the test would be executed
+                  every 2 hours.
                 </p>
               </div>
             </div>
           </section>
 
-          <section style={{border: '5px solid black'}}>
+          <section style={{ border: '5px solid black' }}>
             <Link to="/grants" className="image">
               <img src={qrSlpSecondLayer} alt="" />
             </Link>
@@ -556,16 +544,60 @@ const Landing = props => (
                   <h3>Research: SLP Second Layer</h3>
                 </header>
                 <p>
-                  It should be possible to hack
-                  the <a href="https://github.com/simpleledger/slp-specifications/blob/master/slp-token-type-1.md"
-                  >SLP specification</a> to include on-chain pointers to additional
-                  data, when sending tokens. This would enable a wide range of additional
-                  use cases, such as security tokens. Another use case would be
-                  representing a changing video game character with an NFT token.
+                  It should be possible to hack the{' '}
+                  <a href="https://github.com/simpleledger/slp-specifications/blob/master/slp-token-type-1.md">
+                    SLP specification
+                  </a>{' '}
+                  to include on-chain pointers to additional data, when sending
+                  tokens. This would enable a wide range of additional use
+                  cases, such as security tokens. Another use case would be
+                  representing a changing video game character with an NFT
+                  token.
                 </p>
                 <p>
-                  Funds from this grant will be used to research this idea
-                  and create proof of concept code.
+                  Funds from this grant will be used to research this idea and
+                  create proof of concept code.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section style={{ border: '5px solid black' }}>
+            <Link to="/grants" className="image">
+              <img src={qrSlpCliWallet} alt="" />
+            </Link>
+            <div className="content">
+              <div className="inner">
+                <header className="major">
+                  <h3>Refactor slp-cli-wallet</h3>
+                </header>
+                <p>
+                  <a
+                    href="https://github.com/christroutner/slp-cli-wallet"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    slp-cli-wallet
+                  </a>{' '}
+                  is a a command-line application and HD wallet. It's an
+                  important tool to help developers rapidly prototype new ideas,
+                  based on bch-js and the{' '}
+                  <a
+                    href="https://troutsblog.com/research/bitcoin-cash/how-to-bch-full-stack-developer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Cash Stack at FullStack.cash
+                  </a>
+                  .
+                </p>
+                <p>
+                  The token handling of bch-js was recently overhauled.
+                  slp-cli-wallet needs to be updated to use the latest version
+                  of bch-js, and the way it handles tokens needs to be
+                  refactored. This work will also add support for NFT
+                  tokens, and this effort will include increasing the test code
+                  coverage of this library.
                 </p>
               </div>
             </div>

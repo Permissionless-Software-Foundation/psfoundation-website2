@@ -7,6 +7,7 @@ import trout from '../assets/images/trout-photo.jpg'
 import placeholder from '../assets/images/profile-image-placeholder.png'
 import jtfreeman from '../assets/images/jtfreeman.png'
 import daniel from '../assets/images/daniel.jpg'
+import andre from '../assets/images/andre.jpeg'
 
 // QR donation codes
 // import qrPlaceholder from '../assets/images/qr-placeholder.png'
@@ -173,6 +174,86 @@ const Landing = props => (
         </section>
 
         <section style={{ border: '5px solid black' }}>
+          <Link to="/grants" className="image image-overlay-wrap">
+            <img src={andre} alt="" />
+            <img src={qrPostOffice} alt="" className="image-overlay" />
+          </Link>
+
+          <div className="content">
+            <div className="inner">
+              <header className="major">
+                <h3>Andre Cabrera</h3>
+              </header>
+              <p>
+                Andre is a well-known developer in the Bitcoin Cash space. He
+                and his team created the web wallet,{' '}
+                <a
+                  href="https://github.com/piticocash"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pitico
+                </a>
+                , for the 2019{' '}
+                <a
+                  href="https://simpleledger.info/slpvh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SLP Virtual Hackathon
+                </a>
+                . That wallet was later forked and he was hired by Bitcoin.com
+                to build{' '}
+                <a
+                  href="https://mint.bitcoin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  mint.bitcoin.com
+                </a>
+                . Andre has recently been sponsored by the SLP Foundation to
+                complete his work on the{' '}
+                <a
+                  href="https://github.com/TOKENLAND/simpleledger-post-office-server"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SLP Post Office Server
+                </a>
+                .
+              </p>
+              <p>
+                <a
+                  href="https://medium.com/@vinarmani/simple-ledger-postage-protocol-enabling-a-true-slp-token-ecosystem-on-bitcoin-cash-f960a58c16c4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  This article
+                </a>{' '}
+                explains the purpose and impact of the post office concept:
+                allowing SLP tokens to be used even if buyers have no BCH. BCH
+                is still used 'under the hood' and miners are still paid
+                transaction fees. This scheme greatly improves the user
+                experience for both buyers and sellers when using SLP tokens.
+              </p>
+              <p>
+                Funds from this grant will be used to help him complete this
+                work, as well as to integrate the Post Office protocol into the{' '}
+                <a
+                  href="https://wallet.fullstack.cash"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  FullStack.cash web wallet
+                </a>
+                . The client functionality will also be abstracted into an npm
+                JavaScript library that can be used by any wallet application.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section style={{ border: '5px solid black' }}>
           <Link to="/grants" className="image">
             <img src={placeholder} alt="" />
             <img src={qrGrantAdmin} alt="" className="image-overlay" />
@@ -249,44 +330,40 @@ const Landing = props => (
         <section className="spotlights">
           <section style={{ border: '5px solid black' }}>
             <Link to="/grants" className="image">
-              <img src={qrPostOffice} alt="" />
+              <img src={qrFullNode} alt="" />
             </Link>
             <div className="content">
               <div className="inner">
                 <header className="major">
-                  <h3>SLP Post Office</h3>
+                  <h3>Free Infrastructure</h3>
                 </header>
                 <p>
+                  Funds for this grant will be used to pay for ongoing hosting
+                  costs for running an ABC archival full node, SLPDB, and
+                  a copy of{' '}
                   <a
-                    href="https://medium.com/@vinarmani/simple-ledger-postage-protocol-enabling-a-true-slp-token-ecosystem-on-bitcoin-cash-f960a58c16c4"
+                    href="https://github.com/christroutner/bch-api"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    This article
-                  </a>{' '}
-                  explains the purpose and impact of the post office concept:
-                  allowing SLP tokens to be used even if buyers have no BCH. BCH
-                  is still used 'under the hood' and miners are still paid
-                  transaction fees. This scheme greatly improves the user
-                  experience for both buyers and sellers when using SLP tokens.
+                    bch-api
+                  </a>
+                  , the REST API run by FullStack.cash. Combined with the public
+                  ElectrumX network for indexer functionality, it will give the
+                  BCH developer community a free tier of access to use{' '}
+                  <a
+                    href="https://www.npmjs.com/package/@chris.troutner/bch-js"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    bch-js
+                  </a>
+                  , and will put it on equal footing with services provided by
+                  Bitcoin.com.
                 </p>
                 <p>
-                  Funds from this grant will be used to integrate client
-                  functionality into the{' '}
-                  <a href="https://wallet.fullstack.cash">
-                    FullStack.cash Wallet
-                  </a>
-                  . The client functionality will also be abstracted into an npm
-                  JavaScript library that can be used by any wallet application.
-                  Funds will also be used to finish the{' '}
-                  <a
-                    href="https://github.com/TOKENLAND/simpleledger-post-office-server"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    open source post office server
-                  </a>
-                  .
+                  The free API server can be accessed
+                  at <b>free-api.fullstack.cash</b>.
                 </p>
               </div>
             </div>
@@ -366,42 +443,6 @@ const Landing = props => (
               </div>
             </div>
           </section>
-
-          <section style={{ border: '5px solid black' }}>
-            <Link to="/grants" className="image">
-              <img src={qrFullNode} alt="" />
-            </Link>
-            <div className="content">
-              <div className="inner">
-                <header className="major">
-                  <h3>Free Full Node</h3>
-                </header>
-                <p>
-                  Funds for this grant will be used to pay hosting costs for
-                  running an ABC archival full node along with a copy of{' '}
-                  <a
-                    href="https://github.com/christroutner/bch-api"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    bch-api
-                  </a>
-                  , the REST API run by FullStack.cash. Combined with the public
-                  ElectrumX network for indexer functionality, it will give the
-                  BCH developer community a free tier of access to use{' '}
-                  <a
-                    href="https://www.npmjs.com/package/@chris.troutner/bch-js"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    bch-js
-                  </a>
-                  , and will put it on equal footing with services provided by
-                  Bitcoin.com.
-                </p>
-              </div>
-            </div>
-          </section>
         </section>
 
         <section id="nine">
@@ -414,6 +455,14 @@ const Landing = props => (
             >
               <center>Bounties</center>
             </h2>
+            <p>
+              These bounties will be tracked via GitHub Issues
+              and overseen by PSF management.
+              They will allow independent developers around the world to claim
+              and fulfill them, and thereby earn PSF tokens and BCH.
+              This work will help onboard new developers into the PSF community
+              and improve the software under the PSF umbrella.
+            </p>
           </div>
         </section>
         <section className="spotlights">
@@ -550,7 +599,8 @@ const Landing = props => (
                   </a>{' '}
                   to include on-chain pointers to additional data, when sending
                   tokens. This would enable a wide range of additional use
-                  cases, such as security tokens. Another use case would be
+                  cases, such as security tokens, while maintaining backwards
+                  compatibility. Another use case would be
                   representing a changing video game character with an NFT
                   token.
                 </p>
@@ -595,9 +645,9 @@ const Landing = props => (
                   The token handling of bch-js was recently overhauled.
                   slp-cli-wallet needs to be updated to use the latest version
                   of bch-js, and the way it handles tokens needs to be
-                  refactored. This work will also add support for NFT
-                  tokens, and this effort will include increasing the test code
-                  coverage of this library.
+                  refactored. This work will also add support for NFT tokens,
+                  and this effort will include increasing the test code coverage
+                  of this library.
                 </p>
               </div>
             </div>

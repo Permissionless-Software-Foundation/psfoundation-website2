@@ -109,6 +109,9 @@ const Landing = props => (
                 </Link>{' '}
                 that could stop the Foundation from growing.
               </p>
+              <p><center>
+                simpleledger:qqjjhysfkn7h896t9auttv33k5mnstdeluhln3z94e
+              </center></p>
             </div>
           </div>
         </section>
@@ -121,7 +124,7 @@ const Landing = props => (
           <div className="content">
             <div className="inner">
               <header className="major">
-                <h3>Daniel Humberto</h3>
+                <h3>Daniel Humberto - E2E Encrypted Messaging</h3>
               </header>
               <p>
                 Daniel is a full stack developer with an emphasis on front end
@@ -169,6 +172,9 @@ const Landing = props => (
                 into one app will help facilitate economic activity around the
                 world and grow demand for Bitcoin Cash.
               </p>
+              <p><center>
+                simpleledger:qz47n3avw908qz8sk8vaky9etmrasyqf6s3cnjf5hm
+              </center></p>
             </div>
           </div>
         </section>
@@ -182,7 +188,7 @@ const Landing = props => (
           <div className="content">
             <div className="inner">
               <header className="major">
-                <h3>Andre Cabrera</h3>
+                <h3>Andre Cabrera - SLP Post Office</h3>
               </header>
               <p>
                 Andre is a well-known developer in the Bitcoin Cash space. He
@@ -249,6 +255,9 @@ const Landing = props => (
                 . The client functionality will also be abstracted into an npm
                 JavaScript library that can be used by any wallet application.
               </p>
+              <p><center>
+                simpleledger:qzp6dcg4anrwc84985fazlfzah0r7dx0054svmakmv
+              </center></p>
             </div>
           </div>
         </section>
@@ -274,6 +283,9 @@ const Landing = props => (
                 They will be allowed to use a pseudonym or divulge their
                 identity publically, at their discretion.
               </p>
+              <p><center>
+                simpleledger:qzen3z2rm48qt6uryg70k7x0hg7eu8g8yqthc4y6my
+              </center></p>
             </div>
           </div>
         </section>
@@ -308,6 +320,9 @@ const Landing = props => (
                 Cash community. This grant will fund his ongoing work in the
                 space.
               </p>
+              <p><center>
+                simpleledger:qz7cux4al0akn8t8nwwy8pc8edy7q4gnd5e0y23xza
+              </center></p>
             </div>
           </div>
         </section>
@@ -365,6 +380,9 @@ const Landing = props => (
                   The free API server can be accessed
                   at <b>free-api.fullstack.cash</b>.
                 </p>
+                <p><center>
+                  simpleledger:qq96aqj96z2y83hz28rlzzcwms5rm8rwnyxyvjmchv
+                </center></p>
               </div>
             </div>
           </section>
@@ -440,6 +458,9 @@ const Landing = props => (
                   </a>
                   .
                 </p>
+                <p><center>
+                  simpleledger:qz2w8l8endnn6z3vvql3wkg6k8fsy3m0ys88mgczmv
+                </center></p>
               </div>
             </div>
           </section>
@@ -509,6 +530,9 @@ const Landing = props => (
                   Ninsight indexer at rest.bitcoin.com and use this free
                   resource.
                 </p>
+                <p><center>
+                  simpleledger:qquwtcfj67zpygk673deunp66npnfemcqu9gr9tnkp
+                </center></p>
               </div>
             </div>
           </section>
@@ -547,6 +571,9 @@ const Landing = props => (
                   wallet. Funds for this grant will pay for expanding the
                   library, to add additional functionality.
                 </p>
+                <p><center>
+                  simpleledger:qqhsmcyce44q874l9egtl5skrnedzfttpsw0j76tf6
+                </center></p>
               </div>
             </div>
           </section>
@@ -579,6 +606,9 @@ const Landing = props => (
                   managed by FullStack.cash, and the test would be executed
                   every 2 hours.
                 </p>
+                <p><center>
+                  simpleledger:qqms8fy8sn3qhmcq38zf48x3tu4dgp4vpcwg3nrrkq
+                </center></p>
               </div>
             </div>
           </section>
@@ -608,6 +638,9 @@ const Landing = props => (
                   Funds from this grant will be used to research this idea and
                   create proof of concept code.
                 </p>
+                <p><center>
+                  simpleledger:qqynm8zt9hayn90rfev7yqzygpzgk6he5un9nagext
+                </center></p>
               </div>
             </div>
           </section>
@@ -649,6 +682,9 @@ const Landing = props => (
                   and this effort will include increasing the test code coverage
                   of this library.
                 </p>
+                <p><center>
+                  simpleledger:qpa6nzfaj6npjqee79vekn56qucpqffxmganf9savt
+                </center></p>
               </div>
             </div>
           </section>

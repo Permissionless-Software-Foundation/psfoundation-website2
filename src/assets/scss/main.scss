@@ -884,6 +884,7 @@ button,
 	}
 }
 
+
 /* XLarge */
 
 	@include breakpoint(xlarge) {
@@ -1025,7 +1026,12 @@ button,
 	@include breakpoint(small) {
 
 		/* Basic */
-
+			p{
+				overflow-wrap: break-word;
+			}
+			.image img{
+				max-width: 100%;
+			}
 			body, input, select, textarea {
 				font-size: 12pt;
 			}

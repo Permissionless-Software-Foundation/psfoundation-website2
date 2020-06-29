@@ -117,7 +117,7 @@ const Landing = props => (
         </section>
 
         <section style={{ border: '5px solid black' }}>
-          <Link to="/grants" className="image">
+          <Link to="/grants" className="image image-overlay-wrap">
             <img src={daniel} alt="" />
             <img src={qrDaniel} alt="" className="image-overlay" />
           </Link>

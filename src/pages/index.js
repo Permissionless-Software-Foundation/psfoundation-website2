@@ -173,7 +173,7 @@ class HomeIndex extends React.Component {
                 <div className="col-9">
                   <p style={{paddingRight: '20px'}}>
                   The PSF is governed by a <b>community</b> of token holders.
-                  Patreons can invest in Bitcoin Cash infrastructure by buying
+                  Patrons can invest in Bitcoin Cash infrastructure by buying
                   and holding PSF tokens. They are then eligible for air-drops
                   that can be directed to fund <a href="https://en.wikipedia.org/wiki/Common_good" target="_blank">common goods</a>, like
                   full nodes, indexers, privacy enhancements, and research.

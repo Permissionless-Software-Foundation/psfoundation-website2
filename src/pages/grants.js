@@ -23,6 +23,7 @@ import qrDaniel from '../assets/images/grant-qrs/daniel-qr.png'
 import qrGrantAdmin from '../assets/images/grant-qrs/grant-admin-qr.png'
 import qrJt from '../assets/images/grant-qrs/jt-qr.png'
 import qrSlpCliWallet from '../assets/images/grant-qrs/qr-slp-cli-wallet.png'
+import qrTorlist from '../assets/images/grant-qrs/torlist-qr.png'
 
 const Landing = props => (
   <Layout>
@@ -109,9 +110,11 @@ const Landing = props => (
                 </Link>{' '}
                 that could stop the Foundation from growing.
               </p>
-              <p><center>
-                simpleledger:qqjjhysfkn7h896t9auttv33k5mnstdeluhln3z94e
-              </center></p>
+              <p>
+                <center>
+                  simpleledger:qqjjhysfkn7h896t9auttv33k5mnstdeluhln3z94e
+                </center>
+              </p>
             </div>
           </div>
         </section>
@@ -172,9 +175,11 @@ const Landing = props => (
                 into one app will help facilitate economic activity around the
                 world and grow demand for Bitcoin Cash.
               </p>
-              <p><center>
-                simpleledger:qz47n3avw908qz8sk8vaky9etmrasyqf6s3cnjf5hm
-              </center></p>
+              <p>
+                <center>
+                  simpleledger:qz47n3avw908qz8sk8vaky9etmrasyqf6s3cnjf5hm
+                </center>
+              </p>
             </div>
           </div>
         </section>
@@ -255,9 +260,11 @@ const Landing = props => (
                 . The client functionality will also be abstracted into an npm
                 JavaScript library that can be used by any wallet application.
               </p>
-              <p><center>
-                simpleledger:qzp6dcg4anrwc84985fazlfzah0r7dx0054svmakmv
-              </center></p>
+              <p>
+                <center>
+                  simpleledger:qzp6dcg4anrwc84985fazlfzah0r7dx0054svmakmv
+                </center>
+              </p>
             </div>
           </div>
         </section>
@@ -283,9 +290,11 @@ const Landing = props => (
                 They will be allowed to use a pseudonym or divulge their
                 identity publically, at their discretion.
               </p>
-              <p><center>
-                simpleledger:qzen3z2rm48qt6uryg70k7x0hg7eu8g8yqthc4y6my
-              </center></p>
+              <p>
+                <center>
+                  simpleledger:qzen3z2rm48qt6uryg70k7x0hg7eu8g8yqthc4y6my
+                </center>
+              </p>
             </div>
           </div>
         </section>
@@ -320,9 +329,11 @@ const Landing = props => (
                 Cash community. This grant will fund his ongoing work in the
                 space.
               </p>
-              <p><center>
-                simpleledger:qz7cux4al0akn8t8nwwy8pc8edy7q4gnd5e0y23xza
-              </center></p>
+              <p>
+                <center>
+                  simpleledger:qz7cux4al0akn8t8nwwy8pc8edy7q4gnd5e0y23xza
+                </center>
+              </p>
             </div>
           </div>
         </section>
@@ -354,8 +365,8 @@ const Landing = props => (
                 </header>
                 <p>
                   Funds for this grant will be used to pay for ongoing hosting
-                  costs for running an ABC archival full node, SLPDB, and
-                  a copy of{' '}
+                  costs for running an ABC archival full node, SLPDB, and a copy
+                  of{' '}
                   <a
                     href="https://github.com/christroutner/bch-api"
                     target="_blank"
@@ -377,12 +388,14 @@ const Landing = props => (
                   Bitcoin.com.
                 </p>
                 <p>
-                  The free API server can be accessed
-                  at <b>free-api.fullstack.cash</b>.
+                  The free API server can be accessed at{' '}
+                  <b>free-api.fullstack.cash</b>.
                 </p>
-                <p><center>
-                  simpleledger:qq96aqj96z2y83hz28rlzzcwms5rm8rwnyxyvjmchv
-                </center></p>
+                <p>
+                  <center>
+                    simpleledger:qq96aqj96z2y83hz28rlzzcwms5rm8rwnyxyvjmchv
+                  </center>
+                </p>
               </div>
             </div>
           </section>
@@ -458,9 +471,59 @@ const Landing = props => (
                   </a>
                   .
                 </p>
-                <p><center>
-                  simpleledger:qz2w8l8endnn6z3vvql3wkg6k8fsy3m0ys88mgczmv
-                </center></p>
+                <p>
+                  <center>
+                    simpleledger:qz2w8l8endnn6z3vvql3wkg6k8fsy3m0ys88mgczmv
+                  </center>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section style={{ border: '5px solid black' }}>
+            <Link to="/grants" className="image">
+              <img src={qrTorlist} alt="" />
+            </Link>
+            <div className="content">
+              <div className="inner">
+                <header className="major">
+                  <h3>Tor List</h3>
+                </header>
+                <p>
+                  The Deep Web is natoriously difficult to navigate. Websites
+                  published with Tor '.onion' addresses or IPFS hashes are
+                  ephemeral and change too quickly for users to track them. The
+                  Tor List
+                  project seeks to fix this problem by creating a peer-to-peer
+                  database for tracking websites.
+                </p>
+                <p>
+                  This will take the form of a curated list of clear net, Tor,
+                  and IPFS web sites. PSF will host one copy of this list, but
+                  the database and UI behind the list will use{' '}
+                  <a
+                    href="https://uncensorablepublishing.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Uncensorable Publishing
+                  </a>{' '}
+                  techniques to ensure access to the the list can not be
+                  effectively censored.
+                </p>
+                <p>
+                  Websites can advertise themselves on this list by staking PSF
+                  tokens. The rankings within the different categories will be
+                  determined by the quantity of staked PSF tokens multiplied by
+                  the age of those tokens (how long since they moved). This
+                  creates a number that allows entries to be ranked.
+                </p>
+
+                <p>
+                  <center>
+                    simpleledger:qpxkyjp77lrf4c7j7cts5rvpymr4shmtac274kfvyg
+                  </center>
+                </p>
               </div>
             </div>
           </section>
@@ -477,12 +540,11 @@ const Landing = props => (
               <center>Bounties</center>
             </h2>
             <p>
-              These bounties will be tracked via GitHub Issues
-              and overseen by PSF management.
-              They will allow independent developers around the world to claim
-              and fulfill them, and thereby earn PSF tokens and BCH.
-              This work will help onboard new developers into the PSF community
-              and improve the software under the PSF umbrella.
+              These bounties will be tracked via GitHub Issues and overseen by
+              PSF management. They will allow independent developers around the
+              world to claim and fulfill them, and thereby earn PSF tokens and
+              BCH. This work will help onboard new developers into the PSF
+              community and improve the software under the PSF umbrella.
             </p>
           </div>
         </section>
@@ -530,9 +592,11 @@ const Landing = props => (
                   Ninsight indexer at rest.bitcoin.com and use this free
                   resource.
                 </p>
-                <p><center>
-                  simpleledger:qquwtcfj67zpygk673deunp66npnfemcqu9gr9tnkp
-                </center></p>
+                <p>
+                  <center>
+                    simpleledger:qquwtcfj67zpygk673deunp66npnfemcqu9gr9tnkp
+                  </center>
+                </p>
               </div>
             </div>
           </section>
@@ -571,9 +635,11 @@ const Landing = props => (
                   wallet. Funds for this grant will pay for expanding the
                   library, to add additional functionality.
                 </p>
-                <p><center>
-                  simpleledger:qqhsmcyce44q874l9egtl5skrnedzfttpsw0j76tf6
-                </center></p>
+                <p>
+                  <center>
+                    simpleledger:qqhsmcyce44q874l9egtl5skrnedzfttpsw0j76tf6
+                  </center>
+                </p>
               </div>
             </div>
           </section>
@@ -606,9 +672,11 @@ const Landing = props => (
                   managed by FullStack.cash, and the test would be executed
                   every 2 hours.
                 </p>
-                <p><center>
-                  simpleledger:qqms8fy8sn3qhmcq38zf48x3tu4dgp4vpcwg3nrrkq
-                </center></p>
+                <p>
+                  <center>
+                    simpleledger:qqms8fy8sn3qhmcq38zf48x3tu4dgp4vpcwg3nrrkq
+                  </center>
+                </p>
               </div>
             </div>
           </section>
@@ -630,17 +698,18 @@ const Landing = props => (
                   to include on-chain pointers to additional data, when sending
                   tokens. This would enable a wide range of additional use
                   cases, such as security tokens, while maintaining backwards
-                  compatibility. Another use case would be
-                  representing a changing video game character with an NFT
-                  token.
+                  compatibility. Another use case would be representing a
+                  changing video game character with an NFT token.
                 </p>
                 <p>
                   Funds from this grant will be used to research this idea and
                   create proof of concept code.
                 </p>
-                <p><center>
-                  simpleledger:qqynm8zt9hayn90rfev7yqzygpzgk6he5un9nagext
-                </center></p>
+                <p>
+                  <center>
+                    simpleledger:qqynm8zt9hayn90rfev7yqzygpzgk6he5un9nagext
+                  </center>
+                </p>
               </div>
             </div>
           </section>
@@ -682,9 +751,11 @@ const Landing = props => (
                   and this effort will include increasing the test code coverage
                   of this library.
                 </p>
-                <p><center>
-                  simpleledger:qpa6nzfaj6npjqee79vekn56qucpqffxmganf9savt
-                </center></p>
+                <p>
+                  <center>
+                    simpleledger:qpa6nzfaj6npjqee79vekn56qucpqffxmganf9savt
+                  </center>
+                </p>
               </div>
             </div>
           </section>

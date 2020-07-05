@@ -212,6 +212,26 @@ pre {
 	}
 }
 
+.youtube-responsive-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:100%;
+	overflow:hidden;
+}
+
+.youtube-responsive-container iframe, .youtube-responsive-container object, .youtube-responsive-container embed {
+	/*
+	position:absolute;
+	top:0;
+	left:0;
+	*/
+	width:100%;
+	height:100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
 .align-left {
 	text-align: left;
 }
@@ -803,7 +823,7 @@ button,
 		//	background: _palette(bg);
 		text-align: justify;
 
-	} 
+	}
 	&.style1 .projectText {
 		//	background: _palette(bg);
 		text-align: -webkit-center;
@@ -825,7 +845,7 @@ button,
 	&.style2 .bchAddress {
 			//	background: _palette(bg);
 		text-align: -webkit-center;
-	
+
 	}
 	&.style2 div {
 		//	background: _palette(bg);
@@ -1236,4 +1256,3 @@ button,
 			}
 
 	}
-

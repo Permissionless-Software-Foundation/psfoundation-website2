@@ -127,7 +127,7 @@ const Landing = props => (
           <div className="content">
             <div className="inner">
               <header className="major">
-                <h3>Daniel Humberto - E2E Encrypted Messaging</h3>
+                <h3>Daniel Humberto - Encrypted Messaging</h3>
               </header>
               <p>
                 Daniel is a full stack developer with an emphasis on front end

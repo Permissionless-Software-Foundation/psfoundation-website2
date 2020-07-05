@@ -22,7 +22,6 @@ import vendingMachine from '../assets/images/vending-machine.png'
 import consulting from '../assets/images/consulting.png'
 import community from '../assets/images/community.png'
 
-
 const BchAddress = styled.p`
   text-align: center;
   font-size: 18px;
@@ -53,20 +52,15 @@ class HomeIndex extends React.Component {
           <div className="grid-wrapper">
             <div className="col-6">
               <header className="">
-                <h2>Permissionless</h2>
-
-                <h2>Software</h2>
-
-                <h2>Foundation</h2>
+                <h2> What is the Permissionless Software Foundation?</h2>
               </header>
               <p>
                 The mission of the Permissionless Software Foundation is to
-                foster the <u>growth of open source software</u> and
-                the <u>adoption of Bitcoin Cash</u> across the globe.
-                The Foundation will focus on the
-                development and promotion of software that makes it easy for
-                individuals to protect their privacy, circumvent censorship, and
-                engage in{' '}
+                foster the <u>growth of open source software</u> and the{' '}
+                <u>adoption of Bitcoin Cash</u> across the globe. The Foundation
+                will focus on the development and promotion of software that
+                makes it easy for individuals to protect their privacy,
+                circumvent censorship, and engage in{' '}
                 <a
                   href="https://en.wikipedia.org/wiki/Agorism"
                   target="_blank"
@@ -76,17 +70,16 @@ class HomeIndex extends React.Component {
                 </a>
                 .
               </p>
-            </div>
-            <div className="col-6">
+
+              <p>
+                The business plan for the Permissionless Software Foundation and
+                PSF token discusses the token economics and mathematics used to
+                create a psudo-stable utility token, allowing open source
+                software communities to self-fund without the need for venture
+                capital, corporate sponshorship, or other fiduciary
+                responsibility.
+              </p>
               <center>
-                <p>
-                  The business plan for the Permissionless Software Foundation
-                  and PSF token discusses the
-                  token economics and mathematics used to create a psudo-stable
-                  utility token, allowing open source software communities to
-                  self-fund without the need for venture capital, corporate
-                  sponshorship, or other fiduciary responsibility.
-                </p>
                 <BizPlanButton
                   href="/biz-plan/business-plan"
                   rel="noopener noreferrer"
@@ -95,6 +88,17 @@ class HomeIndex extends React.Component {
                   Read the Business Plan
                 </BizPlanButton>
               </center>
+            </div>
+            <div className="col-6">
+              <div className="youtube-responsive-container">
+                <iframe
+                  title="Bitcoin Cash Full Stack Introduction"
+                  src="https://www.youtube.com/embed/WhJE6kqpS3s"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -114,69 +118,91 @@ class HomeIndex extends React.Component {
               <p>
                 There are three major facets to the Permissionless Software
                 Foundation (PSF): <b>Vending Machines</b>, <b>Consulting</b>,
-                and <b>Community</b>. They are symbolized in the animated graphic.
+                and <b>Community</b>. They are symbolized in the animated
+                graphic.
               </p>
               <p>
                 Code drives everything. That is symbolized by the large gear
-                driving the three smaller gears. The three smaller gears represent
-                the three major facets.
+                driving the three smaller gears. The three smaller gears
+                represent the three major facets.
               </p>
 
               <div className="grid-wrapper">
                 <div className="col-3">
-                <center>
-                  <span className="image fit">
-                    <img src={vendingMachine} alt="community" />
-                  </span>
-                </center>
+                  <center>
+                    <span className="image fit">
+                      <img src={vendingMachine} alt="community" />
+                    </span>
+                  </center>
                 </div>
                 <div className="col-9">
-                  <p style={{paddingRight: '20px'}}>
-                  The <b>Vending Machine</b> represents SaaS
-                  applications. For example, the subscription service
-                  of <a href="https://fullstack.cash" target="_blank">FullStack.cash</a>, or
-                  the <a href="https://ipfs.fullstack.cash" target="blank">IPFS file hosting</a> service.
-                  These are 'coin operated'. A user pays BCH and immediately
-                  gets something of value for it. Each payment burns PSF tokens.
-                  This is the raw fuel that drives the peg between PSF tokens and BCH.
+                  <p style={{ paddingRight: '20px' }}>
+                    The <b>Vending Machine</b> represents SaaS applications. For
+                    example, the subscription service of{' '}
+                    <a href="https://fullstack.cash" target="_blank">
+                      FullStack.cash
+                    </a>
+                    , or the{' '}
+                    <a href="https://ipfs.fullstack.cash" target="blank">
+                      IPFS file hosting
+                    </a>{' '}
+                    service. These are 'coin operated'. A user pays BCH and
+                    immediately gets something of value for it. Each payment
+                    burns PSF tokens. This is the raw fuel that drives the peg
+                    between PSF tokens and BCH.
                   </p>
                 </div>
               </div>
 
               <div className="grid-wrapper">
                 <div className="col-3">
-                <center>
-                  <span className="image fit">
-                    <img src={consulting} alt="community" />
-                  </span>
-                </center>
+                  <center>
+                    <span className="image fit">
+                      <img src={consulting} alt="community" />
+                    </span>
+                  </center>
                 </div>
                 <div className="col-9">
-                  <p style={{paddingRight: '20px'}}>
-                  The PSF is also a <b>consulting</b> company. We match talented
-                  developers with entrepreurs looking to fund development of their
-                  business ideas. Work is structured in 3-6 month contracts.
-                  Payments go to burn tokens, and developers are paid in PSF tokens.
-                  {' '}<a href="https://fullstack.cash/consulting" target="_blank" rel="noopener noreferrer">Find out more</a>.
+                  <p style={{ paddingRight: '20px' }}>
+                    The PSF is also a <b>consulting</b> company. We match
+                    talented developers with entrepreurs looking to fund
+                    development of their business ideas. Work is structured in
+                    3-6 month contracts. Payments go to burn tokens, and
+                    developers are paid in PSF tokens.{' '}
+                    <a
+                      href="https://fullstack.cash/consulting"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Find out more
+                    </a>
+                    .
                   </p>
                 </div>
               </div>
 
               <div className="grid-wrapper">
                 <div className="col-3">
-                <center>
-                  <span className="image fit">
-                    <img src={community} alt="community" />
-                  </span>
-                </center>
+                  <center>
+                    <span className="image fit">
+                      <img src={community} alt="community" />
+                    </span>
+                  </center>
                 </div>
                 <div className="col-9">
-                  <p style={{paddingRight: '20px'}}>
-                  The PSF is governed by a <b>community</b> of token holders.
-                  Patrons can invest in Bitcoin Cash infrastructure by buying
-                  and holding PSF tokens. They are then eligible for air-drops
-                  that can be directed to fund <a href="https://en.wikipedia.org/wiki/Common_good" target="_blank">common goods</a>, like
-                  full nodes, indexers, privacy enhancements, and research.
+                  <p style={{ paddingRight: '20px' }}>
+                    The PSF is governed by a <b>community</b> of token holders.
+                    Patrons can invest in Bitcoin Cash infrastructure by buying
+                    and holding PSF tokens. They are then eligible for air-drops
+                    that can be directed to fund{' '}
+                    <a
+                      href="https://en.wikipedia.org/wiki/Common_good"
+                      target="_blank"
+                    >
+                      common goods
+                    </a>
+                    , like full nodes, indexers, privacy enhancements, and
+                    research.
                   </p>
                 </div>
               </div>
@@ -195,7 +221,10 @@ class HomeIndex extends React.Component {
             <div className="col-6">
               <center>
                 <span className="image">
-                  <img src={qrcodeBCH} alt="bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al" />
+                  <img
+                    src={qrcodeBCH}
+                    alt="bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al"
+                  />
                 </span>
                 <br />
                 <p style={{ textAlign: 'center' }}>
@@ -204,13 +233,15 @@ class HomeIndex extends React.Component {
                 <br />
 
                 <span className="image">
-                  <img src={qrcodeSLP} alt="simpleledger:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfqtaqr70rp" />
+                  <img
+                    src={qrcodeSLP}
+                    alt="simpleledger:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfqtaqr70rp"
+                  />
                 </span>
                 <br />
                 <p style={{ textAlign: 'center' }}>
                   simpleledger:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfqtaqr70rp
                 </p>
-
               </center>
             </div>
             <div className="col-6">
@@ -235,20 +266,26 @@ class HomeIndex extends React.Component {
                   rel="noopener noreferrer"
                 >
                   Bitcoin.com Wallet
-                </a>, or click the Buy or Sell buttons to trade $0.10
-                USD worth of tokens if you have the <a
+                </a>
+                , or click the Buy or Sell buttons to trade $0.10 USD worth of
+                tokens if you have the{' '}
+                <a
                   href="https://badger.bitcoin.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Badger Wallet browser extension
-                </a> installed.
+                </a>{' '}
+                installed.
               </p>
               <p>
                 The liquidity app will send tokens if it recieves BCH. It will
-                send BCH if it recieves tokens. <b>It will take two (2) block
-                confirmations before tokens will appear in your wallet</b>. Refresh
-                the window to get the most up-to-date exchange rate.
+                send BCH if it recieves tokens.{' '}
+                <b>
+                  It will take two (2) block confirmations before tokens will
+                  appear in your wallet
+                </b>
+                . Refresh the window to get the most up-to-date exchange rate.
               </p>
               <p>
                 <b>
@@ -259,19 +296,22 @@ class HomeIndex extends React.Component {
               </p>
               <br />
               <center>
-              <BuyBadgerButton usdPerBch="4" />
-              <br />
-              <br />
-              <SellBadgerButton usdPerBch="4" />
+                <BuyBadgerButton usdPerBch="4" />
+                <br />
+                <br />
+                <SellBadgerButton usdPerBch="4" />
               </center>
             </div>
           </div>
 
           <div className="grid-wrapper">
             <div className="col-12">
-                <p><center>
-                  PSF SLP Token ID: 38e97c5d7d3585a2cbf3f9580c82ca33985f9cb0845d4dcce220cb709f9538b0
-                </center></p>
+              <p>
+                <center>
+                  PSF SLP Token ID:
+                  38e97c5d7d3585a2cbf3f9580c82ca33985f9cb0845d4dcce220cb709f9538b0
+                </center>
+              </p>
             </div>
           </div>
         </section>
@@ -291,12 +331,14 @@ class HomeIndex extends React.Component {
             <div className="col-6">
               <h3>FullStack.cash</h3>
               <p>
-                <a href="https://fullstack.cash" target="_blank">FullStack.cash</a> is
-                a suite of software that allows modern webpages and phone apps
-                to interact with the Bitcoin Cash blockchain. It's a
-                subscription-based cloud service, and it unlocks the next generation
-                of blockchain-based applications. Fees paid for the service
-                burn PSF tokens.
+                <a href="https://fullstack.cash" target="_blank">
+                  FullStack.cash
+                </a>{' '}
+                is a suite of software that allows modern webpages and phone
+                apps to interact with the Bitcoin Cash blockchain. It's a
+                subscription-based cloud service, and it unlocks the next
+                generation of blockchain-based applications. Fees paid for the
+                service burn PSF tokens.
               </p>
               <ul className="actions">
                 <li>
@@ -314,11 +356,11 @@ class HomeIndex extends React.Component {
             <div className="col-6">
               <h3>Uncensorable Publishing</h3>
               <p>
-                Publish web sites and web apps that are impossible for any government
-                to censor or stop. Simultaniously broadcast your website using
-                a conventional domain (clear web), Tor (dark net), and the
-                Interplanetary File System (IPFS) network. Every website published
-                will send a tiny amount of BCH to burn PSF tokens.
+                Publish web sites and web apps that are impossible for any
+                government to censor or stop. Simultaniously broadcast your
+                website using a conventional domain (clear web), Tor (dark net),
+                and the Interplanetary File System (IPFS) network. Every website
+                published will send a tiny amount of BCH to burn PSF tokens.
               </p>
               <ul className="actions">
                 <li>
@@ -337,12 +379,15 @@ class HomeIndex extends React.Component {
             <div className="col-6">
               <h3>White Label Wallet</h3>
               <p>
-                The <a href="https://wallet.fullstack.cash" target="_blank">
-                wallet app at FullStack.cash</a> is built using modular architecture
-                and 100% MIT licensed open source software. It's intended purpose
-                is to be easy to customize, in order to solve the widest possible
-                range of business problems. It leverages the infrastructure provided
-                by both FullStack.cash and Uncensorable Publishing.
+                The{' '}
+                <a href="https://wallet.fullstack.cash" target="_blank">
+                  wallet app at FullStack.cash
+                </a>{' '}
+                is built using modular architecture and 100% MIT licensed open
+                source software. It's intended purpose is to be easy to
+                customize, in order to solve the widest possible range of
+                business problems. It leverages the infrastructure provided by
+                both FullStack.cash and Uncensorable Publishing.
               </p>
               <ul className="actions">
                 <li>
@@ -378,7 +423,6 @@ class HomeIndex extends React.Component {
                 </li>
               </ul>
             </div>
-
           </div>
         </section>
 
@@ -393,14 +437,16 @@ class HomeIndex extends React.Component {
             <div className="col-6">
               <center>
                 <span className="image">
-                  <img src={qrBurn} alt="bitcoincash:qqsrke9lh257tqen99dkyy2emh4uty0vky9y0z0lsr" />
+                  <img
+                    src={qrBurn}
+                    alt="bitcoincash:qqsrke9lh257tqen99dkyy2emh4uty0vky9y0z0lsr"
+                  />
                 </span>
                 <br />
                 <p style={{ textAlign: 'center' }}>
                   bitcoincash:qqsrke9lh257tqen99dkyy2emh4uty0vky9y0z0lsr
                 </p>
                 <br />
-
               </center>
             </div>
             <div className="col-6">
@@ -408,30 +454,36 @@ class HomeIndex extends React.Component {
                 <h2>Burn Tokens</h2>
               </header>
               <p>
-                Sending any BCH to this Bitcoin Cash address will cause
-                tokens to be 'burned' and removed from circulation. The exchange
-                happens just as it does above, but instead of sending the exchanged
-                tokens to the originating address, those tokens are burned.
+                Sending any BCH to this Bitcoin Cash address will cause tokens
+                to be 'burned' and removed from circulation. The exchange
+                happens just as it does above, but instead of sending the
+                exchanged tokens to the originating address, those tokens are
+                burned.
               </p>
               <p>
-                This address
-                will be used by the applications above. For example, when somone
-                pays their subscription fee at <a href="https://fullstack.cash"
-                target="_blank">FullStack.cash</a>, the BCH is used to burn tokens.
-                This causes the price the tokens to increase, because
-                the BCH balance of the token-liquidity app goes up and it's token
-                balance goes down.
+                This address will be used by the applications above. For
+                example, when somone pays their subscription fee at{' '}
+                <a href="https://fullstack.cash" target="_blank">
+                  FullStack.cash
+                </a>
+                , the BCH is used to burn tokens. This causes the price the
+                tokens to increase, because the BCH balance of the
+                token-liquidity app goes up and it's token balance goes down.
               </p>
               <p>
-                This burning function is faciliated by
-                a second app, similar to the token liquidity app. It forwards
-                any BCH recieved to the token liquidity app, and it appends a special
-                OP_RETURN code instructing the tokens to be burned instead of
-                exchanged. The burn is transparent, public, and
-                verifiable <a href="https://explorer.bitcoin.com/bch/address/bitcoincash:qqsrke9lh257tqen99dkyy2emh4uty0vky9y0z0lsr" target="_blank">
-                on the blockchain</a>.
+                This burning function is faciliated by a second app, similar to
+                the token liquidity app. It forwards any BCH recieved to the
+                token liquidity app, and it appends a special OP_RETURN code
+                instructing the tokens to be burned instead of exchanged. The
+                burn is transparent, public, and verifiable{' '}
+                <a
+                  href="https://explorer.bitcoin.com/bch/address/bitcoincash:qqsrke9lh257tqen99dkyy2emh4uty0vky9y0z0lsr"
+                  target="_blank"
+                >
+                  on the blockchain
+                </a>
+                .
               </p>
-
             </div>
           </div>
         </section>

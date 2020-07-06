@@ -466,7 +466,7 @@ class HomeIndex extends React.Component {
                 <a href="https://fullstack.cash" target="_blank">
                   FullStack.cash
                 </a>
-                , the BCH is used to burn tokens. This causes the price the
+                , the BCH is used to burn tokens. This causes the price of the
                 tokens to increase, because the BCH balance of the
                 token-liquidity app goes up and it's token balance goes down.
               </p>

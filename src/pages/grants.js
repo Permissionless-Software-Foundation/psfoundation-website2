@@ -8,6 +8,7 @@ import placeholder from '../assets/images/profile-image-placeholder.png'
 import jtfreeman from '../assets/images/jtfreeman.png'
 import daniel from '../assets/images/daniel.jpg'
 import andre from '../assets/images/andre.jpeg'
+import david from '../assets/images/david-allen.jpg'
 
 // QR donation codes
 // import qrPlaceholder from '../assets/images/qr-placeholder.png'
@@ -24,6 +25,7 @@ import qrGrantAdmin from '../assets/images/grant-qrs/grant-admin-qr.png'
 import qrJt from '../assets/images/grant-qrs/jt-qr.png'
 import qrSlpCliWallet from '../assets/images/grant-qrs/qr-slp-cli-wallet.png'
 import qrTorlist from '../assets/images/grant-qrs/torlist-qr.png'
+import qrDavid from '../assets/images/grant-qrs/david-qr.png'
 
 const Landing = props => (
   <Layout>
@@ -120,6 +122,37 @@ const Landing = props => (
         </section>
 
         <section style={{ border: '5px solid black' }}>
+          <Link to="/grants" className="image">
+            <img src={david} alt="" />
+            <img src={qrDavid} alt="" className="image-overlay" />
+          </Link>
+          <div className="content">
+            <div className="inner">
+              <header className="major">
+                <h3>David Allen - Business Development</h3>
+              </header>
+              <p>
+                David was introduced to the Bitcoin space in 2012.
+                Over the years he has worked with many prominent individuals and
+                organizations and his many contacts have helped new projects to
+                find funding within and outside of the cryptocurrency community.
+              </p>
+              <p>
+                David has agreed to assist and support the Permissionless
+                Software Foundation and to be a primary contact as the community
+                grows out of its infancy. His experience and contributions are
+                a welcome addition to the foundation.
+              </p>
+              <p>
+                <center>
+                  simpleledger:qzcq4z08z89ypqmc6ac0jk47ud6hcquedqlmuuk7fx
+                </center>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section style={{ border: '5px solid black' }}>
           <Link to="/grants" className="image image-overlay-wrap">
             <img src={daniel} alt="" />
             <img src={qrDaniel} alt="" className="image-overlay" />
@@ -131,7 +164,7 @@ const Landing = props => (
               </header>
               <p>
                 Daniel is a full stack developer with an emphasis on front end
-                apps using React and Gatsby, and IPFS. He's built many of the
+                apps using React and Gatsby, as well as IPFS. He's built many of the
                 PSF apps like the{' '}
                 <a
                   href="https://wallet.fullstack.cash"

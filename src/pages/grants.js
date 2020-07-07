@@ -8,7 +8,7 @@ import placeholder from '../assets/images/profile-image-placeholder.png'
 import jtfreeman from '../assets/images/jtfreeman.png'
 import daniel from '../assets/images/daniel.jpg'
 import andre from '../assets/images/andre.jpeg'
-import david from '../assets/images/david-allen.jpg'
+import david from '../assets/images/david02.jpeg'
 
 // QR donation codes
 // import qrPlaceholder from '../assets/images/qr-placeholder.png'

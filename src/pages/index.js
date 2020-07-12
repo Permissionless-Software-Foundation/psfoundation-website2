@@ -215,6 +215,27 @@ class HomeIndex extends React.Component {
             <div className="col-12">
               <h2>Token Liquidity App is Under Construction</h2>
             </div>
+            <div className="col-4" />
+            <div className="col-4">
+              <p>
+                On the afternoon of July 11th, many of the SLPDB instances that
+                run the SLP token network went down due to a malformed transaction.
+                This section will be restored once critical SLPDB instances
+                have been restored.
+              </p>
+              <p>
+                In the meantime, please refrain from sending SLP tokens. This
+                issue appears to be mostly isolated to Electron Cash SLP edition,
+                but there is no telling how other SLP wallets and applications
+                will be effected during this time.
+              </p>
+              <p>
+                Your tokens are not in any danger, so long as they don't move
+                before SLPDB is restored. Please be patient and do not move
+                your tokens.
+              </p>
+            </div>
+            <div className="col-4" />
           </div>
 
           <div className="grid-wrapper"  style={{ visibility: 'hidden' }}>

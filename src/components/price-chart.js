@@ -155,7 +155,7 @@ const options = {
   legend: {
     labels: {
       //display: false,
-      filter: function(item, chart) {
+      filter: function (item, chart) {
         return !item.text.includes('app-balance')
       },
     },
@@ -168,11 +168,17 @@ class PriceChart extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
+
+    // Reference to Line component
+    this.chartReference = {}
   }
 
   render() {
     return (
-      <Line data={this.state.chartData} options={this.state.chartOptions} />
+      <Line
+        data={this.state.chartData}
+        options={this.state.chartOptions}
+        ref={(reference) => this.chartReference = reference} />
     )
   }
 
@@ -228,7 +234,11 @@ class PriceChart extends React.Component {
         chartData: newState,
       }))
 
-      if(typeof window !== 'undefined')
+      // Update graphic with new data
+      const lineChart = this.chartReference.chartInstance
+      lineChart.update();
+
+      if (typeof window !== 'undefined')
         window.tempdata = _this.state
 
       //window.tempdata.chartData.datasets[2].data[0]

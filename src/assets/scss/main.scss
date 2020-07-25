@@ -859,6 +859,7 @@ button,
 		background-size:		auto,							cover;
 		text-align: center;
 	}
+
 }
 
 
@@ -904,7 +905,31 @@ button,
 	}
 }
 
-
+ /* Grants */
+ .grants-balance{
+	background: white;
+	padding: 2px 35px;
+	position: absolute;
+	bottom: 1.5em;
+	left: 1em;
+	max-width: 47%!important;
+	border: 1px solid white;
+    border-radius: 1em;
+ }
+ .grants-balance b{
+	color: black;
+ }
+ .grants-balance2  {
+	padding: 2px 35px;
+	position: absolute;
+	bottom: 1.5em;
+	left: 30%;
+	border-radius: 1em;
+	width: 40%;
+ }
+ .grants-balance2  b{
+	color: black;
+ }
 /* XLarge */
 
 	@include breakpoint(xlarge) {
@@ -1225,6 +1250,15 @@ button,
 				}
 			}
 
+			 /* Grants */
+
+ 			.grants-balance2  {
+				bottom: 1.5em;
+				left: 25%;
+				width: 50%;
+ 			}
+
+
 	}
 
 /* XXSmall */
@@ -1254,5 +1288,16 @@ button,
 			#footer {
 				@include padding(2em, 1em, (0,0,_size(element-margin),0));
 			}
+			 /* Grants */
+ 			.grants-balance{
+				bottom: 1.5em;
+				left: 0.5em;
+ 			}
+
+ 			.grants-balance2  {
+				bottom: 15px;
+				left: 15%;
+				width: 70%;
+ 			}
 
 	}

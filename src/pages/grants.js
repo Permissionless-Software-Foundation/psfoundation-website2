@@ -27,6 +27,7 @@ import qrJt from '../assets/images/grant-qrs/jt-qr.png'
 import qrSlpCliWallet from '../assets/images/grant-qrs/qr-slp-cli-wallet.png'
 import qrTorlist from '../assets/images/grant-qrs/torlist-qr.png'
 import qrDavid from '../assets/images/grant-qrs/david-qr.png'
+import qrDiscretionary from '../assets/images/grant-qrs/discretionary-qr.png'
 
 
 const addresses = {
@@ -43,7 +44,8 @@ const addresses = {
   slpElectrumx: 'simpleledger:qqhsmcyce44q874l9egtl5skrnedzfttpsw0j76tf6',
   slpE2E: 'simpleledger:qqms8fy8sn3qhmcq38zf48x3tu4dgp4vpcwg3nrrkq',
   slpSecondLayer: 'simpleledger:qqynm8zt9hayn90rfev7yqzygpzgk6he5un9nagext',
-  slpCliWallet: 'simpleledger:qpa6nzfaj6npjqee79vekn56qucpqffxmganf9savt'
+  slpCliWallet: 'simpleledger:qpa6nzfaj6npjqee79vekn56qucpqffxmganf9savt',
+  slpDiscretionary: 'simpleledger:qqajwu8f2ce90de7ftf6lfwa8lvl29fg4v37hvwm2y'
 }
 
 let _this
@@ -879,6 +881,36 @@ class Landing extends React.Component {
                   </div>
                 </div>
               </section>
+
+              <section style={{ border: '5px solid black' }}>
+                <Link to="/grants" className="image image-overlay-wrap">
+                  <img src={qrDiscretionary} alt="" />
+                  {
+                    tokensBalance.slpDiscretionary &&
+                    _this.balanceElement(tokensBalance.slpDiscretionary, true)
+                  }
+                </Link>
+                <div className="content">
+                  <div className="inner">
+                    <header className="major">
+                      <h3>Community Building</h3>
+                    </header>
+                    <p>
+                      Funds sent to this address will be used by PSF management
+                      for building community. This includes sponsoring hackathons,
+                      tipping contributors, and incentivizing new developers to
+                      join the PSF. These are discretionary funds that can be
+                      used for expenses that do not fall into one of the above
+                      grants.
+                    </p>
+                    <p>
+                      <center>
+                        {addresses.slpDiscretionary}
+                      </center>
+                    </p>
+                  </div>
+                </div>
+              </section>
             </section>
           </section>
         </div>
@@ -922,7 +954,7 @@ class Landing extends React.Component {
   }
 
 
-  // create html element to show balance 
+  // create html element to show balance
   balanceElement(balance, useStyle2) {
     const style = useStyle2 ? 'grants-balance2' : 'grants-balance'
     return (

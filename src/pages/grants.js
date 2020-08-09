@@ -72,25 +72,49 @@ class Landing extends React.Component {
               <header className="major">
                 <h2>Grants</h2>
               </header>
+              <h3><b>Store your PSF tokens away for 2 months starting August 15th!!</b></h3>
+
               <p>
-                As desribed in the{' '}
-                <Link to="/biz-plan/business-plan/#bootstrapping">
-                  Business Plan
-                  </Link>
-                  , there will be an air-drop of funding tokens on <b>July 15th</b> to
-                  PSF token holders. This is an important part of the governance
-                  mechism for the PSF community.
-                </p>
+                The next airdrop of funding tokens is set to take place on
+                October 15th. To be part of this funding token airdrop you will
+                need to stake your PSF tokens, by not moving them for two months.
+                This means you must not move your PSF tokens after <u><b>August 15th</b></u>.
+              </p>
               <p>
-                PSF community members are expected to send their funding tokens to
-                any of the SLP addresses below to indicate which people and projects
-                  they want to see funded. On <b>August 1st</b> the grant addresses
-                  will be funded 1:1 with newly minted PSF tokens to match the funding
-                  tokens they've recieved. These tokens will be distributed over the
-                  following three months to fund development of projects and
-                  management of the organization, after which the grant-funding cycle
-                  will begin again.
-                </p>
+                Funding tokens are an important part of the governance mechanism
+                for the PSF community. As described in
+                the <Link to="/biz-plan/business-plan/#funding">
+                Business Plan</Link>, stakeholders receive periodic funding
+                tokens. They will then send these funding tokens to the SLP
+                addresses of the people, projects, and bounties they want to see
+                funded. Only those addresses with coins that were held for a
+                minimum of two months are eligible to take part in this governance
+                process.
+              </p>
+              <p>
+                On November 1st the grant addresses will be funded 1:1 with
+                newly minted PSF tokens to match the funding tokens they've
+                received from the stakeholders. These tokens will be distributed
+                over the following three months to fund development of projects,
+                infrastructure, specific developers, and management of the
+                organization. This grant-funding cycle repeats every three
+                months.
+              </p>
+              <br />
+              <br />
+
+              <h3>Previously Funded Grants</h3>
+              <p>
+                The community response from the last grant funding cycle was
+                overwhelmingly positive! Below are the grants that were funded
+                and are currently being worked on.
+              </p>
+              <p>
+                The grant information below will be removed in October, and
+                updated with the new grant candidates for the next round of
+                grant funding.
+              </p>
+
             </div>
           </section>
 

@@ -22,7 +22,6 @@ path: "/biz-plan/business-plan"
       - [Discussion of Governance](#governanceDiscussion)
       - [Less is More](#lessIsMore)
   - [Funding](#funding)
-      - [Bootstrapping](#bootstrapping)
   - [Management](#management)
 
 - [Token Economics](#tokenEconomics)
@@ -99,7 +98,7 @@ Day-to-day, short-term communication will take place on [this Telegram channel](
 #### Long-term, Technical Discussion<a name="technicalDiscussion"></a>
 For long-term, technical discussions, GitHub Issues will be used. GitHub Issues have a proven and effective track record for technical collaboration. Issues will also be an important element in coordinating labor using the token economics presented in this document.
 
-[Trello](https://trello.com) or similar web applications will be used to coordinate and organize effort around sub-projects, using Agile software development best practices. Again, these tools have well-established track record within the software industry.
+[Trello](https://trello.com/b/MBXfHrX7/fullstackcash) or similar web applications will be used to coordinate and organize effort around sub-projects, using Agile software development best practices. Again, these tools have well-established track record within the software industry.
 
 #### Discussion of Governance<a name="governanceDiscussion"></a>
 [Loomio](https://www.loomio.org/) is a proven platform for democratic discussion and decision making. Non-technical, long-term discussions, like those around governance, will take place on the [PSF Loomio group](https://www.loomio.org/join/group/46sYVVAhsMo5aWzr4jF71ZJS/).
@@ -111,31 +110,19 @@ The level of governance is intentionally minimized. Governance of the organizati
 
 ### Funding<a name="funding"></a>
 
-Every 13,000 blocks (approximately three months), existing PSF token holders will be air-dropped a new 'funding' token. The funding token will only be air-dropped to holders who's tokens have not moved in two months. 100,000 funding tokens will be air-dropped, proportional to the amount of PSF tokens meeting the criteria.
+Every quarter (3 months), starting on July 15th 2020, existing PSF token holders will be air-dropped a new 'funding' token. The funding token will only be air-dropped to holders who's tokens have not moved in two months (staked). 100,000 funding tokens will be air-dropped, proportional to the amount of PSF tokens meeting the criteria.
 
-**For example**, if an address holds 1,000 PSF tokens that have not moved in two months, and the total supply of PSF tokens that have not moved in two months is 100,000 tokens, then the address would receive 1,000 funding tokens.
+**For example**, if an address holds 1,000 PSF tokens that have been staked (not moved) in two months, and the _total supply_ of PSF tokens that have not moved in two months is 200,000 tokens, then the address would receive 500 funding tokens.
 
-Prior to the air-drop, developers and other contributors are free to submit grant proposals to the Foundation. An SLP address will be assigned to each approved grant proposal, and the proposal will be published to the PSF website.
+Prior to the air-drop, developers and other contributors are free to submit grant proposals to the Foundation. An SLP address will be assigned to each approved grant proposal, and the proposal will be published to the [Grants Page](https://psfoundation.cash/grants/) of the PSF website.
 
 Receivers of the funding token are expected to send their funding tokens to the SLP addresses of the grants as they see fit, in order to fund the grants.
 
-Every 13,200 blocks (approximately 2 weeks later), the funding tokens held by the grant SLP addresses will receive an air-drop of an equal amount of newly minted PSF tokens. The private keys for these grants will be held by someone designated as a **Treasurer**. The Treasurer will also be funded by a PSF grant, and will be part of the PSF core management team. They will be responsible for distributing 1/3 of the PSF tokens, once per month, to the designated recipient in the grant proposal. Because everything happens transparently on-chain, there is no opportunity for hidden manipulation of funds.
+Approximately 2 weeks later (Starting August 1st 2020, and continuing every quarter), the funding tokens held by each grant SLP addresses will receive an air-drop of an equal amount of newly minted PSF tokens. After the air-drop, the funds for all grants will be swept into a multisignature wallet, with keys being held by multiple members of the PSF. Grants will be paid out by the **Grant Administrator** on a weekly basis, and they will coordinate with the other key holders. Balances for each grant will be tracked on a spreadsheet.
 
-It's important to note: The scope of the grants will focus on both <i>people</i> and <i>projects</i>. People are expected to do work in line with the mission of promoting open source and Bitcoin Cash, but their personal reputation is as stake, and is the basis upon which token holders are sending them funds. Projects are eligible for funding as well. These funds will be directed by PSF management to develop those projects in the same way [consulting services](https://fullstack.cash/consulting) are handled.
+The Grant Administrator will also be funded by a PSF grant, and will be part of the PSF core management team. They will be responsible for distributing PSF tokens to the designated recipient in the grant proposal. Because everything happens transparently on-chain, there is no opportunity for hidden manipulation of funds.
 
-#### Bootstrapping<a name="bootstrapping"></a>
-The Foundation was working off a [different governance model](https://github.com/Permissionless-Software-Foundation/psfoundation-website2/releases/tag/v1.0.0) prior to May 1st, 2020. The Governance and token-economic model captured in this business plan will go into effect on August 1st 2020.
-
-Here are main points on how the transition will take place:
-
-- On July 24th, approved grant applications with corresponding SLP tokens will be posted to the PSF website.<br /><br />
-
-- Using the first BCH block on or after 7PM UTC on July 15th 2020, a snapshot of the BCH blockchain will be taken. 100,000 funding tokens (FUND001) will be air-dropped to all addresses holding PSF tokens in that block.<br /><br />
-
-- Receivers of the FUND001 funding token are expected to send them to the SLP addresses associated with a grant, distributing tokens how they see fit, based on the funding they want each grantee to receive.<br /><br />
-
-- Using the first BCH block on or after 7PM UTC on August 1st 2020, another snapshot of the BCH blockchain will be taken. Any SLP address associated with a grant and holding FUND001 tokens will be airdropped a matching amount of newly minted PSF tokens.<br /><br />
-
+It's important to note: The scope of the grants will focus on _people_, _projects_, and _bounties_. _People_ are expected to do work in line with the mission of promoting open source and Bitcoin Cash, but their personal reputation is as stake, and is the basis upon which token holders are sending them funds. _Projects_ are eligible for funding as well. These funds will be directed by PSF management to develop those projects in the same way [consulting services](https://fullstack.cash/consulting) are handled. _Bounties_ are limited in scope, and rewards for them are paid out immediately upon completion. Bounties will be useful tool for onboarding new developers into the community.
 
 ### Management<a name="management"></a>
 
@@ -143,9 +130,9 @@ The management team for the Foundation will be funded via grants, the same as al
 
 The first member of the management team will have the title 'Head Janitor'. This person's chief responsibilities are to choose the other first contributors, and to slowly and a carefully distribute responsibilities and cryptographic keys. Their primary role is to grow the organization, keep it focused on the Foundation's mission, and reduce any single points of failure that could lead to a catastrophic failure of the organization.
 
-Another member of the management team, the Treasurer, will be responsible for distributing PSF tokens to grant recipients.
+Another member of the management team, the Grant Administrator, will be responsible for distributing PSF tokens to grant recipients.
 
-The main day-to-day duties of the management team will be to discuss, coordinate, and approve grant proposals, solicit the community for feedback,  and maintain the PSF website.
+The main day-to-day duties of the management team will be to discuss, coordinate, and approve work around grant proposals, solicit the community for feedback,  and maintain the PSF website.
 
 ## Token Economics<a name="tokenEconomics"></a>
 Before delving into the specifics of the token economics, it's important to keep the big picture in mind: The purpose of the mathematics behind the token is to enable steady funding of development, and fair incentives for collaboration, in order to further the Foundation's mission.

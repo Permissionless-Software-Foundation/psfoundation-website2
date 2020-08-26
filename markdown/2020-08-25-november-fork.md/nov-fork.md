@@ -14,6 +14,8 @@ ABC has been very clear on their stance, and they plan to move forward regardles
 
 Ultimately the decision to split will come down to the miners. In order for miners running the BCHN full node software to split the chain, they’ll need to mine 10 blocks ahead of the ABC chain. There appears to be enough hash power signaling in support of BCHN to accomplish a split. It’s unknown who would end up with the ticker symbol. It's a fluid situation, and it will not be resolved until after November 15th. It may take a very long time for the BCHN chain to achieve the needed proof of work. It could happen quickly, or it might not happen at all.
 
+Even if BCHN manages to split the chain, they'll need to maintain the 10-block advance on the ABC chain. Otherwise SPV wallets, as well as BCHN nodes exiting and entering the network, will flip back-and-forth between chains. It could get very messy. But ABC nodes will not be exposed to this risk, and by extension, neither will the [FullStack.cash](https://fullstack.cash) Cash Stack.
+
 ## How will FullStack.cash and PSF handle the fork?
 The Permissionless Software Foundation embraces the concept of forks. As laid out in [the business plan](https://psfoundation.cash/biz-plan/business-plan#migitatingFailure), forks are an important governance tool for mitigating catastrophic failures. Since the looming split centers around governance and not technical changes, FullStack.cash infrastructure can run on both chains without any changes.
 
@@ -26,7 +28,7 @@ In the event of a chain split, the PSF plans to execute the following plan:
 
 1. The token-liquidity app will be stopped temporarily. The stop will be announced on the [PSF Twitter](https://twitter.com/PSF_DAO) feed as well as the [PSF Telegram](https://t.me/permissionless_software) channel.<br /><br />
 
-2. The BCHN-chain coins and tokens will be split into a separate wallet. Then the token-liquidity app on the ABC-chain will be brought back online. This step is only expected to last for a few minutes. When the token-liquidity app is back online, on the ABC-chain, it will be announced on Twitter and Telegram.<br /><br />
+2. The BCHN-chain coins and tokens will be split into a separate wallet. Then the token-liquidity app on the ABC-chain will be brought back online. It is hoped this step can be accomplished quickly. When the token-liquidity app is back online, on the ABC-chain, it will be announced on Twitter and Telegram.<br /><br />
 
 3. We will fork wallet.fullstack.cash to create a web wallet for the BCHN-chain. The address will be bchn.wallet.fullstack.cash. This will allow people to easily split their BCH and SLP tokens. We will post step-by-step directions on YouTube.<br /><br />
 

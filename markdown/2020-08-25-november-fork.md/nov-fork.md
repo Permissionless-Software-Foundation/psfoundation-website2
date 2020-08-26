@@ -45,17 +45,6 @@ The next funding-token air-drop for [grant funding](https://psfoundation.cash/gr
 
 Because tokens will need to be split and shuffled after the fork, the staking requirement may be adjusted for the following funding/governance round.
 
-## What should you do?
-The safest thing to do with your PSF tokens is to save them to a paper wallet prior to the network upgrade on November 15th. This sets up an easy way to split the tokens after the fork.
-
-- You can generate a paper wallet for storing SLP tokens here:
-  - https://slp-paper-wallet.fullstack.cash/
-
-- You can generate a paper wallet for storing BCH here:
-  - https://paperwallet.bitcoin.com
-
-Currently [Badger Mobile Wallet](https://badger.bitcoin.com/) is the only phone app that can retrieve SLP tokens from a paper wallet. The ‘sweep’ command in [slp-cli-wallet](https://github.com/christroutner/slp-cli-wallet) also works, for those brave enough to try a command line app. We are working hard to build a plugin for [wallet.fullstack.cash](https://wallet.fullstack.cash/) to be able to sweep tokens too (it’s not ready yet).
-
 ## Why are we using ABC chain as the default?
 ABC has a proven track record of creating reliable full node software. As contentious as the Infrastructure Funding Plan (IFP) is, the significant increase in funding for maintenance and the road map can only help them continue to deliver steady improvements.
 
@@ -71,3 +60,10 @@ Here are a few resources that shaped our decision:
 
 - C. Edward Kelso captures the current culture, tough choices, and careful consideration in choosing between forks:
   - https://read.cash/@CoinFugazi/supporting-the-new-bitcoin-cash-coinbase-rule-4fc3a6c6
+
+## How to stay up to date
+The Permissionless Software Foundation will continue to monitor the evolving situation around the chain split. We will maintain these communication channels with information:
+
+- [PSF Telegram Channel](https://t.me/permissionless_software)
+- [PSF Twitter](https://twitter.com/PSF_DAO)
+- [PSF Blog](https://psfoundation.cash/blog)

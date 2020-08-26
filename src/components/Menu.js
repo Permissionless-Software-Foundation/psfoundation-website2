@@ -20,7 +20,7 @@ const Menu = props => (
           </Link>
         </li>
         <li>
-          <Link onClick={props.onToggleMenu} to="/biz-plan">
+          <Link onClick={props.onToggleMenu} to="/biz-plan/business-plan/">
             Business Plan
           </Link>
         </li>

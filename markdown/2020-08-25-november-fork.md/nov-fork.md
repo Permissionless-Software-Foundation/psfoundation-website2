@@ -5,6 +5,8 @@ root: "/blog"
 path: "/blog/november-fork"
 ---
 
+![November Fork](./bch-nov-fork.jpg)
+
 Several PSF members have been asking about the potential chain split of the BCH blockchain on November 15th. This article will walk through the actions [FullStack.cash](https://fullstack.cash) is taking with its infrastructure, and that [PSF](https://psfoundation.cash) will be taking with its token, in order to mitigate risk, and support the developers and businesses that use our software.
 
 ## Will There Be a Fork?

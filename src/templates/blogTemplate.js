@@ -24,7 +24,7 @@ export default function Template({
     <Layout>
       <Helmet>
         <title>{frontmatter.title}</title>
-        <meta name="description" content="Markdown Generated Page" />
+        <meta name="description" content="PSF Blog" />
       </Helmet>
 
       <BlogPostContainer className="blog-post-container">

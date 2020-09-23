@@ -5,7 +5,7 @@ root: "/blog"
 path: "/blog/q3-progress-report"
 ---
 
-Now that the Permissionless Software Foundation is about half way through its first quarter of grants, it’s a good time to present current progress and celebrate our incredible success. The PSF community had a greater than 90% participate rate in the last governance round of grant funding. Top quality developers answered the call and have been fulfilling bounties. They have clearly appreciated the incentives the PSF community created for them. So far, we have seen success on every front of the Permissionless Software Foundation vision, laid out in [the business plan](https://psfoundation.cash/biz-plan/business-plan).
+Now that the Permissionless Software Foundation is about half way through its first quarter of grants, it’s a good time to present current progress and celebrate our incredible success. The PSF community had a greater than 90% participation rate in the last governance round of grant funding. Top quality developers answered the call and have been fulfilling [bounties](https://github.com/Permissionless-Software-Foundation/bounties). They have clearly appreciated the incentives the PSF community created for them. So far, we have seen success on every front of the Permissionless Software Foundation vision, laid out in [the business plan](https://psfoundation.cash/biz-plan/business-plan).
 
 The summaries below are condensed for the sake of brevity. If they pique your interest, we invite you to [join our Telegram Channel](https://t.me/permissionless_software) and ask for additional information.
 
@@ -22,7 +22,7 @@ The end, which developers use our tools to achieve, is apps. Apps like [wallet.f
 
 This web wallet application is 100% open source and MIT licensed, allowing companies to easily white-label it. We have already forked it several times for other projects, presented in this post. It's the only Bitcoin Cash web-wallet that has full support for nonfugible (NFT) tokens.
 
-By default, the code includes a 2,000 satoshi convenience fee output added to each transaction. These 2,000 sats go to burn PSF tokens.
+By default, the code includes a 2,000 satoshi convenience fee output added to each transaction (about $0.005 USD). These 2,000 sats go to burn PSF tokens.
 
 [Nicolas Cappabianca](https://github.com/Nicocappabianca) has been making steady improvements to the wallet, moving it from the current Alpha release to a more stable Beta release soon.
 

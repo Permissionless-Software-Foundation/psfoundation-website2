@@ -13,11 +13,8 @@ import david from '../../assets/images/david02.jpeg'
 // import qrPlaceholder from '../assets/images/qr-placeholder.png'
 import qrTrout from '../../assets/images/trout-07-2020-grant.png'
 import qrCoinJoin from '../../assets/images/grant-qrs/coinjoin-qr.png'
-import qrElectrumx from '../../assets/images/grant-qrs/electrumx.png'
 import qrFullNode from '../../assets/images/grant-qrs/full-node-qr.png'
 import qrNinsight from '../../assets/images/grant-qrs/ninsight-qr.png'
-import qrSlpE2e from '../../assets/images/grant-qrs/slp-e2e-qr.png'
-import qrSlpSecondLayer from '../../assets/images/grant-qrs/slp-second-layer-qr.png'
 import qrDaniel from '../../assets/images/grant-qrs/daniel-qr.png'
 import qrGrantAdmin from '../../assets/images/grant-qrs/grant-admin-qr.png'
 import qrSlpCliWallet from '../../assets/images/grant-qrs/qr-slp-cli-wallet.png'
@@ -269,6 +266,52 @@ class Landing extends React.Component {
                 <div className="content">
                   <div className="inner">
                     <header className="major">
+                      <h3>wallet.fullstack.cash</h3>
+                    </header>
+                    <p>
+                      Last quarter the PSF launched{' '}
+                      <a
+                        href="https://wallet.fullstack.cash"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        wallet.fullstack.cash
+                      </a>
+                      , a BCH and SLP enabled web wallet. It has been a huge
+                      success! Unlike a native phone app, the wallet can not be
+                      banned from an app store. Any device capable of opening a
+                      web page can access it. The app is even accessible over
+                      Tor and IPFS, allowing users from countries with
+                      restrictive internet policies to circumvent government
+                      rules and easily engage in economic activity using Bitcoin
+                      Cash. The app is also an awesome demonstration of what can
+                      be built with tools available at FullStack.cash.
+                    </p>
+
+                    <p>
+                      However, the app is still in early 'Alpha' release. Funds
+                      from this grant will go towards getting this app over the
+                      'finish line'. They will fund the completion of paper
+                      wallet sweeping of SLP tokens, and increase test coverage
+                      and reliablity testing of the app.
+                    </p>
+
+                    <p>
+                      <center>{addresses.slpFree}</center>
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section style={{ border: '5px solid black' }}>
+                <Link to="/grants" className="image image-overlay-wrap">
+                  <img src={qrFullNode} alt="" />
+                  {tokensBalance.slpFree &&
+                    _this.balanceElement(tokensBalance.slpFree, true)}
+                </Link>
+                <div className="content">
+                  <div className="inner">
+                    <header className="major">
                       <h3>Free Infrastructure</h3>
                     </header>
                     <p>
@@ -400,9 +443,9 @@ class Landing extends React.Component {
                     <p>
                       The primary advantage of this protocol over other CoinJoin
                       protocols is that there is no need for a coordination
-                      server. Wallets will be able to find and collaborate with
-                      each other, peer-to-peer. The end result will be large,
-                      anonymous coins, with no 'dust' issues.
+                      server. Wallets will be able to securely find and
+                      collaborate with each other, peer-to-peer. The end result
+                      will be large, anonymous coins, with no 'dust' issues.
                     </p>
                     <p>
                       Eventually, this command-line wallet will be packaged as
@@ -490,12 +533,19 @@ class Landing extends React.Component {
                   <center>Bounties</center>
                 </h2>
                 <p>
-                  These bounties will be tracked via GitHub Issues and overseen
-                  by PSF management. They will allow independent developers
-                  around the world to claim and fulfill them, and thereby earn
-                  PSF tokens and BCH. This work will help onboard new developers
-                  into the PSF community and improve the software under the PSF
-                  umbrella.
+                  These bounties will be tracked via GitHub Issues, the{' '}
+                  <a
+                    href="https://github.com/Permissionless-Software-Foundation/bounties"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Bounties Repository
+                  </a>
+                  , and their execution is overseen by PSF management. They will
+                  allow independent developers around the world to claim and
+                  fulfill them, and thereby earn PSF tokens and BCH. This work
+                  will help onboard new developers into the PSF community and
+                  improve the software under the PSF umbrella.
                 </p>
               </div>
             </section>
@@ -509,159 +559,39 @@ class Landing extends React.Component {
                 <div className="content">
                   <div className="inner">
                     <header className="major">
-                      <h3>Expand Ninsight Library in bch-js</h3>
-                    </header>
-                    <p>
-                      The indexer used by{' '}
-                      <a
-                        href="https://rest.bitcoin.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        rest.bitcoin.com
-                      </a>{' '}
-                      is called Ninsight, and it's what provides address
-                      balances and UTXO information. This is a free service
-                      provided by Bitcoin.com.
-                    </p>
-                    <p>
-                      Funds from this grant will be used to expand the{' '}
-                      <a
-                        href="https://bchjs.fullstack.cash/#api-Ninsight"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Ninsight class library
-                      </a>{' '}
-                      in{' '}
-                      <a
-                        href="https://www.npmjs.com/package/@chris.troutner/bch-js"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        bch-js
-                      </a>
-                      , allowing users of the bch-js library to make calls to
-                      the Ninsight indexer at rest.bitcoin.com and use this free
-                      resource.
-                    </p>
-                    <p>
-                      <center>{addresses.slpNinsight}</center>
-                    </p>
-                  </div>
-                </div>
-              </section>
-
-              <section style={{ border: '5px solid black' }}>
-                <Link to="/grants" className="image image-overlay-wrap">
-                  <img src={qrElectrumx} alt="" />
-                  {tokensBalance.slpElectrumx &&
-                    _this.balanceElement(tokensBalance.slpElectrumx, true)}
-                </Link>
-                <div className="content">
-                  <div className="inner">
-                    <header className="major">
-                      <h3>Expand Electrumx Library in bch-js</h3>
+                      <h3>Expand bch-js and bch-api Functionality</h3>
                     </header>
                     <p>
                       The{' '}
-                      <a href="https://bchjs.fullstack.cash/#api-ElectrumX">
-                        Electrumx class library
-                      </a>{' '}
-                      in{' '}
                       <a
-                        href="https://www.npmjs.com/package/@chris.troutner/bch-js"
+                        href="https://www.npmjs.com/package/@psf/bch-js"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         bch-js
                       </a>{' '}
-                      allows users to tap into the free, public Electrumx
-                      network. This is the same network used by the{' '}
+                      JavaScript library and{' '}
                       <a
-                        href="https://electroncash.org/"
+                        href="https://github.com/Permissionless-Software-Foundation/bch-api"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Electron Cash
+                        bch-api
                       </a>{' '}
-                      wallet. Funds for this grant will pay for expanding the
-                      library, to add additional functionality.
+                      REST API are the core infrastructure that empowers
+                      developers to build Bitcoin-Cash-based applications. This
+                      grant will pay for a series of bounties for continued
+                      improvement of this critical resource.
                     </p>
                     <p>
-                      <center>{addresses.slpElectrumx}</center>
+                      Last quarter, most of the bounties were fulfilled, but
+                      there are still a few that need to be completed. The
+                      budget from this grant will pay for additional
+                      improvements fix any bugs that are discovered.
                     </p>
-                  </div>
-                </div>
-              </section>
 
-              <section style={{ border: '5px solid black' }}>
-                <Link to="/grants" className="image image-overlay-wrap">
-                  <img src={qrSlpE2e} alt="" />
-                  {tokensBalance.slpE2E &&
-                    _this.balanceElement(tokensBalance.slpE2E, true)}
-                </Link>
-                <div className="content">
-                  <div className="inner">
-                    <header className="major">
-                      <h3>SLP E2E Test</h3>
-                    </header>
                     <p>
-                      Funds for this grant will be used to develop an end-to-end
-                      (e2e) test for sending SLP tokens. This test would verify
-                      that the entire stack of infrastructure required to send
-                      and recieve SLP tokens is functioning correctly.
-                    </p>
-                    <p>
-                      This would be an automated program that sends an SLP token
-                      from one wallet to another. This program would be added to
-                      the{' '}
-                      <a
-                        href="https://metrics.fullstack.cash/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Build Verification Test System
-                      </a>{' '}
-                      managed by FullStack.cash, and the test would be executed
-                      every 2 hours.
-                    </p>
-                    <p>
-                      <center>{addresses.slpE2E}</center>
-                    </p>
-                  </div>
-                </div>
-              </section>
-
-              <section style={{ border: '5px solid black' }}>
-                <Link to="/grants" className="image image-overlay-wrap">
-                  <img src={qrSlpSecondLayer} alt="" />
-                  {tokensBalance.slpSecondLayer &&
-                    _this.balanceElement(tokensBalance.slpSecondLayer, true)}
-                </Link>
-                <div className="content">
-                  <div className="inner">
-                    <header className="major">
-                      <h3>Research: SLP Second Layer</h3>
-                    </header>
-                    <p>
-                      It should be possible to hack the{' '}
-                      <a href="https://github.com/simpleledger/slp-specifications/blob/master/slp-token-type-1.md">
-                        SLP specification
-                      </a>{' '}
-                      to include on-chain pointers to additional data, when
-                      sending tokens. This would enable a wide range of
-                      additional use cases, such as security tokens, while
-                      maintaining backwards compatibility. Another use case
-                      would be representing a changing video game character with
-                      an NFT token.
-                    </p>
-                    <p>
-                      Funds from this grant will be used to research this idea
-                      and create proof of concept code.
-                    </p>
-                    <p>
-                      <center>{addresses.slpSecondLayer}</center>
+                      <center>{addresses.slpNinsight}</center>
                     </p>
                   </div>
                 </div>
@@ -705,6 +635,13 @@ class Landing extends React.Component {
                       be refactored. This work will also add support for NFT
                       tokens, and this effort will include increasing the test
                       code coverage of this library.
+                    </p>
+                    <p>
+                      This grant was funded last quarter, but developers with
+                      the prequisit skills could not be found to work on it.
+                      However, developers who worked on other projects last
+                      quarter have been identified to work on these bounties
+                      this quarter.
                     </p>
                     <p>
                       <center>{addresses.slpCliWallet}</center>
@@ -794,7 +731,7 @@ class Landing extends React.Component {
                       His grant will be used to fund continued development of
                       this{' '}
                       <a
-                        href="https://github.com/Permissionless-Software-Foundation/encrypt-msg/blob/master/docs/README.md"
+                        href="https://github.com/Permissionless-Software-Foundation/specifications/blob/master/ps001-media-sharing.md"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -808,10 +745,12 @@ class Landing extends React.Component {
                       >
                         message.fullstack.cash
                       </a>
-                      .
+                      . He is also developing the Community Feed to help PSF
+                      token holders to communicate effectively with the wider
+                      PSF community.
                     </p>
                     <p>
-                      This will enable wallet users to send end-to-end (e2e)
+                      The app will enable wallet users to send end-to-end (e2e)
                       encrypted messages, containing files of any size, to any
                       other Bitcoin Cash address. The experience will be very
                       similar to email. Combining uncensorable payments,
@@ -915,8 +854,7 @@ class Landing extends React.Component {
                     </header>
                     <p>
                       The role of the grant adminstrator is to distribute grants
-                      on a monthly basis. One third of each quarterly grant is
-                      distribtued per month. The duty of the Grant Adminstrator
+                      on a weekly basis. The duty of the Grant Adminstrator
                       is to manage the spreadsheet and distribute the funds in a
                       timely manner.
                     </p>

@@ -122,6 +122,8 @@ Approximately 2 weeks later (Starting August 1st 2020, and continuing every quar
 
 The Grant Administrator will also be funded by a PSF grant, and will be part of the PSF core management team. They will be responsible for distributing PSF tokens to the designated recipient in the grant proposal. Because everything happens transparently on-chain, there is no opportunity for hidden manipulation of funds.
 
+Prior to each new quarter of grant funding, any unused PSF tokens will be burned. They will not be carried over from one quarter to the next. In the first few quarters, it is expected that most Grant tokens will not be spent, as it will take time to reach a critical mass of developer talent to achieve all the goals laid out by the grants.
+
 It's important to note: The scope of the grants will focus on _people_, _projects_, and _bounties_. _People_ are expected to do work in line with the mission of promoting open source and Bitcoin Cash, but their personal reputation is as stake, and is the basis upon which token holders are sending them funds. _Projects_ are eligible for funding as well. These funds will be directed by PSF management to develop those projects in the same way [consulting services](https://fullstack.cash/consulting) are handled. _Bounties_ are limited in scope, and rewards for them are paid out immediately upon completion. Bounties will be useful tool for onboarding new developers into the community.
 
 ### Management<a name="management"></a>

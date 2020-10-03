@@ -71,380 +71,184 @@ class Landing extends React.Component {
               <header className="major">
                 <h2>Grants</h2>
               </header>
-              <h3>
-                <b>
-                  Store your PSF tokens away for 2 months starting August 15th!!
-                </b>
-              </h3>
+              <p>
+                Our first quarter of grant funding{' '}
+                <Link to="/blog/q3-progress-report">
+                  was an overwhelming succes
+                </Link>{' '}
+                due to over 90% participation by PSF community members.
+                Community developers worked hard to claim bounties and improve
+                the infrastructure and services. The core management team
+                learned many lessons in this last quarter. Most things worked,
+                some things didn't. Most importantly, we've focused efforts on
+                giving PSF token holders more tools for finding their voice
+                within the community.
+              </p>
 
               <p>
-                The next airdrop of funding tokens is set to take place on
-                October 15th. To be part of this funding token airdrop you will
-                need to stake your PSF tokens, by not moving them for two
-                months. This means you must not move your PSF tokens after{' '}
-                <u>
-                  <b>August 15th</b>
-                </u>
-                .
+                The next funding token air drop will take place at 7PM UTC on
+                October 15th, 2020. Community members that have held their
+                tokens without moving them since August 15th (block 648,518)
+                will be elgible for the air drop. They can then use those tokens
+                to fund the below grants, by sending the funding tokens to the
+                address assigned to each grant. On November 1st, each grant will
+                recieve a 1-to-1 match of newly minted PSF tokens for each
+                funding token recieved.
               </p>
-              <p>
-                Funding tokens are an important part of the governance mechanism
-                for the PSF community. As described in the{' '}
-                <Link to="/biz-plan/business-plan/#funding">Business Plan</Link>
-                , stakeholders receive periodic funding tokens. They will then
-                send these funding tokens to the SLP addresses of the people,
-                projects, and bounties they want to see funded. Only those
-                addresses with coins that were held for a minimum of two months
-                are eligible to take part in this governance process.
-              </p>
-              <p>
-                On November 1st the grant addresses will be funded 1:1 with
-                newly minted PSF tokens to match the funding tokens they've
-                received from the stakeholders. These tokens will be distributed
-                over the following three months to fund development of projects,
-                infrastructure, specific developers, and management of the
-                organization. This grant-funding cycle repeats every three
-                months.
-              </p>
-              <br />
-              <br />
 
-              <h3>Previously Funded Grants</h3>
               <p>
-                The community response from the last grant funding cycle was
-                overwhelmingly positive! Below are the grants that were funded
-                and are currently being worked on.
+                Here are a few of the successes the Permissionless Software
+                Foundation community has achieved over the last quarter:
+              </p>
+
+              <ul>
+                <li>
+                  Huge improvements were made to the{' '}
+                  <a
+                    href="https://www.npmjs.com/package/@psf/bch-js"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    bch-js
+                  </a>{' '}
+                  JavaScript library and{' '}
+                  <a
+                    href="https://github.com/Permissionless-Software-Foundation/bch-api"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    bch-api
+                  </a>{' '}
+                  REST API, which is the core infrastructure supporting all
+                  other PSF projects.
+                </li>
+                <br></br>
+
+                <li>
+                  We proudly supported the{' '}
+                  <a
+                    href="https://devcon.cash"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Third Bitcoin 'Dev Con' hackathon
+                  </a>
+                  . This onboarded several new developers into the Bitcoin Cash
+                  space as well as FullStack.cash tools. As a result, the number
+                  of paid subscriptions and daily API requests are both up 50%
+                  from the start of the quarter.
+                </li>
+                <br></br>
+
+                <li>
+                  <a
+                    href="https://wallet.fullstack.cash"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    wallet.fullstack.cash
+                  </a>{' '}
+                  has a functional{' '}
+                  <a
+                    href="https://youtu.be/vtv9bAQx5LE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    SLP Post Office
+                  </a>{' '}
+                  and is the only web wallet in existance that is capable of
+                  sweeping SLP tokens from a paper wallet. Sweeping tokens will
+                  be a valuable tool for onboarding new users into the Bitcoin
+                  Cash space, and it will help existing users preserve and split
+                  their coins after the{' '}
+                  <Link to="/blog/november-fork">looming chain split</Link>.
+                </li>
+                <br></br>
+
+                <li>
+                  <a
+                    href="https://memo.cash/profile/15XmDNSNVvENzRKfSSvyUXqh8egf9mSrZH"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Daniel Humberto
+                  </a>{' '}
+                  has been working hard on{' '}
+                  <a
+                    href="https://message.fullstack.cash"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    message.fullstack.cash
+                  </a>{' '}
+                  to enable uncensorable, e2e encrypted messaging. He's also
+                  adding a Community Feed to give PSF community members a
+                  greater voice.
+                </li>
+              </ul>
+
+              <p>
+                Additional details are available in our{' '}
+                <Link to="/blog/q3-progress-report">
+                  Mid-Q3 progress report
+                </Link>
+              </p>
+
+              <p>
+                Since the start of the quarter, the PSF token price increased
+                from $0.04 to a peak of $0.50. Community members with BCH have
+                provided the incentive for developers to achieve the
+                accomplishments above. With a successful first quarter behind
+                us, the community will focus its resources to continue riding
+                the wave of success by reducing the scope of grants this next
+                quarter.
               </p>
               <p>
-                The grant information below will be removed in October, and
-                updated with the new grant candidates for the next round of
-                grant funding.
+                The world has never had a greater need for private, end-to-end
+                encrypted, uncensorable messaging. The PSF has the same needs
+                internal to its community. The grant process and{' '}
+                <a
+                  href="https://t.me/permissionless_software"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Telegram channel
+                </a>{' '}
+                are execellent initial communication tools, but the Community
+                Feed will enable improved, decentralized, uncensorable
+                communication between significant economic actors within the PSF
+                community.{' '}
+                <a
+                  href="https://torlist.cash/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  torlist.cash
+                </a>{' '}
+                will unleash the deep web as pragmatic e-commerce alternative to
+                the highly-censored clear web. Consolidating CoinJoin will
+                provide another tool for achieving financial privacy using
+                Bitcoin Cash. Increased usage of any of these tools will
+                increase demand for the PSF token.
               </p>
+              <p>
+                Now is the time for PSF community members to show their support
+                for these freedom enhancing tools. Now is the time for community
+                developers to roll up their sleeves and continue building with
+                fervor. Now is the time for you to participate in{' '}
+                <a
+                  href="https://t.me/permissionless_software"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  commmunity discussion
+                </a>
+                , and to use your funding tokens to signal your support for the
+                projects and people below.
+              </p>
+
+              <p>Thank you for being a part of the PSF community!</p>
             </div>
-          </section>
-
-          <section id="eight">
-            <div style={{ padding: '25px' }}>
-              <h2
-                style={{
-                  borderTop: 'white 2px solid',
-                  borderBottom: 'white 2px solid',
-                }}
-              >
-                <center>People</center>
-              </h2>
-            </div>
-          </section>
-
-          <section id="two" className="spotlights">
-            <section style={{ border: '5px solid black' }}>
-              <Link to="/grants" className="image image-overlay-wrap">
-                <img src={trout} alt="" />
-                <img src={qrTrout} alt="" className="image-overlay" />
-                {tokensBalance.slpTrout &&
-                  _this.balanceElement(tokensBalance.slpTrout)}
-              </Link>
-
-              <div className="content">
-                <div className="inner">
-                  <header className="major">
-                    <h3>Chris Troutner - Head Janitor</h3>
-                  </header>
-                  <p>
-                    As explained in the{' '}
-                    <Link to="/biz-plan/business-plan/#management">
-                      management section
-                    </Link>{' '}
-                    of the Business Plan, the first managment role for the
-                    Foundation is that of 'Head Janitor'. This person's chief
-                    responsibilities are to choose the other first contributors,
-                    and to slowly and a carefully distribute responsibilities
-                    and cryptographic keys. Their primary role is to grow the
-                    organization, keep it focused on the Foundation's mission,
-                    and reduce any single points of failure that could lead to a
-                    catastrophic failure of the organization.
-                  </p>
-                  <p>
-                    As founder of the PSF and creator of its core software,
-                    Chris Troutner, aka 'trout', will take on this initial role.
-                    Over the next quarter, he will focus on finding community
-                    members who can be trusted with multisig keys for minting
-                    PSF tokens. This will be the first step towards
-                    decentralizing the organization and{' '}
-                    <Link to="/biz-plan/business-plan/#migitatingFailure">
-                      mitigating catestrophic failure
-                    </Link>{' '}
-                    that could stop the Foundation from growing.
-                  </p>
-                  <p>
-                    <center>{addresses.slpTrout}</center>
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section style={{ border: '5px solid black' }}>
-              <Link to="/grants" className="image image-overlay-wrap">
-                <img src={david} alt="" />
-                <img src={qrDavid} alt="" className="image-overlay" />
-                {tokensBalance.slpDavid &&
-                  _this.balanceElement(tokensBalance.slpDavid)}
-              </Link>
-              <div className="content">
-                <div className="inner">
-                  <header className="major">
-                    <h3>David Allen - Business Development</h3>
-                  </header>
-                  <p>
-                    David was introduced to the Bitcoin space in 2012. Over the
-                    years he has worked with many prominent individuals and
-                    organizations and his many contacts have helped new projects
-                    to find funding within and outside of the cryptocurrency
-                    community.
-                  </p>
-                  <p>
-                    David has agreed to assist and support the Permissionless
-                    Software Foundation and to be a primary contact as the
-                    community grows out of its infancy. His experience and
-                    contributions are a welcome addition to the foundation.
-                  </p>
-                  <p>
-                    <center>{addresses.slpDavid}</center>
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section style={{ border: '5px solid black' }}>
-              <Link to="/grants" className="image image-overlay-wrap">
-                <img src={daniel} alt="" />
-                <img src={qrDaniel} alt="" className="image-overlay" />
-                {tokensBalance.slpDaniel &&
-                  _this.balanceElement(tokensBalance.slpDaniel)}
-              </Link>
-              <div className="content">
-                <div className="inner">
-                  <header className="major">
-                    <h3>Daniel Humberto - Encrypted Messaging</h3>
-                  </header>
-                  <p>
-                    Daniel is a full stack developer with an emphasis on front
-                    end apps using React and Gatsby, as well as IPFS. He's built
-                    many of the PSF apps like the{' '}
-                    <a
-                      href="https://wallet.fullstack.cash"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      FullStack.cash Wallet
-                    </a>
-                    , the{' '}
-                    <a
-                      href="https://uncensorablepublishing.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Uncensorable Publishing
-                    </a>{' '}
-                    template, and many of our IPFS-enabled apps. As a
-                    Venezuelan, he has witnessed first-hand the importance of
-                    secure communication and the need to increase the efficiency
-                    of the grey market.
-                  </p>
-                  <p>
-                    His grant will be used to fund continued development of this{' '}
-                    <a
-                      href="https://github.com/Permissionless-Software-Foundation/encrypt-msg/blob/master/docs/README.md"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Media Sharing Protocol
-                    </a>{' '}
-                    and its integration into the{' '}
-                    <a href="https://wallet.fullstack.cash">
-                      FullStack.cash Wallet
-                    </a>
-                    .
-                  </p>
-                  <p>
-                    This will enable wallet users to send end-to-end (e2e)
-                    encrypted messages, containing files of any size, to any
-                    other Bitcoin Cash address. The experience will be very
-                    similar to email. Combining uncensorable payments,
-                    communication, and file sharing into one app will help
-                    facilitate economic activity around the world and grow
-                    demand for Bitcoin Cash.
-                  </p>
-                  <p>
-                    <center>{addresses.slpDaniel}</center>
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section style={{ border: '5px solid black' }}>
-              <Link to="/grants" className="image image-overlay-wrap">
-                <img src={andre} alt="" />
-                <img src={qrPostOffice} alt="" className="image-overlay" />
-                {tokensBalance.slpAndre &&
-                  _this.balanceElement(tokensBalance.slpAndre)}
-              </Link>
-
-              <div className="content">
-                <div className="inner">
-                  <header className="major">
-                    <h3>Andre Cabrera - SLP Post Office</h3>
-                  </header>
-                  <p>
-                    Andre is a well-known developer in the Bitcoin Cash space.
-                    He and his team created the web wallet,{' '}
-                    <a
-                      href="https://github.com/piticocash"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Pitico
-                    </a>
-                    , for the 2019{' '}
-                    <a
-                      href="https://simpleledger.info/slpvh/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      SLP Virtual Hackathon
-                    </a>
-                    . That wallet was later forked and he was hired by
-                    Bitcoin.com to build{' '}
-                    <a
-                      href="https://mint.bitcoin.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      mint.bitcoin.com
-                    </a>
-                    . Andre has recently been sponsored by the SLP Foundation to
-                    complete his work on the{' '}
-                    <a
-                      href="https://github.com/TOKENLAND/simpleledger-post-office-server"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      SLP Post Office Server
-                    </a>
-                    .
-                  </p>
-                  <p>
-                    <a
-                      href="https://medium.com/@vinarmani/simple-ledger-postage-protocol-enabling-a-true-slp-token-ecosystem-on-bitcoin-cash-f960a58c16c4"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      This article
-                    </a>{' '}
-                    explains the purpose and impact of the post office concept:
-                    allowing SLP tokens to be used even if buyers have no BCH.
-                    BCH is still used 'under the hood' and miners are still paid
-                    transaction fees. This scheme greatly improves the user
-                    experience for both buyers and sellers when using SLP
-                    tokens.
-                  </p>
-                  <p>
-                    Funds from this grant will be used to help him complete this
-                    work, as well as to integrate the Post Office protocol into
-                    the{' '}
-                    <a
-                      href="https://wallet.fullstack.cash"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      FullStack.cash web wallet
-                    </a>
-                    . The client functionality will also be abstracted into an
-                    npm JavaScript library that can be used by any wallet
-                    application.
-                  </p>
-                  <p>
-                    <center>{addresses.slpAndre}</center>
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section style={{ border: '5px solid black' }}>
-              <Link to="/grants" className="image image-overlay-wrap">
-                <img src={placeholder} alt="" />
-                <img src={qrGrantAdmin} alt="" className="image-overlay" />
-                {tokensBalance.slpAdmin &&
-                  _this.balanceElement(tokensBalance.slpAdmin)}
-              </Link>
-              <div className="content">
-                <div className="inner">
-                  <header className="major">
-                    <h3>Grant Administrator</h3>
-                  </header>
-                  <p>
-                    The role of the grant adminstrator is to distribute grants
-                    on a monthly basis. One third of each quarterly grant is
-                    distribtued per month. The duty of the Grant Adminstrator is
-                    to manage the spreadsheet and distribute the funds in a
-                    timely manner.
-                  </p>
-                  <p>
-                    The person fulfilling this role will report to the Head
-                    Janitor. They will be allowed to use a pseudonym or divulge
-                    their identity publically, at their discretion.
-                  </p>
-                  <p>
-                    <center>{addresses.slpAdmin}</center>
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section style={{ border: '5px solid black' }}>
-              <Link to="/grants" className="image image-overlay-wrap">
-                <img src={jtfreeman} alt="" />
-                <img src={qrJt} alt="" className="image-overlay" />
-                {tokensBalance.slpJtfreeman &&
-                  _this.balanceElement(tokensBalance.slpJtfreeman)}
-              </Link>
-              <div className="content">
-                <div className="inner">
-                  <header className="major">
-                    <h3>JT Freeman - SLP Infrastructure</h3>
-                  </header>
-                  <p>
-                    JT is a founder of{' '}
-                    <Link to="https://fountainhead.cash">
-                      Fountainhead.cash
-                    </Link>
-                    ,{' '}
-                    <Link to="https://read.cash/@SLP-Foundation/announcing-the-slp-foundation-e8cededa">
-                      SLP Foundation
-                    </Link>
-                    , the <Link to="https://slp.dev">SLP.dev</Link>{' '}
-                    documentation site, and many others. He created and
-                    maintains critical pieces of SLP token infrastructure like{' '}
-                    <Link to="https://www.npmjs.com/package/slp-parser">
-                      slp-parser
-                    </Link>{' '}
-                    and{' '}
-                    <Link to="https://www.npmjs.com/package/slp-mdm">
-                      slp-mdm
-                    </Link>
-                    .
-                  </p>
-                  <p>
-                    JT is an advisor to PSF management and a pillar of the
-                    Bitcoin Cash community. This grant will fund his ongoing
-                    work in the space.
-                  </p>
-                  <p>
-                    <center>{addresses.slpJtfreeman}</center>
-                  </p>
-                </div>
-              </div>
-            </section>
           </section>
 
           <section>
@@ -900,6 +704,332 @@ class Landing extends React.Component {
               </section>
             </section>
 
+            <section id="eight">
+              <div style={{ padding: '25px' }}>
+                <h2
+                  style={{
+                    borderTop: 'white 2px solid',
+                    borderBottom: 'white 2px solid',
+                  }}
+                >
+                  <center>People</center>
+                </h2>
+              </div>
+            </section>
+
+            <section id="two" className="spotlights">
+              <section style={{ border: '5px solid black' }}>
+                <Link to="/grants" className="image image-overlay-wrap">
+                  <img src={trout} alt="" />
+                  <img src={qrTrout} alt="" className="image-overlay" />
+                  {tokensBalance.slpTrout &&
+                    _this.balanceElement(tokensBalance.slpTrout)}
+                </Link>
+
+                <div className="content">
+                  <div className="inner">
+                    <header className="major">
+                      <h3>Chris Troutner - Head Janitor</h3>
+                    </header>
+                    <p>
+                      As explained in the{' '}
+                      <Link to="/biz-plan/business-plan/#management">
+                        management section
+                      </Link>{' '}
+                      of the Business Plan, the first managment role for the
+                      Foundation is that of 'Head Janitor'. This person's chief
+                      responsibilities are to choose the other first
+                      contributors, and to slowly and a carefully distribute
+                      responsibilities and cryptographic keys. Their primary
+                      role is to grow the organization, keep it focused on the
+                      Foundation's mission, and reduce any single points of
+                      failure that could lead to a catastrophic failure of the
+                      organization.
+                    </p>
+                    <p>
+                      As founder of the PSF and creator of its core software,
+                      Chris Troutner, aka 'trout', will take on this initial
+                      role. Over the next quarter, he will focus on finding
+                      community members who can be trusted with multisig keys
+                      for minting PSF tokens. This will be the first step
+                      towards decentralizing the organization and{' '}
+                      <Link to="/biz-plan/business-plan/#migitatingFailure">
+                        mitigating catestrophic failure
+                      </Link>{' '}
+                      that could stop the Foundation from growing.
+                    </p>
+                    <p>
+                      <center>{addresses.slpTrout}</center>
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section style={{ border: '5px solid black' }}>
+                <Link to="/grants" className="image image-overlay-wrap">
+                  <img src={david} alt="" />
+                  <img src={qrDavid} alt="" className="image-overlay" />
+                  {tokensBalance.slpDavid &&
+                    _this.balanceElement(tokensBalance.slpDavid)}
+                </Link>
+                <div className="content">
+                  <div className="inner">
+                    <header className="major">
+                      <h3>David Allen - Business Development</h3>
+                    </header>
+                    <p>
+                      David was introduced to the Bitcoin space in 2012. Over
+                      the years he has worked with many prominent individuals
+                      and organizations and his many contacts have helped new
+                      projects to find funding within and outside of the
+                      cryptocurrency community.
+                    </p>
+                    <p>
+                      David has agreed to assist and support the Permissionless
+                      Software Foundation and to be a primary contact as the
+                      community grows out of its infancy. His experience and
+                      contributions are a welcome addition to the foundation.
+                    </p>
+                    <p>
+                      <center>{addresses.slpDavid}</center>
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section style={{ border: '5px solid black' }}>
+                <Link to="/grants" className="image image-overlay-wrap">
+                  <img src={daniel} alt="" />
+                  <img src={qrDaniel} alt="" className="image-overlay" />
+                  {tokensBalance.slpDaniel &&
+                    _this.balanceElement(tokensBalance.slpDaniel)}
+                </Link>
+                <div className="content">
+                  <div className="inner">
+                    <header className="major">
+                      <h3>Daniel Humberto - Encrypted Messaging</h3>
+                    </header>
+                    <p>
+                      Daniel is a full stack developer with an emphasis on front
+                      end apps using React and Gatsby, as well as IPFS. He's
+                      built many of the PSF apps like the{' '}
+                      <a
+                        href="https://wallet.fullstack.cash"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        FullStack.cash Wallet
+                      </a>
+                      , the{' '}
+                      <a
+                        href="https://uncensorablepublishing.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Uncensorable Publishing
+                      </a>{' '}
+                      template, and many of our IPFS-enabled apps. As a
+                      Venezuelan, he has witnessed first-hand the importance of
+                      secure communication and the need to increase the
+                      efficiency of the grey market.
+                    </p>
+                    <p>
+                      His grant will be used to fund continued development of
+                      this{' '}
+                      <a
+                        href="https://github.com/Permissionless-Software-Foundation/encrypt-msg/blob/master/docs/README.md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Media Sharing Protocol
+                      </a>{' '}
+                      and its integration into the{' '}
+                      <a href="https://wallet.fullstack.cash">
+                        FullStack.cash Wallet
+                      </a>
+                      .
+                    </p>
+                    <p>
+                      This will enable wallet users to send end-to-end (e2e)
+                      encrypted messages, containing files of any size, to any
+                      other Bitcoin Cash address. The experience will be very
+                      similar to email. Combining uncensorable payments,
+                      communication, and file sharing into one app will help
+                      facilitate economic activity around the world and grow
+                      demand for Bitcoin Cash.
+                    </p>
+                    <p>
+                      <center>{addresses.slpDaniel}</center>
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section style={{ border: '5px solid black' }}>
+                <Link to="/grants" className="image image-overlay-wrap">
+                  <img src={andre} alt="" />
+                  <img src={qrPostOffice} alt="" className="image-overlay" />
+                  {tokensBalance.slpAndre &&
+                    _this.balanceElement(tokensBalance.slpAndre)}
+                </Link>
+
+                <div className="content">
+                  <div className="inner">
+                    <header className="major">
+                      <h3>Andre Cabrera - SLP Post Office</h3>
+                    </header>
+                    <p>
+                      Andre is a well-known developer in the Bitcoin Cash space.
+                      He and his team created the web wallet,{' '}
+                      <a
+                        href="https://github.com/piticocash"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Pitico
+                      </a>
+                      , for the 2019{' '}
+                      <a
+                        href="https://simpleledger.info/slpvh/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        SLP Virtual Hackathon
+                      </a>
+                      . That wallet was later forked and he was hired by
+                      Bitcoin.com to build{' '}
+                      <a
+                        href="https://mint.bitcoin.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        mint.bitcoin.com
+                      </a>
+                      . Andre has recently been sponsored by the SLP Foundation
+                      to complete his work on the{' '}
+                      <a
+                        href="https://github.com/TOKENLAND/simpleledger-post-office-server"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        SLP Post Office Server
+                      </a>
+                      .
+                    </p>
+                    <p>
+                      <a
+                        href="https://medium.com/@vinarmani/simple-ledger-postage-protocol-enabling-a-true-slp-token-ecosystem-on-bitcoin-cash-f960a58c16c4"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        This article
+                      </a>{' '}
+                      explains the purpose and impact of the post office
+                      concept: allowing SLP tokens to be used even if buyers
+                      have no BCH. BCH is still used 'under the hood' and miners
+                      are still paid transaction fees. This scheme greatly
+                      improves the user experience for both buyers and sellers
+                      when using SLP tokens.
+                    </p>
+                    <p>
+                      Funds from this grant will be used to help him complete
+                      this work, as well as to integrate the Post Office
+                      protocol into the{' '}
+                      <a
+                        href="https://wallet.fullstack.cash"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        FullStack.cash web wallet
+                      </a>
+                      . The client functionality will also be abstracted into an
+                      npm JavaScript library that can be used by any wallet
+                      application.
+                    </p>
+                    <p>
+                      <center>{addresses.slpAndre}</center>
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section style={{ border: '5px solid black' }}>
+                <Link to="/grants" className="image image-overlay-wrap">
+                  <img src={placeholder} alt="" />
+                  <img src={qrGrantAdmin} alt="" className="image-overlay" />
+                  {tokensBalance.slpAdmin &&
+                    _this.balanceElement(tokensBalance.slpAdmin)}
+                </Link>
+                <div className="content">
+                  <div className="inner">
+                    <header className="major">
+                      <h3>Grant Administrator</h3>
+                    </header>
+                    <p>
+                      The role of the grant adminstrator is to distribute grants
+                      on a monthly basis. One third of each quarterly grant is
+                      distribtued per month. The duty of the Grant Adminstrator
+                      is to manage the spreadsheet and distribute the funds in a
+                      timely manner.
+                    </p>
+                    <p>
+                      The person fulfilling this role will report to the Head
+                      Janitor. They will be allowed to use a pseudonym or
+                      divulge their identity publically, at their discretion.
+                    </p>
+                    <p>
+                      <center>{addresses.slpAdmin}</center>
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section style={{ border: '5px solid black' }}>
+                <Link to="/grants" className="image image-overlay-wrap">
+                  <img src={jtfreeman} alt="" />
+                  <img src={qrJt} alt="" className="image-overlay" />
+                  {tokensBalance.slpJtfreeman &&
+                    _this.balanceElement(tokensBalance.slpJtfreeman)}
+                </Link>
+                <div className="content">
+                  <div className="inner">
+                    <header className="major">
+                      <h3>JT Freeman - SLP Infrastructure</h3>
+                    </header>
+                    <p>
+                      JT is a founder of{' '}
+                      <Link to="https://fountainhead.cash">
+                        Fountainhead.cash
+                      </Link>
+                      ,{' '}
+                      <Link to="https://read.cash/@SLP-Foundation/announcing-the-slp-foundation-e8cededa">
+                        SLP Foundation
+                      </Link>
+                      , the <Link to="https://slp.dev">SLP.dev</Link>{' '}
+                      documentation site, and many others. He created and
+                      maintains critical pieces of SLP token infrastructure like{' '}
+                      <Link to="https://www.npmjs.com/package/slp-parser">
+                        slp-parser
+                      </Link>{' '}
+                      and{' '}
+                      <Link to="https://www.npmjs.com/package/slp-mdm">
+                        slp-mdm
+                      </Link>
+                      .
+                    </p>
+                    <p>
+                      JT is an advisor to PSF management and a pillar of the
+                      Bitcoin Cash community. This grant will fund his ongoing
+                      work in the space.
+                    </p>
+                    <p>
+                      <center>{addresses.slpJtfreeman}</center>
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </section>
+
             <section id="nine">
               <div style={{ padding: '25px' }}>
                 <h2
@@ -921,7 +1051,6 @@ class Landing extends React.Component {
                 </ul>
               </div>
             </section>
-
           </section>
         </div>
       </Layout>

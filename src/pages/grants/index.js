@@ -10,32 +10,30 @@ import daniel from '../../assets/images/daniel.jpg'
 import david from '../../assets/images/david02.jpeg'
 
 // QR donation codes
-// import qrPlaceholder from '../assets/images/qr-placeholder.png'
-import qrTrout from '../../assets/images/trout-07-2020-grant.png'
-import qrCoinJoin from '../../assets/images/grant-qrs/coinjoin-qr.png'
-import qrFullNode from '../../assets/images/grant-qrs/full-node-qr.png'
-import qrNinsight from '../../assets/images/grant-qrs/ninsight-qr.png'
-import qrDaniel from '../../assets/images/grant-qrs/daniel-qr.png'
-import qrGrantAdmin from '../../assets/images/grant-qrs/grant-admin-qr.png'
-import qrSlpCliWallet from '../../assets/images/grant-qrs/qr-slp-cli-wallet.png'
-import qrTorlist from '../../assets/images/grant-qrs/torlist-qr.png'
-import qrDavid from '../../assets/images/grant-qrs/david-qr.png'
-import qrDiscretionary from '../../assets/images/grant-qrs/discretionary-qr.png'
+import qrWallet from '../../assets/images/grant-qrs/2020-q4/qr-wallet.png'
+import qrTrout from '../../assets/images/grant-qrs/2020-q4/qr-trout.png'
+import qrCoinJoin from '../../assets/images/grant-qrs/2020-q4/qr-coinjoin.png'
+import qrFreeInfa from '../../assets/images/grant-qrs/2020-q4/qr-free-infra.png'
+import qrBchjs from '../../assets/images/grant-qrs/2020-q4/qrBchjs.png'
+import qrDaniel from '../../assets/images/grant-qrs/2020-q4/qr-daniel.png'
+import qrGrantAdmin from '../../assets/images/grant-qrs/2020-q4/qr-grant-admin.png'
+import qrSlpCliWallet from '../../assets/images/grant-qrs/2020-q4/qr-slp-cli-wallet.png'
+import qrTorlist from '../../assets/images/grant-qrs/2020-q4/qr-torlist.png'
+import qrDavid from '../../assets/images/grant-qrs/2020-q4/qr-david.png'
+import qrDiscretionary from '../../assets/images/grant-qrs/2020-q4/qr-community.png'
 
 const addresses = {
-  slpTrout: 'simpleledger:qqjjhysfkn7h896t9auttv33k5mnstdeluhln3z94e',
-  slpDaniel: 'simpleledger:qz47n3avw908qz8sk8vaky9etmrasyqf6s3cnjf5hm',
-  slpDavid: 'simpleledger:qzcq4z08z89ypqmc6ac0jk47ud6hcquedqlmuuk7fx',
-  slpAdmin: 'simpleledger:qzen3z2rm48qt6uryg70k7x0hg7eu8g8yqthc4y6my',
-  slpFree: 'simpleledger:qq96aqj96z2y83hz28rlzzcwms5rm8rwnyxyvjmchv',
-  slpCollaborative: 'simpleledger:qz2w8l8endnn6z3vvql3wkg6k8fsy3m0ys88mgczmv',
-  slpTorList: 'simpleledger:qpxkyjp77lrf4c7j7cts5rvpymr4shmtac274kfvyg',
-  slpNinsight: 'simpleledger:qquwtcfj67zpygk673deunp66npnfemcqu9gr9tnkp',
-  slpElectrumx: 'simpleledger:qqhsmcyce44q874l9egtl5skrnedzfttpsw0j76tf6',
-  slpE2E: 'simpleledger:qqms8fy8sn3qhmcq38zf48x3tu4dgp4vpcwg3nrrkq',
-  slpSecondLayer: 'simpleledger:qqynm8zt9hayn90rfev7yqzygpzgk6he5un9nagext',
-  slpCliWallet: 'simpleledger:qpa6nzfaj6npjqee79vekn56qucpqffxmganf9savt',
-  slpDiscretionary: 'simpleledger:qqajwu8f2ce90de7ftf6lfwa8lvl29fg4v37hvwm2y',
+  slpTrout: 'simpleledger:qrqr7w2cmxk9gxe0uzdsdzh295kmp65tgskj8kxslr',
+  slpDaniel: 'simpleledger:qqfewsn7sx383caj9l8e964l7v7kcrm9xqyrnttahh',
+  slpDavid: 'simpleledger:qq623cx5uc28y7p7fg3px979tlhghzrm256avfh3kj',
+  slpAdmin: 'simpleledger:qqnv30enl0dqtfs25xh9nkqdrzpqflz22gdhx5ttr0',
+  slpFree: 'simpleledger:qpyu35q0ylvjjaex889phzl94taka68dsu0a0p2nez',
+  slpCollaborative: 'simpleledger:qrxd64rg7wel2rkk0257gs56anh0exlz25hvjx9h78',
+  slpTorList: 'simpleledger:qpnetzpuldvrvg4qxu8t2jdz7nwn6s5pmy4knghexv',
+  slpCliWallet: 'simpleledger:qzu63uur8q6wse022cgvheth8ec6l6w5cy6qm8l862',
+  slpDiscretionary: 'simpleledger:qpalprjtnq35sf0akv2t6jt3qz9pn66vscmdqj8cdq',
+  slpWallet: 'simpleledger:qz3zydy6w8g35296xucwuys92l33f0q7kqerdv7mj4',
+  slpBchjs: 'simpleledger:qpnd4umjualvpnk46xrzk2ay9csz88q0nqej2l9jw9'
 }
 
 let _this
@@ -259,9 +257,9 @@ class Landing extends React.Component {
             <section className="spotlights">
               <section style={{ border: '5px solid black' }}>
                 <Link to="/grants" className="image image-overlay-wrap">
-                  <img src={qrFullNode} alt="" />
-                  {tokensBalance.slpFree &&
-                    _this.balanceElement(tokensBalance.slpFree, true)}
+                  <img src={qrWallet} alt="" />
+                  {tokensBalance.slpWallet &&
+                    _this.balanceElement(tokensBalance.slpWallet, true)}
                 </Link>
                 <div className="content">
                   <div className="inner">
@@ -297,7 +295,7 @@ class Landing extends React.Component {
                     </p>
 
                     <p>
-                      <center>{addresses.slpFree}</center>
+                      <center>{addresses.slpWallet}</center>
                     </p>
                   </div>
                 </div>
@@ -305,7 +303,7 @@ class Landing extends React.Component {
 
               <section style={{ border: '5px solid black' }}>
                 <Link to="/grants" className="image image-overlay-wrap">
-                  <img src={qrFullNode} alt="" />
+                  <img src={qrFreeInfa} alt="" />
                   {tokensBalance.slpFree &&
                     _this.balanceElement(tokensBalance.slpFree, true)}
                 </Link>
@@ -552,9 +550,9 @@ class Landing extends React.Component {
             <section className="spotlights">
               <section style={{ border: '5px solid black' }}>
                 <Link to="/grants" className="image image-overlay-wrap">
-                  <img src={qrNinsight} alt="" />
-                  {tokensBalance.slpNinsight &&
-                    _this.balanceElement(tokensBalance.slpNinsight, true)}
+                  <img src={qrBchjs} alt="" />
+                  {tokensBalance.slpBchjs &&
+                    _this.balanceElement(tokensBalance.slpBchjs, true)}
                 </Link>
                 <div className="content">
                   <div className="inner">
@@ -591,7 +589,7 @@ class Landing extends React.Component {
                     </p>
 
                     <p>
-                      <center>{addresses.slpNinsight}</center>
+                      <center>{addresses.slpBchjs}</center>
                     </p>
                   </div>
                 </div>

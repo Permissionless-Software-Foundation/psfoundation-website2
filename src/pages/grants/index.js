@@ -21,6 +21,7 @@ import qrSlpCliWallet from '../../assets/images/grant-qrs/2020-q4/qr-slp-cli-wal
 import qrTorlist from '../../assets/images/grant-qrs/2020-q4/qr-torlist.png'
 import qrDavid from '../../assets/images/grant-qrs/2020-q4/qr-david.png'
 import qrDiscretionary from '../../assets/images/grant-qrs/2020-q4/qr-community.png'
+import qrMetrics from '../../assets/images/grant-qrs/2020-q4/qr-metrics.png'
 
 const addresses = {
   slpTrout: 'simpleledger:qrqr7w2cmxk9gxe0uzdsdzh295kmp65tgskj8kxslr',
@@ -33,7 +34,8 @@ const addresses = {
   slpCliWallet: 'simpleledger:qzu63uur8q6wse022cgvheth8ec6l6w5cy6qm8l862',
   slpDiscretionary: 'simpleledger:qpalprjtnq35sf0akv2t6jt3qz9pn66vscmdqj8cdq',
   slpWallet: 'simpleledger:qz3zydy6w8g35296xucwuys92l33f0q7kqerdv7mj4',
-  slpBchjs: 'simpleledger:qpnd4umjualvpnk46xrzk2ay9csz88q0nqej2l9jw9'
+  slpBchjs: 'simpleledger:qpnd4umjualvpnk46xrzk2ay9csz88q0nqej2l9jw9',
+  slpMetrics: 'simpleledger:qq380wxdut8r44ummd3r9x25h7mhkm9x8v4cd00lwd',
 }
 
 let _this
@@ -78,11 +80,11 @@ class Landing extends React.Component {
                 The next funding token air drop will take place at 7PM UTC on
                 October 15th, 2020. Community members that have held their
                 tokens without moving them since August 15th (block 648,518)
-                will be elgible for the air drop. They can then use those tokens
+                will be eligible for the air drop. They can then use those tokens
                 to fund the below grants, by sending the funding tokens to the
                 address assigned to each grant. On November 1st, each grant will
-                recieve a 1-to-1 match of newly minted PSF tokens for each
-                funding token recieved.
+                receive a 1-to-1 match of newly minted PSF tokens for each
+                funding token received.
               </p>
 
               <p>
@@ -122,7 +124,7 @@ class Landing extends React.Component {
                   >
                     Third Bitcoin 'Dev Con' hackathon
                   </a>
-                  . This onboarded several new developers into the Bitcoin Cash
+                  . This on-boarded several new developers into the Bitcoin Cash
                   space as well as FullStack.cash tools. As a result, the number
                   of paid subscriptions and daily API requests are both up 50%
                   from the start of the quarter.
@@ -145,9 +147,9 @@ class Landing extends React.Component {
                   >
                     SLP Post Office
                   </a>{' '}
-                  and is the only web wallet in existance that is capable of
+                  and is the only web wallet in existence that is capable of
                   sweeping SLP tokens from a paper wallet. Sweeping tokens will
-                  be a valuable tool for onboarding new users into the Bitcoin
+                  be a valuable tool for on-boarding new users into the Bitcoin
                   Cash space, and it will help existing users preserve and split
                   their coins after the{' '}
                   <Link to="/blog/november-fork">looming chain split</Link>.
@@ -203,7 +205,7 @@ class Landing extends React.Component {
                 >
                   Telegram channel
                 </a>{' '}
-                are execellent initial communication tools, but the Community
+                are excellent initial communication tools, but the Community
                 Feed will enable improved, decentralized, uncensorable
                 communication between significant economic actors within the PSF
                 community.{' '}
@@ -291,7 +293,7 @@ class Landing extends React.Component {
                       from this grant will go towards getting this app over the
                       'finish line'. They will fund the completion of paper
                       wallet sweeping of SLP tokens, and increase test coverage
-                      and reliablity testing of the app.
+                      and reliability testing of the app.
                     </p>
 
                     <p>
@@ -475,7 +477,7 @@ class Landing extends React.Component {
                       <h3>Tor List</h3>
                     </header>
                     <p>
-                      The Deep Web is natoriously difficult to navigate.
+                      The Deep Web is notoriously difficult to navigate.
                       Websites published with Tor '.onion' addresses or IPFS
                       hashes are ephemeral and change too quickly for users to
                       track them. The{' '}
@@ -518,6 +520,82 @@ class Landing extends React.Component {
                   </div>
                 </div>
               </section>
+
+              <section style={{ border: '5px solid black' }}>
+                <Link to="/grants" className="image image-overlay-wrap">
+                  <img src={qrMetrics} alt="" />
+                  {tokensBalance.slpMetrics &&
+                    _this.balanceElement(tokensBalance.slpMetrics, true)}
+                </Link>
+                <div className="content">
+                  <div className="inner">
+                    <header className="major">
+                      <h3>Blockchain Metrics</h3>
+                    </header>
+                    <p>
+                      <i>"What gets measured, gets managed"</i>
+                    </p>
+
+                    <p>
+                      Last quarter, the PSF core management has had deep
+                      discussions about what metrics we could look at, to tell us if
+                      we are successful in managing the PSF software and
+                      community. We've come up with a handful of metrics that
+                      we'd like to regularly share with the PSF community.
+                    </p>
+
+                    <p>
+                      The Bitcoin Cash blockchain provides a perfect opportunity
+                      for the management to transparently share that
+                      information. Funds from this grant will fund development
+                      of a simple application that will write a very small JSON
+                      object of metrics data to the blockchain, once per day,
+                      using the{' '}
+                      <a
+                        href="https://github.com/simpleledger/slp-specifications/blob/master/bitcoinfiles.md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Bitcoin Files Protocol
+                      </a>
+                      .
+
+                      These are the initial metrics that will be recorded:
+                    </p>
+
+                    <ul>
+                      <li>
+                        <a
+                          href="https://simpleledger.info/token/38e97c5d7d3585a2cbf3f9580c82ca33985f9cb0845d4dcce220cb709f9538b0"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          PSF token stats
+                        </a>
+                      </li>
+                      <li>The price of the PSF token and BCH in USD</li>
+                      <li>
+                        <a
+                          href="https://www.npmjs.com/package/@psf/bch-js"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          npm bch-js library weekly downloads
+                        </a>
+                      </li>
+                    </ul>
+
+                    <p>
+                      We will add more metrics at a later date. We invite the
+                      PSF community to suggest additional metrics.
+                    </p>
+
+                    <p>
+                      <center>{addresses.slpMetrics}</center>
+                    </p>
+                  </div>
+                </div>
+              </section>
             </section>
 
             <section id="nine">
@@ -542,7 +620,7 @@ class Landing extends React.Component {
                   , and their execution is overseen by PSF management. They will
                   allow independent developers around the world to claim and
                   fulfill them, and thereby earn PSF tokens and BCH. This work
-                  will help onboard new developers into the PSF community and
+                  will help on-board new developers into the PSF community and
                   improve the software under the PSF umbrella.
                 </p>
               </div>
@@ -614,7 +692,7 @@ class Landing extends React.Component {
                       >
                         slp-cli-wallet
                       </a>{' '}
-                      is a a command-line application and HD wallet. It's an
+                      is a command-line application and HD wallet. It's an
                       important tool to help developers rapidly prototype new
                       ideas, based on bch-js and the{' '}
                       <a
@@ -636,7 +714,7 @@ class Landing extends React.Component {
                     </p>
                     <p>
                       This grant was funded last quarter, but developers with
-                      the prequisit skills could not be found to work on it.
+                      the prerequisite skills could not be found to work on it.
                       However, developers who worked on other projects last
                       quarter have been identified to work on these bounties
                       this quarter.
@@ -779,7 +857,7 @@ class Landing extends React.Component {
                     <p>
                       As explained in the{' '}
                       <Link to="/biz-plan/business-plan/#management">
-                        management section
+                        managment section
                       </Link>{' '}
                       of the Business Plan, the first managment role for the
                       Foundation is that of 'Head Janitor'. This person's chief
@@ -794,7 +872,7 @@ class Landing extends React.Component {
                     <p>
                       As founder of the PSF and creator of its core software,
                       Chris Troutner, aka 'trout', has taken on this initial
-                      role. His focus is on manageing the different PSF projects
+                      role. His focus is on managing the different PSF projects
                       and bounties, keeping the developers on-task, and
                       communicating with PSF community members that hold
                       significant quantities of tokens.
@@ -851,15 +929,15 @@ class Landing extends React.Component {
                       <h3>Grant Administrator</h3>
                     </header>
                     <p>
-                      The role of the grant adminstrator is to distribute grants
-                      on a weekly basis. The duty of the Grant Adminstrator
-                      is to manage the spreadsheet and distribute the funds in a
+                      The role of the grant administrator is to distribute grants
+                      on a weekly basis. The duty of the Grant Administrator is
+                      to manage the spreadsheet and distribute the funds in a
                       timely manner.
                     </p>
                     <p>
                       The person fulfilling this role will report to the Head
                       Janitor. They will be allowed to use a pseudonym or
-                      divulge their identity publically, at their discretion.
+                      divulge their identity publicly, at their discretion.
                     </p>
                     <p>
                       <center>{addresses.slpAdmin}</center>

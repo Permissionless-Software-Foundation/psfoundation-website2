@@ -80,11 +80,11 @@ class Landing extends React.Component {
                 The next funding token air drop will take place at 7PM UTC on
                 October 15th, 2020. Community members that have held their
                 tokens without moving them since August 15th (block 648,518)
-                will be eligible for the air drop. They can then use those tokens
-                to fund the below grants, by sending the funding tokens to the
-                address assigned to each grant. On November 1st, each grant will
-                receive a 1-to-1 match of newly minted PSF tokens for each
-                funding token received.
+                will be eligible for the air drop. They can then use those
+                tokens to fund the below grants, by sending the funding tokens
+                to the address assigned to each grant. On November 1st, each
+                grant will receive a 1-to-1 match of newly minted PSF tokens for
+                each funding token received.
               </p>
 
               <p>
@@ -538,8 +538,8 @@ class Landing extends React.Component {
 
                     <p>
                       Last quarter, the PSF core management has had deep
-                      discussions about what metrics we could look at, to tell us if
-                      we are successful in managing the PSF software and
+                      discussions about what metrics we could look at, to tell
+                      us if we are successful in managing the PSF software and
                       community. We've come up with a handful of metrics that
                       we'd like to regularly share with the PSF community.
                     </p>
@@ -558,9 +558,7 @@ class Landing extends React.Component {
                       >
                         Bitcoin Files Protocol
                       </a>
-                      .
-
-                      These are the initial metrics that will be recorded:
+                      . These are the initial metrics that will be recorded:
                     </p>
 
                     <ul>
@@ -929,10 +927,10 @@ class Landing extends React.Component {
                       <h3>Grant Administrator</h3>
                     </header>
                     <p>
-                      The role of the grant administrator is to distribute grants
-                      on a weekly basis. The duty of the Grant Administrator is
-                      to manage the spreadsheet and distribute the funds in a
-                      timely manner.
+                      The role of the grant administrator is to distribute
+                      grants on a weekly basis. The duty of the Grant
+                      Administrator is to manage the spreadsheet and distribute
+                      the funds in a timely manner.
                     </p>
                     <p>
                       The person fulfilling this role will report to the Head
@@ -963,7 +961,7 @@ class Landing extends React.Component {
                 </p>
                 <ul>
                   <li>
-                    <a href="2020-Q3">2020-Q3</a>
+                    <Link to="/grants/2020-Q3">2020-Q3</Link>
                   </li>
                 </ul>
               </div>

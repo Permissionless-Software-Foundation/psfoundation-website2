@@ -992,9 +992,9 @@ class Landing extends React.Component {
   // Get token fi
   async getBalancesForToken() {
     try {
-      const SERVER = 'https://api.fullstack.cash/v3/slp/balancesForToken'
+      const SERVER = 'https://free-main.fullstack.cash/v3/slp/balancesForToken'
       const tokenId =
-        '832cc2d25d4c91487cc8caad8faa86f8b179bf190e86bf4bc83b30e7bcb8fe1c'
+        'a28cf560dae041738ae5422660a1bb18d34fc743a08cac532168d0939ca5e29b'
       const resp = await fetch(`${SERVER}/${tokenId}`)
       const body = await resp.json()
 

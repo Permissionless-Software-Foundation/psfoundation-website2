@@ -211,90 +211,9 @@ class HomeIndex extends React.Component {
         </section>
 
         <section id="two" className="main style2">
-          <div className="grid-wrapper" style={{ visibility: 'show' }}>
-            <div className="col-6">
-              <center>
-                <span className="image">
-                  <img
-                    src={qrcodeBCH}
-                    alt="bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al"
-                  />
-                </span>
-                <br />
-                <p style={{ textAlign: 'center' }}>
-                  bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al
-                </p>
-                <br />
-
-                <span className="image">
-                  <img
-                    src={qrcodeSLP}
-                    alt="simpleledger:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfqtaqr70rp"
-                  />
-                </span>
-                <br />
-                <p style={{ textAlign: 'center' }}>
-                  simpleledger:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfqtaqr70rp
-                </p>
-              </center>
-            </div>
-            <div className="col-6">
-              <header className="">
-                <h2>Buy or Sell PSF Tokens</h2>
-              </header>
-              <p>
-                You can buy or sell tokens by sending BCH or tokens to the
-                liquidity app. Scan the QR code with a SLP token-aware BCH
-                wallet, like{' '}
-                <a
-                  href="https://badger.bitcoin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Badger Mobile
-                </a>{' '}
-                or the{' '}
-                <a
-                  href="https://wallet.bitcoin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Bitcoin.com Wallet
-                </a>
-                , or click the Buy or Sell buttons to trade $0.10 USD worth of
-                tokens if you have the{' '}
-                <a
-                  href="https://badger.bitcoin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Badger Wallet browser extension
-                </a>{' '}
-                installed.
-              </p>
-              <p>
-                The liquidity app will send tokens if it recieves BCH. It will
-                send BCH if it recieves tokens.{' '}
-                <b>
-                  It will take two (2) block confirmations before tokens will
-                  appear in your wallet
-                </b>
-                . Refresh the window to get the most up-to-date exchange rate.
-              </p>
-              <p>
-                <b>
-                  <u>Warning:</u>{' '}
-                </b>
-                Do not send BCH to the app address unless you are using a SLP
-                token-aware wallet. Non-aware wallets can destroy the tokens.
-              </p>
-              <br />
-              <center>
-                <BuyBadgerButton usdPerBch="4" />
-                <br />
-                <br />
-                <SellBadgerButton usdPerBch="4" />
-              </center>
+          <div className="grid-wrapper">
+            <div className="col-12">
+              <h2>Token Liquidity App is Under Construction</h2>
             </div>
           </div>
 
@@ -523,5 +442,94 @@ export default HomeIndex
     </p>
   </div>
   <div className="col-4" />
+</div>
+*/
+
+/*
+<div className="grid-wrapper" style={{ visibility: 'show' }}>
+  <div className="col-6">
+    <center>
+      <span className="image">
+        <img
+          src={qrcodeBCH}
+          alt="bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al"
+        />
+      </span>
+      <br />
+      <p style={{ textAlign: 'center' }}>
+        bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al
+      </p>
+      <br />
+
+      <span className="image">
+        <img
+          src={qrcodeSLP}
+          alt="simpleledger:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfqtaqr70rp"
+        />
+      </span>
+      <br />
+      <p style={{ textAlign: 'center' }}>
+        simpleledger:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfqtaqr70rp
+      </p>
+    </center>
+  </div>
+  <div className="col-6">
+    <header className="">
+      <h2>Buy or Sell PSF Tokens</h2>
+    </header>
+    <p>
+      You can buy or sell tokens by sending BCH or tokens to the
+      liquidity app. Scan the QR code with a SLP token-aware BCH
+      wallet, like{' '}
+      <a
+        href="https://badger.bitcoin.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Badger Mobile
+      </a>{' '}
+      or the{' '}
+      <a
+        href="https://wallet.bitcoin.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Bitcoin.com Wallet
+      </a>
+      , or click the Buy or Sell buttons to trade $0.10 USD worth of
+      tokens if you have the{' '}
+      <a
+        href="https://badger.bitcoin.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Badger Wallet browser extension
+      </a>{' '}
+      installed.
+    </p>
+    <p>
+      The liquidity app will send tokens if it recieves BCH. It will
+      send BCH if it recieves tokens.{' '}
+      <b>
+        It will take two (2) block confirmations before tokens will
+        appear in your wallet
+      </b>
+      . Refresh the window to get the most up-to-date exchange rate.
+    </p>
+    <p>
+      <b>
+        <u>Warning:</u>{' '}
+      </b>
+      Do not send BCH to the app address unless you are using a SLP
+      token-aware wallet. Non-aware wallets can destroy the tokens.
+    </p>
+    <br />
+    <center>
+      <BuyBadgerButton usdPerBch="4" />
+      <br />
+      <br />
+      <SellBadgerButton usdPerBch="4" />
+    </center>
+  </div>
 </div>
 */

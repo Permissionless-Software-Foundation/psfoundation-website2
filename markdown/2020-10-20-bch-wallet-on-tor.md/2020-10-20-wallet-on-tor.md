@@ -5,7 +5,7 @@ root: "/blog"
 path: "/blog/bch-wallet-on-tor"
 ---
 
-[wallet.fullstack.cash](https://wallet.fullstack.cash) is the white-label-ready Bitcoin Cash (BCH) and SLP token web-wallet. It showcases a 100% open source, MIT-licensed, turn-key wallet app that runs on top of [FullStack.cash](https://fullstack.cash) infrastructure. Any device that can access a web page, can act as a Bitcoin Cash and SLP token wallet.
+[wallet.fullstack.cash](https://wallet.fullstack.cash) is the white-label-ready Bitcoin Cash (BCH) and SLP token web-wallet. It showcases a 100% open source, MIT-licensed, turn-key, non-custodial wallet app that runs on top of [FullStack.cash](https://fullstack.cash) infrastructure. Any device that can access a web page, can act as a Bitcoin Cash and SLP token wallet.
 
 It's still in early 'Alpha' release, but we've recently released several new features that you should know about.
 

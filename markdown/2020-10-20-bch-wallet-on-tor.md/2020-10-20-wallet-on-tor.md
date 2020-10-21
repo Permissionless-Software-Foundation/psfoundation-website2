@@ -29,7 +29,7 @@ The PSF [community of developers](https://psfoundation.cash/grants) is proud to 
 November 15th is shaping up to be a fairly amicable chain split into two new blockchains. [As we announced](/blog/november-fork), the Permissionless Software Foundation will support both chains and welcomes the opportunity to serve two markets.
 
 - [wallet.fullstack.cash](https://wallet.fullstack.cash) will default to the ABC chain.
-- [bchn-wallet.fullstack.cash](https://bchn-wallet.fullstak.cash) will default to the BCHN chain.
+- [bchn-wallet.fullstack.cash](https://bchn-wallet.fullstack.cash) will default to the BCHN chain.
 
 The Gatsby Theme that powers both wallets, [gatsby-ipfs-web-wallet](https://github.com/Permissionless-Software-Foundation/gatsby-ipfs-web-wallet), is easily configurable for either chain. Users can choose a chain prior to creating a new wallet, using a drop-down selector in the Configuration View. Once the wallet is created, the server and blockchain will be saved with the wallet data.
 

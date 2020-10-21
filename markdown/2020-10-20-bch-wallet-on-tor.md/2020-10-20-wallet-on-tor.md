@@ -15,7 +15,7 @@ It's still in early 'Alpha' release, but we've recently released several new fea
 - Generate a paper wallet for SLP tokens at [slp-paper-wallet.fullstack.cash](https://slp-paper-wallet.fullstack.cash)
 - Generate a paper wallet for BCH at [paperwallet.bitcoin.com](https://paperwallet.bitcoin.com)
 
-We've also published a video introducing paper wallets and the different apps available or working with them:
+We've also published a video introducing paper wallets and the different apps available for working with them:
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/e1JxSirCiXM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 
@@ -39,10 +39,10 @@ The Gatsby Theme that powers both wallets, [gatsby-ipfs-web-wallet](https://gith
 - free-main.fullstack.cash is the free blockchain service following the ABC chain.
 - bchn-free-main.fullstack.cash is the default server for [bchn-wallet.fullstack.cash](https://bchn-wallet.fullstak.cash). This is a free blockchain service following the BCHN chain.
 
-The **free** servers provide rate-limited access to blockchain services. The rate limits are adaquate for most web wallet users, though throttling may occur for wallets will a large number of SLP tokens. The **premium** blockchain service is available for $30 per month through [FullStack.cash](https://fullstack.cash) for businesses that want to customize the web wallet for their own use, or build other Bitcoin Cash based web apps. [Custom infrastructure](https://fullstack.cash/pricing) following either the ABC or BCHN chain is also available.
+The **free** servers provide rate-limited access to blockchain services. The rate limits are adaquate for most web wallet users, though throttling may occur for wallets with a large number of SLP tokens. The **premium** blockchain service is available for $30 per month through [FullStack.cash](https://fullstack.cash) for businesses that want to customize the web wallet for their own use, or build other Bitcoin Cash based web apps. [Custom infrastructure](https://fullstack.cash/pricing) following either the ABC or BCHN chain is also available.
 
 ## Coin Splitting is Coming
-Now that infrastructure is in place to support both chains, PSF developers are working hard on creating a coin-splitting tool. This web app will allow users to easily split their BCH and SLP tokens between chains.
+Now that infrastructure is in place to support both chains, PSF developers are working hard on creating a coin-splitting tool. This web app will allow users to easily split their BCH and SLP tokens between chains, after the chain split after November 15th.
 
 The coin-splitting tool will make use of the new paper wallet sweeping feature in [wallet.fullstack.cash](https://wallet.fullstack.cash). Any coins and tokens saved to a paper wallet **before** the chain split, will be able to be scanned by this tool **after** the chain split. The BCH will safely be split and deposited into addresses on each chain. The addresses will be specified by the user prior to scanning the QR code.
 

@@ -1,6 +1,6 @@
 ---
 date: "2020-10-20"
-title: "wallet.fullstack.cash supports ABC and BCHN, is Available over Tor"
+title: "wallet.fullstack.cash supports ABC and BCHN, is available over Tor"
 root: "/blog"
 path: "/blog/bch-wallet-on-tor"
 ---

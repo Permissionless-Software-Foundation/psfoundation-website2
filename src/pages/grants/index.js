@@ -62,6 +62,28 @@ class Landing extends React.Component {
               <header className="major">
                 <h2>Grants</h2>
               </header>
+
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/oAVO-tPm2LY"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                title="kickoff"
+                style={{padding: '10px'}}
+              ></iframe>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/mThM98KmDxs"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                title="governance"
+                style={{padding: '10px'}}
+              ></iframe>
+
               <p>
                 Our first quarter of grant funding{' '}
                 <Link to="/blog/q3-progress-report">
@@ -260,10 +282,9 @@ class Landing extends React.Component {
               <section style={{ border: '5px solid black' }}>
                 <Link to="/grants" className="image image-overlay-wrap">
                   <img src={qrWallet} alt="" />
-                  {tokensBalance.slpWallet ?
-                    _this.balanceElement(tokensBalance.slpWallet, true) :
-                    _this.balanceElement(0, true)
-                  }
+                  {tokensBalance.slpWallet
+                    ? _this.balanceElement(tokensBalance.slpWallet, true)
+                    : _this.balanceElement(0, true)}
                 </Link>
                 <div className="content">
                   <div className="inner">
@@ -308,9 +329,9 @@ class Landing extends React.Component {
               <section style={{ border: '5px solid black' }}>
                 <Link to="/grants" className="image image-overlay-wrap">
                   <img src={qrFreeInfa} alt="" />
-                  {tokensBalance.slpFree ?
-                    _this.balanceElement(tokensBalance.slpFree, true) :
-                    _this.balanceElement(0, true)}
+                  {tokensBalance.slpFree
+                    ? _this.balanceElement(tokensBalance.slpFree, true)
+                    : _this.balanceElement(0, true)}
                 </Link>
                 <div className="content">
                   <div className="inner">
@@ -366,9 +387,9 @@ class Landing extends React.Component {
               <section style={{ border: '5px solid black' }}>
                 <Link to="/grants" className="image image-overlay-wrap">
                   <img src={qrCoinJoin} alt="" />
-                  {tokensBalance.slpCollaborative ?
-                    _this.balanceElement(tokensBalance.slpCollaborative, true) :
-                    _this.balanceElement(0, true)}
+                  {tokensBalance.slpCollaborative
+                    ? _this.balanceElement(tokensBalance.slpCollaborative, true)
+                    : _this.balanceElement(0, true)}
                 </Link>
                 <div className="content">
                   <div className="inner">
@@ -472,9 +493,9 @@ class Landing extends React.Component {
               <section style={{ border: '5px solid black' }}>
                 <Link to="/grants" className="image image-overlay-wrap">
                   <img src={qrTorlist} alt="" />
-                  {tokensBalance.slpTorList ?
-                    _this.balanceElement(tokensBalance.slpTorList, true) :
-                    _this.balanceElement(0, true)}
+                  {tokensBalance.slpTorList
+                    ? _this.balanceElement(tokensBalance.slpTorList, true)
+                    : _this.balanceElement(0, true)}
                 </Link>
                 <div className="content">
                   <div className="inner">
@@ -529,9 +550,9 @@ class Landing extends React.Component {
               <section style={{ border: '5px solid black' }}>
                 <Link to="/grants" className="image image-overlay-wrap">
                   <img src={qrMetrics} alt="" />
-                  {tokensBalance.slpMetrics ?
-                    _this.balanceElement(tokensBalance.slpMetrics, true) :
-                    _this.balanceElement(0, true)}
+                  {tokensBalance.slpMetrics
+                    ? _this.balanceElement(tokensBalance.slpMetrics, true)
+                    : _this.balanceElement(0, true)}
                 </Link>
                 <div className="content">
                   <div className="inner">
@@ -633,9 +654,9 @@ class Landing extends React.Component {
               <section style={{ border: '5px solid black' }}>
                 <Link to="/grants" className="image image-overlay-wrap">
                   <img src={qrBchjs} alt="" />
-                  {tokensBalance.slpBchjs ?
-                    _this.balanceElement(tokensBalance.slpBchjs, true) :
-                    _this.balanceElement(0, true)}
+                  {tokensBalance.slpBchjs
+                    ? _this.balanceElement(tokensBalance.slpBchjs, true)
+                    : _this.balanceElement(0, true)}
                 </Link>
                 <div className="content">
                   <div className="inner">
@@ -681,9 +702,9 @@ class Landing extends React.Component {
               <section style={{ border: '5px solid black' }}>
                 <Link to="/grants" className="image image-overlay-wrap">
                   <img src={qrSlpCliWallet} alt="" />
-                  {tokensBalance.slpCliWallet ?
-                    _this.balanceElement(tokensBalance.slpCliWallet, true) :
-                    _this.balanceElement(0, true)}
+                  {tokensBalance.slpCliWallet
+                    ? _this.balanceElement(tokensBalance.slpCliWallet, true)
+                    : _this.balanceElement(0, true)}
                 </Link>
                 <div className="content">
                   <div className="inner">
@@ -735,9 +756,9 @@ class Landing extends React.Component {
               <section style={{ border: '5px solid black' }}>
                 <Link to="/grants" className="image image-overlay-wrap">
                   <img src={qrDiscretionary} alt="" />
-                  {tokensBalance.slpDiscretionary ?
-                    _this.balanceElement(tokensBalance.slpDiscretionary, true) :
-                    _this.balanceElement(0, true)}
+                  {tokensBalance.slpDiscretionary
+                    ? _this.balanceElement(tokensBalance.slpDiscretionary, true)
+                    : _this.balanceElement(0, true)}
                 </Link>
                 <div className="content">
                   <div className="inner">
@@ -778,9 +799,9 @@ class Landing extends React.Component {
                 <Link to="/grants" className="image image-overlay-wrap">
                   <img src={daniel} alt="" />
                   <img src={qrDaniel} alt="" className="image-overlay" />
-                  {tokensBalance.slpDaniel ?
-                    _this.balanceElement(tokensBalance.slpDaniel) :
-                    _this.balanceElement(0)}
+                  {tokensBalance.slpDaniel
+                    ? _this.balanceElement(tokensBalance.slpDaniel)
+                    : _this.balanceElement(0)}
                 </Link>
                 <div className="content">
                   <div className="inner">
@@ -853,9 +874,9 @@ class Landing extends React.Component {
                 <Link to="/grants" className="image image-overlay-wrap">
                   <img src={trout} alt="" />
                   <img src={qrTrout} alt="" className="image-overlay" />
-                  {tokensBalance.slpTrout ?
-                    _this.balanceElement(tokensBalance.slpTrout) :
-                    _this.balanceElement(0)}
+                  {tokensBalance.slpTrout
+                    ? _this.balanceElement(tokensBalance.slpTrout)
+                    : _this.balanceElement(0)}
                 </Link>
 
                 <div className="content">
@@ -897,9 +918,9 @@ class Landing extends React.Component {
                 <Link to="/grants" className="image image-overlay-wrap">
                   <img src={david} alt="" />
                   <img src={qrDavid} alt="" className="image-overlay" />
-                  {tokensBalance.slpDavid ?
-                    _this.balanceElement(tokensBalance.slpDavid) :
-                    _this.balanceElement(0)}
+                  {tokensBalance.slpDavid
+                    ? _this.balanceElement(tokensBalance.slpDavid)
+                    : _this.balanceElement(0)}
                 </Link>
                 <div className="content">
                   <div className="inner">
@@ -930,9 +951,9 @@ class Landing extends React.Component {
                 <Link to="/grants" className="image image-overlay-wrap">
                   <img src={placeholder} alt="" />
                   <img src={qrGrantAdmin} alt="" className="image-overlay" />
-                  {tokensBalance.slpAdmin ?
-                    _this.balanceElement(tokensBalance.slpAdmin) :
-                    _this.balanceElement(0)}
+                  {tokensBalance.slpAdmin
+                    ? _this.balanceElement(tokensBalance.slpAdmin)
+                    : _this.balanceElement(0)}
                 </Link>
                 <div className="content">
                   <div className="inner">

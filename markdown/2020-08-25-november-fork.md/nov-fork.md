@@ -21,7 +21,7 @@ Even if BCHN manages to split the chain, they'll need to maintain the 10-block a
 ## How will FullStack.cash and PSF handle the fork?
 The Permissionless Software Foundation embraces the concept of forks. As laid out in [the business plan](https://psfoundation.cash/biz-plan/business-plan#migitatingFailure), forks are an important governance tool for mitigating catastrophic failures. Since the looming split centers around governance and not technical changes, FullStack.cash infrastructure can run on both chains without any changes.
 
-A month prior to the fork, a mirror of the existing FullStack.cash [CashStrap](https://fullstack.cash/cashstrap) infrastructure will be created, using BCHN as the base of the [Cash Stack](https://fullstack.cash). The BCHN-based REST API will appear at bchn.fullstack.cash. You’ll be able to point [the bch-js npm library](https://www.npmjs.com/package/@psf/bch-js) at it by setting the `restURL` when instantiating the library. By default, bch-js will use the ABC chain, but switching to the BCHN chain will only require a one-line code change.
+A month prior to the fork, a mirror of the existing FullStack.cash [CashStrap](https://fullstack.cash/cashstrap) infrastructure will be created, using BCHN as the base of the [Cash Stack](https://fullstack.cash). The BCHN-based REST API will appear at [bchn-free-main.fullstack.cash](https://bchn-free-main.fullstack.cash). You’ll be able to point [the bch-js npm library](https://www.npmjs.com/package/@psf/bch-js) at it by setting the `restURL` when instantiating the library. By default, bch-js will use the ABC chain, but switching to the BCHN chain will only require a one-line code change.
 
 How does the split effect the PSF token?
 In the event of a chain split, all PSF tokens that now exist on the one chain will split and exist equally on both chains. The BCH in the token-liquidity app will also split and exist on each chain.
@@ -32,7 +32,7 @@ In the event of a chain split, the PSF plans to execute the following plan:
 
 2. The BCHN-chain coins and tokens will be split into a separate wallet. Then the token-liquidity app on the ABC-chain will be brought back online. It is hoped this step can be accomplished quickly. When the token-liquidity app is back online, on the ABC-chain, it will be announced on Twitter and Telegram.<br /><br />
 
-3. We will fork wallet.fullstack.cash to create a web wallet for the BCHN-chain. The address will be bchn.wallet.fullstack.cash. This will allow people to easily split their BCH and SLP tokens. We will post step-by-step directions on YouTube.<br /><br />
+3. We will fork [wallet.fullstack.cash](https://wallet.fullstack.cash) to create a web wallet for the BCHN-chain. The address will be [bchn-wallet.fullstack.cash](https://bchn-wallet.fullstack.cash). A third app at [split.fullstack.cash](https://split.fullstack.cash) will allow people to easily split their BCH and SLP tokens. We will post step-by-step directions on YouTube.<br /><br />
 
 4. A new token-liquidity app on the BCHN-chain will be started. It will be funded with the coins and tokens split from the original app. Once online, the addresses for this new app will be posted to [the PSF website](https://PSFoundation.cash/), as well as Twitter and Telegram.<br /><br />
 

@@ -14,8 +14,8 @@ import PriceSection from '../components/price-section'
 import Util from '../components/lib/util'
 const util = new Util()
 
-import qrcodeBCH from '../assets/images/qrcodeBCH.png'
-import qrcodeSLP from '../assets/images/qrcodeSLP.png'
+import qrcodeBCH from '../assets/images/bitcoincash:qrnn49rx0p4xh78tts79utf0zv26vyru6vqtl9trd3.png'
+import qrcodeSLP from '../assets/images/simpleledger:qrnn49rx0p4xh78tts79utf0zv26vyru6vvs577rn0.png'
 import qrBurn from '../assets/images/qrBurn.png'
 import animatedGears from '../assets/images/PSF-animated-gears.gif'
 import vendingMachine from '../assets/images/vending-machine.png'
@@ -211,36 +211,36 @@ class HomeIndex extends React.Component {
         </section>
 
         <section id="two" className="main style2">
-          <div className="grid-wrapper" style={{ visibility: 'show' }}>
+          <div className="grid-wrapper" style={{ visibility: 'hidden' }}>
             <div className="col-12">
               <h2>Token Liquidity App is currently shut down until after the Bitcoin Cash chain split.</h2>
             </div>
           </div>
 
-          <div className="grid-wrapper" style={{ visibility: 'hidden' }}>
+          <div className="grid-wrapper" style={{ visibility: 'show' }}>
             <div className="col-6">
               <center>
                 <span className="image">
                   <img
                     src={qrcodeBCH}
-                    alt="bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al"
+                    alt="bitcoincash:qrnn49rx0p4xh78tts79utf0zv26vyru6vqtl9trd3"
                   />
                 </span>
                 <br />
                 <p style={{ textAlign: 'center' }}>
-                  bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al
+                  bitcoincash:qrnn49rx0p4xh78tts79utf0zv26vyru6vqtl9trd3
                 </p>
                 <br />
 
                 <span className="image">
                   <img
                     src={qrcodeSLP}
-                    alt="simpleledger:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfqtaqr70rp"
+                    alt="simpleledger:qrnn49rx0p4xh78tts79utf0zv26vyru6vvs577rn0"
                   />
                 </span>
                 <br />
                 <p style={{ textAlign: 'center' }}>
-                  simpleledger:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfqtaqr70rp
+                  simpleledger:qrnn49rx0p4xh78tts79utf0zv26vyru6vvs577rn0
                 </p>
               </center>
             </div>

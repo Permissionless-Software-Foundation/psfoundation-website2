@@ -5,7 +5,7 @@ root: "/blog"
 path: "/blog/healthy-bitcoin"
 ---
 
-*TL;DR: The Permissionless Software Foundation is evolving its governance structure. This article discusses the things that are changing, why they are changing, and why you should care. This is an excellent time for you to [join our Telegram channel](https://t.me/permissionless_software) and help stear the direction of the organization.*
+*TL;DR: The Permissionless Software Foundation is evolving its governance structure. This article discusses the things that are changing, why they are changing, and why you should care. This is an excellent time for you to [join our Telegram channel](https://t.me/permissionless_software) and help steer the direction of the organization.*
 
 The [Permissionless Software Foundation](https://psfoundation.cash) (PSF) is changing it's governance structure to reflect lessons learned from two great sources of inspiration:
 
@@ -23,7 +23,7 @@ Here is what the architecture of their governance looks like:
 ![Node.js Governance Model](./node-js-org.png)
 
 - There are two primary committees:
-  - The Technical Stearing Committee (**TSC**), stears the technical decisions of the Foundation.
+  - The Technical Steering Committee (**TSC**), steers the technical decisions of the Foundation.
   - The Community Committee (**CommComm**), acts as the formal 'voice' of the community and is in charge of setting the cultural direction of the Foundation.
 
 - Each of the committees spin off work groups (**WG**) to do the actual work, who report back to the top-level committee during their bi-weekly meetings, which are recorded and broadcast on the [Node.js YouTube channel](https://www.youtube.com/c/nodejs-foundation/videos).

@@ -16,7 +16,7 @@ The [Permissionless Software Foundation](https://psfoundation.cash) (PSF) is cha
 We invite participation from Bitcoiners, cryptocurrency enthusiasts, libertarians, and anyone who thinks privacy and free speech are important issues. Our [public Telegram channel](https://t.me/permissionless_software) is a great place to start, but to really have a voice in the new direction of the PSF, you'll need to gain access to [our Telegram VIP channel](https://t.me/psf_vip).
 
 ## What's Changing: Governance Architecture
-The Node.js governance model was birthed from a fork. When the community didn't like how things were being run by Joyant, they forked node.js to create io.js. The governance model was so successful at growing contributors to the code base that Joyant couldn't compete. They gave the Linux Foundation the rights to Node.js branding, and io.js merged back into node.js. The node.js we know today is a direct result of the success of their governance model. [Here is a brief summary of the history](https://opensource.christmas/2019/13).
+The Node.js governance model was birthed from a fork. When the community didn't like how things were being run by Joyent, they forked node.js to create io.js. The governance model was so successful at growing contributors to the code base that Joyent couldn't compete. They gave the Linux Foundation the rights to Node.js branding, and io.js merged back into node.js. The node.js we know today is a direct result of the success of their governance model. [Here is a brief summary of the history](https://opensource.christmas/2019/13).
 
 Here is what the architecture of their governance looks like:
 

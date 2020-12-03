@@ -80,7 +80,7 @@ Here is a list of articles discussing this idea further:
 ## The Permissionless Software Foundation<a name="thePSF"></a>
 
 ### Mission<a name="mission"></a>
-The mission of the Permissionless Software Foundation is to foster the <u>growth of open source software</u> and the <u>adoption of Bitcoin Cash</u> across the globe. We believe this is the best way to promote individual sovereignty and increase prosperity. The Foundation will focus on the development, maintenance, and promotion of software that makes it easy for individuals to protect their privacy, circumvent censorship, and engage in economic activity.
+The mission of the Permissionless Software Foundation is to develop, promote, and maintain software that makes it easy for **individuals** to <u>protect their privacy</u>, <u>circumvent censorship</u>, and <u>engage in economic activity</u>. We believe this is the best way to promote individual sovereignty and increase prosperity. The Foundation will focus on the growth of <u>open source software</u> and the <u>adoption of Bitcoin Cash</u> across the globe, as the primary means of achieving its goals.
 
 #### Tools to fight surveillance<a name="antiSurveillance"></a>
 The primary tool used to protect privacy is [the Tor network](https://www.torproject.org/). The Tor network and tor-accessible browsers like [Brave browser](https://brave.com/browser-option-a-hpa811/) work within the current [server-client paradigm](https://en.wikipedia.org/wiki/Client%E2%80%93server_model), but they provide a layer of anonymity by hiding the server IP address inside the Tor network.

@@ -56,19 +56,13 @@ class HomeIndex extends React.Component {
               </header>
               <p>
                 The mission of the Permissionless Software Foundation is to
-                foster the <u>growth of open source software</u> and the{' '}
-                <u>adoption of Bitcoin Cash</u> across the globe. The Foundation
-                will focus on the development and promotion of software that
-                makes it easy for individuals to protect their privacy,
-                circumvent censorship, and engage in{' '}
-                <a
-                  href="https://en.wikipedia.org/wiki/Agorism"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Agorism
-                </a>
-                .
+                develop, promote, and maintain software that makes it easy for{' '}
+                <b>individuals</b> to <u>protect their privacy</u>,{' '}
+                <u>circumvent censorship</u>, and <u>engage in economic activity</u>.
+                The Foundation
+                will focus on the growth of open source software and the{' '}
+                adoption of Bitcoin Cash across the globe, as the primary
+                means of achieving its goals.
               </p>
 
               <p>

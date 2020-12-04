@@ -205,13 +205,14 @@ class HomeIndex extends React.Component {
         </section>
 
         <section id="two" className="main style2">
-          <div className="grid-wrapper" style={{ visibility: 'hidden' }}>
+          <div className="grid-wrapper" style={{ visibility: 'show' }}>
             <div className="col-12">
-              <h2>Token Liquidity App is currently shut down until after the Bitcoin Cash chain split.</h2>
+              <h2>Token Liquidity App is currently shut down for maintenance.</h2>
+              <h2>It will be back up soon.</h2>
             </div>
           </div>
 
-          <div className="grid-wrapper" style={{ visibility: 'show' }}>
+          <div className="grid-wrapper" style={{ visibility: 'hidden' }}>
             <div className="col-6">
               <center>
                 <span className="image">

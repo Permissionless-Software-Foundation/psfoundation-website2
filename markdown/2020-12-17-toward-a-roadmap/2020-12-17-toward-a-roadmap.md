@@ -59,9 +59,9 @@ The 'core' software make up the top three layers of the [Cash Stack](https://ful
 ## Free Speech
 - [UncensorablePublishing.com](https://uncensorablepublishing.com) is an introductory site to uncensorable publishing techniques, how governments censor websites, and how to use PSF software to build private and uncensorable web apps.<br /><br />
 
-- *IPFS-Filecoin Bridge* - The initial steps for this bridge can be found on [message.FullStack.cash](https://message.fullstack.cash), in the File Upload area. Anyone can pay a hosting fee of $0.01 to have a file hosted on the IPFS network. This feature can be expanded for Filecoin.<br /><br />
+- *IPFS-Filecoin Bridge* - The initial steps for this bridge can be found on [message.FullStack.cash](https://message.fullstack.cash), in the File Upload area. Anyone can pay a hosting fee of $0.01 in BCH to have a file hosted on the IPFS network. These fees go to burn PSF tokens. This feature can be expanded for Filecoin.<br /><br />
 
-- [IPFS-based API](https://youtu.be/VVc0VbOD4co) - This milestone is in its initial research stages. IPFS is an effective network for circumventing aggressive firewalls, like that of China's. The front end for [wallet.FullStack.cash](https://wallet.fulstack.cash) is already available over IPFS, but the back end REST API is not, and can be blocked. An IPFS pub-sub channel with Bitcoin-based end-to-end encryption wou be a secure, uncensorable way deliver API access and ensure that any web app can reach the blockchain.
+- [IPFS-based API](https://youtu.be/VVc0VbOD4co) - This milestone is in its initial research stages. IPFS is an effective network for circumventing aggressive firewalls, like that of China's. The front end for [wallet.FullStack.cash](https://wallet.fulstack.cash) is already available over IPFS, but the back end REST API is not, and can be blocked. An IPFS pub-sub channel with Bitcoin-based end-to-end encryption would be a secure, uncensorable way deliver API access and ensure that any web app can reach the blockchain.
 
 ## Economic Action
 - [FullStack.cash](https://fullstack.cash) is a blockchain-as-a-service REST API that developers and businesses can use to power their business applications.<br /><br />

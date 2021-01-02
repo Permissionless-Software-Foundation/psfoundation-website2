@@ -92,11 +92,11 @@ The PSF maintains several custom applications utilizing the Cash Stack. These no
 While no support for the BSV blockchain exists yet, because it is a fork of the BCH blockchain, the software maintained by the PSF should *theoretically* work with very little modification. If developers want to adapt and maintain the Cash Stack for the BSV blockchain, or help bring SLP tokens to the BSV chain, they should join the [PSF Telegram channel](https://t.me/permissionless_software).
 
 ## AVAX
-[Ava Labs](https://www.avalabs.org/) maintains their own suit of software that follows the same Cash Stack model:
+[Ava Labs](https://www.avalabs.org/) maintains their own suit of software that follows the same Cash Stack model. AVAX is a blockchain of blockchains, so it looks little different. They have three main blockchains: X-chain, P-chain, and C-chain. The X-chain is the one that operates most like Bitcoin.
 
 - [AvalancheGo](https://github.com/ava-labs/avalanchego) is the full node for the AVAX network.<br /><br />
 
-- [Ortelius](https://github.com/ava-labs/ortelius) is the AVAX indexer.<br /><br />
+- [Ortelius](https://github.com/ava-labs/ortelius) is the AVAX indexer for the X-chain.<br /><br />
 
 - [AvalancheJS](https://github.com/ava-labs/avalanchejs) is the JavaScript library that communicates directly with the full node and indexer. It does not go through a REST API.<br /><br />
 

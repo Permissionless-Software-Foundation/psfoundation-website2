@@ -24,12 +24,12 @@ The PSF maintains software for every level of the Cash Stack, for the BCH and BC
 
 The unique token-economic model used by the PSF serves to maintain the Cash Stack code and infrastructure. Businesses and users consume the token directly, or through use of the PSF software, and the token pays for ongoing maintenance of the Cash Stack software.
 
-Docker containers are heavily used to run Cash Stack infrastructure. Syncing a full node or indexer from 'genesis' is a very long, computationally expensive process. These Docker containers, maintained by the PSF, are designed to mount a pre-synced database that can be downloaded from the [Cash Strap page](https://fullstack.cash/cashstrap). This allows businesses to quickly stand-up their own, independent infrastructure. As an alternative, [FullStack.cash](https://fullstack.cash) provides quick access to the REST API layer, so that businesses do not need to maintain their own infrastructure.
-
 The following sections point out the code repositories that make up the PSF implementations of the Cash Stack.
 
 ## Full Nodes
 A full node is the most fundamental building block of a blockchain-based application. It's the software that writes data to the blockchain and communicates with the network.
+
+Docker containers are heavily used to run Cash Stack infrastructure. Syncing a full node or indexer from 'genesis' is a very long, computationally expensive process. These Docker containers, maintained by the PSF, are designed to mount a pre-synced database that can be downloaded from the [Cash Strap page](https://fullstack.cash/cashstrap). This allows businesses to quickly stand-up their own, independent infrastructure. As an alternative, [FullStack.cash](https://fullstack.cash) provides quick access to the REST API layer, so that businesses do not need to maintain their own infrastructure.
 
 - [docker-abc](https://github.com/Permissionless-Software-Foundation/docker-abc) runs a [Bitcoin ABC](https://www.bitcoinabc.org/) full node on the BCHA blockchain.<br /><br />
 

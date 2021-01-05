@@ -33,7 +33,7 @@ The following list are the milestones that should be achieved as development pro
 
 - BCH fundamentals
   - Fork npm-lib-boilerplate and create an npm library called slp-avax-bridge that includes bch-js and bch-util as dependencies.
-  - Done: slp-avax-bridge
+    - Done: [slp-avax-bridge](https://github.com/Permissionless-Software-Foundation/slp-avax-bridge)
   - Create a mintable SLP token on the BCH blockchain.
   - Add a method to slp-avax-bridge that can mint new SLP tokens.
   - Add a method to slp-avax-bridge that can burn SLP tokens.

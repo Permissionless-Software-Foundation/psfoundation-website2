@@ -48,7 +48,7 @@ The following list are the milestones that should be achieved as development pro
   - Replace the BCH receiving library with one that mints a new SLP token when an AVAX token is received.
 - Wrapup
   - Add a [PSF specification document](https://github.com/Permissionless-Software-Foundation/specifications) describing the protocol for transferring tokens between the blockchains.
-  - Add installation installation and usage instructions to the README of the token-transfer app.
+  - Add installation and usage instructions to the README of the token-transfer app.
 - Production
   - Stand up a simple web page, and customize the token-transfer app, to enable users to transfer PSF tokens between the AVAX and BCH blockchains.
 
@@ -58,6 +58,8 @@ The following list are the milestones that should be achieved as development pro
 - [FullStack.cash](https://fullstack.cash)
 - [Introduction to AVAX](https://youtu.be/rD-IOd1nvFo)
 - [AVAX developer documentation](https://docs.avax.network/)
+- [How we manage remote teams](https://youtu.be/YHngWbJ4Cjw)
+- [JavaScript testing patterns](https://youtu.be/lE3RYnchHps)
 
 ## Screening Task
 The following screening task must be completed by all applicants before being considered for this contract, in order to demonstrate their ability to work with JavaScript and the BCH blockchain.

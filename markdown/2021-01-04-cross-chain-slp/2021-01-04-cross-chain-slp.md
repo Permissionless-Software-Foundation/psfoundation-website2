@@ -32,32 +32,32 @@ The selected developer should meet all these requirements:
 The following list are the milestones that should be achieved as development progresses, to complete the scope of work. The completion of each milestone should be accompanied with unit and integration tests, and unit tests should maintain near-100% test coverage.
 
 - BCH fundamentals
-  - Fork npm-lib-boilerplate and create an npm library called slp-avax-bridge that includes bch-js and bch-util as dependencies.
-    - Done: [slp-avax-bridge](https://github.com/Permissionless-Software-Foundation/slp-avax-bridge)
+  - Fork [npm-lib-boilerplate](https://github.com/christroutner/npm-lib-boilerplate) and create an npm library called slp-avax-bridge that includes [bch-js](https://www.npmjs.com/package/@psf/bch-js) and [bch-util](https://www.npmjs.com/package/bch-util) as dependencies.
+      - Done: [slp-avax-bridge](https://github.com/Permissionless-Software-Foundation/slp-avax-bridge)
   - Create a mintable SLP token on the BCH blockchain.
   - Add a method to slp-avax-bridge that can mint new SLP tokens.
   - Add a method to slp-avax-bridge that can burn SLP tokens.
 - AVAX fundamentals
-  - Create a new class library in slp-avax-bridge for AVAX. Add avalanch as a dependency.
+  - Create a new class library in slp-avax-bridge for AVAX. Add [avalanch.js](https://github.com/ava-labs/avalanchejs) as a dependency.
   - Create a mintable token on AVAX.
   - Add a method to slp-avax-bridge that can mint a new AVAX token on the X-chain.
   - Add a method to slp-avax-bridge that can burn the AVAX token.
 - Asset Transfer    
-  - Fork the token-liquidity app to a ‘token-transfer app’, and add slp-avax-bridge as a dependency.
+  - Fork the [token-liquidity app](https://github.com/Permissionless-Software-Foundation/token-liquidity) to a ‘token-transfer app’, and add slp-avax-bridge as a dependency.
   - Modify the token-liquidity app so that it mints a new AVAX token when receiving the SLP token. This is opposed to the current functionality which sends BCH in response to receiving an SLP token.
   - Replace the BCH receiving library with one that mints a new SLP token when an AVAX token is received.
 - Wrapup
-  - Add a PSF specification document describing the protocol for transferring tokens between the blockchains.
+  - Add a [PSF specification document](https://github.com/Permissionless-Software-Foundation/specifications) describing the protocol for transferring tokens between the blockchains.
   - Add installation installation and usage instructions to the README of the token-transfer app.
 - Production
   - Stand up a simple web page, and customize the token-transfer app, to enable users to transfer PSF tokens between the AVAX and BCH blockchains.
 
 ## Reference Information
-- Mastering Bitcoin Cash
-- Getting started with bch-js
-- FullStack.cash
-- Introduction to AVAX
-- AVAX developer documentation
+- [Mastering Bitcoin Cash](http://zh.thedev.id/mastering-bitcoin-cash/)
+- [Getting started with bch-js](https://youtu.be/GD2i1ZUiyrk)
+- [FullStack.cash](https://fullstack.cash)
+- [Introduction to AVAX](https://youtu.be/rD-IOd1nvFo)
+- [AVAX developer documentation](https://docs.avax.network/)
 
 ## Screening Task
 The following screening task must be completed by all applicants before being considered for this contract, in order to demonstrate their ability to work with JavaScript and the BCH blockchain.

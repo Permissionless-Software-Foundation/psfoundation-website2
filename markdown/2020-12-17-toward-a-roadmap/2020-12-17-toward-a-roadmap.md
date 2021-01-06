@@ -75,3 +75,8 @@ The 'core' software make up the top three layers of the [Cash Stack](https://ful
 - The [SLP Post Office Protocol](https://youtu.be/IATkQEdRdVI) allows SLP tokens to be used natively, without exposing users to the friction of needed 'gas' to move tokens. The same SLP token can be used to pay the transaction fees. This makes it much easier to onboard new users. The PSF maintains a [Post Office Server](https://github.com/Permissionless-Software-Foundation/simpleledger-post-office-server) and a [Post Office Plugin](https://github.com/Permissionless-Software-Foundation/bch-wallet-plugin-postoffice) for the web wallet.<br /><br />
 
 - [SWaP Protocol](https://youtu.be/jypfYJkdJ1k) is a trustless way of creating a decentralized exchange (DEX) for trading SLP tokens and native assets (like BCH, BCHA, etc), making bets, establishing trustless escrow, and more. The PSF would like to develop tools around this protocol to enable more economic action using tokens.
+
+
+## Comments
+Want to leave feedback or discuss this blog post? Please leave comments on this Member.cash thread:
+- https://member.cash/p/f983008c6a

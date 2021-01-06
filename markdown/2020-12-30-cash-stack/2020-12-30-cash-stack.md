@@ -103,3 +103,7 @@ While no support for the BSV blockchain exists yet, because it is a fork of the 
 - [avalanche-wallet](https://github.com/ava-labs/avalanche-wallet) is an example of a web wallet application built using the above infrastructure.
 
 The PSF would love to collaborate with developers from the AVAX network. Both organizations have expressed interest in developing a cross-chain protocol that would allow SLP tokens to be moved between networks. Please join the [PSF Telegram channel](https://t.me/permissionless_software) and signal your interest.
+
+## Comments
+Want to leave feedback or discuss this blog post? Please leave comments on this Member.cash thread:
+- https://member.cash/p/f902a31fc4

@@ -72,3 +72,7 @@ https://fullstack.cash/examples
 
 Send at least one of your newly created tokens to this SLP address:
 *simpleledger:qzjgc7cz99hyh98yp4y6z5j40uwnd78fw5napqqkm4*
+
+## Comments
+Want to leave feedback or discuss this blog post? Please leave comments on this Member.cash thread:
+- https://member.cash/p/740b6a492d

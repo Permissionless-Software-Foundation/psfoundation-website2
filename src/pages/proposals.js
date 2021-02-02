@@ -20,7 +20,7 @@ const IndexPage = ({
 
   const Posts = edges
     // Filter Blog posts. Posts have dates. Research pages don't.
-    .filter(edge => !!edge.node.frontmatter.date && !edge.node.frontmatter.path.includes('proposal'))
+    .filter(edge => !!edge.node.frontmatter.date && edge.node.frontmatter.path.includes('proposal'))
     .map(edge => (
       <li key={edge.node.id}>
         <PostLink key={edge.node.id} post={edge.node} />
@@ -30,18 +30,22 @@ const IndexPage = ({
   return (
     <Layout>
       <Helmet>
-        <title>Blog</title>
-        <meta name="Blog" content="Blog" />
+        <title>Proposals</title>
+        <meta name="Proposals" content="Proposals" />
       </Helmet>
 
       <div id="main" className="alt">
         <section id="one">
           <div className="inner">
             <header className="major">
-              <h1>PSF Blog</h1>
+              <h1>PSF Proposals</h1>
             </header>
 
-            <p>This page displays all blog entries, sorted by date.</p>
+            <p>
+              This page displays all proposals, sorted by date. Proposals are
+              indended to be voted on by casting air-dropped voting tokens
+              to the correct 'Yes' or 'No' address.
+            </p>
 
             <ul>{Posts}</ul>
           </div>

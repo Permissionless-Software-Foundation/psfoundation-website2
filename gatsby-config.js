@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby IPFS Boilerplate Starter",
+    title: "Permissionless Software Foundation",
     author: "Chris Troutner",
-    description: "A Gatsby.js V2 Starter based on Forty by HTML5 UP"
+    description: "A community focused on free speech, circumventing censorship, and economic action."
   },
   pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',
   plugins: [
@@ -32,6 +32,13 @@ module.exports = {
       options: {
         path: "./markdown",
         name: "markdown-pages"
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: "./proposals",
+        name: "proposal-pages"
       },
     },
     "gatsby-transformer-json",

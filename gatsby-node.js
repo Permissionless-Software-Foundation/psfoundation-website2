@@ -13,6 +13,7 @@ exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
 
   const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
+  const proposalTemplate = path.resolve(`src/templates/proposalTemplate.js`)
 
   return graphql(`
     {
@@ -37,9 +38,17 @@ exports.createPages = async ({ actions, graphql }) => {
     //console.log(`result.data.allMarkdownRemark: ${JSON.stringify(result.data.allMarkdownRemark,null,2)}`)
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      console.log(`node.frontmatter: `, node.frontmatter)
+      
       createPage({
         path: node.frontmatter.path,
         component: blogPostTemplate,
+        context: {}, // additional data can be passed via context
+      })
+
+      createPage({
+        path: node.frontmatter.path,
+        component: proposalTemplate,
         context: {}, // additional data can be passed via context
       })
     })

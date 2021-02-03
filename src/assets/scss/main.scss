@@ -930,6 +930,13 @@ button,
  .grants-balance2  b{
 	color: black;
  }
+ .burn-qr{
+	 border: 4px solid #F31431;
+	 padding: 0.5rem
+ }
+ .red-color{
+	 color:#F31431;
+ }
 /* XLarge */
 
 	@include breakpoint(xlarge) {

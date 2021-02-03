@@ -58,11 +58,11 @@ class HomeIndex extends React.Component {
                 The mission of the Permissionless Software Foundation is to
                 develop, promote, and maintain software that makes it easy for{' '}
                 <b>individuals</b> to <u>protect their privacy</u>,{' '}
-                <u>circumvent censorship</u>, and <u>engage in economic activity</u>.
-                The Foundation
-                will focus on the growth of open source software and the{' '}
-                adoption of Bitcoin Cash across the globe, as the primary
-                means of achieving its goals.
+                <u>circumvent censorship</u>, and{' '}
+                <u>engage in economic activity</u>. The Foundation will focus on
+                the growth of open source software and the adoption of Bitcoin
+                Cash across the globe, as the primary means of achieving its
+                goals.
               </p>
 
               <p>
@@ -207,7 +207,9 @@ class HomeIndex extends React.Component {
         <section id="two" className="main style2">
           <div className="grid-wrapper" style={{ visibility: 'hidden' }}>
             <div className="col-12">
-              <h2>Token Liquidity App is currently shut down for maintenance.</h2>
+              <h2>
+                Token Liquidity App is currently shut down for maintenance.
+              </h2>
               <h2>It will be back up soon.</h2>
             </div>
           </div>
@@ -431,7 +433,10 @@ class HomeIndex extends React.Component {
           <div className="grid-wrapper">
             <div className="col-6">
               <center>
-                <span className="image">
+                <h1 className="red-color">Danger</h1>
+              </center>
+              <center>
+                <span className="image burn-qr">
                   <img
                     src={qrBurn}
                     alt="bitcoincash:qqsrke9lh257tqen99dkyy2emh4uty0vky9y0z0lsr"

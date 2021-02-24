@@ -5,6 +5,8 @@ root: "/blog"
 path: "/blog/cross-chain-slp"
 ---
 
+**NOTE: This position has been filled and the project is under active development**
+
 This document is a summary description of a new project managed and funded by the Permissionless Software Foundation. It contains the information for developers who are interested in this contract. Interested developers should reach out via the [PSF Telegram channel](https://t.me/permissionless_software). They will be required to complete a screening task (at the bottom) before being considered for this contract.
 
 ## Scope of Work

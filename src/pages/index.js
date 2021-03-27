@@ -17,6 +17,7 @@ const util = new Util()
 import qrcodeBCH from '../assets/images/bitcoincash:qrnn49rx0p4xh78tts79utf0zv26vyru6vqtl9trd3.png'
 import qrcodeSLP from '../assets/images/simpleledger:qrnn49rx0p4xh78tts79utf0zv26vyru6vvs577rn0.png'
 import qrBurn from '../assets/images/qrBurn.png'
+import qrBurnSlp from '../assets/images/qrBurn-slp.png'
 import animatedGears from '../assets/images/PSF-animated-gears.gif'
 import vendingMachine from '../assets/images/vending-machine.png'
 import consulting from '../assets/images/consulting.png'
@@ -445,6 +446,17 @@ class HomeIndex extends React.Component {
                 <br />
                 <p style={{ textAlign: 'center' }}>
                   bitcoincash:qqsrke9lh257tqen99dkyy2emh4uty0vky9y0z0lsr
+                </p>
+                
+                <span className="image burn-qr">
+                  <img
+                    src={qrBurnSlp}
+                    alt="simpleledger:qqsrke9lh257tqen99dkyy2emh4uty0vkyflye6lwa"
+                  />
+                </span>
+
+                <p style={{ textAlign: 'center' }}>
+                  simpleledger:qqsrke9lh257tqen99dkyy2emh4uty0vkyflye6lwa
                 </p>
                 <br />
               </center>

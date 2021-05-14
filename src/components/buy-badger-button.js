@@ -27,7 +27,7 @@ class BuyBadgerButton extends React.Component {
         href="#"
         className="button special badger-button-buy"
         onClick={this.invokeBadger}
-        data-to="bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al"
+        data-to="bitcoincash:qrnn49rx0p4xh78tts79utf0zv26vyru6vqtl9trd3"
       >
         Buy $0.10 of PSF Tokens
       </StyledButton>
@@ -82,7 +82,6 @@ class BuyBadgerButton extends React.Component {
         //   window[successCallback](window.usdPerBC)
         // }
       })
-
     } else {
       // Send them to the badger wallet page if they don't have Badger Extension
       // installed.

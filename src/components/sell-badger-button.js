@@ -27,7 +27,7 @@ class SellBadgerButton extends React.Component {
         href="#"
         className="button special badger-button-sell"
         onClick={this.invokeBadger}
-        data-to="bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al"
+        data-to="bitcoincash:qrnn49rx0p4xh78tts79utf0zv26vyru6vqtl9trd3"
       >
         Sell $0.10 of PSF Tokens
       </StyledButton>

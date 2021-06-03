@@ -108,7 +108,7 @@ class HomeIndex extends React.Component {
               </center>
             </div>
 
-            <div className="col-6">
+            <div className="col-6" style={{ padding: '20px' }}>
               <h3>Three Major Facets</h3>
               <p>
                 There are three major facets to the Permissionless Software
@@ -248,33 +248,24 @@ class HomeIndex extends React.Component {
               </header>
               <p>
                 You can buy or sell tokens by sending BCH or tokens to the
-                liquidity app. Scan the QR code with a SLP token-aware BCH
-                wallet, like{' '}
+                liquidity app. Scan the QR code with a Bitcoin Cash wallet that
+                is SLP-token-aware, like{' '}
                 <a
-                  href="https://badger.bitcoin.com/"
+                  href="https://play.google.com/store/apps/details?id=com.badgermobile"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Badger Mobile
                 </a>{' '}
-                or the{' '}
+                or{' '}
                 <a
-                  href="https://wallet.bitcoin.com/"
+                  href="https://wallet.fullstack.cash/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Bitcoin.com Wallet
+                  wallet.FullStack.cash
                 </a>
-                , or click the Buy or Sell buttons to trade $0.10 USD worth of
-                tokens if you have the{' '}
-                <a
-                  href="https://badger.bitcoin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Badger Wallet browser extension
-                </a>{' '}
-                installed.
+                .
               </p>
               <p>
                 The liquidity app will send tokens if it recieves BCH. It will
@@ -292,13 +283,6 @@ class HomeIndex extends React.Component {
                 Do not send BCH to the app address unless you are using a SLP
                 token-aware wallet. Non-aware wallets can destroy the tokens.
               </p>
-              <br />
-              <center>
-                <BuyBadgerButton usdPerBch="4" />
-                <br />
-                <br />
-                <SellBadgerButton usdPerBch="4" />
-              </center>
             </div>
           </div>
 
@@ -447,7 +431,7 @@ class HomeIndex extends React.Component {
                 <p style={{ textAlign: 'center' }}>
                   bitcoincash:qqsrke9lh257tqen99dkyy2emh4uty0vky9y0z0lsr
                 </p>
-                
+
                 <span className="image burn-qr">
                   <img
                     src={qrBurnSlp}

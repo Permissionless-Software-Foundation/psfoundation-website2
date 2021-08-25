@@ -23,6 +23,34 @@ import vendingMachine from '../assets/images/vending-machine.png'
 import consulting from '../assets/images/consulting.png'
 import community from '../assets/images/community.png'
 
+// Import media components
+import InfoModal from '../components/media/modals.js/info'
+import WatchModal from '../components/media/modals.js/watch'
+let Category =
+  typeof window !== `undefined`
+    ? require('../components/media/category').default
+    : null
+
+const categoryA = {
+  title: 'Category A',
+  about:
+    'Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum is simply dummy text of the printing and and Lorem Ipsum is simply dummy text of the printing and and Lorem Ipsum is simply dummy text of the printing and   ',
+  videos: [
+    {
+      url: 'G7ptg7VIRnk',
+      info: 'Category A - Video Number 1 Info',
+    },
+    {
+      url: 'nrtVuk3v1R0',
+      info: 'Category A - Video Number 2 Info',
+    },
+    {
+      url: 'G7ptg7VIRnk',
+      info: 'Category A - Video Number 3 Info',
+    },
+  ],
+}
+
 const BchAddress = styled.p`
   text-align: center;
   font-size: 18px;
@@ -33,11 +61,20 @@ const BizPlanButton = styled.a`
   margin-bottom: 25px;
 `
 
+let _this
 class HomeIndex extends React.Component {
   constructor() {
     super()
 
     this.usdPerBCH = 300.0
+
+    this.state = {
+      showInfo: false,
+      info: '',
+      watchVideo: false,
+      urlToWatch: '',
+    }
+    _this = this
   }
 
   render() {
@@ -48,7 +85,35 @@ class HomeIndex extends React.Component {
         <Helmet title={siteTitle} />
         <PriceSection />
         <WarningDiv />
-
+        {/** Media */}
+        {Category && (
+          <>
+            <Category
+              key={categoryA.title}
+              id={categoryA.title}
+              title={categoryA.title}
+              about={categoryA.about}
+              onShowInfo={_this.toggleInfo}
+              onWatchVideo={_this.toggleVideo}
+              media={categoryA.videos}
+            />
+          </>
+        )}
+        {_this.state.showInfo && (
+          <InfoModal
+            info={_this.state.info}
+            show={_this.state.showInfo}
+            onHide={_this.toggleInfo}
+          />
+        )}
+        {_this.state.watchVideo && (
+          <WatchModal
+            url={_this.state.urlToWatch}
+            show={_this.state.watchVideo}
+            onHide={_this.toggleVideo}
+          />
+        )}
+        {/**  */}
         <section id="one" className="main style1">
           <div className="grid-wrapper">
             <div className="col-6">
@@ -494,6 +559,19 @@ class HomeIndex extends React.Component {
     } catch (err) {
       console.log(`Error in index.js/componentDidMounts(): `, err)
     }
+  }
+  toggleInfo(info) {
+    _this.setState({
+      showInfo: !_this.state.showInfo,
+      info,
+    })
+  }
+
+  toggleVideo(urlToWatch) {
+    _this.setState({
+      watchVideo: !_this.state.watchVideo,
+      urlToWatch,
+    })
   }
 }
 

@@ -32,21 +32,39 @@ let Category =
     : null
 
 const categoryA = {
-  title: 'Category A',
+  title: 'Latest Media from PSF Community',
   about:
-    'Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum is simply dummy text of the printing and and Lorem Ipsum is simply dummy text of the printing and and Lorem Ipsum is simply dummy text of the printing and   ',
+    'This section is frequently updated with the latest videos from the PSF community. It includes meetings, how-to videos, and more.',
   videos: [
     {
-      url: 'G7ptg7VIRnk',
-      info: 'Category A - Video Number 1 Info',
+      url: 'Kuzn0iglVJc',
+      info:
+        'PSF Architecture Trajectory - This video provides a high-level overview of how the software architecture is changing with software maintained by the Permissionless Software Foundation',
     },
     {
-      url: 'nrtVuk3v1R0',
-      info: 'Category A - Video Number 2 Info',
+      url: '4ZNwY4gO00A',
+      info:
+        'PSF TC Meeting 8.18.21 - Our bi-weekly Technical Steering Committee (TSC) meeting.',
     },
     {
-      url: 'G7ptg7VIRnk',
-      info: 'Category A - Video Number 3 Info',
+      url: 'D6HlEqpUOvg',
+      info:
+        'SLP CLI Wallet How To with Chris and Aaron - Chris and Aaron walk through the installation and usage of slp-cli-wallet, a command-line application for rapid prototyping with BCH and SLP tokens.',
+    },
+    {
+      url: 'ca0ambB0bys',
+      info:
+        'PSF TC Meeting 8.4.21 - Our bi-weekly Technical Steering Committee (TSC) meeting',
+    },
+    {
+      url: 'm_33rRXEats',
+      info:
+        'Decentralized Blockchain Service Providers - A high level overview of the implications of decentralized blockchain service providers running on IPFS, to provide censorship-resistant back-end services and access to blockchains.',
+    },
+    {
+      url: 'korI-8W240s',
+      info:
+        'P2WDB Intro - A high-level overview of the pay-to-write database (P2WDB) project. ',
     },
   ],
 }

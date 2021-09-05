@@ -23,6 +23,52 @@ import vendingMachine from '../assets/images/vending-machine.png'
 import consulting from '../assets/images/consulting.png'
 import community from '../assets/images/community.png'
 
+// Import media components
+import InfoModal from '../components/media/modals.js/info'
+import WatchModal from '../components/media/modals.js/watch'
+let Category =
+  typeof window !== `undefined`
+    ? require('../components/media/category').default
+    : null
+
+const categoryA = {
+  title: 'Latest Media from PSF Community',
+  about:
+    'This section is frequently updated with the latest videos from the PSF community. It includes meetings, how-to videos, and more.',
+  videos: [
+    {
+      url: 'Kuzn0iglVJc',
+      info:
+        'PSF Architecture Trajectory - This video provides a high-level overview of how the software architecture is changing with software maintained by the Permissionless Software Foundation',
+    },
+    {
+      url: '4ZNwY4gO00A',
+      info:
+        'PSF TC Meeting 8.18.21 - Our bi-weekly Technical Steering Committee (TSC) meeting.',
+    },
+    {
+      url: 'D6HlEqpUOvg',
+      info:
+        'SLP CLI Wallet How To with Chris and Aaron - Chris and Aaron walk through the installation and usage of slp-cli-wallet, a command-line application for rapid prototyping with BCH and SLP tokens.',
+    },
+    {
+      url: 'ca0ambB0bys',
+      info:
+        'PSF TC Meeting 8.4.21 - Our bi-weekly Technical Steering Committee (TSC) meeting',
+    },
+    {
+      url: 'm_33rRXEats',
+      info:
+        'Decentralized Blockchain Service Providers - A high level overview of the implications of decentralized blockchain service providers running on IPFS, to provide censorship-resistant back-end services and access to blockchains.',
+    },
+    {
+      url: 'korI-8W240s',
+      info:
+        'P2WDB Intro - A high-level overview of the pay-to-write database (P2WDB) project. ',
+    },
+  ],
+}
+
 const BchAddress = styled.p`
   text-align: center;
   font-size: 18px;
@@ -33,11 +79,20 @@ const BizPlanButton = styled.a`
   margin-bottom: 25px;
 `
 
+let _this
 class HomeIndex extends React.Component {
   constructor() {
     super()
 
     this.usdPerBCH = 300.0
+
+    this.state = {
+      showInfo: false,
+      info: '',
+      watchVideo: false,
+      urlToWatch: '',
+    }
+    _this = this
   }
 
   render() {
@@ -48,7 +103,35 @@ class HomeIndex extends React.Component {
         <Helmet title={siteTitle} />
         <PriceSection />
         <WarningDiv />
-
+        {/** Media */}
+        {Category && (
+          <>
+            <Category
+              key={categoryA.title}
+              id={categoryA.title}
+              title={categoryA.title}
+              about={categoryA.about}
+              onShowInfo={_this.toggleInfo}
+              onWatchVideo={_this.toggleVideo}
+              media={categoryA.videos}
+            />
+          </>
+        )}
+        {_this.state.showInfo && (
+          <InfoModal
+            info={_this.state.info}
+            show={_this.state.showInfo}
+            onHide={_this.toggleInfo}
+          />
+        )}
+        {_this.state.watchVideo && (
+          <WatchModal
+            url={_this.state.urlToWatch}
+            show={_this.state.watchVideo}
+            onHide={_this.toggleVideo}
+          />
+        )}
+        {/**  */}
         <section id="one" className="main style1">
           <div className="grid-wrapper">
             <div className="col-6">
@@ -494,6 +577,19 @@ class HomeIndex extends React.Component {
     } catch (err) {
       console.log(`Error in index.js/componentDidMounts(): `, err)
     }
+  }
+  toggleInfo(info) {
+    _this.setState({
+      showInfo: !_this.state.showInfo,
+      info,
+    })
+  }
+
+  toggleVideo(urlToWatch) {
+    _this.setState({
+      watchVideo: !_this.state.watchVideo,
+      urlToWatch,
+    })
   }
 }
 

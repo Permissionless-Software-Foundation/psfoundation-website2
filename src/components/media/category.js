@@ -10,10 +10,12 @@ class Category extends React.Component {
     this.state = {
       activeItem: {},
     }
-    _this.scrollValue =
-      window.innerWidth < 700 ? 1 : window.innerWidth < 1200 ? 2 : 3
+    if (typeof window !== `undefined`) {
+      _this.scrollValue =
+        window.innerWidth < 700 ? 1 : window.innerWidth < 1200 ? 2 : 3
 
-    console.log('window.innerWidth', window.innerWidth, _this.scrollValue)
+      console.log('window.innerWidth', window.innerWidth, _this.scrollValue)
+    }
   }
   render() {
     const { id, title, about, media, hidenLeft, hidenRight } = _this.state

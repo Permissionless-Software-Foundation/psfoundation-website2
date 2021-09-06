@@ -26,10 +26,8 @@ import community from '../assets/images/community.png'
 // Import media components
 import InfoModal from '../components/media/modals.js/info'
 import WatchModal from '../components/media/modals.js/watch'
-let Category =
-  typeof window !== `undefined`
-    ? require('../components/media/category').default
-    : null
+
+import Category from '../components/media/category'
 
 const categoryA = {
   title: 'Latest Media from PSF Community',

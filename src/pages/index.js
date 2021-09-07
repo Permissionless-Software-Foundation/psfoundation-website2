@@ -26,16 +26,24 @@ import community from '../assets/images/community.png'
 // Import media components
 import InfoModal from '../components/media/modals.js/info'
 import WatchModal from '../components/media/modals.js/watch'
-let Category =
-  typeof window !== `undefined`
-    ? require('../components/media/category').default
-    : null
+
+import Category from '../components/media/category'
 
 const categoryA = {
   title: 'Latest Media from PSF Community',
   about:
     'This section is frequently updated with the latest videos from the PSF community. It includes meetings, how-to videos, and more.',
   videos: [
+    {
+      url: '45YEeZi_8Kc',
+      info:
+        'psf-bch-wallet - How to Install and Use - Learn how to work with the command line interface (CLI) wallet that can work with BCH and SLP tokens, as well as IPFS.',
+    },
+    {
+      url: 'bN9Zgobf0qU',
+      info:
+        'Using the P2WDB - Shows how to use the psf-bch-wallet command-line wallet to read and write to the pay-to-write database (P2WDB).',
+    },
     {
       url: 'Kuzn0iglVJc',
       info:

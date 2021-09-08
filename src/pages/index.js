@@ -35,6 +35,11 @@ const categoryA = {
     'This section is frequently updated with the latest videos from the PSF community. It includes meetings, how-to videos, and more.',
   videos: [
     {
+      url: 'ypbDYzNuD3M',
+      info:
+        'PSF TSC Meeting 9.8.21 - Excellent presentation by Stoyan on developing on SmartBCH.',
+    },
+    {
       url: '45YEeZi_8Kc',
       info:
         'psf-bch-wallet - How to Install and Use - Learn how to work with the command line interface (CLI) wallet that can work with BCH and SLP tokens, as well as IPFS.',

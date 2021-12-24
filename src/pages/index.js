@@ -35,6 +35,34 @@ const categoryA = {
     'This section is frequently updated with the latest videos from the PSF community. It includes meetings, how-to videos, and more.',
   videos: [
     {
+      url: 'joyN1Q-5tnI',
+      info: 'PSF TSC Meeting 12.22.21',
+    },
+    {
+      url: 'DOIkDIMlw8k',
+      info: 'PSF TSC Meeting 12.08.21',
+    },
+    {
+      url: 'wSF6Mr6YnjY',
+      info: 'PSF TSC Meeting 11.22.21',
+    },
+    {
+      url: '6b9hSfz8cC4',
+      info: 'PSF TSC Meeting 11.10.21',
+    },
+    {
+      url: 'sin4r-FNAVQ',
+      info: 'PSF TSC Meeting 10.27.21',
+    },
+    {
+      url: 'CfgIr_KAlkE',
+      info: 'PSF TSC Meeting 10.6.21',
+    },
+    {
+      url: 'suM7e49lnl4',
+      info: 'PSF TSC Meeting 9.22.21',
+    },
+    {
       url: 'ypbDYzNuD3M',
       info:
         'PSF TSC Meeting 9.8.21 - Excellent presentation by Stoyan on developing on SmartBCH.',

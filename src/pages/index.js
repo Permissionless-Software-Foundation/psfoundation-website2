@@ -330,7 +330,7 @@ class HomeIndex extends React.Component {
         </section>
 
         <section id="two" className="main style2">
-          <div className="grid-wrapper" style={{ visibility: 'hidden' }}>
+          <div className="grid-wrapper" style={{ visibility: 'show' }}>
             <div className="col-12">
               <h2>
                 Token Liquidity App is currently shut down for maintenance.
@@ -339,7 +339,7 @@ class HomeIndex extends React.Component {
             </div>
           </div>
 
-          <div className="grid-wrapper" style={{ visibility: 'show' }}>
+          <div className="grid-wrapper" style={{ visibility: 'hidden' }}>
             <div className="col-6">
               <center>
                 <span className="image">

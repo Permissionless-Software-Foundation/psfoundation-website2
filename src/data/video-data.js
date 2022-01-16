@@ -4,6 +4,10 @@ const categoryA = {
     'This section is frequently updated with the latest videos from the PSF community. It includes meetings, how-to videos, and more.',
   videos: [
     {
+      url: 'dhgZlxpDnz4',
+      info: 'PSF TSC Meeting 01.05.22',
+    },
+    {
       url: 'joyN1Q-5tnI',
       info: 'PSF TSC Meeting 12.22.21',
     },
@@ -157,24 +161,23 @@ const categoryD = {
     'This section contains advanced videos, to help full stack developers set up their own self-sufficient infrastructure, and how to donate that infrastructure to the community in order to claim bounties of PSf tokens.',
   videos: [
     {
-      url: 'ypbDYzNuD3M',
+      url: 'uvk59RGype0',
       info:
-        'PSF TSC Meeting 9.8.21 - Excellent presentation by Stoyan on developing on SmartBCH.',
+        'Developer Hardware Reference. All software maintained by the PSF is designed to run on this reference hardware.',
     },
     {
-      url: '45YEeZi_8Kc',
+      url: 'glS3hC_fk6k',
       info:
-        'psf-bch-wallet - How to Install and Use - Learn how to work with the command line interface (CLI) wallet that can work with BCH and SLP tokens, as well as IPFS.',
+        'How to install Ubuntu 20.04 onto the reference desktop using a bootable USB flash drive.',
     },
     {
-      url: '4ZNwY4gO00A',
+      url: 'w5mpwX4vUIg',
       info:
-        'PSF TC Meeting 8.18.21 - Our bi-weekly Technical Steering Committee (TSC) meeting.',
+        'Setup a new Ubuntu Server. Gist notes: https://gist.github.com/christroutner/a39f656850dc022b60f25c9663dd1cdd',
     },
     {
-      url: 'D6HlEqpUOvg',
-      info:
-        'SLP CLI Wallet How To with Chris and Aaron - Chris and Aaron walk through the installation and usage of slp-cli-wallet, a command-line application for rapid prototyping with BCH and SLP tokens.',
+      url: '5CUEHex7xgY',
+      info: 'How to download the BCH blockchain over IPFS',
     },
     {
       url: 'ca0ambB0bys',

@@ -179,21 +179,6 @@ const categoryD = {
       url: '5CUEHex7xgY',
       info: 'How to download the BCH blockchain over IPFS',
     },
-    {
-      url: 'ca0ambB0bys',
-      info:
-        'PSF TC Meeting 8.4.21 - Our bi-weekly Technical Steering Committee (TSC) meeting',
-    },
-    {
-      url: 'm_33rRXEats',
-      info:
-        'Decentralized Blockchain Service Providers - A high level overview of the implications of decentralized blockchain service providers running on IPFS, to provide censorship-resistant back-end services and access to blockchains.',
-    },
-    {
-      url: 'korI-8W240s',
-      info:
-        'P2WDB Intro - A high-level overview of the pay-to-write database (P2WDB) project. ',
-    },
   ],
 }
 

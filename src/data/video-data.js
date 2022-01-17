@@ -179,6 +179,18 @@ const categoryD = {
       url: '5CUEHex7xgY',
       info: 'How to download the BCH blockchain over IPFS',
     },
+    {
+      url: 'MpJ9uHnsLKM',
+      info: 'How to install a BCH or eCash full node',
+    },
+    {
+      url: 'kqRZ4Um9PbQ',
+      info: 'How to install Fulcrum indexer',
+    },
+    {
+      url: '5gF4ON9lRHI',
+      info: 'How to install the PSF SLP indexer',
+    },
   ],
 }
 

@@ -191,44 +191,42 @@ const categoryD = {
       url: '5gF4ON9lRHI',
       info: 'How to install the PSF SLP indexer',
     },
+    {
+      url: 'D0pMYpGhOco',
+      info: 'How to install bch-api REST API',
+    },
+    {
+      url: 'rwJcZLcBOSo',
+      info:
+        'How to install ipfs-bch-wallet-service for piping access to the BCH blockchain over the IPFS network.',
+    },
   ],
 }
 
 const categoryE = {
-  title: 'Misc',
+  title: 'Dev Culture',
   about:
-    'This section contains videos that do not fit into the categories above.',
+    'The PSF has its own `culture` when it comes to JavaScript development. We follow test-driven development (TDD) best practices, as well as the Clean Architecture design pattern. These videos go into detail about our dev culture.',
   videos: [
     {
-      url: '45YEeZi_8Kc',
+      url: 'xPL84vvLwXA',
       info:
-        'psf-bch-wallet - How to Install and Use - Learn how to work with the command line interface (CLI) wallet that can work with BCH and SLP tokens, as well as IPFS.',
+        'TDD: The Bad Parts - Great introduction into test-driven development and why it is so important.',
     },
     {
-      url: 'bN9Zgobf0qU',
+      url: 'lE3RYnchHps',
       info:
-        'Using the P2WDB - Shows how to use the psf-bch-wallet command-line wallet to read and write to the pay-to-write database (P2WDB).',
-    },
-
-    {
-      url: 'D6HlEqpUOvg',
-      info:
-        'SLP CLI Wallet How To with Chris and Aaron - Chris and Aaron walk through the installation and usage of slp-cli-wallet, a command-line application for rapid prototyping with BCH and SLP tokens.',
+        'JavaScript Testing - development patterns and best practices used by the PSF.',
     },
     {
-      url: 'ca0ambB0bys',
+      url: 'LftjSIbHzbo',
       info:
-        'PSF TC Meeting 8.4.21 - Our bi-weekly Technical Steering Committee (TSC) meeting',
+        'Introduction on Clean Architecture, and how the design pattern is applied to PSF projects. Notes: https://gist.github.com/christroutner/85966972aefef6f25e475c2482bb6c97',
     },
     {
-      url: 'm_33rRXEats',
+      url: 'YHngWbJ4Cjw',
       info:
-        'Decentralized Blockchain Service Providers - A high level overview of the implications of decentralized blockchain service providers running on IPFS, to provide censorship-resistant back-end services and access to blockchains.',
-    },
-    {
-      url: 'korI-8W240s',
-      info:
-        'P2WDB Intro - A high-level overview of the pay-to-write database (P2WDB) project. ',
+        'Introduction to the Trello board and how the PSF uses it to organize work with community members.',
     },
   ],
 }

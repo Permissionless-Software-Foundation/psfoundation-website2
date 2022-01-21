@@ -4,6 +4,10 @@ const categoryA = {
     'This section is frequently updated with the latest videos from the PSF community. It includes meetings, how-to videos, and more.',
   videos: [
     {
+      url: 'IVA_7T8nsJ0',
+      info: 'PSF TSC Meeting 01.19.22',
+    },
+    {
       url: 'dhgZlxpDnz4',
       info: 'PSF TSC Meeting 01.05.22',
     },
@@ -117,16 +121,25 @@ const categoryB = {
 }
 
 const categoryC = {
-  title: 'Beginner JavaScript',
+  title: 'Beginner JavaScript Developers',
   about:
-    'The PSF is consortium of JavaScript developers and entreprenures. This section contains information for novice JavaScript developers. It helps you get started with simple programming knowledge, to supercharge the control you have over Bitcoin Cash.',
+    'The PSF is consortium of JavaScript developers and entreprenures. This section contains information for novice JavaScript developers. It helps you get started with simple programming knowledge, to supercharge the control you have over your money and communication.',
   videos: [
+    {
+      url: 'f0YfQbNTrmU',
+      info:
+        'The Pi 400 is a $100 kit, and the "reference hardware" for running much of the "consumer" software produced by the PSF.',
+    },
+    {
+      url: 'lbAPR4rRiVI',
+      info:
+        'This video shows how to flash an SD card with the Ubuntu Desktop software.',
+    },
     {
       url: 'bN9Zgobf0qU',
       info:
         'Using the P2WDB - Shows how to use the psf-bch-wallet command-line wallet to read and write to the pay-to-write database (P2WDB).',
     },
-
     {
       url: '4ZNwY4gO00A',
       info:

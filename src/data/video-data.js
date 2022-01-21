@@ -136,9 +136,9 @@ const categoryC = {
         'This video shows how to flash an SD card with the Ubuntu Desktop software.',
     },
     {
-      url: 'bN9Zgobf0qU',
+      url: '9-UrlsS2uwE',
       info:
-        'Using the P2WDB - Shows how to use the psf-bch-wallet command-line wallet to read and write to the pay-to-write database (P2WDB).',
+        'piclone is the first app you should install. It lets you "save your game" by easily backing up the SD card with the Raspberry Pi OS.',
     },
     {
       url: '4ZNwY4gO00A',

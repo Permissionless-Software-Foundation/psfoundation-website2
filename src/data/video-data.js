@@ -171,7 +171,7 @@ const categoryC = {
 const categoryD = {
   title: 'Dev Ops & Infrastructure',
   about:
-    'This section contains advanced videos, to help full stack developers set up their own self-sufficient infrastructure, and how to donate that infrastructure to the community in order to claim bounties of PSf tokens.',
+    'This section contains advanced videos, to help full stack developers set up their own self-sufficient infrastructure, and how to donate that infrastructure to the community in order to claim bounties of PSF tokens.',
   videos: [
     {
       url: 'uvk59RGype0',

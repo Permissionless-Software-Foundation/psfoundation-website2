@@ -124,14 +124,27 @@ const categoryC = {
       info:
         'Setting up remote desktop for the RPi. This will let you remotely control the GUI desktop of RPi.',
     },
-    {
-      url: '-RwLAL3fA24',
-      info: 'Set up end-to-end encrypted (e2ee) chat between two computers.',
-    },
   ],
 }
 
 const categoryD = {
+  title: 'Op-Sec',
+  about:
+    'Op-Sec (Operational Security) are best practices for protecting your privacy and mitigating online threats.',
+  videos: [
+    {
+      url: '-RwLAL3fA24',
+      info: 'Set up end-to-end encrypted (e2ee) chat between two computers.',
+    },
+    {
+      url: 'J0Cz4QwNwKY',
+      info:
+        'Setup directions for Electron Cash with CashFusion, for anonymizing your Bitcoin Cash.',
+    },
+  ],
+}
+
+const categoryE = {
   title: 'Dev Ops & Infrastructure',
   about:
     'This section contains advanced videos, to help full stack developers set up their own self-sufficient infrastructure, and how to donate that infrastructure to the community in order to claim bounties of PSF tokens.',
@@ -189,7 +202,7 @@ const categoryD = {
   ],
 }
 
-const categoryE = {
+const categoryF = {
   title: 'Dev Culture',
   about:
     'The PSF has its own `culture` when it comes to JavaScript development. We follow test-driven development (TDD) best practices, as well as the Clean Architecture design pattern. These videos go into detail about our dev culture.',
@@ -216,5 +229,12 @@ const categoryE = {
     },
   ],
 }
-const videoData = [categoryA, categoryB, categoryC, categoryD, categoryE]
+const videoData = [
+  categoryA,
+  categoryB,
+  categoryC,
+  categoryD,
+  categoryE,
+  categoryF,
+]
 export default videoData

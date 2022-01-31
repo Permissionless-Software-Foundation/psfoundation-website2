@@ -124,6 +124,10 @@ const categoryC = {
       info:
         'Setting up remote desktop for the RPi. This will let you remotely control the GUI desktop of RPi.',
     },
+    {
+      url: '-RwLAL3fA24',
+      info: 'Set up end-to-end encrypted (e2ee) chat between two computers.',
+    },
   ],
 }
 

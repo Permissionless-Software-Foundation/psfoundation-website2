@@ -93,29 +93,8 @@ const categoryB = {
     'Are you just starting your crypto journey? The videos in this category will show you the basics around creating and using a Bitcoin Cash wallet.',
   videos: [
     {
-      url: 'ypbDYzNuD3M',
-      info:
-        'PSF TSC Meeting 9.8.21 - Excellent presentation by Stoyan on developing on SmartBCH.',
-    },
-    {
-      url: '45YEeZi_8Kc',
-      info:
-        'psf-bch-wallet - How to Install and Use - Learn how to work with the command line interface (CLI) wallet that can work with BCH and SLP tokens, as well as IPFS.',
-    },
-    {
-      url: 'bN9Zgobf0qU',
-      info:
-        'Using the P2WDB - Shows how to use the psf-bch-wallet command-line wallet to read and write to the pay-to-write database (P2WDB).',
-    },
-    {
-      url: 'Kuzn0iglVJc',
-      info:
-        'PSF Architecture Trajectory - This video provides a high-level overview of how the software architecture is changing with software maintained by the Permissionless Software Foundation',
-    },
-    {
-      url: '4ZNwY4gO00A',
-      info:
-        'PSF TC Meeting 8.18.21 - Our bi-weekly Technical Steering Committee (TSC) meeting.',
+      url: 'NpEaa2P7qZI',
+      info: 'Placeholder',
     },
   ],
 }
@@ -141,29 +120,9 @@ const categoryC = {
         'piclone is the first app you should install. It lets you "save your game" by easily backing up the SD card with the Raspberry Pi OS.',
     },
     {
-      url: '4ZNwY4gO00A',
+      url: 'cUu59ceXtWE',
       info:
-        'PSF TC Meeting 8.18.21 - Our bi-weekly Technical Steering Committee (TSC) meeting.',
-    },
-    {
-      url: 'D6HlEqpUOvg',
-      info:
-        'SLP CLI Wallet How To with Chris and Aaron - Chris and Aaron walk through the installation and usage of slp-cli-wallet, a command-line application for rapid prototyping with BCH and SLP tokens.',
-    },
-    {
-      url: 'ca0ambB0bys',
-      info:
-        'PSF TC Meeting 8.4.21 - Our bi-weekly Technical Steering Committee (TSC) meeting',
-    },
-    {
-      url: 'm_33rRXEats',
-      info:
-        'Decentralized Blockchain Service Providers - A high level overview of the implications of decentralized blockchain service providers running on IPFS, to provide censorship-resistant back-end services and access to blockchains.',
-    },
-    {
-      url: 'korI-8W240s',
-      info:
-        'P2WDB Intro - A high-level overview of the pay-to-write database (P2WDB) project. ',
+        'Setting up remote desktop for the RPi. This will let you remotely control the GUI desktop of RPi.',
     },
   ],
 }
@@ -212,6 +171,16 @@ const categoryD = {
       url: 'rwJcZLcBOSo',
       info:
         'How to install ipfs-bch-wallet-service for piping access to the BCH blockchain over the IPFS network.',
+    },
+    {
+      url: 'Z0NsboIVN44',
+      info:
+        'How to setup a Circuit Relay. Circuit Relays are the glue that hold our community IPFS network together. Bounties are available for operating them.',
+    },
+    {
+      url: '3UsgCUPFmx0',
+      info:
+        'In order to claim the bounty for running a Circuit Relay, it must have an SSL certificate and be accessible via secure websockets.',
     },
   ],
 }

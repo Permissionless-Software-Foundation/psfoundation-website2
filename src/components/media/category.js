@@ -10,6 +10,7 @@ class Category extends React.Component {
     this.state = {
       activeItem: {},
     }
+
     if (typeof window !== `undefined`) {
       _this.scrollValue =
         window.innerWidth < 700 ? 1 : window.innerWidth < 1200 ? 2 : 3
@@ -17,6 +18,7 @@ class Category extends React.Component {
       console.log('window.innerWidth', window.innerWidth, _this.scrollValue)
     }
   }
+
   render() {
     const { id, title, about, media, hidenLeft, hidenRight } = _this.state
     const { onShowInfo, onWatchVideo } = _this.props

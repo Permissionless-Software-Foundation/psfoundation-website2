@@ -32,8 +32,8 @@ display: -webkit-box;
 }
 .media-content{
     display: block;
-    min-width: 400px;
-    max-width: 400px;
+    min-width: 25%;
+    max-width: 25%;
     min-height: 360px;
     max-height: 400px;
     text-align: center;
@@ -72,10 +72,13 @@ display: -webkit-box;
     display: flex;
     align-items: center;
     height: 360px;
-
 }
 .media-arrow-left i,.media-arrow-right i{
     cursor: pointer;
+}
+.disabled-arrow{
+    color: gray;
+    cursor: none;
 }
 .ReactModal__Overlay--after-open {
     position: fixed;
@@ -108,7 +111,7 @@ display: -webkit-box;
     margin-top: 1em
 }
 .media-content img{
-    max-width: 90%;
+    max-width: 80%;
     margin-bottom: 2em;
 }
 .close-modal{

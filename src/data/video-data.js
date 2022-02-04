@@ -4,6 +4,10 @@ const categoryA = {
     'This section is frequently updated with the latest videos from the PSF community. It includes meetings, how-to videos, and more.',
   videos: [
     {
+      url: 'b_CgOWf-eV0',
+      info: 'PSF TSC Meeting 02.02.22',
+    },
+    {
       url: 'IVA_7T8nsJ0',
       info: 'PSF TSC Meeting 01.19.22',
     },
@@ -123,6 +127,11 @@ const categoryC = {
       url: 'cUu59ceXtWE',
       info:
         'Setting up remote desktop for the RPi. This will let you remotely control the GUI desktop of RPi.',
+    },
+    {
+      url: '8Dd7KRpKeaE',
+      info:
+        'All code the PSF develops is hosted on GitHub. It is critical that new developers learn how to use this platform. We generally prefer using git on the command line, but if you are brand new, using the GUI may be easier to start with.',
     },
   ],
 }

@@ -13,7 +13,7 @@ class Category extends React.Component {
 
     if (typeof window !== `undefined`) {
       _this.scrollValue =
-        window.innerWidth < 700 ? 1 : window.innerWidth < 1200 ? 2 : 3
+        window.innerWidth < 700 ? 1 : window.innerWidth < 1200 ? 2 : 2
 
       console.log('window.innerWidth', window.innerWidth, _this.scrollValue)
     }
@@ -88,7 +88,7 @@ class Category extends React.Component {
   scrollTo(id, direction) {
     try {
       const { activeItem } = _this.state
-      console.log(`activeItem`, activeItem)
+
       let _index
       try {
         _index = activeItem[id] || 0
@@ -96,23 +96,35 @@ class Category extends React.Component {
         _index = 0
       }
 
-      let newIndex
-      if (direction === 'left') {
-        newIndex = _index - _this.scrollValue
-      } else {
-        newIndex = _index + _this.scrollValue
-      }
 
       const element = document.getElementById(`${id}-mediaContainer`)
 
       const childs = element.childNodes
-      if (!childs[newIndex]) return
+
+      let newIndex
+      if (direction === 'left') {
+        newIndex = _index - _this.scrollValue 
+      } else {
+        newIndex = _index + _this.scrollValue
+      }
+
+      if (newIndex >= childs.length -2) {
+        newIndex = childs.length
+      } 
+      // handler disabled arrows
+      if (newIndex <= 0) {
+        newIndex = 0
+      } 
+
+      if (!childs[newIndex]) {
+        return
+      }
+
       childs[newIndex].scrollIntoView({
         block: 'nearest',
-        inline: 'center',
+        inline: 'start',
         behavior: 'smooth',
       })
-
       activeItem[id] = newIndex
       _this.setState({
         activeItem,

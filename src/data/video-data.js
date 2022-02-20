@@ -97,8 +97,17 @@ const categoryB = {
     'Are you just starting your crypto journey? The videos in this category will show you the basics around creating and using a Bitcoin Cash wallet.',
   videos: [
     {
-      url: 'NpEaa2P7qZI',
-      info: 'Placeholder',
+      url: 'Tpm34Qkp_Tc',
+      info:
+        'Introduction to Bitcoin Cash wallets. How to create them and keep them safe.',
+    },
+    {
+      url: 'WZRwkLPtkaI',
+      info: 'How to send and receive Bitcoin Cash and SLP tokens.',
+    },
+    {
+      url: '5RiYLf3ky8U',
+      info: 'How to recover and restore a wallet using the 12 word mnemonic.',
     },
   ],
 }

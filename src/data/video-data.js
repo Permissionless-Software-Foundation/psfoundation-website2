@@ -109,6 +109,16 @@ const categoryB = {
       url: '5RiYLf3ky8U',
       info: 'How to recover and restore a wallet using the 12 word mnemonic.',
     },
+    {
+      url: 'KOmF97NKRPU',
+      info:
+        'How to store BCH and retrieve it from a paper wallet. Generate paper wallets at paperwallet.FullStack.cash',
+    },
+    {
+      url: 'mRniqpgWdjg',
+      info:
+        'How to store SLP tokens and retrieve them from a paper wallet. Generate paper wallets at paperwallet.FullStack.cash',
+    },
   ],
 }
 

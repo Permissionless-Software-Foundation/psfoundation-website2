@@ -332,7 +332,7 @@ class HomeIndex extends React.Component {
                   rel="noopener noreferrer"
                 >
                   wallet.FullStack.cash
-                </a> or
+                </a> or{' '}
                 <a
                   href="https://github.com/simpleledger/Electron-Cash-SLP"
                   target="_blank"

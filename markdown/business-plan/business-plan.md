@@ -144,9 +144,7 @@ There is an unavoidable, short period of time where speculation of the token pri
 But the long-term, steady-state incentives ensure that only community members who want to participate in governance, have incentive to hold the token. This ensure that dedicated, community-focused participants, with skin-in-the-game, are the ones driving the governance of the Permissionless Software Foundation and its community.
 
 ### Token Creation, Issuance, and Wallet<a name="tokenCreation"></a>
-The proposed PSF token will be issued on the Bitcoin Cash (BCH) blockchain using the [Simple Ledger Token Protocol (SLP)](https://simpleledger.cash/). The token is currently exchanged using the [Badger Wallet](https://badger.bitcoin.com/), the [Bitcoin.com wallet](https://wallet.bitcoin.com), and several up-and-coming SLP token-aware wallets, by sending either BCH or PSF tokens to this BCH address:
-
-bitcoincash:qzl6k0wvdd5ky99hewghqdgfj2jhcpqnfq8xtct0al
+The proposed PSF token will be issued on the Bitcoin Cash (BCH) blockchain using the [Simple Ledger Token Protocol (SLP)](https://simpleledger.cash/). The token is currently exchanged using [wallet.fullstack.cash](https://bchn-wallet.fullstack.cash), by interacting with the app on [the homepage](https://psfoundation.cash).
 
 The PSF token is identified by its unique SLP property token ID of:
 

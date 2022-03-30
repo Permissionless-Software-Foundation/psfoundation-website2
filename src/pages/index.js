@@ -325,13 +325,6 @@ class HomeIndex extends React.Component {
                 You can buy or sell tokens by sending BCH or tokens to the
                 liquidity app. Scan the QR code with a Bitcoin Cash wallet that
                 is SLP-token-aware, like{' '}
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.badgermobile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Badger Mobile
-                </a>{' '}
                 or{' '}
                 <a
                   href="https://wallet.fullstack.cash/"
@@ -339,6 +332,13 @@ class HomeIndex extends React.Component {
                   rel="noopener noreferrer"
                 >
                   wallet.FullStack.cash
+                </a> or
+                <a
+                  href="https://github.com/simpleledger/Electron-Cash-SLP"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Electron Cash SLP
                 </a>
                 .
               </p>

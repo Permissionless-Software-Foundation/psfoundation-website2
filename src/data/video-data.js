@@ -4,6 +4,14 @@ const categoryA = {
     'This section is frequently updated with the latest videos from the PSF community. It includes meetings, how-to videos, and more.',
   videos: [
     {
+      url: 'nqGefRSfT_k',
+      info: 'PSF TSC Meeting 03.16.22',
+    },
+    {
+      url: 'ptZSFF0WQ4Q',
+      info: 'PSF TSC Meeting 03.02.22',
+    },
+    {
       url: 'b_CgOWf-eV0',
       info: 'PSF TSC Meeting 02.02.22',
     },

@@ -102,7 +102,7 @@ class PriceSection extends React.Component {
       console.log(`bchBalance: ${this.state.bchBalance}`)
       console.log(`tokenBalance: ${this.state.tokenBalance}`)
     } catch (err) {
-      console.log(`Error in Header.js/getPrice()`)
+      console.log(`Error in price-section.js/getPrice(): `, err)
       throw err
     }
   }

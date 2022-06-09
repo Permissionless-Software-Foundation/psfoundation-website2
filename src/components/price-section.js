@@ -88,6 +88,8 @@ class PriceSection extends React.Component {
       const resp = await fetch(`${SERVER}/price`)
       const body = await resp.json()
 
+      console.log('body: ', body)
+
       this.setState(prevState => ({
         usdPerToken: body.usdPerToken,
         usdPerBCH: body.usdPerBCH,

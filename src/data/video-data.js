@@ -4,6 +4,26 @@ const categoryA = {
     'This section is frequently updated with the latest videos from the PSF community. It includes meetings, how-to videos, and more.',
   videos: [
     {
+      url: 'ajmBwM-ntp4',
+      info: 'PSF TSC Meeting 06.08.22',
+    },
+    {
+      url: 'RicVSFlcNwg',
+      info: 'PSF TSC Meeting 05.25.22',
+    },
+    {
+      url: 'SvSAiM4xQkQ',
+      info: 'PSF TSC Meeting 05.04.22',
+    },
+    {
+      url: 'nNRpa3WPxdU',
+      info: 'PSF TSC Meeting 04.13.22',
+    },
+    {
+      url: 'Vb_fwPQ7dN4',
+      info: 'PSF TSC Meeting 03.30.22',
+    },
+    {
       url: 'nqGefRSfT_k',
       info: 'PSF TSC Meeting 03.16.22',
     },
@@ -154,12 +174,7 @@ const categoryC = {
       url: 'cUu59ceXtWE',
       info:
         'Setting up remote desktop for the RPi. This will let you remotely control the GUI desktop of RPi.',
-    },
-    {
-      url: '8Dd7KRpKeaE',
-      info:
-        'All code the PSF develops is hosted on GitHub. It is critical that new developers learn how to use this platform. We generally prefer using git on the command line, but if you are brand new, using the GUI may be easier to start with.',
-    },
+    }
   ],
 }
 
@@ -243,6 +258,11 @@ const categoryF = {
   about:
     'The PSF has its own `culture` when it comes to JavaScript development. We follow test-driven development (TDD) best practices, as well as the Clean Architecture design pattern. These videos go into detail about our dev culture.',
   videos: [
+    {
+      url: '8Dd7KRpKeaE',
+      info:
+        'All code the PSF develops is hosted on GitHub. It is critical that new developers learn how to use this platform. We generally prefer using git on the command line, but if you are brand new, using the GUI may be easier to start with.',
+    },
     {
       url: 'xPL84vvLwXA',
       info:

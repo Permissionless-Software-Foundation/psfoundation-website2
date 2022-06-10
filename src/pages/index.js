@@ -35,6 +35,26 @@ const categoryA = {
     'This section is frequently updated with the latest videos from the PSF community. It includes meetings, how-to videos, and more.',
   videos: [
     {
+      url: 'ajmBwM-ntp4',
+      info: 'PSF TSC Meeting 06.08.22',
+    },
+    {
+      url: 'RicVSFlcNwg',
+      info: 'PSF TSC Meeting 05.25.22',
+    },
+    {
+      url: 'SvSAiM4xQkQ',
+      info: 'PSF TSC Meeting 05.04.22',
+    },
+    {
+      url: 'nNRpa3WPxdU',
+      info: 'PSF TSC Meeting 04.13.22',
+    },
+    {
+      url: 'Vb_fwPQ7dN4',
+      info: 'PSF TSC Meeting 03.30.22',
+    },
+    {
       url: 'nqGefRSfT_k',
       info: 'PSF TSC Meeting 03.16.22',
     },

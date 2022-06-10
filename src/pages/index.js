@@ -14,8 +14,8 @@ import PriceSection from '../components/price-section'
 import Util from '../components/lib/util'
 const util = new Util()
 
-import qrcodeBCH from '../assets/images/bitcoincash:qrnn49rx0p4xh78tts79utf0zv26vyru6vqtl9trd3.png'
-import qrcodeSLP from '../assets/images/simpleledger:qrnn49rx0p4xh78tts79utf0zv26vyru6vvs577rn0.png'
+import qrcodeBCH from '../assets/images/bitcoincash:qr9xtwn9u22wqh7j00fy6k4jg9ktmdn69utna2wmnh.png'
+import qrcodeSLP from '../assets/images/simpleledger:qr9xtwn9u22wqh7j00fy6k4jg9ktmdn69u8gk3mmdf.png'
 import qrBurn from '../assets/images/qrBurn.png'
 import qrBurnSlp from '../assets/images/qrBurn-slp.png'
 import animatedGears from '../assets/images/PSF-animated-gears.gif'
@@ -316,24 +316,24 @@ class HomeIndex extends React.Component {
                 <span className="image">
                   <img
                     src={qrcodeBCH}
-                    alt="bitcoincash:qrnn49rx0p4xh78tts79utf0zv26vyru6vqtl9trd3"
+                    alt="bitcoincash:qr9xtwn9u22wqh7j00fy6k4jg9ktmdn69utna2wmnh"
                   />
                 </span>
                 <br />
                 <p style={{ textAlign: 'center' }}>
-                  bitcoincash:qrnn49rx0p4xh78tts79utf0zv26vyru6vqtl9trd3
+                  bitcoincash:qr9xtwn9u22wqh7j00fy6k4jg9ktmdn69utna2wmnh
                 </p>
                 <br />
 
                 <span className="image">
                   <img
                     src={qrcodeSLP}
-                    alt="simpleledger:qrnn49rx0p4xh78tts79utf0zv26vyru6vvs577rn0"
+                    alt="simpleledger:qr9xtwn9u22wqh7j00fy6k4jg9ktmdn69u8gk3mmdf"
                   />
                 </span>
                 <br />
                 <p style={{ textAlign: 'center' }}>
-                  simpleledger:qrnn49rx0p4xh78tts79utf0zv26vyru6vvs577rn0
+                  simpleledger:qr9xtwn9u22wqh7j00fy6k4jg9ktmdn69u8gk3mmdf
                 </p>
               </center>
             </div>

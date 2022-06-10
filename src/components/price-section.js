@@ -5,8 +5,8 @@ import fetch from 'isomorphic-fetch'
 
 import PriceChart from './price-chart'
 
-const SERVER = 'http://localhost:5000'
-// const SERVER = 'https://psfoundation.cash'
+//const SERVER = 'http://localhost:5000'
+const SERVER = 'https://psfoundation.cash'
 //const SERVER = 'http://192.168.2.3:5000'
 
 

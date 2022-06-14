@@ -172,7 +172,7 @@ class HomeIndex extends React.Component {
               </p>
               <center>
                 <BizPlanButton
-                  href="/biz-plan/business-plan"
+                  href="https://psfoundation.info"
                   rel="noopener noreferrer"
                   className="button special"
                 >
@@ -256,7 +256,7 @@ class HomeIndex extends React.Component {
                 <div className="col-9">
                   <p style={{ paddingRight: '20px' }}>
                     The PSF is also a collection of freelancers, looking to do
-                    <b>consulting</b>. We match
+                    {' '}<b>consulting</b>. We match
                     talented developers with entrepreurs looking to fund
                     development of their business ideas.
                     Freelancers are available to customize PSF code for your
@@ -338,7 +338,7 @@ class HomeIndex extends React.Component {
                 <h2>Buy or Sell PSF Tokens</h2>
               </header>
               <p>
-                You can buy or sell tokens by sending BCH or tokens to the
+                You can buy or sell tokens PSF tokens by sending BCH or tokens to the
                 liquidity app. Scan the QR code with a Bitcoin Cash wallet that
                 is SLP-token-aware, like{' '}
                 or{' '}
@@ -359,8 +359,8 @@ class HomeIndex extends React.Component {
                 .
               </p>
               <p>
-                The liquidity app will send tokens if it recieves BCH. It will
-                send BCH if it recieves tokens.{' '}
+                The liquidity app will send PSF tokens if it recieves BCH. It will
+                send BCH if it recieves PSF tokens.{' '}
                 <b>
                   It will take up to 30 minutes before tokens will
                   appear in your wallet

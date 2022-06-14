@@ -156,14 +156,15 @@ class HomeIndex extends React.Component {
                 <b>individuals</b> to <u>protect their privacy</u>,{' '}
                 <u>circumvent censorship</u>, and{' '}
                 <u>engage in economic activity</u>. The Foundation will focus on
-                the growth of open source software and the adoption of Bitcoin
-                Cash across the globe, as the primary means of achieving its
+                the growth of open source software and the adoption of cryptocurrency
+                across the globe, as the primary means of achieving its
                 goals.
               </p>
 
               <p>
-                The business plan for the Permissionless Software Foundation and
-                PSF token discusses the token economics and mathematics used to
+                <a href="https://psfoundation.info" target="_blank">PSFoundation.info</a> is
+                our documentation site that
+                discusses the token economics and mathematics used to
                 create a psudo-stable utility token, allowing open source
                 software communities to self-fund without the need for venture
                 capital, corporate sponshorship, or other fiduciary
@@ -175,7 +176,7 @@ class HomeIndex extends React.Component {
                   rel="noopener noreferrer"
                   className="button special"
                 >
-                  Read the Business Plan
+                  Learn More about PSF
                 </BizPlanButton>
               </center>
             </div>
@@ -232,11 +233,11 @@ class HomeIndex extends React.Component {
                     <a href="https://fullstack.cash" target="_blank">
                       FullStack.cash
                     </a>
-                    , or the{' '}
-                    <a href="https://ipfs.fullstack.cash" target="blank">
-                      IPFS file hosting
+                    , or other{' '}
+                    <a href="https://cashstack.info" target="blank">
+                      Cash Stack
                     </a>{' '}
-                    service. These are 'coin operated'. A user pays BCH and
+                    services. These are 'coin operated'. A user pays BCH and
                     immediately gets something of value for it. Each payment
                     burns PSF tokens. This is the raw fuel that drives the peg
                     between PSF tokens and BCH.
@@ -254,11 +255,12 @@ class HomeIndex extends React.Component {
                 </div>
                 <div className="col-9">
                   <p style={{ paddingRight: '20px' }}>
-                    The PSF is also a <b>consulting</b> company. We match
+                    The PSF is also a collection of freelancers, looking to do
+                    <b>consulting</b>. We match
                     talented developers with entrepreurs looking to fund
-                    development of their business ideas. Work is structured in
-                    3-6 month contracts. Payments go to burn tokens, and
-                    developers are paid in PSF tokens.{' '}
+                    development of their business ideas.
+                    Freelancers are available to customize PSF code for your
+                    business, starting at $100 USD per hour.{' '}
                     <a
                       href="https://fullstack.cash/consulting"
                       target="_blank"
@@ -282,17 +284,11 @@ class HomeIndex extends React.Component {
                 <div className="col-9">
                   <p style={{ paddingRight: '20px' }}>
                     The PSF is governed by a <b>community</b> of token holders.
-                    Patrons can invest in Bitcoin Cash infrastructure by buying
-                    and holding PSF tokens. They are then eligible for air-drops
-                    that can be directed to fund{' '}
-                    <a
-                      href="https://en.wikipedia.org/wiki/Common_good"
-                      target="_blank"
-                    >
-                      common goods
-                    </a>
-                    , like full nodes, indexers, privacy enhancements, and
-                    research.
+                    Patrons can invest in cryptocurrency infrastructure by buying
+                    and holding PSF tokens. They can then influence <a
+                    href="https://psfoundation.cash" target="_blank">
+                    governance decisions</a>, to direct how future cash flows
+                    are used by the PSF.
                   </p>
                 </div>
               </div>
@@ -366,7 +362,7 @@ class HomeIndex extends React.Component {
                 The liquidity app will send tokens if it recieves BCH. It will
                 send BCH if it recieves tokens.{' '}
                 <b>
-                  It will take two (2) block confirmations before tokens will
+                  It will take up to 30 minutes before tokens will
                   appear in your wallet
                 </b>
                 . Refresh the window to get the most up-to-date exchange rate.

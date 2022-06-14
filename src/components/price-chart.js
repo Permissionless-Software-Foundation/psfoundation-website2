@@ -80,7 +80,7 @@ const initialState = {
     },
     {
       type: 'bubble',
-      label: 'Inflection Point',
+      label: 'BCH Hard Peg',
       data: [
         {
           x: 1,

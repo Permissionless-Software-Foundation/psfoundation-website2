@@ -178,17 +178,17 @@ const categoryC = {
     {
       url: 'nsExL0Hb7bQ',
       info:
-        'This video shows how to install and use psf-bch-wallet, the command-line BCH wallet. This is the PSF 'reference' implementation. This demo shows how to send and receive BCH and tokens with the wallet.',
+        'This video shows how to install and use psf-bch-wallet, the command-line BCH wallet. This is the PSF \'reference\' implementation. This demo shows how to send and receive BCH and tokens with the wallet.'
     },
     {
       url: 'Bu8KqUJSvvc',
       info:
-        'This video shows how to configure psf-bch-wallet to use different web2 or web3 infrastructure.',
+        'This video shows how to configure psf-bch-wallet to use different web2 or web3 infrastructure.'
     },
     {
       url: 't3eXbnP_TJo',
       info:
-        'This videos hows how to install ipfs-bch-wallet-consumer, and then control it with psf-bch-wallet.',
+        'This videos hows how to install ipfs-bch-wallet-consumer, and then control it with psf-bch-wallet.'
     },
   ],
 }

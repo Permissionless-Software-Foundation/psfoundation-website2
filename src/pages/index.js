@@ -406,8 +406,8 @@ class HomeIndex extends React.Component {
                 <h2>Software Projects</h2>
               </header>
               <p className="projectText">
-                The PSF token will be used to fund the following open source
-                projects, with <a href="/grants">more on the way</a>.
+                The PSF token is used to fund the following open source
+                projects:
               </p>
             </div>
 
@@ -419,7 +419,7 @@ class HomeIndex extends React.Component {
                 </a>{' '}
                 is a suite of software that allows modern webpages and phone
                 apps to interact with the Bitcoin Cash blockchain. It's a
-                subscription-based cloud service, and it unlocks the next
+                cloud-based service for scaling crypto apps, and it unlocks the next
                 generation of blockchain-based applications. Fees paid for the
                 service burn PSF tokens.
               </p>
@@ -437,18 +437,18 @@ class HomeIndex extends React.Component {
               </ul>
             </div>
             <div className="col-6">
-              <h3>Uncensorable Publishing</h3>
+              <h3>Pay-to-Write Database (P2WDB)</h3>
               <p>
-                Publish web sites and web apps that are impossible for any
-                government to censor or stop. Simultaniously broadcast your
-                website using a conventional domain (clear web), Tor (dark net),
-                and the Interplanetary File System (IPFS) network. Every website
-                published will send a tiny amount of BCH to burn PSF tokens.
+                The Pay-to-Write Database (P2WDB) is an censorship-resistant database. 
+                It's similar to a blockchain, but better optimized for data.
+                The database has many redundant copies spread across the globe. 
+                They sync with one another using consensus rules. Burning PSF
+                tokens is required to write to the database.
               </p>
               <ul className="actions">
                 <li>
                   <a
-                    href="https://uncensorablepublishing.com"
+                    href="https://p2wdb.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="button"
@@ -470,7 +470,8 @@ class HomeIndex extends React.Component {
                 source software. It's intended purpose is to be easy to
                 customize, in order to solve the widest possible range of
                 business problems. It leverages the infrastructure provided by
-                both FullStack.cash and Uncensorable Publishing.
+                both FullStack.cash and Uncensorable Publishing. Every transaction
+                sent with the wallet burns 2,000 sats worth of PSF tokens.
               </p>
               <ul className="actions">
                 <li>
@@ -486,17 +487,18 @@ class HomeIndex extends React.Component {
               </ul>
             </div>
             <div className="col-6">
-              <h3>P2P VPS: Peer-to-Peer Cloud Infrastructure</h3>
+              <h3>PSF DEX</h3>
               <p>
-                P2P VPS allows people to rent out unused computing power for
-                hosting common internet services like blogs, email, VPN, and
-                other cloud services. Any device capable of running Docker can
-                be rented on the network, in exchange for the PSF token.
+                The PSF has built decentralized exchanges (DEXs) on the BCH,
+                XEC, and AVAX blockchains. These exchanges are peer-to-peer,
+                trustless, and atomic, leveraging inherent features of the
+                Bitcoin protocol. Trade data is stored on the P2WDB, which
+                means each interaction burns PSF tokens.
               </p>
               <ul className="actions">
                 <li>
                   <a
-                    href="https://p2pvps.org/about"
+                    href="https://dex.fullstack.cash/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="button"

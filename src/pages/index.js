@@ -116,7 +116,7 @@ class HomeIndex extends React.Component {
         <PriceSection />
         <WarningDiv />
         {/** Media */}
-        {Category && (
+        {/* Category && (
           <>
             <Category
               key={categoryA.title}
@@ -127,6 +127,9 @@ class HomeIndex extends React.Component {
               onWatchVideo={_this.toggleVideo}
               media={categoryA.videos}
             />
+            <>
+              <a href="">Watch the latest videos on our YouTube channel.</a>
+            </>
           </>
         )}
         {_this.state.showInfo && (
@@ -142,7 +145,7 @@ class HomeIndex extends React.Component {
             show={_this.state.watchVideo}
             onHide={_this.toggleVideo}
           />
-        )}
+        )*/}
         {/**  */}
         <section id="one" className="main style1">
           <div className="grid-wrapper">
@@ -435,9 +438,9 @@ class HomeIndex extends React.Component {
             <div className="col-6">
               <h3>Pay-to-Write Database (P2WDB)</h3>
               <p>
-                The Pay-to-Write Database (P2WDB) is an censorship-resistant database. 
+                The Pay-to-Write Database (P2WDB) is an censorship-resistant database.
                 It's similar to a blockchain, but better optimized for data.
-                The database has many redundant copies spread across the globe. 
+                The database has many redundant copies spread across the globe.
                 They sync with one another using consensus rules. Burning PSF
                 tokens is required to write to the database.
               </p>

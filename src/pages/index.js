@@ -310,73 +310,15 @@ class HomeIndex extends React.Component {
           </div>
 
           <div className="grid-wrapper" style={{ visibility: 'show' }}>
-            <div className="col-6">
-              <center>
-                <span className="image">
-                  <img
-                    src={qrcodeBCH}
-                    alt="bitcoincash:qr9xtwn9u22wqh7j00fy6k4jg9ktmdn69utna2wmnh"
-                  />
-                </span>
-                <br />
-                <p style={{ textAlign: 'center' }}>
-                  bitcoincash:qr9xtwn9u22wqh7j00fy6k4jg9ktmdn69utna2wmnh
-                </p>
-                <br />
 
-                <span className="image">
-                  <img
-                    src={qrcodeSLP}
-                    alt="simpleledger:qr9xtwn9u22wqh7j00fy6k4jg9ktmdn69u8gk3mmdf"
-                  />
-                </span>
-                <br />
-                <p style={{ textAlign: 'center' }}>
-                  simpleledger:qr9xtwn9u22wqh7j00fy6k4jg9ktmdn69u8gk3mmdf
-                </p>
-              </center>
-            </div>
-            <div className="col-6">
+            <div className="col-12">
               <header className="">
                 <h2>Buy or Sell PSF Tokens</h2>
               </header>
               <p>
-                You can buy or sell tokens PSF tokens by sending BCH or tokens to the
-                liquidity app. Scan the QR code with a Bitcoin Cash wallet that
-                is SLP-token-aware, like{' '}
-                or{' '}
-                <a
-                  href="https://wallet.fullstack.cash/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  wallet.FullStack.cash
-                </a> or{' '}
-                <a
-                  href="https://github.com/simpleledger/Electron-Cash-SLP"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Electron Cash SLP
-                </a>
-                .
-              </p>
-              <p>
-                The liquidity app will send PSF tokens if it recieves BCH. It will
-                send BCH if it recieves PSF tokens.{' '}
-                <b>
-                  It will take up to 30 minutes before tokens will
-                  appear in your wallet
-                </b>
-                . Refresh the window to get the most up-to-date exchange rate.
-              </p>
-              <p>
-                <b>
-                  <u>Warning:</u>{' '}
-                </b>
-                Do not send BCH to the app address unless you are using a SLP
-                token-aware wallet. Non-aware wallets can destroy the tokens.
-              </p>
+                You can buy PSF tokens through the <a href="https://slpdex.com" target="_blank">SLP DEX</a>.
+                This is a trustless, atomic DEX for trading SLP tokens. Go to the 'Fungible' sections, as the
+                PSF token is a Fungible token, not an NFT.
             </div>
           </div>
 
